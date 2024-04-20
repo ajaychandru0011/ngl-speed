@@ -1,3 +1,4 @@
+import ASOsection1 from "../components/asoSection1";
 import Marketing from "../components/marketing";
 import Section3 from "../components/section3";
 import Section4 from "../components/section4";
@@ -12,6 +13,7 @@ export default function Home() {
       <Section4 />
       <Section5 />
       <Section6 />
+      <ASOsection1 />
     </>
   );
 }
