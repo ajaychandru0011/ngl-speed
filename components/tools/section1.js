@@ -346,7 +346,7 @@ const data = [
     ),
   },
 ];
-const Tools1 = () => {
+const ToolsSection1 = () => {
   return (
     <section className="section mt-100">
       <div className="container">
@@ -393,4 +393,4 @@ const Tools1 = () => {
   );
 };
 
-export default Tools1;
+export default ToolsSection1;

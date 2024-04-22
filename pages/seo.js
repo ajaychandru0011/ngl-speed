@@ -1,16 +1,17 @@
-import { useState } from "react";
-import Hero from "../components/Hero";
+import React, { useState } from "react";
 import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Marketing from "../components/marketing";
-import OurServices from "../components/OurServices";
-import Services from "../components/Services";
-import Sidebar from "../components/Sidebar";
+import Hero1 from "../components/Hero";
+import Trustby1 from "../components/Trustby";
+import SEOSection1 from "../components/seo/seoSection1";
 import Testimonials from "../components/Testimonials";
-import Tools from "../components/Tools";
-import Trustby from "../components/Trustby";
+import SEOSection3 from "../components/seo/seoSection3";
+import SEOSection4 from "../components/seo/seoSection4";
+import SEOSection5 from "../components/seo/seoSection5";
 import Contact from "../components/elements/Contact";
-export default function Home() {
+import Footer1 from "../components/Footer";
+import SEOSection6 from "../components/seo/seoSection6";
+
+const SEO = () => {
   const [openClass, setOpenClass] = useState("");
 
   const handleOpen = () => {
@@ -32,16 +33,19 @@ export default function Home() {
         openClass={openClass}
         addClass="header-home7"
       />
-      <Sidebar openClass={openClass} />
-      <Hero />
-      <Trustby />
-      <OurServices />
+      <Hero1 />
+      <Trustby1 />
+      <SEOSection1 />
       <Testimonials />
-      <Tools />
-      <Services />
-      <Marketing />
+
+      <SEOSection3 />
+      <SEOSection4 />
+      <SEOSection5 />
+      <SEOSection6 />
       <Contact />
-      <Footer />
+      <Footer1 />
     </>
   );
-}
+};
+
+export default SEO;
