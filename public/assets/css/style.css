@@ -2903,17 +2903,14 @@ body {
 .header .main-menu {
   padding-top: 3px;
 }
-.header .main-menu{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .header .main-menu li {
-  /* float: left; */
-  /* display: flex; */
-  /* position: relative; */
-  /* text-align: left; */
-  /* padding-right: 15px; */
+  float: left;
+  display: flex;
+  position: relative;
+  text-align: left;
+  padding-right: 15px;
+  /* padding-bottom: 15px; */
 }
 .header .main-menu li.has-children > a::after {
   content: "";
@@ -2943,7 +2940,7 @@ body {
   color: #071920;
   line-height: 23px;
   display: block;
-  padding: 12px 0px 12px 12px;
+  padding: 28px 18px 15px 28px;
   /* padding: 10px 6px; */
   text-decoration: none;
   position: relative;

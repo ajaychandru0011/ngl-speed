@@ -1,4 +1,6 @@
+import React, { useState } from 'react';
 import Header from "../components/Header";
+import Sidebar from '../components/Sidebar';
 import Hero from "../components/Hero";
 import Trustby from '../components/Trustby'
 import ASOsection1 from "../components/asoSection1";
@@ -12,9 +14,23 @@ import BackToTop from "../components/elements/BackToTop";
 import Contact from '../components/elements/Contact';
 
 export default function Home() {
+  const [openClass, setOpenClass] = useState('');
+
+    const handleOpen = () => {
+        document.body.classList.add("mobile-menu-active");
+        setOpenClass("sidebar-visible")
+    }
+
+    const handleRemove = () => {
+        if (openClass === "sidebar-visible") {
+            setOpenClass("")
+            document.body.classList.remove("mobile-menu-active");
+        }
+    }
   return (
     <>
-      <Header />
+      <Header handleOpen={handleOpen} handleRemove={handleRemove} openClass={openClass} addClass="header-home7" />
+      <Sidebar openClass={openClass} />
       <Hero />
       <Trustby />
       <OurServices />
