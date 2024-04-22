@@ -1,19 +1,31 @@
+import Header from "../components/Header";
+import Hero from "../components/Hero";
+import Trustby from '../components/Trustby'
 import ASOsection1 from "../components/asoSection1";
-import Marketing from "../components/marketing";
-import Section3 from "../components/section3";
-import Section4 from "../components/section4";
-import Section5 from "../components/section5";
-import Section6 from "../components/section6";
+import OurServices from "../components/OurServices";
+import Testimonials from "../components/Testimonials";
+import Tools from "../components/Tools";
+import Services from "../components/Services";
+import Marketing from "../components/Marketing";
+import Footer from "../components/Footer";
+import BackToTop from "../components/elements/BackToTop";
+import Contact from '../components/elements/Contact';
 
 export default function Home() {
   return (
     <>
+      <Header />
+      <Hero />
+      <Trustby />
+      <OurServices />
+      <Testimonials />
+      <Tools />
+      <Services />
       <Marketing />
-      <Section3 />
-      <Section4 />
-      <Section5 />
-      <Section6 />
-      <ASOsection1 />
+      {/* <ASOsection1 /> */}
+      <Contact />
+      <Footer />
+      <BackToTop />
     </>
   );
 }

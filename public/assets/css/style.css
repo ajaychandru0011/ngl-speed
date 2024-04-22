@@ -2903,11 +2903,17 @@ body {
 .header .main-menu {
   padding-top: 3px;
 }
+.header .main-menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .header .main-menu li {
-  float: left;
-  position: relative;
-  text-align: left;
-  padding-right: 15px;
+  /* float: left; */
+  /* display: flex; */
+  /* position: relative; */
+  /* text-align: left; */
+  /* padding-right: 15px; */
 }
 .header .main-menu li.has-children > a::after {
   content: "";
@@ -2933,11 +2939,12 @@ body {
   font-family: "Manrope", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   color: #071920;
   line-height: 23px;
   display: block;
-  padding: 28px 18px 28px 15px;
+  padding: 12px 0px 12px 12px;
+  /* padding: 10px 6px; */
   text-decoration: none;
   position: relative;
 }
