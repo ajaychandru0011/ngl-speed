@@ -2903,11 +2903,14 @@ body {
 .header .main-menu {
   padding-top: 3px;
 }
+
 .header .main-menu li {
   float: left;
+  display: flex;
   position: relative;
   text-align: left;
   padding-right: 15px;
+  /* padding-bottom: 15px; */
 }
 .header .main-menu li.has-children > a::after {
   content: "";
@@ -2933,11 +2936,12 @@ body {
   font-family: "Manrope", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   color: #071920;
   line-height: 23px;
   display: block;
-  padding: 28px 18px 28px 15px;
+  padding: 28px 18px 15px 28px;
+  /* padding: 10px 6px; */
   text-decoration: none;
   position: relative;
 }
