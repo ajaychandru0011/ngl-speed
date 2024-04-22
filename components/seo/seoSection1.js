@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-const ASOsection1 = () => {
+const SEOSection1 = () => {
   return (
     <section className="section mt-100">
       <div className="container">
@@ -206,4 +206,4 @@ const ASOsection1 = () => {
   );
 };
 
-export default ASOsection1;
+export default SEOSection1;
