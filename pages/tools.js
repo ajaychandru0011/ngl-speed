@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
-import Hero1 from "../components/Hero";
 import ToolsSection1 from "../components/tools/section1";
 import ToolsSection2 from "../components/tools/section2";
 import ToolsSection3 from "../components/tools/section3";
@@ -9,6 +8,7 @@ import ToolsSection5 from "../components/tools/section5";
 import Footer1 from "../components/Footer";
 import Trustby1 from "../components/Trustby";
 import Contact from "../components/elements/Contact";
+import ToolsHero from "../components/tools/toolsHero";
 const Tools = () => {
   const [openClass, setOpenClass] = useState("");
 
@@ -31,7 +31,7 @@ const Tools = () => {
         openClass={openClass}
         addClass="header-home7"
       />
-      <Hero1 />
+      <ToolsHero />
       <Trustby1 />
       <ToolsSection1 />
       <ToolsSection2 />

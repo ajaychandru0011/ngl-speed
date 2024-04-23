@@ -10,6 +10,8 @@ import SEOSection5 from "../components/seo/seoSection5";
 import Contact from "../components/elements/Contact";
 import Footer1 from "../components/Footer";
 import SEOSection6 from "../components/seo/seoSection6";
+import SEOHero from "../components/seo/seoHero";
+import SEOTrustBy from "../components/seo/seoTrustBy";
 
 const SEO = () => {
   const [openClass, setOpenClass] = useState("");
@@ -33,11 +35,10 @@ const SEO = () => {
         openClass={openClass}
         addClass="header-home7"
       />
-      <Hero1 />
-      <Trustby1 />
+      <SEOHero />
+      <SEOTrustBy />
       <SEOSection1 />
       <Testimonials />
-
       <SEOSection3 />
       <SEOSection4 />
       <SEOSection5 />
