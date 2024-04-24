@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import BackToTop from '../elements/BackToTop';
-import Footer from '../Footer';
-import Header from '../Header';
-import Sidebar from '../Sidebar';
+import Footer from './Footer';
+import Header from './Header';
+import Sidebar from './Sidebar';
 
 const Layout = ({ children }) => {
     const [openClass, setOpenClass] = useState('');
