@@ -1335,7 +1335,8 @@ const data = [
     ),
   },
 ];
-const Section4 = () => {
+const Tools = ({length}) => {
+  const numItems = length && !isNaN(length) ? parseInt(length) : data.length;
   return (
     <section className="section mt-100">
       <div className="container">
@@ -1369,7 +1370,7 @@ const Section4 = () => {
           </div>
         </div>
         <div className="row mt-50">
-          {data.map((item) => (
+          {data.slice(0, numItems).map((item) => (
             <div key={item.name} className="col-lg-4 col-md-6 col-sm-6">
               <div className="card-offer hover-up">
                 <div className="card-image">{item.img}</div>
@@ -1386,4 +1387,4 @@ const Section4 = () => {
   );
 };
 
-export default Section4;
+export default Tools;

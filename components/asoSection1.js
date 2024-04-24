@@ -1,6 +1,103 @@
 import React from "react";
 import Link from "next/link";
 const ASOsection1 = () => {
+  const data = {
+    "Website's": [
+      {
+        name: "Improve Website's Visibility",
+        desc: "Our Search Engine Optimization solutions for growing a website's organic visibility",
+        data: [
+          {
+            link: "On page Optimization",
+            desc: "Maximize visitors by ensuring your web pages are tailored to be user-friendly and search engine optimized.",
+            img: (
+              <svg
+                className="w-6 h-6 icon-16 ml-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                />
+              </svg>
+            ),
+          },
+          {
+            link: "Core Web Vitals",
+            desc: "Enance conversion rates by optimizing your website for better search engine visibility",
+            img: (
+              <svg
+                className="w-6 h-6 icon-16 ml-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                />
+              </svg>
+            ),
+          },
+          {
+            link: "Reverse Engineer Competitions",
+            desc: "Reverse engineer SEO competition for strategic refinement and sustained digital success.",
+            img: (
+              <svg
+                className="w-6 h-6 icon-16 ml-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                />
+              </svg>
+            ),
+          },
+          {
+            link: "Backlinks",
+            desc: "Improve your ranking and credibility through our ethical link-building approach. No shortcuts, just superior-quality links.",
+            img: (
+              <svg
+              className="w-6 h-6 icon-16 ml-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              />
+            </svg>
+            ),
+          }
+        ],
+      },
+    ],
+    "App's": [
+      {
+        name: "Improve Installs",
+        desc: "Rank on your target keywords, get into similar and related app section and improve chart rankings.",
+      },
+    ],
+  };
+
   return (
     <section className="section mt-100">
       <div className="container">

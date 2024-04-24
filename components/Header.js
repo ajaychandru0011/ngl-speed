@@ -47,7 +47,7 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                       <Link href="#">Tools</Link>
                     </li>
                     <li>
-                      <Link href="#">Get Free ASO Analysis</Link>
+                      <Link href="/asopage">Get Free ASO Analysis</Link>
                     </li>
                     <li>
                       <Link href="#">Blog</Link>

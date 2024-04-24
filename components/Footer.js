@@ -127,7 +127,6 @@ const Footer1 = () => {
               </ul>
             </div>
             <div className="col-lg-3 width-23">
-              {/* <h5 className="mb-10 color-brand-1">App &amp; Payment</h5> */}
               <div>
                 <p className="font-sm color-grey-400">
                   Our mission is to leverage technology and data science to
@@ -136,7 +135,7 @@ const Footer1 = () => {
                 <div className="mt-20">
                   <a className="mr-10" href="#">
                     <Image
-                      src="/social_icons/download 1.svg"
+                      src="assets/imgs/template/download 1.svg"
                       alt="Description of the image"
                       width={220}
                       height={82}
