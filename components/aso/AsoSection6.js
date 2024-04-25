@@ -1,21 +1,22 @@
 import Link from "next/link";
-import Image from "next/image";
+import AsoFunnel from "./AsoFunnel";
 
 const AsoSection6 = () => {
   return (
     <section className="section mt-50">
       <div className="container">
         <div className="row mt-50">
-          <div className="col-xl-6 col-lg-7">
-            <div className="row pt-40">
-              <Image
+           <div className="col-xl-6 col-lg-7">
+            <div className="row">
+              {/* <Image
                 src="assets/imgs/template/Screenshot-2022-07-19-firstChart 1.svg"
                 width={690}
                 height={420}
                 alt="Marketing-dashboard"
-              />
+              /> */}
+              <AsoFunnel />
             </div>
-          </div>
+          </div> 
           <div className="col-xl-6 col-lg-5">
             <div className="box-images-project">
               <h2 className="color-brand-1 mb-25">
