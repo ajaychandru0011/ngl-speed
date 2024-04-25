@@ -12,14 +12,14 @@ const Tools = () => {
   return (
     <>
       <Layout>
-      <ToolsHero />
-      <Trustby />
-      <ToolsSection1 />
-      <ToolsSection2 />
-      <ToolsSection3 />
-      <ToolsSection4 />
-      <ToolsSection5 />
-      <Contact />
+        <ToolsHero />
+        <Trustby />
+        <ToolsSection1 />
+        <ToolsSection2 />
+        <ToolsSection3 />
+        <ToolsSection4 />
+        <ToolsSection5 />
+        <Contact />
       </Layout>
     </>
   );

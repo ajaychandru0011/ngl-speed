@@ -55,14 +55,14 @@ const Trustby = () => {
         </p>
       </div>
       <div class="section home12-logos">
-    <marquee scrollAmount="20">
         <div class="container">
-            <ul class="lists-logo">
-            {data.map((image, index) => (
-                  <li key={index}>
-                    <img src={image.src} alt={image.alt} />
-                  </li>
-                ))}
+          <marquee scrollAmount="20">
+            <ul class="list-partners">
+              {data.map((image, index) => (
+                <li key={index}>
+                  <img src={image.src} alt={image.alt} />
+                </li>
+              ))}
               {/* <li>
                 <Image
                   width={100}
@@ -129,8 +129,8 @@ const Trustby = () => {
               </li>
               */}
             </ul>
+          </marquee>
         </div>
-              </marquee>
       </div>
     </section>
   );

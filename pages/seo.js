@@ -13,15 +13,15 @@ const SEO = () => {
   return (
     <>
       <Layout>
-      <SEOHero />
-      <SEOTrustBy />
-      <Service8 category = {"Website's"}/>
-      <Testimonials />
-      <SEOSection3 />
-      <SEOSection4 />
-      <SEOSection5 />
-      <SEOSection6 />
-      <Contact />
+        <SEOHero />
+        <SEOTrustBy />
+        <Service8 category={"Website's"} />
+        <Testimonials />
+        <SEOSection3 />
+        <SEOSection4 />
+        <SEOSection5 />
+        <SEOSection6 />
+        <Contact />
       </Layout>
     </>
   );
