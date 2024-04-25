@@ -35,7 +35,7 @@ const Sidebar = ({ openClass }) => {
                           <Link href="/seo">SEO</Link>
                         </li>
                         <li>
-                          <Link href="#">Tools</Link>
+                          <Link href="/tools">Tools</Link>
                         </li>
                         <li>
                           <Link href="/aso">Get Free ASO Analysis</Link>
