@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 const Sidebar = ({ openClass }) => {
-  
   return (
     <>
       <div

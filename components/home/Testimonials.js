@@ -159,10 +159,7 @@ const Testimonials = () => {
             <div className="box-swiper">
               <div className="swiper-container swiper-group-2  d-flex flex-wrap">
                 {data.map((item, i) => (
-                  <div
-                    key={item.author}
-                    className="card-review width-45 ml-20 mb-40"
-                  >
+                  <div key={item.author} className="card-review width-45 mb-40">
                     <div className="card-info">
                       <div className="rating-review">
                         <img
