@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 const Sidebar = ({ openClass }) => {
-  
   return (
     <>
       <div
@@ -41,10 +40,10 @@ const Sidebar = ({ openClass }) => {
                           <Link href="/aso">Get Free ASO Analysis</Link>
                         </li>
                         <li>
-                          <Link href="#">Blog</Link>
+                          <Link href="/blog">Blog</Link>
                         </li>
                         <li>
-                          <Link href="#">Career</Link>
+                          <Link href="/career">Career</Link>
                         </li>
                         <li>
                           <Link href="/contact">Contact Us</Link>
