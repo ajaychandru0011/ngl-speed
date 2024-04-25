@@ -15,7 +15,7 @@ const data = [
   { src: "assets/imgs/clientlogo/OYO.png", alt: "OYO" },
   { src: "assets/imgs/clientlogo/Josh.png", alt: "Josh" },
   { src: "assets/imgs/clientlogo/ShareChat.png", alt: "ShareChat" },
-  { src: "assets/imgs/clientlogo/Make-My-trip.png", alt: "Make-My-trip" },
+  { src: "assets/imgs/clientlogo/Make-My-Trip.png", alt: "Make-My-trip" },
   { src: "assets/imgs/clientlogo/Goibibo.png", alt: "Goibibo" },
   { src: "assets/imgs/clientlogo/ixigo.png", alt: "ixigo" },
   { src: "assets/imgs/clientlogo/Yatra.png", alt: "Yatra" },
