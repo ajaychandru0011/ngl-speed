@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Button from "../elements/Button";
 import React, { useEffect, useState } from "react";
 
 const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
@@ -82,9 +83,7 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
               </div>
               <div className="header-right">
                 <div className="d-none d-sm-inline-block">
-                  <Link className="btn btn-brand-1 hover-up" href="register">
-                    Get Started
-                  </Link>
+                  <Button text={"Get Started"} href={"/register"} />
                 </div>
               </div>
             </div>

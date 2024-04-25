@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link";
+import Button from "../elements/Button";
 import Image from "next/image";
 import gif from "../../public/assets/imgs/Google-Search-Animation.gif";
 const SEOSection5 = () => {
@@ -23,10 +23,8 @@ const SEOSection5 = () => {
                 that incorporates these groups of keywords and maximizes your
                 search engine visibility and performance.
               </p>
-              <div className="box-button text-start mt-40">
-                <Link className="btn btn-brand-1 hover-up" href="#">
-                  Find Out How
-                </Link>
+              <div className="box-button text-start mt-40"> 
+                <Button text="Find Out How" href={"#"} />
               </div>
             </div>
           </div>

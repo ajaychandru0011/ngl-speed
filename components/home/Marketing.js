@@ -1,4 +1,4 @@
-import React from "react";
+import Button from "../elements/Button"
 import Link from "next/link";
 const Marketing = () => {
   return (
@@ -27,9 +27,10 @@ const Marketing = () => {
               </p>
               <div className="box-button text-start mt-40">
                 {" "}
-                <Link className="btn btn-brand-1 hover-up" href="#">
+                {/* <Link className="btn btn-brand-1 hover-up" href="#">
                   Contact Us
-                </Link>
+                </Link> */}
+                <Button text={"Contact Us"} href={"#"}/>
                 <Link
                   className="btn btn-default font-sm-bold hover-up"
                   href="#"

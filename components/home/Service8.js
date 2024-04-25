@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link";
+import Button from "../elements/Button"
 const Service8 = ({ category }) => {
   const data = {
     "Website's": [
@@ -122,9 +122,7 @@ const Service8 = ({ category }) => {
               </div>
             ))}
             <div className="col-lg-12 box-button text-center mt-40">
-              <a className="btn btn-brand-1 hover-up" href="#">
-                Book An Appointment
-              </a>
+              <Button text={"Book An Appointment"} />
               <a className="btn btn-default font-sm-bold hover-up" href="#">
                 Learn More
                 <svg

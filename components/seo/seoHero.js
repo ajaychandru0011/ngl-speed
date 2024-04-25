@@ -1,5 +1,4 @@
-import React from "react";
-import Link from "next/link";
+import Button from "../elements/Button";
 const SEOHero = () => {
   return (
     <section className="section banner-2">
@@ -25,23 +24,7 @@ const SEOHero = () => {
                 <h5 className="color-brand-1">Connect With Us Today</h5>
               </div>
               <div className="box-button mt-20">
-                <Link className="btn btn-brand-1 hover-up" href="#">
-                  Book An Appointment
-                  <svg
-                    className="w-6 h-6 icon-16 ml-5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M14 5l7 7m0 0l-7 7m7-7H3"
-                    />
-                  </svg>
-                </Link>
+                <Button text={"Book An Appointment"} showIcon = {true}/>
               </div>
             </div>
             <div className="col-lg-5 d-none d-lg-block">

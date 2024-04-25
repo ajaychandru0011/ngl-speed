@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link";
+import Button from "../elements/Button";
 
 const CareerSection6 = () => {
   return (
@@ -28,9 +28,7 @@ const CareerSection6 = () => {
                 </p>
                 <div className="box-button text-start mt-65">
                   {" "}
-                  <Link className="btn btn-brand-1 hover-up" href="#">
-                    Contact Us
-                  </Link>
+                  <Button text = {"Contact Us"} href={"/contact"} />
                   <a className="btn btn-default font-sm-bold hover-up" href="#">
                     Support Center
                     <svg

@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link";
+import Button from "../elements/Button";
 import gif from "../../public/assets/imgs/Google-Search-Animation.gif";
 import Image from "next/image";
 const SEOSection3 = () => {
@@ -21,9 +21,7 @@ const SEOSection3 = () => {
                 site.
               </p>
               <div className="box-button text-start mt-40">
-                <Link className="btn btn-brand-1 hover-up" href="#">
-                  Find Out How
-                </Link>
+                <Button text="Find Out How" href={"#"} />
               </div>
             </div>
           </div>

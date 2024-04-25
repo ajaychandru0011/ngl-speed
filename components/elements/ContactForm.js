@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Button from './Button';
 const ContactForm = () => {
   return (
     <div class="col-lg-7">
@@ -32,11 +32,7 @@ const ContactForm = () => {
                   </div>
                   <div class="col-xl-4 col-lg-5 col-md-5 col-sm-6 col-9">
                     <div class="form-group">
-                      <button class="btn btn-brand-1-full font-sm" type="submit">Send message
-                        <svg class="w-6 h-6 icon-16 ml-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                        </svg>
-                      </button>
+                      <Button text={"Send message"} showIcon={true} onClick={"clicked"} />
                     </div>
                   </div>
                 </div>

@@ -1,3 +1,4 @@
+import Button from "../elements/Button"
 import React, { useState } from "react";
 const Hero = () => {
   const [selectedOption, setSelectedOption] = useState("");
@@ -46,7 +47,7 @@ const Hero = () => {
                 </select>
               </div>
               <div class="d-sm-inline-block mb-25">
-                <a class="btn btn-brand-1">Start Now</a>
+                <Button text="Start Now" href={"#"} />
               </div>
             </div>
           </div>
