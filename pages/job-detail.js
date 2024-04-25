@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import NewsLetter from "../components/Newsletter";
-import Marketing from "../components/marketing";
+import NewsLetter from "../components/home/Newsletter";
+import Marketing from "../components/home/Marketing";
 
 import CareerSection7 from "../components/career/careerSection7";
 const JobDetail = () => {
