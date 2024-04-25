@@ -164,23 +164,23 @@ const Testimonials = () => {
                       <div className="rating-review">
                         <img
                           src="/assets/imgs/page/homepage7/star.png"
-                          alt="iori"
+                          alt="star"
                         />
                         <img
                           src="/assets/imgs/page/homepage7/star.png"
-                          alt="iori"
+                          alt="star"
                         />
                         <img
                           src="/assets/imgs/page/homepage7/star.png"
-                          alt="iori"
+                          alt="star"
                         />
                         <img
                           src="/assets/imgs/page/homepage7/star.png"
-                          alt="iori"
+                          alt="star"
                         />
                         <img
                           src="/assets/imgs/page/homepage7/star.png"
-                          alt="iori"
+                          alt="star"
                         />
                       </div>
                       <h5 className="color-grey-800 mb-20">{item.review}</h5>

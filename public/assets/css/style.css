@@ -2856,7 +2856,7 @@ body {
   width: 100%;
 }
 .header .main-header .header-left .header-logo {
-  max-width: 150px;
+  max-width: 70px;
   width: 100%;
 }
 .header .main-header .header-left .header-logo a {
@@ -2867,7 +2867,7 @@ body {
 }
 .header .main-header .header-left .header-nav {
   display: inline-block;
-  width: 75%;
+  width: 100%;
   text-align: left;
 }
 .header .main-header .header-left .header-right {
@@ -2938,7 +2938,7 @@ body {
   color: #071920;
   line-height: 23px;
   display: block;
-  padding: 28px 18px 28px 15px;
+  padding: 28px 9px 28px 0;
   text-decoration: none;
   position: relative;
 }
@@ -3246,11 +3246,13 @@ body {
   color: #071920;
 }
 
-.swiper-button-prev-notify, .swiper-button-next-notify {
+.swiper-button-prev-notify,
+.swiper-button-next-notify {
   background: none;
   height: 14px;
 }
-.swiper-button-prev-notify:hover, .swiper-button-next-notify:hover {
+.swiper-button-prev-notify:hover,
+.swiper-button-next-notify:hover {
   background: none;
 }
 
