@@ -1,6 +1,3 @@
-import React from "react";
-import Image from "next/image";
-
 const data = [
   { src: "assets/imgs/clientlogo/HDFC.png", alt: "hdfc" },
   { src: "assets/imgs/clientlogo/Groww.png", alt: "groww" },
@@ -46,7 +43,7 @@ const data = [
 const Trustby = () => {
   return (
     <section className="section bg-brand-1">
-      <div className="row mt-100 mb-50">
+      <div className="row mt-100 mb-50 container m-auto">
         <h2 className="color-white mb-15 font-bold text-center">
           Apps we’ve helped grow
         </h2>
@@ -63,71 +60,6 @@ const Trustby = () => {
                   <img src={image.src} alt={image.alt} />
                 </li>
               ))}
-              {/* <li>
-                <Image
-                  width={100}
-                  height={40}
-                  src="/assets/imgs/page/homepage12/placed.png"
-                  alt="iori"
-                />
-              </li>
-              <li>
-                <Image
-                  width={100}
-                  height={40}
-                  src="/assets/imgs/page/homepage12/cuebiq.png"
-                  alt="iori"
-                />
-              </li>
-              <li>
-                <Image
-                  width={100}
-                  height={40}
-                  src="/assets/imgs/page/homepage12/factual.png"
-                  alt="iori"
-                />
-              </li>
-              <li>
-                <Image
-                  width={100}
-                  height={40}
-                  src="/assets/imgs/page/homepage12/placeiq.png"
-                  alt="iori"
-                />
-              </li>
-              <li>
-                <Image
-                  width={100}
-                  height={40}
-                  src="/assets/imgs/page/homepage12/airmeet.png"
-                  alt="iori"
-                />
-              </li>
-              <li>
-                <Image
-                  width={100}
-                  height={40}
-                  src="/assets/imgs/page/homepage12/spen.png"
-                  alt="iori"
-                />
-              </li>
-              <li>
-                <Image
-                  width={100}
-                  height={40}
-                  src="/assets/imgs/page/homepage12/klippa.png"
-                  alt="iori"
-                />
-              </li>
-              <li>
-                <Image
-                  width={100}
-                  height={40}
-                  src="/assets/imgs/page/homepage12/matrixian.png"
-                  alt="iori"
-                />
-              </li>
-              */}
             </ul>
           </marquee>
         </div>

@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
+import Chart from './Chart'
+
 
 const Asomarketing = () => {
   return (
@@ -35,13 +37,8 @@ const Asomarketing = () => {
           </div>
 
           <div className="col-xl-6 col-lg-7">
-            <div className="row pt-40">
-              <Image
-                src="assets/imgs/template/counter.svg"
-                width={690}
-                height={420}
-                alt="Marketing-dashboard"
-              />
+            <div className="row pt-20">
+              <Chart />
             </div>
           </div>
 

@@ -6,7 +6,7 @@ import CareerSection4 from "../components/career/careerSection4";
 import CareerSection5 from "../components/career/careerSection5";
 import CareerSection6 from "../components/career/careerSection6";
 import CareerSection7 from "../components/career/careerSection7";
-import NewsLetter from "../components/home/Newsletter";
+import NewsLetter from "../components/elements/Newsletter";
 import Layout from "../components/layout/Layout";
 
 const career = () => {

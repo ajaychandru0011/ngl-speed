@@ -13,7 +13,7 @@ const ASO = () => {
   return (
     <>
       <Layout>
-        <Hero />
+         <Hero />
         <SEOTrustBy />
         <Service8 category={"App's"} />
         <Testimonials />

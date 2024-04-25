@@ -44,7 +44,7 @@ const data = [
 
 const SEOTrustBy = () => {
   return (
-    <div className="section">
+    <div className="section mt-50">
       <div className="container">
         <div className="box-radius-logo">
           <div className="text-center">

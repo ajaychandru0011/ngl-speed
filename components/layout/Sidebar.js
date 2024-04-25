@@ -49,10 +49,10 @@ const Sidebar = ({ openClass }) => {
                           <Link href="/contact">Contact Us</Link>
                         </li>
                         <li>
-                          <Link href="#">Terms</Link>
+                          <Link href="/terms">Terms</Link>
                         </li>
                         <li>
-                          <Link href="#">Privacy</Link>
+                          <Link href="/privacy">Privacy</Link>
                         </li>
                       </ul>
                     </nav>
