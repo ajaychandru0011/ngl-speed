@@ -5,7 +5,7 @@ import ToolsSection3 from "../components/tools/section3";
 import ToolsSection4 from "../components/tools/section4";
 import ToolsSection5 from "../components/tools/section5";
 import Trustby from "../components/home/Trustby";
-import Contact from "../components/elements/ContactForm";
+import Contact from "../components/home/Contact";
 import ToolsHero from "../components/tools/toolsHero";
 
 const Tools = () => {
