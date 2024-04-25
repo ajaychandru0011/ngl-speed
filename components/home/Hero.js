@@ -10,7 +10,7 @@ const Hero = () => {
       <div class="asset-5 shape-2"></div>
       <div class="container text-center">
         <div class="row mt-150">
-          <div class="col-xl-8 col-lg-10 m-auto" >
+          <div class="col-xl-8 col-lg-10 m-auto" style={{zIndex:999}}>
             <h1 class="color-brand-1 mb-25 mt-10">App Store Optimization</h1>
             <p class="font-md color-grey-500 mb-25">
               Since 2016, we are at the forefront of Digital Marketing. We just

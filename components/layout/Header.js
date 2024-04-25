@@ -53,7 +53,7 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                       <Link href="#">Blog</Link>
                     </li>
                     <li>
-                      <Link href="#">Career</Link>
+                      <Link href="/job-detail">Career</Link>
                     </li>
                     <li>
                       <Link href="/contact">Contact Us</Link>
