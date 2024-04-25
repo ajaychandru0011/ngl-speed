@@ -1,5 +1,5 @@
-import React from "react";
 import Link from "next/link";
+import Button from "../elements/Button"
 const Services = () => {
   return (
     <section className="section mt-50 mb-30">
@@ -148,9 +148,7 @@ const Services = () => {
             </div>
             <div className="mt-50 text-start">
               {" "}
-              <Link className="btn btn-brand-1 hover-up" href="#">
-                Find Out How
-              </Link>
+              <Button text={"Find Out How"} href={"#"} />
             </div>
           </div>
         </div>
@@ -277,9 +275,7 @@ const Services = () => {
             </div>
             <div className="mt-50 text-start">
               {" "}
-              <Link className="btn btn-brand-1 hover-up" href="#">
-                FInd Out How
-              </Link>
+              <Button text={"Find Out How"} href={"#"} />
             </div>
           </div>
           <div className="col-xl-7 col-lg-6">

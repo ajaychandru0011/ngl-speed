@@ -1,4 +1,4 @@
-import React from "react";
+import Button from "../elements/Button"
 import Link from "next/link";
 
 const BlogSection2 = () => {
@@ -529,9 +529,8 @@ const BlogSection2 = () => {
           </div>
           <div className="mt-20 mb-30 text-center">
             {" "}
-            <Link className="btn btn-brand-1 font-sm-bold" href="#">
-              Load More...
-            </Link>
+
+            <Button text="Load More..." href={"#"} />
           </div>
         </div>
       </div>

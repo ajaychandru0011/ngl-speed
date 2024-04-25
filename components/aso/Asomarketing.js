@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import Button from "../elements/Button";
 import Chart from './Chart'
 
 
@@ -29,9 +29,7 @@ const Asomarketing = () => {
                 </ul>
               <div className="box-button text-start mt-40">
                 {" "}
-                <Link className="btn btn-brand-1 hover-up" href="#">
-                  Find Out How
-                </Link>
+                <Button text="Find Out How" href={"#"} />
               </div>
             </div>
           </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import Button from "../elements/Button";
 import Link from "next/link";
 
 const CareerSection3 = () => {
@@ -240,9 +240,8 @@ const CareerSection3 = () => {
           </div>
         </div>
         <div className="mt-40 mb-50 text-center">
-          <Link className="btn btn-brand-1 hover-up" href="contact">
-            Contact Us
-          </Link>
+          
+          <Button text = {"Contact Us"} href={"/contact"} />
           <a className="btn btn-default font-sm-bold hover-up" href="#">
             Learn More
             <svg

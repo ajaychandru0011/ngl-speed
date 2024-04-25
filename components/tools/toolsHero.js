@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Button from "../elements/Button";
 
 const ToolsHero = () => {
   return (
@@ -18,23 +18,7 @@ const ToolsHero = () => {
             </p>
 
             <div class="d-none d-sm-inline-block">
-              <a class="btn btn-brand-1 hover-up">
-                Contact Us
-                <span
-                  style={{
-                    position: "relative",
-                    top: "3px",
-                    paddingLeft: "6px",
-                  }}
-                >
-                  <Image
-                    src="assets/imgs/template/icons/Frame.svg"
-                    alt="Description of the image"
-                    width={16}
-                    height={16}
-                  />
-                </span>
-              </a>
+              <Button text="Contact Us" href={"#"} showIcon ={true} />
             </div>
           </div>
         </div>

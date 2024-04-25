@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Button from "../elements/Button";
 import AsoFunnel from "./AsoFunnel";
 
 const AsoSection6 = () => {
@@ -8,12 +8,6 @@ const AsoSection6 = () => {
         <div className="row mt-50">
            <div className="col-xl-6 col-lg-7">
             <div className="row">
-              {/* <Image
-                src="assets/imgs/template/Screenshot-2022-07-19-firstChart 1.svg"
-                width={690}
-                height={420}
-                alt="Marketing-dashboard"
-              /> */}
               <AsoFunnel />
             </div>
           </div> 
@@ -46,9 +40,8 @@ const AsoSection6 = () => {
               </ul>
               <div className="box-button text-start mt-40">
                 {" "}
-                <Link className="btn btn-brand-1 hover-up" href="#">
-                  Find Out How
-                </Link>
+                
+                <Button text="Find Out How" href={"#"} />
               </div>
             </div>
           </div>
