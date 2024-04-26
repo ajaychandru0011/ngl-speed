@@ -22,7 +22,7 @@
       align-items: center;
       width: 100%;
       .header-logo {
-        max-width: 70px;
+        max-width: 150px;
         width: 100%;
         a {
           display: block;
@@ -36,28 +36,28 @@
         width: 100%;
         text-align: left;
       }
-      .header-right {
-        width: 35%;
-        text-align: right;
-        .icon-list {
-          display: inline-block;
-          padding: 0px 10px 0px 10px;
-          position: relative;
-          font-size: 16px;
-          color: $color-brand-3;
-          line-height: 24px;
-          cursor: pointer;
-          &:hover {
-            color: $color-brand-1;
-          }
-          .arrow-down {
-            background: url(../imgs/template/icons/angle-down.svg) no-repeat
-              right top 3px;
-            padding-right: 22px;
-            &:hover {
-              color: $color-brand-1;
-            }
-          }
+    }
+  }
+  .header-right {
+    width: 21%;
+    text-align: right;
+    .icon-list {
+      display: inline-block;
+      padding: 0px 10px 0px 10px;
+      position: relative;
+      font-size: 16px;
+      color: $color-brand-3;
+      line-height: 24px;
+      cursor: pointer;
+      &:hover {
+        color: $color-brand-1;
+      }
+      .arrow-down {
+        background: url(../imgs/template/icons/angle-down.svg) no-repeat right
+          top 3px;
+        padding-right: 22px;
+        &:hover {
+          color: $color-brand-1;
         }
       }
     }

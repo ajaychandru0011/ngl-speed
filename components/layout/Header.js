@@ -81,10 +81,10 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                   <span className="burger-icon-bottom" />
                 </div>
               </div>
-              <div className="header-right">
-                <div className="d-none d-sm-inline-block">
-                  <Button text={"Get Started"} href={"/register"} />
-                </div>
+            </div>
+            <div className="header-right">
+              <div className="d-none d-sm-inline-block">
+                <Button text={"Get Started"} href={"/register"} />
               </div>
             </div>
           </div>
