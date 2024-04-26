@@ -34,7 +34,7 @@ const Asomarketing = () => {
             </div>
           </div>
 
-          <div className="col-xl-6 col-lg-7">
+          <div className="col-xl-6 col-lg-6">
             <div className="row pt-20">
               <Chart />
             </div>

@@ -135,7 +135,7 @@ const Chart = () => {
             position: "relative",
           }}
         >
-          <div
+          <div className="insideslider-1"
             style={{
               position: "relative",
               width: "500px",
@@ -144,6 +144,7 @@ const Chart = () => {
               margin: "0px",
               borderWidth: "0px",
               cursor: "pointer",
+              
             }}
           >
             <canvas
@@ -161,6 +162,7 @@ const Chart = () => {
                 padding: "0px",
                 margin: "0px",
                 borderWidth: "0px",
+              
               }}
             ></canvas>
           </div>
