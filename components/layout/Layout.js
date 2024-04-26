@@ -19,8 +19,7 @@ const Layout = ({ children }) => {
         }
     }
     return (
-        <>
-            
+        <>    
             <Header handleOpen={handleOpen} handleRemove={handleRemove} openClass={openClass} addClass="header-home7" />
             <Sidebar openClass={openClass} />
             <main className="main">

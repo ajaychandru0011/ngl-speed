@@ -9,7 +9,6 @@ const JobDetail = () => {
   return (
     <>
     <Layout>
-      
       <section className="section pt-50 pb-100">
         {/* <div className="container"> */}
           <div className="box-image-detail">

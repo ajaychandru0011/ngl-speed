@@ -8,14 +8,12 @@ import SEOSection6 from "../components/seo/seoSection6";
 import SEOHero from "../components/seo/seoHero";
 import SEOTrustBy from "../components/seo/seoTrustBy";
 import Service8 from "../components/home/Service8";
-import Head from "next/head";
+import PageHead from "../components/elements/PageHead";
 
 const SEO = () => {
   return (
     <>
-      <Head>
-        <title>Increase Visibility & Traffic with Our SEO Solutions</title>
-      </Head>
+      <PageHead title={'Increase Visibility & Traffic with Our SEO Solutions'}/>
       <Layout>
         <SEOHero />
         <SEOTrustBy />

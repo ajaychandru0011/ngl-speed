@@ -1,14 +1,12 @@
 import Link from "next/link";
-import Head from "next/head";
+import PageHead from "../components/elements/PageHead";
 import React from "react";
 import Layout from "../components/layout/Layout";
 
 const Error = () => {
   return (
     <>
-      <Head>
-        <title>Error 404 - Page not found</title>
-      </Head>
+      <PageHead title = {"Error 404 - Page not found"} />
       <Layout>
         <section className="section box-404">
           <div className="container">

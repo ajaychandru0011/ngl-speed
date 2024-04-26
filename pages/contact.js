@@ -1,15 +1,13 @@
 import React from "react";
 import Link from "next/link";
-import Head from "next/head";
 import Contact from "../components/home/Contact";
 import NewsLetter from "../components/elements/Newsletter";
 import Layout from "../components/layout/Layout";
+import PageHead from "../components/elements/PageHead";
 const Contactus = () => {
   return (
     <>
-      <Head>
-        <title>Contact Us for better coordination and more info.</title>
-      </Head>
+      <PageHead title={"Contact Us for better coordination and more info."}/>
       <Layout>
         <section className="section banner-contact">
           <div className="container">

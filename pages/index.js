@@ -7,14 +7,11 @@ import Tools from "../components/home/Tools";
 import Trustby from "../components/home/Trustby";
 import Contact from "../components/home/Contact";
 import Layout from "../components/layout/Layout";
-import Head from "next/head";
-
+import PageHead from "../components/elements/PageHead";
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>NEXT Growth Labs Pvt. Ltd.</title>
-      </Head>
+      <PageHead title = {"NextGrowthLabs - Best App Store Optimization Platform"} />
       <Layout>
         <Hero />
         <Trustby />

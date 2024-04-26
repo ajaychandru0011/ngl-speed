@@ -9,13 +9,11 @@ import Services5 from "../components/aso/Services5";
 import Asomarketing from "../components/aso/Asomarketing";
 import Asomarketing4 from "../components/aso/Asomarking4";
 import AsoSection6 from "../components/aso/AsoSection6";
-import Head from "next/head";
+import PageHead from "../components/elements/PageHead";
 const ASO = () => {
   return (
     <>
-      <Head>
-        <title>App Store Optimization</title>
-      </Head>
+      <PageHead title = {"App Store Optimization"} />
       <Layout>
         <Hero />
         <SEOTrustBy />
