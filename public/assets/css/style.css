@@ -2856,7 +2856,7 @@ body {
   width: 100%;
 }
 .header .main-header .header-left .header-logo {
-  max-width: 70px;
+  max-width: 150px;
   width: 100%;
 }
 .header .main-header .header-left .header-logo a {
@@ -2870,11 +2870,11 @@ body {
   width: 100%;
   text-align: left;
 }
-.header .main-header .header-left .header-right {
-  width: 35%;
+.header .header-right {
+  width: 30%;
   text-align: right;
 }
-.header .main-header .header-left .header-right .icon-list {
+.header .header-right .icon-list {
   display: inline-block;
   padding: 0px 10px 0px 10px;
   position: relative;
@@ -2883,14 +2883,14 @@ body {
   line-height: 24px;
   cursor: pointer;
 }
-.header .main-header .header-left .header-right .icon-list:hover {
+.header .header-right .icon-list:hover {
   color: #024430;
 }
-.header .main-header .header-left .header-right .icon-list .arrow-down {
+.header .header-right .icon-list .arrow-down {
   background: url(../imgs/template/icons/angle-down.svg) no-repeat right top 3px;
   padding-right: 22px;
 }
-.header .main-header .header-left .header-right .icon-list .arrow-down:hover {
+.header .header-right .icon-list .arrow-down:hover {
   color: #024430;
 }
 .header .nav-main-menu {
