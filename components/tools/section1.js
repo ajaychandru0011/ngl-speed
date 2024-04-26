@@ -1,4 +1,5 @@
 import React from "react";
+import ToolsCard from "../cards/ToolsCard";
 const data = [
   {
     name: "Track Any Country",
@@ -376,16 +377,13 @@ const ToolsSection1 = () => {
           </div>
         </div>
         <div className="row mt-50">
-          {data.map((item) => (
-            <div key={item.name} className="col-lg-4 col-md-6 col-sm-6">
-              <div className="card-offer hover-up">
-                <div className="card-image">{item.img}</div>
-                <div className="card-info">
-                  <h4 className="color-brand-1 mb-15">{item.name}</h4>
-                  <p className="font-md color-grey-500 mb-15">{item.desc}</p>
-                </div>
-              </div>
-            </div>
+          {data.map((item, index) => (
+            <ToolsCard
+              key={index + item.name}
+              name={item.name}
+              desc={item.desc}
+              img={item.img}
+            />
           ))}
         </div>
       </div>

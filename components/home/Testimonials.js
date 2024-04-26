@@ -1,4 +1,5 @@
 import React from "react";
+import TestimonialCard from "../cards/TestimonialCard";
 
 const data = [
   {
@@ -159,46 +160,13 @@ const Testimonials = () => {
             <div className="box-swiper">
               <div className="swiper-container swiper-group-2  d-flex flex-wrap">
                 {data.map((item, i) => (
-                  <div key={item.author} className="card-review width-45 mb-40">
-                    <div className="card-info">
-                      <div className="rating-review">
-                        <img
-                          src="/assets/imgs/page/homepage7/star.png"
-                          alt="star"
-                        />
-                        <img
-                          src="/assets/imgs/page/homepage7/star.png"
-                          alt="star"
-                        />
-                        <img
-                          src="/assets/imgs/page/homepage7/star.png"
-                          alt="star"
-                        />
-                        <img
-                          src="/assets/imgs/page/homepage7/star.png"
-                          alt="star"
-                        />
-                        <img
-                          src="/assets/imgs/page/homepage7/star.png"
-                          alt="star"
-                        />
-                      </div>
-                      <h5 className="color-grey-800 mb-20">{item.review}</h5>
-                      <div className="box-author flex-nowrap justify-content-sm-between">
-                        <div className="author-info">
-                          <a href="#">
-                            <span className="font-md-bold color-brand-1 author-name">
-                              {item.author}
-                            </span>
-                          </a>
-                          <span className="font-xs color-grey-500 department">
-                            {item.department}
-                          </span>
-                        </div>
-                        <span>{item.img}</span>
-                      </div>
-                    </div>
-                  </div>
+                  <TestimonialCard
+                    key={item.author}
+                    author={item.author}
+                    department={item.department}
+                    review={item.review}
+                    img={item.img}
+                  />
                 ))}
               </div>
             </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import ToolsCard from "../cards/ToolsCard";
 
 const data = [
   {
@@ -1335,7 +1336,7 @@ const data = [
     ),
   },
 ];
-const Tools = ({length}) => {
+const Tools = ({ length }) => {
   const numItems = length && !isNaN(length) ? parseInt(length) : data.length;
   return (
     <section className="section mt-100">
@@ -1370,16 +1371,13 @@ const Tools = ({length}) => {
           </div>
         </div>
         <div className="row mt-50">
-          {data.slice(0, numItems).map((item) => (
-            <div key={item.name} className="col-lg-4 col-md-6 col-sm-6">
-              <div className="card-offer hover-up">
-                <div className="card-image">{item.img}</div>
-                <div className="card-info">
-                  <h4 className="color-brand-1 mb-15">{item.name}</h4>
-                  <p className="font-md color-grey-500 mb-15">{item.desc}</p>
-                </div>
-              </div>
-            </div>
+          {data.slice(0, numItems).map((item, index) => (
+            <ToolsCard
+              key={index}
+              name={item.name}
+              img={item.img}
+              desc={item.desc}
+            />
           ))}
         </div>
       </div>
