@@ -7,20 +7,24 @@ import Tools from "../components/home/Tools";
 import Trustby from "../components/home/Trustby";
 import Contact from "../components/home/Contact";
 import Layout from "../components/layout/Layout";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <>
-    <Layout>
-      <Hero />
-      <Trustby />
-      <OurServices />
-      <Testimonials />
-      <Tools />
-      <Services />
-      <Marketing />
-      <Contact />
-    </Layout>
+      <Head>
+        <title>NEXT Growth Labs Pvt. Ltd.</title>
+      </Head>
+      <Layout>
+        <Hero />
+        <Trustby />
+        <OurServices />
+        <Testimonials />
+        <Tools />
+        <Services />
+        <Marketing />
+        <Contact />
+      </Layout>
     </>
   );
 }

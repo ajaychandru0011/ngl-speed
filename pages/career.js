@@ -8,10 +8,16 @@ import CareerSection6 from "../components/career/careerSection6";
 import CareerSection7 from "../components/career/careerSection7";
 import NewsLetter from "../components/elements/Newsletter";
 import Layout from "../components/layout/Layout";
+import Head from "next/head";
 
 const career = () => {
   return (
     <>
+      <Head>
+        <title>
+          We are Always Searching For Amazing People to Join Our Team.
+        </title>
+      </Head>
       <Layout>
         <CareerSection1 />
         <CareerSection2 />

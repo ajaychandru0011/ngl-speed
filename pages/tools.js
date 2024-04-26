@@ -7,10 +7,14 @@ import ToolsSection5 from "../components/tools/section5";
 import Trustby from "../components/home/Trustby";
 import Contact from "../components/home/Contact";
 import ToolsHero from "../components/tools/toolsHero";
+import Head from "next/head";
 
 const Tools = () => {
   return (
     <>
+      <Head>
+        <title>NEXT ASO Tools</title>
+      </Head>
       <Layout>
         <ToolsHero />
         <Trustby />
