@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Button from "../elements/Button";
 import Chart from './Chart'
 

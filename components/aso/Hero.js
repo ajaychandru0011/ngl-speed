@@ -13,12 +13,12 @@ const Hero = () => {
     setSelectedOption(event.target.value);
   };
   return (
-    <section class="section" style={{ backgroundColor: "#E0F1F4" }}>
-      <div class="container text-center">
-        <div class="row mt-100 mb-100">
-          <div class="col-xl-8 col-lg-10 m-auto">
-            <h1 class="color-brand-1 mb-25 mt-10">App Store Optimization</h1>
-            <p class="font-md color-grey-500 mb-25">
+    <section className="section" style={{ backgroundColor: "#E0F1F4" }}>
+      <div className="container text-center">
+        <div className="row mt-100 mb-100">
+          <div className="col-xl-8 col-lg-10 m-auto">
+            <h1 className="color-brand-1 mb-25 mt-10">App Store Optimization</h1>
+            <p className="font-md color-grey-500 mb-25">
               Since 2016, we've been at the forefront of App Marketing. Some of
               world's top brands too read these lines, before contacting and
               working with us. The next 5 minutes you spend reading about us
@@ -26,14 +26,14 @@ const Hero = () => {
               presentation? Let us know.
             </p>
             <div className="aso-input-form mb-25">
-              <div class="mb-25">
+              <div className="mb-25">
                 <input
-                  class="form-control input-search"
+                  className="form-control input-search"
                   type="text"
                   placeholder="Enter an app name to get [quick insights, data, information]"
                 />
               </div>
-              <div class="mb-25">
+              <div className="mb-25">
                 <select
                   className="form-control aso-select"
                   value={selectedOption}
@@ -46,7 +46,7 @@ const Hero = () => {
                   ))}
                 </select>
               </div>
-              <div class="d-sm-inline-block mb-25">
+              <div className="d-sm-inline-block mb-25">
                 <Button text="Start Now" href={"#"} />
               </div>
             </div>
