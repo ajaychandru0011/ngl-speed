@@ -19,8 +19,8 @@ const Footer = () => {
                 <br className="d-none d-lg-block" />
                 HSR Layout
               </p>
-              <div class="font-md mb-20 color-grey-400">
-                <strong class="font-md-bold">Email:</strong> contact@nextgrowthlabs.com
+              <div className="font-md mb-20 color-grey-400">
+                <strong className="font-md-bold">Email:</strong> contact@nextgrowthlabs.com
               </div>
               <h6 className="color-brand-1">Follow Us</h6>
               <div className="mt-15">
