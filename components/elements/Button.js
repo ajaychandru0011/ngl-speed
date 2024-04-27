@@ -1,50 +1,58 @@
 import Link from "next/link";
-const Button = ({ text, showIcon, href, onClick }) => {
-  
+const Button = ({ text, showIcon, href, onClick, target }) => {
   return (
     <>
-    {href ? (
-    <Link href={href} className="hover-up btn btn-brand-1" style={{padding: "16px 20px"}} >
-      {text}
-      {showIcon && (
-        <svg
-          class="w-6 h-6 icon-16 ml-5"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
+      {href ? (
+        <Link
+          href={href}
+          className="hover-up btn btn-brand-1"
+          style={{ padding: "16px 20px" }}
+          target={target}
         >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M14 5l7 7m0 0l-7 7m7-7H3"
-          ></path>
-        </svg>
-      )}
-    </Link>
-  ) : (
-    <button className="btn btn-brand-1-full hover-up" onClick={onClick} style={{width:"15rem"}}>
           {text}
           {showIcon && (
             <svg
-            class="w-6 h-6 icon-16 ml-5"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M14 5l7 7m0 0l-7 7m7-7H3"
-            ></path>
-          </svg>  
+              className="w-6 h-6 icon-16 ml-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              ></path>
+            </svg>
+          )}
+        </Link>
+      ) : (
+        <button
+          className="btn btn-brand-1-full hover-up"
+          onClick={onClick}
+          style={{ width: "15rem" }}
+        >
+          {text}
+          {showIcon && (
+            <svg
+              className="w-6 h-6 icon-16 ml-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              ></path>
+            </svg>
           )}
         </button>
       )}
-      </>
+    </>
   );
 };
 

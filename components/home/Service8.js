@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../elements/Button"
+import Button from "../elements/Button";
 const Service8 = ({ category }) => {
   const data = {
     "Website's": [
@@ -67,14 +67,14 @@ const Service8 = ({ category }) => {
       {renderData && (
         <section className="section mt-100">
           <div className="container">
-          {data[category].map((categoryItem, categoryIndex) => (
-            <div key={categoryIndex} className="row mt-50">
-              <div className="col-lg-12 text-center">
-                <h2 className="color-brand-1 mb-20">{categoryItem.name}</h2>
-                <p className="font-lg color-gray-500" >{categoryItem.desc}</p>
+            {data[category].map((categoryItem, categoryIndex) => (
+              <div key={categoryIndex} className="row mt-50">
+                <div className="col-lg-12 text-center">
+                  <h2 className="color-brand-1 mb-20">{categoryItem.name}</h2>
+                  <p className="font-lg color-gray-500">{categoryItem.desc}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
             {data[category].map((item, index) => (
               <div key={index} className="row mt-50">
                 {item.data &&
@@ -122,7 +122,13 @@ const Service8 = ({ category }) => {
               </div>
             ))}
             <div className="col-lg-12 box-button text-center mt-40">
-              <Button text={"Book An Appointment"} />
+              <Button
+                text={"Book An Appointment"}
+                href={
+                  "https://calender.multivariate.ai/team/nextgrowth-labs/marketing-meet"
+                }
+                target="blank"
+              />
               <a className="btn btn-default font-sm-bold hover-up" href="#">
                 Learn More
                 <svg

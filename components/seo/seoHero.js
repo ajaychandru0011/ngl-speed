@@ -24,7 +24,14 @@ const SEOHero = () => {
                 <h5 className="color-brand-1">Connect With Us Today</h5>
               </div>
               <div className="box-button mt-20">
-                <Button text={"Book An Appointment"} showIcon = {true}/>
+                <Button
+                  text={"Book An Appointment"}
+                  showIcon={true}
+                  href={
+                    "https://calender.multivariate.ai/team/nextgrowth-labs/marketing-meet"
+                  }
+                  target="blank"
+                />
               </div>
             </div>
             <div className="col-lg-5 d-none d-lg-block">
