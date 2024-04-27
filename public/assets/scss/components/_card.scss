@@ -201,11 +201,15 @@
     }
   }
 }
+.min-height-360 {
+  min-height: 380px;
+}
 .card-offer {
   border: 1px solid $color-gray-80;
   padding: 40px 30px 30px 30px;
   border-radius: 8px;
   margin-bottom: 30px;
+
   &:hover {
     box-shadow: $box-shadow-1;
     border: 1px solid $color-brand-3;

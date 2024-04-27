@@ -1859,6 +1859,10 @@ body {
   box-shadow: 0px 0px 30px 0px rgba(14, 41, 50, 0.08);
 }
 
+.min-height-360 {
+  min-height: 380px;
+}
+
 .card-offer {
   border: 1px solid #CDE2E7;
   padding: 40px 30px 30px 30px;
@@ -1936,6 +1940,7 @@ body {
 .card-we-do .card-info {
   width: 100%;
 }
+
 .cardNumber {
   border-radius: 16px;
   background-color: #D1ECF7;
@@ -2494,9 +2499,6 @@ body {
   line-height: 30px;
   text-align: center;
 }
-
-
-
 
 /*page loading*/
 .preloader {
@@ -9666,7 +9668,6 @@ footer.footer-4 {
     line-height: 18px;
     font-size: 14px;
   }
-
 }
 @media (max-width: 449.98px) {
   .box-newsletter .image-1 img {
@@ -9787,24 +9788,6 @@ footer.footer-4 {
   .box-info-banner11 {
     padding: 20px;
   }
-/* Custom Css */
-.insideslider-1{
-  width: 300px !important;
-  height: 300px !important;
-}
-.insideslider canvas{
-  width: 300px !important;
-  height: 300px !important;
-}
-#chart-container-1{
-  width: 300px !important;
-  height: 300px !important;
-}
-#chart-container-2{
-  width: 300px !important;
-  height: 300px !important;
-}
-
 }
 @media (max-width: 349.98px) {
   .mobile-header-wrapper-style {
