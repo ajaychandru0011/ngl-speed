@@ -3,7 +3,7 @@ import Image from "next/image";
 import ContactForm from "../elements/ContactForm";
 const Asocontact = () => {
   return (
-    <section className="section mt-70">
+    <section className="section mt-200">
       <div className="container">
         <div className="row">
           <div className="col-lg-5">
@@ -13,8 +13,10 @@ const Asocontact = () => {
             <p className="font-sm color-grey-500">
               Elevate your app's success with our ASO expertise – we specialize
               in optimizing keywords, enhancing visibility, boost app-installs,
-              and maximize conversions for unparalleled app growth.<br/>Get in touch
-              with us, and a specialist will be with you in a few hours.
+              and maximize conversions for unparalleled app growth.
+              <br />
+              Get in touch with us, and a specialist will be with you in a few
+              hours.
             </p>
             <div className="mt-50">
               <div className="card-offer card-we-do card-contact hover-up">
@@ -35,7 +37,6 @@ const Asocontact = () => {
                   </p>
                 </div>
               </div>
-
             </div>
           </div>
           <ContactForm />
