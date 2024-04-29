@@ -2,7 +2,7 @@ import Link from "next/link";
 import Button from "../elements/Button"
 const Services = () => {
   return (
-    <section className="section mt-50 mb-30">
+    <section className="section mt-200 mb-30">
       <div className="container">
         <div className="text-center mb-70">
           <h2 className="color-brand-1 mb-20">Why are we different?</h2>

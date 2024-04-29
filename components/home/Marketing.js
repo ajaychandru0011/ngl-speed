@@ -2,7 +2,7 @@ import Button from "../elements/Button"
 import Link from "next/link";
 const Marketing = () => {
   return (
-    <section className="section mt-50">
+    <section className="section mt-200">
       <div className="container">
         <div className="row mt-50">
           <div className="col-xl-6 col-lg-5">

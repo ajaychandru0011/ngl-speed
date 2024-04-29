@@ -10,9 +10,14 @@ const Hero = () => {
       <div className="asset-5 shape-2"></div>
       <div className="container text-center">
         <div className="row mt-150">
-          <div className="col-xl-8 col-lg-10 m-auto" style={{ zIndex: 999 }}>
-            <h1 className="color-brand-1 mb-25 mt-10">App Store Optimization</h1>
-            <p className="font-md color-grey-500 mb-25">
+          <div
+            className="col-xl-8 col-lg-10 m-auto text-center "
+            style={{ zIndex: 999 }}
+          >
+            <h1 className="color-brand-1 mb-25 mt-10">
+              App Store Optimization
+            </h1>
+            <p className="font-md color-grey-500 mb-25 max-width-685">
               Since 2016, we are at the forefront of Digital Marketing. We just
               don't service our clients - we <br />
               reverse engineer search algorithms. We process billions of data
@@ -20,11 +25,7 @@ const Hero = () => {
             </p>
 
             <div className="d-none d-sm-inline-block">
-              <Button
-                text={"Contact Us"}
-                href={"http://www.example.com"}
-                showIcon={true}
-              />
+              <Button text={"Contact Us"} href={"/contact"} showIcon={true} />
             </div>
           </div>
         </div>

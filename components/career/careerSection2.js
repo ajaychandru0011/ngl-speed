@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 const CareerSection2 = () => {
   return (
-    <section className="section mt-100">
+    <section className="section mt-200">
       <div className="container">
         <div className="row">
           <div className="col-lg-12 text-center">
