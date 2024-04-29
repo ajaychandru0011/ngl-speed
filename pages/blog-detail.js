@@ -1,8 +1,9 @@
 import React from "react";
 import Link from "next/link";
+import Layout from "../components/layout/Layout"
 const BlogDetails = () => {
   return (
-    <>
+    <Layout>
       <div className="section mt-35">
         <div className="container">
           <div className="breadcrumbs">
@@ -449,7 +450,7 @@ const BlogDetails = () => {
           </div>
         </div>
       </section>
-    </>
+    </Layout>
   );
 };
 
