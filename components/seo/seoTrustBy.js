@@ -55,7 +55,7 @@ const SEOTrustBy = () => {
               <ul className="list-partners">
                 {data.map((image, index) => (
                   <li key={index}>
-                    <img src={image.src} alt={image.alt} />
+                    <img src={image.src} alt={image.alt} height="50px" />
                   </li>
                 ))}
               </ul>
