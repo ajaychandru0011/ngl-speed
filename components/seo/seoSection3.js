@@ -4,7 +4,7 @@ import gif from "../../public/assets/imgs/Google-Search-Animation.gif";
 import Image from "next/image";
 const SEOSection3 = () => {
   return (
-    <section className="section mt-50">
+    <section className="section mt-200">
       <div className="container">
         <div className="row mt-50">
           <div className="col-xl-6 col-lg-5">

@@ -676,10 +676,10 @@ a {
   overflow: hidden;
   white-space: nowrap;
   padding: 20px 0;
-  width: 10040px;
+  width: 100%;
   .marqueeSlide {
     display: inline-block;
-    width: 100%;
+    width: 10040px;
     animation: 39s slide linear infinite;
     img {
       height: 50px;
@@ -688,7 +688,7 @@ a {
   }
   .marqueeSlide2 {
     display: inline-block;
-    width: 100%;
+    width: 10040px;
     animation: 39s slide2 linear infinite;
     img {
       height: 50px;

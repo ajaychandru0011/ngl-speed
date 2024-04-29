@@ -808,11 +808,11 @@ a:hover {
   overflow: hidden;
   white-space: nowrap;
   padding: 20px 0;
-  width: 10040px;
+  width: 100%;
 }
 .marqueeContainer .marqueeSlide {
   display: inline-block;
-  width: 100%;
+  width: 10040px;
   animation: 39s slide linear infinite;
 }
 .marqueeContainer .marqueeSlide img {
@@ -821,7 +821,7 @@ a:hover {
 }
 .marqueeContainer .marqueeSlide2 {
   display: inline-block;
-  width: 100%;
+  width: 10040px;
   animation: 39s slide2 linear infinite;
 }
 .marqueeContainer .marqueeSlide2 img {
@@ -1909,7 +1909,7 @@ body {
 }
 
 .min-height-360 {
-  min-height: 300px;
+  min-height: 380px;
 }
 
 .card-offer {
