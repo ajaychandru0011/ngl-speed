@@ -51,7 +51,14 @@ const Trustby = () => {
           And 100’s of other top companies – ranging upto 0.5 Billion downloads
         </p>
       </div>
-      <div className="section home12-logos">
+      <div className="marqueeContainer">
+        <div className="marqueeSlide">
+          {data.map((item, index) => (
+            <img src={item.src} alt={item.alt} />
+          ))}
+        </div>
+      </div>
+      {/* <div className="section home12-logos">
         <div className="container">
           <marquee scrollamount="20">
             <ul className="list-partners">
@@ -63,7 +70,7 @@ const Trustby = () => {
             </ul>
           </marquee>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

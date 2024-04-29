@@ -273,7 +273,12 @@ body {
   font-family: "Manrope", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Manrope", sans-serif;
   font-style: normal;
   color: #000000;
@@ -575,7 +580,12 @@ a:hover {
 }
 
 @media (min-width: 1400px) {
-  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
     max-width: 1410px;
   }
 }
@@ -693,7 +703,8 @@ a:hover {
   border: 0px;
 }
 
-.pagination li a:hover, .pagination li a.active {
+.pagination li a:hover,
+.pagination li a.active {
   background-color: #024430;
   border-color: #024430;
   color: #CDE2E7;
@@ -778,6 +789,26 @@ a:hover {
   margin-bottom: 5px;
   font-size: 32px !important;
   line-height: 55px !important;
+}
+
+@keyframes slide {
+  100% {
+    transform: translateX(-508.5%);
+  }
+}
+.marqueeContainer {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 20px 0;
+}
+.marqueeContainer .marqueeSlide {
+  display: inline-block;
+  animation: 44s slide linear infinite;
+  transform: translate3d(0, 0, 0);
+}
+.marqueeContainer .marqueeSlide img {
+  height: 50px;
+  margin: 0 40px;
 }
 
 a,
@@ -9023,6 +9054,9 @@ footer.footer-4 {
   .width-45 {
     width: 100%;
     margin: auto;
+  }
+  .min-height-360 {
+    min-height: 300px;
   }
   .box-container-sw .box-swiper {
     padding-left: 30px;
