@@ -659,17 +659,37 @@ a {
 
 @keyframes slide {
   100% {
-    transform: translateX(calc(-508.5%));
+    // transform: translateX(calc(-508.5% - 40px));
+    transform: translateX(calc(-100%));
+  }
+}
+@keyframes slide2 {
+  0% {
+    // transform: translateX(calc(-508.5% - 40px));
+    transform: translateX(+10040);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
 .marqueeContainer {
   overflow: hidden;
   white-space: nowrap;
   padding: 20px 0;
+  width: 10040px;
   .marqueeSlide {
     display: inline-block;
-    animation: 44s slide linear infinite;
-    transform: translate3d(0, 0, 0);
+    width: 100%;
+    animation: 39s slide linear infinite;
+    img {
+      height: 50px;
+      margin: 0 40px;
+    }
+  }
+  .marqueeSlide2 {
+    display: inline-block;
+    width: 100%;
+    animation: 39s slide2 linear infinite;
     img {
       height: 50px;
       margin: 0 40px;

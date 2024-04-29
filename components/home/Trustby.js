@@ -57,6 +57,11 @@ const Trustby = () => {
             <img src={item.src} alt={item.alt} />
           ))}
         </div>
+        <div className="marqueeSlide2">
+          {data.map((item, index) => (
+            <img src={item.src} alt={item.alt} />
+          ))}
+        </div>
       </div>
       {/* <div className="section home12-logos">
         <div className="container">
