@@ -9840,6 +9840,25 @@ footer.footer-4 {
   .box-info-banner11 {
     padding: 20px;
   }
+/* Custom Css */
+.insideslider-1{
+  width: 300px !important;
+  height: 300px !important;
+}
+.insideslider canvas{
+  width: 300px !important;
+  height: 300px !important;
+}
+#chart-container-1{
+  width: 300px !important;
+  height: 300px !important;
+}
+#chart-container-2{
+  width: 300px !important;
+  height: 300px !important;
+}
+
+
 }
 @media (max-width: 349.98px) {
   .mobile-header-wrapper-style {
