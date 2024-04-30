@@ -9327,6 +9327,13 @@ footer.footer-4 {
   .list-partners-6 li:nth-child(3) {
     text-align: right;
   }
+  .header .header-right {
+    position: absolute;
+    right: 6%;
+  }
+  .header .header-right a{
+    padding: 12px 13px;
+  }
 }
 @media (max-width: 767.98px) {
   .mobile-header-wrapper-style .mobile-header-wrapper-inner .mobile-header-top .mobile-header-logo a img {
@@ -9568,6 +9575,7 @@ footer.footer-4 {
   .accordionStyle2.accordion .accordion-body {
     padding: 0px 25px 30px 25px;
   }
+  
 }
 @media (max-width: 575.98px) {
   .header {
