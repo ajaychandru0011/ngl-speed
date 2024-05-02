@@ -1,5 +1,6 @@
 import React from "react";
 import ToolsCard from "../cards/ToolsCard";
+import Link from "next/link";
 const data = [
   {
     name: "Sync & Reply",
@@ -274,7 +275,7 @@ const ToolsSection2 = () => {
             <p className="font-lg color-gray-500">NEXT CONSOLE FEATURES</p>
           </div>
           <div className="col-lg-4 col-md-4 text-md-end text-start">
-            <a className="btn btn-default font-sm-bold pl-0">
+            <Link href='#' className="btn btn-default font-sm-bold pl-0">
               Learn More
               <svg
                 className="w-6 h-6 icon-16 ml-5"
@@ -290,7 +291,7 @@ const ToolsSection2 = () => {
                   d="M14 5l7 7m0 0l-7 7m7-7H3"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="row mt-50">

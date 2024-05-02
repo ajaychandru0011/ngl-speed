@@ -28,8 +28,11 @@ const CareerSection6 = () => {
                 </p>
                 <div className="box-button text-start mt-65">
                   {" "}
-                  <Button text = {"Contact Us"} href={"/contact"} />
-                  <a className="btn btn-default font-sm-bold hover-up" href="#">
+                  <Button text={"Contact Us"} href={"/contact"} />
+                  <Link
+                    href="#"
+                    className="btn btn-default font-sm-bold hover-up"
+                  >
                     Support Center
                     <svg
                       className="w-6 h-6 icon-16 ml-5"
@@ -45,7 +48,7 @@ const CareerSection6 = () => {
                         d="M14 5l7 7m0 0l-7 7m7-7H3"
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

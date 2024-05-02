@@ -3619,6 +3619,9 @@ body {
   right: 0px;
   z-index: 1004;
 }
+.burger-icon.burger-close {
+  width: 15px;
+}
 .burger-icon > span {
   display: block;
   position: absolute;
@@ -7224,22 +7227,6 @@ textarea.textarea-control {
   width: 15rem !important;
 }
 
-.insideslider-1 {
-  width: 415px !important;
-  height: 415px !important;
-}
-
-.insideslider canvas {
-  width: 415px !important;
-  height: 415px !important;
-}
-
-@media (min-width: 1023px) {
-  .row-image img {
-    width: 415px !important;
-    margin: 0px 2rem;
-  }
-}
 @media (max-width: 449.98px) {
   .insideslider-1 {
     width: 300px !important;

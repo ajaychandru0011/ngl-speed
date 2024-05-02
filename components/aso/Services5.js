@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 const Services5 = () => {
   return (
     <section className="section mt-80">
@@ -14,7 +15,7 @@ const Services5 = () => {
             </p>
           </div>
           <div className="col-lg-4 col-md-4 text-md-end text-start">
-            <a className="btn btn-default font-sm-bold pl-0">
+            <Link href='#' className="btn btn-default font-sm-bold pl-0">
               Learn More
               <svg
                 className="w-6 h-6 icon-16 ml-5"
@@ -30,14 +31,19 @@ const Services5 = () => {
                   d="M14 5l7 7m0 0l-7 7m7-7H3"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="row mt-50">
           <div className="col-lg-6">
             <div className="card-offer card-we-do hover-upd bg-4">
               <div className="card-image">
-                <img src="assets/imgs/template/listing.svg" alt="iori" />
+                <Image
+                  src="assets/imgs/template/listing.svg"
+                  height={64}
+                  width={64}
+                  alt="listing"
+                />
               </div>
               <div className="card-info">
                 <h4 className="color-brand-1 mb-10">
@@ -53,7 +59,7 @@ const Services5 = () => {
                   close eye on the changes they make.
                 </p>
                 <div className="box-button-offer">
-                  <a className="btn btn-default font-sm-bold pl-0 color-brand-1">
+                  <Link href='#' className="btn btn-default font-sm-bold pl-0 color-brand-1">
                     Learn More
                     <svg
                       className="w-6 h-6 icon-16 ml-5"
@@ -69,7 +75,7 @@ const Services5 = () => {
                         d="M14 5l7 7m0 0l-7 7m7-7H3"
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -77,7 +83,12 @@ const Services5 = () => {
           <div className="col-lg-6">
             <div className="card-offer card-we-do hover-up bg-5">
               <div className="card-image">
-                <img src="assets/imgs/template/anamolies.svg" alt="iori" />
+                <Image
+                  src="assets/imgs/template/anamolies.svg"
+                  height={64}
+                  width={64}
+                  alt="iori"
+                />
               </div>
               <div className="card-info">
                 <h4 className="color-brand-1 mb-10">
@@ -93,7 +104,7 @@ const Services5 = () => {
                   mismatches. And there's a way to fix it.
                 </p>
                 <div className="box-button-offer">
-                  <a className="btn btn-default font-sm-bold pl-0 color-brand-1">
+                  <Link href='#' className="btn btn-default font-sm-bold pl-0 color-brand-1">
                     Learn More
                     <svg
                       className="w-6 h-6 icon-16 ml-5"
@@ -109,7 +120,7 @@ const Services5 = () => {
                         d="M14 5l7 7m0 0l-7 7m7-7H3"
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -117,7 +128,12 @@ const Services5 = () => {
           <div className="col-lg-6">
             <div className="card-offer card-we-do hover-up bg-5">
               <div className="card-image">
-                <img src="assets/imgs/template/rating-mhr.svg" alt="iori" />
+                <Image
+                  src="assets/imgs/template/rating-mhr.svg"
+                  height={64}
+                  width={64}
+                  alt="Ratings"
+                />
               </div>
               <div className="card-info">
                 <h4 className="color-brand-1 mb-10">
@@ -133,7 +149,7 @@ const Services5 = () => {
                   (Most Helpful Review Section) Score - developed by us.
                 </p>
                 <div className="box-button-offer">
-                  <a className="btn btn-default font-sm-bold pl-0 color-brand-1">
+                  <Link href='#' className="btn btn-default font-sm-bold pl-0 color-brand-1">
                     Learn More
                     <svg
                       className="w-6 h-6 icon-16 ml-5"
@@ -149,7 +165,7 @@ const Services5 = () => {
                         d="M14 5l7 7m0 0l-7 7m7-7H3"
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -157,7 +173,12 @@ const Services5 = () => {
           <div className="col-lg-6">
             <div className="card-offer card-we-do hover-up bg-7">
               <div className="card-image">
-                <img src="assets/imgs/template/engagement.svg" alt="iori" />
+                <Image
+                  src="assets/imgs/template/engagement.svg"
+                  height={64}
+                  width={64}
+                  alt="iori"
+                />
               </div>
               <div className="card-info">
                 <h4 className="color-brand-1 mb-10">
@@ -173,7 +194,7 @@ const Services5 = () => {
                   your peers, and help you improve on it.
                 </p>
                 <div className="box-button-offer">
-                  <a className="btn btn-default font-sm-bold pl-0 color-brand-1">
+                  <Link href='#' className="btn btn-default font-sm-bold pl-0 color-brand-1">
                     Learn More
                     <svg
                       className="w-6 h-6 icon-16 ml-5"
@@ -189,7 +210,7 @@ const Services5 = () => {
                         d="M14 5l7 7m0 0l-7 7m7-7H3"
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
