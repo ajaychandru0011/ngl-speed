@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../elements/Button";
+import Link from "next/link";
 
 const CareerSection6 = () => {
   return (
