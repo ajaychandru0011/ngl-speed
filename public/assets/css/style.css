@@ -7204,4 +7204,27 @@ textarea.textarea-control {
   margin-bottom: 15px;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
+@media (max-width: 449.98px) {
+  .insideslider-1 {
+    width: 300px !important;
+    height: 300px !important;
+  }
+  .insideslider canvas {
+    width: 300px !important;
+    height: 300px !important;
+  }
+  #chart-container-1 {
+    width: 300px !important;
+    height: 300px !important;
+  }
+  #chart-container-2 {
+    width: 300px !important;
+    height: 300px !important;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
