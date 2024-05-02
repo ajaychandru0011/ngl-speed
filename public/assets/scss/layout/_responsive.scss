@@ -544,7 +544,7 @@
   .card-we-do .card-image {
     max-width: 75px;
   }
-  .cardNumber {
+  .box-create-account .cardNumber {
     position: absolute;
     bottom: 0px;
     padding: 20px 20px;
@@ -557,11 +557,24 @@
   .box-image-account {
     max-width: 90%;
   }
-
+  .list-partners-left li {
+    width: 33.33%;
+  }
   .btn-app img {
     height: 40px;
   }
-
+  .item-core {
+    flex-wrap: wrap;
+    .item-image {
+      max-width: 100%;
+      min-width: auto;
+      margin-right: 0px;
+      margin-bottom: 20px;
+    }
+  }
+  .box-business-service .box-number-1 {
+    top: 0%;
+  }
   .card-product.card-product-list {
     flex-wrap: wrap;
   }
@@ -577,7 +590,7 @@
   .perfect-scroll {
     padding: 0px 15px 0px 15px;
   }
-  .font-xl-bold {
+  .item-tick.font-xl-bold {
     line-height: 18px;
     font-size: 14px;
   }
