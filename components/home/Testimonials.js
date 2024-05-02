@@ -158,7 +158,7 @@ const Testimonials = () => {
           <h2 className="color-brand-1">Read what our amazing clients say</h2>
           <div className="mt-50">
             <div className="box-swiper">
-              <div className="swiper-container swiper-group-2  d-flex flex-wrap">
+              <div className="swiper-container swiper-group-2  d-flex flex-wrap justify-center">
                 {data.map((item, i) => (
                   <TestimonialCard
                     key={item.author}

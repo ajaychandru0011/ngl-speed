@@ -1,7 +1,7 @@
 import Image from "next/image";
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer mt-80">
       <div className="footer-1">
         <div className="container">
           <div className="row">

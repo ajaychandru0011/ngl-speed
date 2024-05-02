@@ -1486,6 +1486,12 @@ body {
   margin-right: 4px;
 }
 
+/* Custom Css */
+.justify-center{
+  justify-content: center;
+}
+
+
 /*Customize the style representation when pager is activated*/
 .swiper-pagination-customs-active,
 .swiper-pagination-customs:hover {
