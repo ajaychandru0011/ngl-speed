@@ -2,7 +2,7 @@ import Button from "../elements/Button";
 import Image from "next/image";
 const Asomarketing4 = () => {
   return (
-    <section className="section mt-200">
+    <section className="section mt-80">
       <div className="container">
         <div className="row mt-50">
           <div className="col-xl-6 col-lg-5">

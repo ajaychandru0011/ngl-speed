@@ -1339,7 +1339,7 @@ const data = [
 const Tools = ({ length }) => {
   const numItems = length && !isNaN(length) ? parseInt(length) : data.length;
   return (
-    <section className="section mt-200">
+    <section className="section mt-80">
       <div className="container">
         <div className="row align-items-end">
           <div className="col-lg-8 col-md-8">

@@ -3,7 +3,7 @@ import Image from "next/image";
 import ContactForm from "../elements/ContactForm";
 const Contact = () => {
   return (
-    <section className="section mt-200">
+    <section className="section mt-80">
       <div className="container">
         <div className="row">
           <div className="col-lg-5">

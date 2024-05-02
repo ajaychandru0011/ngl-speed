@@ -152,7 +152,7 @@ const data = [
 
 const Testimonials = () => {
   return (
-    <section className="section mt-200 bg-grey-60">
+    <section className="section mt-80 bg-grey-60">
       <div className="container">
         <div className="pt-120 pb-120">
           <h2 className="color-brand-1 text-center">

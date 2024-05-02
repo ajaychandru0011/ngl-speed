@@ -7223,6 +7223,10 @@ textarea.textarea-control {
   justify-content: center;
 }
 
+.custom-btn-size {
+  width: 15rem !important;
+}
+
 @media (max-width: 449.98px) {
   .insideslider-1 {
     width: 300px !important;
@@ -7239,6 +7243,11 @@ textarea.textarea-control {
   #chart-container-2 {
     width: 300px !important;
     height: 300px !important;
+  }
+}
+@media (max-width: 449.98px) {
+  .custom-btn-size {
+    width: 12rem !important;
   }
 }
 

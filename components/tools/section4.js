@@ -2,7 +2,7 @@ import React from "react";
 
 const ToolsSection4 = () => {
   return (
-    <section className="section mt-200">
+    <section className="section mt-80">
       <div className="container">
         <div className="text-center">
           <h2 className="color-brand-1 mb-40">NEXT Console Features</h2>

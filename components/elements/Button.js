@@ -29,9 +29,8 @@ const Button = ({ text, showIcon, href, onClick, target }) => {
         </Link>
       ) : (
         <button
-          className="btn btn-brand-1-full hover-up"
+          className="btn btn-brand-1-full hover-up custom-btn-size"
           onClick={onClick}
-          style={{ width: "15rem" }}
         >
           {text}
           {showIcon && (
