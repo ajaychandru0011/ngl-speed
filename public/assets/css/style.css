@@ -3123,7 +3123,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 10000;
   left: 0;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -3618,9 +3618,6 @@ body {
   top: 10px;
   right: 0px;
   z-index: 1004;
-}
-.burger-icon.burger-close {
-  width: 15px;
 }
 .burger-icon > span {
   display: block;
