@@ -65,7 +65,7 @@ const Service8 = ({ category }) => {
   return (
     <>
       {renderData && (
-        <section className="section mt-200">
+        <section className="section mt-80">
           <div className="container">
             {data[category].map((categoryItem, categoryIndex) => (
               <div key={categoryIndex} className="row mt-50">

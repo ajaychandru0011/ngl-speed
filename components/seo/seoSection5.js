@@ -23,7 +23,7 @@ const SEOSection5 = () => {
                 that incorporates these groups of keywords and maximizes your
                 search engine visibility and performance.
               </p>
-              <div className="box-button text-start mt-40"> 
+              <div className="box-button text-start mt-40">
                 <Button text="Find Out How" href={"#"} />
               </div>
             </div>
@@ -32,8 +32,8 @@ const SEOSection5 = () => {
             <div className="row pt-20">
               <Image
                 src={gif}
-                width={690}
-                height={420}
+                width={415}
+                height="100%"
                 alt="Google Search Animation"
               />
             </div>

@@ -29,8 +29,8 @@ const SEOSection3 = () => {
             <div className="row pt-20">
               <Image
                 src={gif}
-                width={690}
-                height={420}
+                width={415}
+                height="100%"
                 alt="Google Search Animation"
               />
             </div>

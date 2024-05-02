@@ -11,8 +11,8 @@ const SEOSection4 = () => {
             <div className="row pt-20">
               <Image
                 src={testSEO}
-                width={690}
-                height={420}
+                width={415}
+                height="100%"
                 alt="Run A/B test"
               />
             </div>
@@ -33,7 +33,7 @@ const SEOSection4 = () => {
                 business.
               </p>
               <div className="box-button text-start mt-40">
-              <Button text="Find Out How" href={"#"} />
+                <Button text="Find Out How" href={"#"} />
               </div>
             </div>
           </div>

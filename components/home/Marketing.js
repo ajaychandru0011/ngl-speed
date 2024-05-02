@@ -1,8 +1,8 @@
-import Button from "../elements/Button"
+import Button from "../elements/Button";
 import Link from "next/link";
 const Marketing = () => {
   return (
-    <section className="section mt-200">
+    <section className="section mt-80">
       <div className="container">
         <div className="row mt-50">
           <div className="col-xl-6 col-lg-5">
@@ -30,7 +30,7 @@ const Marketing = () => {
                 {/* <Link className="btn btn-brand-1 hover-up" href="#">
                   Contact Us
                 </Link> */}
-                <Button text={"Contact Us"} href={"#"}/>
+                <Button text={"Contact Us"} href={"#"} />
                 <Link
                   className="btn btn-default font-sm-bold hover-up"
                   href="#"

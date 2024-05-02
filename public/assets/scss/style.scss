@@ -44,13 +44,10 @@ TABLE CONTENT
   "layout/spacing";
 // Page-specific styles
 @import "pages/homepage1", "pages/homepage2", "pages/homepage3",
-  "pages/homepage4", "pages/homepage5", "pages/homepage6", "pages/homepage7",
-  "pages/homepage8", "pages/homepage9", "pages/homepage10", "pages/homepage11",
+  "pages/homepage4", "pages/homepage7", "pages/homepage8", "pages/homepage11",
   "pages/homepage12", "pages/service", "pages/pricing", "pages/career",
-  "pages/job-detail", "pages/contact", "pages/register", "pages/login",
-  "pages/blog", "pages/service", "pages/blog-single", "pages/shop-grid",
-  "pages/shop-list", "pages/product", "pages/team", "pages/comming-soon",
-  "pages/blog2", "pages/help", "pages/term", "pages/about";
+  "pages/job-detail", "pages/contact", "pages/blog", "pages/service",
+  "pages/blog-single", "pages/help", "pages/term", "pages/about";
 // Responsive
 @import "layout/responsive";
 .page-content {

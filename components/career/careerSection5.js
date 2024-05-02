@@ -58,7 +58,7 @@ const CareerSection5 = () => {
           <ul className="list-partners text-start">
             {data.map((image, index) => (
               <li key={index}>
-                <img src={image.src} alt={image.alt} />
+                <img src={image.src} alt={image.alt} height="50px" />
               </li>
             ))}
           </ul>
