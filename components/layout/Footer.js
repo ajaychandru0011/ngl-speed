@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="footer mt-80">
@@ -20,40 +21,41 @@ const Footer = () => {
                 HSR Layout
               </p>
               <div className="font-md mb-20 color-grey-400">
-                <strong className="font-md-bold">Email:</strong> contact@nextgrowthlabs.com
+                <strong className="font-md-bold">Email:</strong>{" "}
+                contact@nextgrowthlabs.com
               </div>
               <h6 className="color-brand-1">Follow Us</h6>
               <div className="mt-15">
-                <a className="icon-socials icon-facebook" href="#"></a>
-                <a className="icon-socials icon-instagram" href="#"></a>
-                <a className="icon-socials icon-twitter" href="#"></a>
-                <a className="icon-socials icon-linkedin" href="#"></a>
-                <a className="icon-socials icon-youtube" href="#"></a>
+                <Link className="icon-socials icon-facebook" href="#"></Link>
+                <Link className="icon-socials icon-instagram" href="#"></Link>
+                <Link className="icon-socials icon-twitter" href="#"></Link>
+                <Link className="icon-socials icon-linkedin" href="#"></Link>
+                <Link className="icon-socials icon-youtube" href="#"></Link>
               </div>
             </div>
             <div className="col-lg-3 width-16 mb-30">
               <h5 className="mb-10 color-brand-1">Consulting</h5>
               <ul className="menu-footer">
                 <li>
-                  <a href="#!">App Store Optimization</a>
+                  <Link href="#!">App Store Optimization</Link>
                 </li>
                 <li>
-                  <a href="#!">Mobile App Promotion</a>
+                  <Link href="#!">Mobile App Promotion</Link>
                 </li>
                 <li>
-                  <a href="#!">Ad Cost Reduction</a>
+                  <Link href="#!">Ad Cost Reduction</Link>
                 </li>
                 <li>
-                  <a href="#!">Search Engine Optimization</a>
+                  <Link href="#!">Search Engine Optimization</Link>
                 </li>
                 <li>
-                  <a href="#!">Free App Analysis</a>
+                  <Link href="#!">Free App Analysis</Link>
                 </li>
                 <li>
-                  <a href="#!">Improve Pagespeed</a>
+                  <Link href="#!">Improve Pagespeed</Link>
                 </li>
                 <li>
-                  <a href="#!">Mobile & Web Analytics</a>
+                  <Link href="#!">Mobile & Web Analytics</Link>
                 </li>
               </ul>
             </div>
@@ -61,31 +63,31 @@ const Footer = () => {
               <h5 className="mb-10 color-brand-1">Free Tools</h5>
               <ul className="menu-footer">
                 <li>
-                  <a href="#!">App Rank Checker</a>
+                  <Link href="#!">App Rank Checker</Link>
                 </li>
                 <li>
-                  <a href="#!">Bing Rank Checker</a>
+                  <Link href="#!">Bing Rank Checker</Link>
                 </li>
                 <li>
-                  <a href="#!">Keyword Auto Suggest</a>
+                  <Link href="#!">Keyword Auto Suggest</Link>
                 </li>
                 <li>
-                  <a href="#!">Google SERP Checker</a>
+                  <Link href="#!">Google SERP Checker</Link>
                 </li>
                 <li>
-                  <a href="#!">SEO Content Assistant</a>
+                  <Link href="#!">SEO Content Assistant</Link>
                 </li>
                 <li>
-                  <a href="#!">iOS Keyword Search</a>
+                  <Link href="#!">iOS Keyword Search</Link>
                 </li>
                 <li>
-                  <a href="#!">SEO and ASO Chrome Add On</a>
+                  <Link href="#!">SEO and ASO Chrome Add On</Link>
                 </li>
                 <li>
-                  <a href="#!">Bulk Page Speed Assessment</a>
+                  <Link href="#!">Bulk Page Speed Assessment</Link>
                 </li>
                 <li>
-                  <a href="#!">iOS Keyword Tracker</a>
+                  <Link href="#!">iOS Keyword Tracker</Link>
                 </li>
               </ul>
             </div>
@@ -94,35 +96,35 @@ const Footer = () => {
               <ul className="menu-footer">
                 <li>
                   {" "}
-                  <a href="#!">Android Rating Projection Tool</a>
+                  <Link href="#!">Android Rating Projection Tool</Link>
                 </li>
                 <li>
                   {" "}
-                  <a href="#!">Html Editor</a>
+                  <Link href="#!">Html Editor</Link>
                 </li>
                 <li>
                   {" "}
-                  <a href="#!">Website Rank Checker</a>
+                  <Link href="#!">Website Rank Checker</Link>
                 </li>
                 <li>
                   {" "}
-                  <a href="#!">Emi Calculator</a>
+                  <Link href="#!">Emi Calculator</Link>
                 </li>
                 <li>
                   {" "}
-                  <a href="#!">Word To Html</a>
+                  <Link href="#!">Word To Html</Link>
                 </li>
                 <li>
                   {" "}
-                  <a href="#!">Font Changer</a>
+                  <Link href="#!">Font Changer</Link>
                 </li>
                 <li>
                   {" "}
-                  <a href="#!">Multi Tool</a>
+                  <Link href="#!">Multi Tool</Link>
                 </li>
                 <li>
                   {" "}
-                  <a href="#!">Keyword Suggestion</a>
+                  <Link href="#!">Keyword Suggestion</Link>
                 </li>
               </ul>
             </div>
@@ -133,14 +135,14 @@ const Footer = () => {
                   maximize your app's organic users.
                 </p>
                 <div className="mt-20">
-                  <a className="mr-10" href="#">
+                  <Link className="mr-10" href="#">
                     <Image
                       src="assets/imgs/template/download 1.svg"
                       alt="Description of the image"
                       width={220}
                       height={82}
                     />
-                  </a>
+                  </Link>
                 </div>
                 <p className="font-sm color-grey-400 mt-20 mb-10">Contact Us</p>
                 <p className="font-sm color-grey-400 mt-20 mb-10">
@@ -161,28 +163,28 @@ const Footer = () => {
               <div className="col-lg-6 col-md-12 text-center text-lg-start">
                 <ul className="menu-bottom">
                   <li>
-                    <a
+                    <Link
                       className="font-sm color-grey-300"
                       href="term-conditions.html"
                     >
                       Privacy policy
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       className="font-sm color-grey-300"
                       href="term-conditions.html"
                     >
                       Cookies
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       className="font-sm color-grey-300"
                       href="term-conditions.html"
                     >
                       Terms of service
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

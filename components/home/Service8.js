@@ -86,15 +86,15 @@ const Service8 = ({ category }) => {
                         </div>
                         <div className="card-info">
                           <h4 className="color-brand-1 mb-10">
-                            <a className="color-brand-1" href={subItem.link}>
+                            <Link className="color-brand-1" href={subItem.link}>
                               {subItem.link}
-                            </a>
+                            </Link>
                           </h4>
                           <p className="font-md color-grey-500 mb-5">
                             {subItem.desc}
                           </p>
                           <div className="box-button-offer">
-                            <a
+                            <Link
                               className="btn btn-default font-sm-bold pl-0 color-brand-1"
                               href="#"
                             >
@@ -113,7 +113,7 @@ const Service8 = ({ category }) => {
                                   d="M14 5l7 7m0 0l-7 7m7-7H3"
                                 ></path>
                               </svg>
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -129,7 +129,7 @@ const Service8 = ({ category }) => {
                 }
                 target="blank"
               />
-              <a className="btn btn-default font-sm-bold hover-up" href="#">
+              <Link className="btn btn-default font-sm-bold hover-up" href="#">
                 Learn More
                 <svg
                   className="w-6 h-6 icon-16 ml-5"
@@ -145,7 +145,7 @@ const Service8 = ({ category }) => {
                     d="M14 5l7 7m0 0l-7 7m7-7H3"
                   ></path>
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </section>

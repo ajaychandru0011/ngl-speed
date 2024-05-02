@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from "next/link";
 const TestimonialCard = (props) => {
   return (
     <div className="card-review width-45 mb-40">
@@ -14,11 +14,11 @@ const TestimonialCard = (props) => {
         <h5 className="color-grey-800 mb-20">{props.review}</h5>
         <div className="box-author flex-nowrap justify-content-sm-between">
           <div className="author-info">
-            <a href="#">
+            <Link href="#">
               <span className="font-md-bold color-brand-1 author-name">
                 {props.author}
               </span>
-            </a>
+            </Link>
             <span className="font-xs color-grey-500 department">
               {props.department}
             </span>

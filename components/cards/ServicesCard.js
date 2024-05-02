@@ -19,7 +19,7 @@ const ServicesCard = (props) => {
           </h4>
           <p className="font-md color-grey-500 mb-5">{props.desc}</p>
           <div className="box-button-offer">
-            <a className="btn btn-default font-sm-bold pl-0 color-brand-1">
+            <Link href='#' className="btn btn-default font-sm-bold pl-0 color-brand-1">
               Learn More
               <svg
                 className="w-6 h-6 icon-16 ml-5"
@@ -35,7 +35,7 @@ const ServicesCard = (props) => {
                   d="M14 5l7 7m0 0l-7 7m7-7H3"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

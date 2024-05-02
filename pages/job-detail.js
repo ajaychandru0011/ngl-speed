@@ -8,9 +8,9 @@ import CareerSection7 from "../components/career/careerSection7";
 const JobDetail = () => {
   return (
     <>
-    <Layout>
-      <section className="section pt-50 pb-100">
-        {/* <div className="container"> */}
+      <Layout>
+        <section className="section pt-50 pb-100">
+          {/* <div className="container"> */}
           <div className="box-image-detail">
             <img
               className="bd-rd16 d-block"
@@ -478,7 +478,7 @@ const JobDetail = () => {
                 </p>
               </div>
               <div className="col-lg-4 col-md-4 text-md-end text-start">
-                <a className="btn btn-default font-sm-bold pl-0">
+                <Link href="#" className="btn btn-default font-sm-bold pl-0">
                   View All
                   <svg
                     className="w-6 h-6 icon-16 ml-5"
@@ -494,7 +494,7 @@ const JobDetail = () => {
                       d="M14 5l7 7m0 0l-7 7m7-7H3"
                     />
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="row mt-50">
@@ -512,7 +512,10 @@ const JobDetail = () => {
                       plans, Excel files &amp; CSV files.
                     </p>
                     <div className="box-button-offer">
-                      <a className="btn btn-default font-sm-bold pl-0 color-brand-1">
+                      <Link
+                        href="#"
+                        className="btn btn-default font-sm-bold pl-0 color-brand-1"
+                      >
                         Learn More
                         <svg
                           className="w-6 h-6 icon-16 ml-5"
@@ -528,7 +531,7 @@ const JobDetail = () => {
                             d="M14 5l7 7m0 0l-7 7m7-7H3"
                           />
                         </svg>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -550,7 +553,10 @@ const JobDetail = () => {
                       plans, Excel files &amp; CSV files.
                     </p>
                     <div className="box-button-offer">
-                      <a className="btn btn-default font-sm-bold pl-0 color-brand-1">
+                      <Link
+                        href="#"
+                        className="btn btn-default font-sm-bold pl-0 color-brand-1"
+                      >
                         Learn More
                         <svg
                           className="w-6 h-6 icon-16 ml-5"
@@ -566,7 +572,7 @@ const JobDetail = () => {
                             d="M14 5l7 7m0 0l-7 7m7-7H3"
                           />
                         </svg>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -588,7 +594,10 @@ const JobDetail = () => {
                       plans, Excel files &amp; CSV files.
                     </p>
                     <div className="box-button-offer">
-                      <a className="btn btn-default font-sm-bold pl-0 color-brand-1">
+                      <Link
+                        href="#"
+                        className="btn btn-default font-sm-bold pl-0 color-brand-1"
+                      >
                         Learn More
                         <svg
                           className="w-6 h-6 icon-16 ml-5"
@@ -604,7 +613,7 @@ const JobDetail = () => {
                             d="M14 5l7 7m0 0l-7 7m7-7H3"
                           />
                         </svg>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

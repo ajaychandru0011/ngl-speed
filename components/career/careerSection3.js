@@ -32,7 +32,10 @@ const CareerSection3 = () => {
                   plans, Excel files &amp; CSV files.
                 </p>
                 <div className="box-button-offer">
-                  <a className="btn btn-default font-sm-bold pl-0 color-brand-1">
+                  <Link
+                    href="#"
+                    className="btn btn-default font-sm-bold pl-0 color-brand-1"
+                  >
                     Learn More
                     <svg
                       className="w-6 h-6 icon-16 ml-5"
@@ -48,7 +51,7 @@ const CareerSection3 = () => {
                         d="M14 5l7 7m0 0l-7 7m7-7H3"
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -69,7 +72,10 @@ const CareerSection3 = () => {
                   solutions with strategy, design &amp; technology.
                 </p>
                 <div className="box-button-offer">
-                  <a className="btn btn-default font-sm-bold pl-0 color-brand-1">
+                  <Link
+                    href="#"
+                    className="btn btn-default font-sm-bold pl-0 color-brand-1"
+                  >
                     Learn More
                     <svg
                       className="w-6 h-6 icon-16 ml-5"
@@ -85,7 +91,7 @@ const CareerSection3 = () => {
                         d="M14 5l7 7m0 0l-7 7m7-7H3"
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -106,7 +112,10 @@ const CareerSection3 = () => {
                   black hole. As team collaboration improves
                 </p>
                 <div className="box-button-offer">
-                  <a className="btn btn-default font-sm-bold pl-0 color-brand-1">
+                  <Link
+                    href="#"
+                    className="btn btn-default font-sm-bold pl-0 color-brand-1"
+                  >
                     Learn More
                     <svg
                       className="w-6 h-6 icon-16 ml-5"
@@ -122,7 +131,7 @@ const CareerSection3 = () => {
                         d="M14 5l7 7m0 0l-7 7m7-7H3"
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -143,7 +152,10 @@ const CareerSection3 = () => {
                   software, and get the entire team collaborating
                 </p>
                 <div className="box-button-offer">
-                  <a className="btn btn-default font-sm-bold pl-0 color-brand-1">
+                  <Link
+                    href="#"
+                    className="btn btn-default font-sm-bold pl-0 color-brand-1"
+                  >
                     Learn More
                     <svg
                       className="w-6 h-6 icon-16 ml-5"
@@ -159,7 +171,7 @@ const CareerSection3 = () => {
                         d="M14 5l7 7m0 0l-7 7m7-7H3"
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -180,7 +192,10 @@ const CareerSection3 = () => {
                   plans, Excel files &amp; CSV files.
                 </p>
                 <div className="box-button-offer">
-                  <a className="btn btn-default font-sm-bold pl-0 color-brand-1">
+                  <Link
+                    href="#"
+                    className="btn btn-default font-sm-bold pl-0 color-brand-1"
+                  >
                     Learn More
                     <svg
                       className="w-6 h-6 icon-16 ml-5"
@@ -196,7 +211,7 @@ const CareerSection3 = () => {
                         d="M14 5l7 7m0 0l-7 7m7-7H3"
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -217,7 +232,10 @@ const CareerSection3 = () => {
                   solutions with strategy, design &amp; technology.
                 </p>
                 <div className="box-button-offer">
-                  <a className="btn btn-default font-sm-bold pl-0 color-brand-1">
+                  <Link
+                    href="#"
+                    className="btn btn-default font-sm-bold pl-0 color-brand-1"
+                  >
                     Learn More
                     <svg
                       className="w-6 h-6 icon-16 ml-5"
@@ -233,16 +251,19 @@ const CareerSection3 = () => {
                         d="M14 5l7 7m0 0l-7 7m7-7H3"
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div className="mt-40 mb-50 text-center">
-          
-          <Button text = {"Contact Us"} href={"/contact"} />
-          <a className="btn btn-default font-sm-bold hover-up" href="#">
+          <Button text={"Contact Us"} href={"/contact"} />
+          <Link
+            href="#"
+            className="btn btn-default font-sm-bold hover-up"
+            href="#"
+          >
             Learn More
             <svg
               className="w-6 h-6 icon-16 ml-5"
@@ -258,7 +279,7 @@ const CareerSection3 = () => {
                 d="M14 5l7 7m0 0l-7 7m7-7H3"
               />
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

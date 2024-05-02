@@ -15,7 +15,7 @@ const CareerSection7 = () => {
             </p>
           </div>
           <div className="col-lg-4 col-md-4 text-md-end text-start">
-            <a className="btn btn-default font-sm-bold pl-0">
+            <Link href='#' className="btn btn-default font-sm-bold pl-0">
               View All
               <svg
                 className="w-6 h-6 icon-16 ml-5"
@@ -31,7 +31,7 @@ const CareerSection7 = () => {
                   d="M14 5l7 7m0 0l-7 7m7-7H3"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="row mt-55">
