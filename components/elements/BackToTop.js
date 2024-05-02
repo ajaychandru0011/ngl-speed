@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import Link from "next/link";
 function BackToTop() {
   const [hasScrolled, setHasScrolled] = useState("false");
   useEffect(() => {

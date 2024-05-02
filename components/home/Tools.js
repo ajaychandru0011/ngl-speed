@@ -1,5 +1,7 @@
 import React from "react";
 import ToolsCard from "../cards/ToolsCard";
+import Link from "next/link";
+
 
 const data = [
   {
