@@ -146,19 +146,19 @@ const Footer = () => {
                 </div>
                 <ul className="menu-footer">
                   <li>
-                    <a className="font-sm color-grey-400 " href={"/contact"}>
+                    <Link className="font-sm color-grey-400 " href={"/contact"}>
                       Contact Us
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#"  className="font-sm color-grey-400 ">
+                    <Link href="#"  className="font-sm color-grey-400 ">
                       Request Access to Free Tools Suite
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="font-sm color-grey-400">
+                    <Link href="#" className="font-sm color-grey-400">
                       Data Studio Connector For PlayStore
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
