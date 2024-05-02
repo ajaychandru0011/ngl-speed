@@ -4,7 +4,7 @@ const Marketing = () => {
   return (
     <section className="section mt-80">
       <div className="container">
-        <div className="row mt-50">
+        <div className="row">
           <div className="col-xl-6 col-lg-5">
             <div className="box-images-project">
               <div className="title-line mb-10">Why choose us?</div>

@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import ServicesCard from "../cards/ServicesCard";
 const SERVICES_DATA = [
   {
@@ -26,7 +25,7 @@ const SERVICES_DATA = [
 const OurServices = () => {
   return (
     <>
-      <section className="section mt-200">
+      <section className="section mt-80">
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
