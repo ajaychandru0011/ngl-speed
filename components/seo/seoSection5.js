@@ -29,7 +29,7 @@ const SEOSection5 = () => {
             </div>
           </div>
           <div className="col-xl-6 col-lg-7">
-            <div className="row pt-20">
+            <div className="row pt-20 row-image">
               <Image
                 src={gif}
                 width={415}

@@ -62,6 +62,21 @@ TABLE CONTENT
 .custom-btn-size{
   width: 15rem !important;
 }
+
+.insideslider-1{
+  width: 415px !important;
+  height: 415px !important;
+}
+.insideslider canvas{
+  width: 415px !important;
+  height: 415px !important;
+}
+@media(min-width: 1023px){
+  .row-image img{
+    width: 415px !important;
+    margin:0px 2rem;
+  }
+}
 @media (max-width: 449.98px) {
   .insideslider-1{
     width: 300px !important;

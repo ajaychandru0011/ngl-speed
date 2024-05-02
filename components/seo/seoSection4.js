@@ -8,7 +8,7 @@ const SEOSection4 = () => {
       <div className="container">
         <div className="row mt-50">
           <div className="col-xl-6 col-lg-7">
-            <div className="row pt-20">
+            <div className="row pt-20 row-image">
               <Image
                 src={testSEO}
                 width={415}
