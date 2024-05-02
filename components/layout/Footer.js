@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="footer mt-80">
@@ -20,7 +21,8 @@ const Footer = () => {
                 HSR Layout
               </p>
               <div className="font-md mb-20 color-grey-400">
-                <strong className="font-md-bold">Email:</strong> contact@nextgrowthlabs.com
+                <strong className="font-md-bold">Email:</strong>{" "}
+                contact@nextgrowthlabs.com
               </div>
               <h6 className="color-brand-1">Follow Us</h6>
               <div className="mt-15">
@@ -142,13 +144,23 @@ const Footer = () => {
                     />
                   </a>
                 </div>
-                <p className="font-sm color-grey-400 mt-20 mb-10">Contact Us</p>
-                <p className="font-sm color-grey-400 mt-20 mb-10">
-                  Request Access to Free Tools Suite
-                </p>
-                <p className="font-sm color-grey-400 mt-20 mb-10">
-                  Data Studio Connector For PlayStore
-                </p>
+                <ul className="menu-footer">
+                  <li>
+                    <a className="font-sm color-grey-400 " href={"/contact"}>
+                      Contact Us
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"  className="font-sm color-grey-400 ">
+                      Request Access to Free Tools Suite
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="font-sm color-grey-400">
+                      Data Studio Connector For PlayStore
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
