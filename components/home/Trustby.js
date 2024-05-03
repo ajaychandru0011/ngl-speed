@@ -118,19 +118,6 @@ const Trustby = () => {
           ))}
         </div>
       </div>
-      {/* <div className="section home12-logos">
-        <div className="container">
-          <marquee scrollamount="20">
-            <ul className="list-partners">
-              {data.map((image, index) => (
-                <li key={index}>
-                  <img src={image.src} alt={image.alt} />
-                </li>
-              ))}
-            </ul>
-          </marquee>
-        </div>
-      </div> */}
     </section>
   );
 };

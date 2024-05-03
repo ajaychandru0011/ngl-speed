@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import Image from "next/image";
 const Sidebar = ({ openClass }) => {
   return (
     <>
@@ -10,8 +10,8 @@ const Sidebar = ({ openClass }) => {
           <div className="mobile-header-content-area">
             <div className="mobile-logo">
               <Link className="d-flex" href="/">
-                <img
-                  alt="IORI"
+                <Image
+                  alt="logo"
                   src="assets/imgs/template/logo.svg"
                   width={40}
                   height={40}
