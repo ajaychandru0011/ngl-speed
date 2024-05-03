@@ -5930,11 +5930,11 @@ footer a {
   max-width: 119px;
 }
 
-.banner-12 {
-  background-image: url("../imgs/page/homepage12/hero-bg.png");
+.banner-12 img{
+  /* background-image: url("../imgs/page/homepage12/hero-bg.png"); */
   background-size: cover;
   min-height: 700px;
-  position: relative;
+  position: absolute;
 }
 .banner-12 .asset-1 {
   position: absolute;

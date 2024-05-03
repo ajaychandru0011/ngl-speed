@@ -42,7 +42,7 @@ const data = [
 ];
 const Trustby = () => {
   return (
-    <section className="section bg-brand-1">
+    <section className="section bg-brand-1" style={{marginTop:"265px", position:'relative'}}>
       <div className="row mt-100 mb-50 container m-auto">
         <h2 className="color-white mb-15 font-bold text-center">
           Apps we’ve helped grow
