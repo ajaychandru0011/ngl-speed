@@ -1,6 +1,6 @@
 import Link from "next/link";
 import PageHead from "../components/elements/PageHead";
-import React from "react";
+import Image from "next/image";
 import Layout from "../components/layout/Layout";
 
 const Error = () => {
@@ -15,7 +15,13 @@ const Error = () => {
               <div className="col-lg-10">
                 <div className="row align-items-center">
                   <div className="col-md-5 col-sm-12 mb-30 text-center text-md-start">
-                    <img src="assets/imgs/page/404/404.png" alt="iori" />
+                    <Image
+                      layout="responsive"
+                      width={100}
+                      height={100}
+                      src="/assets/imgs/page/404/404.png"
+                      alt="iori"
+                    />
                   </div>
                   <div className="col-md-7 col-sm-12 text-center text-md-start">
                     <h1 className="color-brand-1 font-84 mb-10">404</h1>
@@ -62,8 +68,11 @@ const Error = () => {
                 <div className="card-small card-small-2">
                   <div className="card-image">
                     <div className="box-image">
-                      <img
-                        src="assets/imgs/page/contact/headphone.png"
+                      <Image
+                        layout="responsive"
+                        width={100}
+                        height={100}
+                        src="/assets/imgs/page/contact/headphone.png"
                         alt="iori"
                       />
                     </div>
@@ -89,8 +98,11 @@ const Error = () => {
                 <div className="card-small card-small-2">
                   <div className="card-image">
                     <div className="box-image">
-                      <img
-                        src="assets/imgs/page/contact/phone.png"
+                      <Image
+                        layout="responsive"
+                        width={100}
+                        height={100}
+                        src="/assets/imgs/page/contact/phone.png"
                         alt="iori"
                       />
                     </div>
@@ -111,8 +123,11 @@ const Error = () => {
                 <div className="card-small card-small-2">
                   <div className="card-image">
                     <div className="box-image">
-                      <img
-                        src="assets/imgs/page/contact/chart.png"
+                      <Image
+                        layout="responsive"
+                        width={100}
+                        height={100}
+                        src="/assets/imgs/page/contact/chart.png"
                         alt="iori"
                       />
                     </div>
@@ -133,8 +148,11 @@ const Error = () => {
                 <div className="card-small card-small-2">
                   <div className="card-image">
                     <div className="box-image">
-                      <img
-                        src="assets/imgs/page/contact/earth.png"
+                      <Image
+                        layout="responsive"
+                        width={100}
+                        height={100}
+                        src="/assets/imgs/page/contact/earth.png"
                         alt="iori"
                       />
                     </div>
@@ -159,28 +177,76 @@ const Error = () => {
           <div className="container">
             <ul className="list-partners">
               <li>
-                <img src="assets/imgs/page/homepage1/placed.png" alt="iori" />
+                <Image
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                  src="/assets/imgs/page/homepage1/placed.png"
+                  alt="iori"
+                />
               </li>
               <li>
-                <img src="assets/imgs/page/homepage1/cuebiq.png" alt="iori" />
+                <Image
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                  src="/assets/imgs/page/homepage1/cuebiq.png"
+                  alt="iori"
+                />
               </li>
               <li>
-                <img src="assets/imgs/page/homepage1/factual.png" alt="iori" />
+                <Image
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                  src="/assets/imgs/page/homepage1/factual.png"
+                  alt="iori"
+                />
               </li>
               <li>
-                <img src="assets/imgs/page/homepage1/placeiq.png" alt="iori" />
+                <Image
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                  src="/assets/imgs/page/homepage1/placeiq.png"
+                  alt="iori"
+                />
               </li>
               <li>
-                <img src="assets/imgs/page/homepage1/airmeet.png" alt="iori" />
+                <Image
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                  src="/assets/imgs/page/homepage1/airmeet.png"
+                  alt="iori"
+                />
               </li>
               <li>
-                <img src="assets/imgs/page/homepage1/spen.png" alt="iori" />
+                <Image
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                  src="/assets/imgs/page/homepage1/spen.png"
+                  alt="iori"
+                />
               </li>
               <li>
-                <img src="assets/imgs/page/homepage1/klippa.png" alt="iori" />
+                <Image
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                  src="/assets/imgs/page/homepage1/klippa.png"
+                  alt="iori"
+                />
               </li>
               <li>
-                <img src="assets/imgs/page/homepage1/matrix.png" alt="iori" />
+                <Image
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                  src="/assets/imgs/page/homepage1/matrix.png"
+                  alt="iori"
+                />
               </li>
             </ul>
           </div>

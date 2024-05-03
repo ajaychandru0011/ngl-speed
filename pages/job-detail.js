@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import Layout from "../components/layout/Layout";
 import NewsLetter from "../components/elements/Newsletter";
@@ -12,10 +12,14 @@ const JobDetail = () => {
         <section className="section pt-50 pb-100">
           {/* <div className="container"> */}
           <div className="box-image-detail">
-            <img
+            <Image
+              layout="responsive"
+              width={100}
+              height={100}
               className="bd-rd16 d-block"
-              src="assets/imgs/page/job-detail/img-job.png"
+              src="/assets/imgs/page/job-detail/img-job.png"
               alt="iori"
+              priority={true}
             />
           </div>
           <div className="content-detail">
@@ -501,7 +505,12 @@ const JobDetail = () => {
               <div className="col-lg-4 col-md-6 col-sm-6">
                 <div className="card-offer hover-up">
                   <div className="card-image">
-                    <img src="assets/imgs/page/job-detail/ui.png" alt="iori" />
+                    <Image
+                      width={69}
+                      height={75}
+                      src="/assets/imgs/page/job-detail/ui.png"
+                      alt="iori"
+                    />
                   </div>
                   <div className="card-info">
                     <h4 className="color-brand-1 mb-15">
@@ -539,8 +548,10 @@ const JobDetail = () => {
               <div className="col-lg-4 col-md-6 col-sm-6">
                 <div className="card-offer hover-up">
                   <div className="card-image">
-                    <img
-                      src="assets/imgs/page/job-detail/java.png"
+                    <Image
+                      width={69}
+                      height={75}
+                      src="/assets/imgs/page/job-detail/java.png"
                       alt="iori"
                     />
                   </div>
@@ -580,8 +591,10 @@ const JobDetail = () => {
               <div className="col-lg-4 col-md-6 col-sm-6">
                 <div className="card-offer hover-up">
                   <div className="card-image">
-                    <img
-                      src="assets/imgs/page/job-detail/senior.png"
+                    <Image
+                      width={69}
+                      height={75}
+                      src="/assets/imgs/page/job-detail/senior.png"
                       alt="iori"
                     />
                   </div>

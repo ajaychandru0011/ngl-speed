@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 const CareerSection2 = () => {
   return (
@@ -22,7 +22,12 @@ const CareerSection2 = () => {
               <div className="card-image">
                 <Link href="#">
                   <div className="box-image">
-                    <img src="assets/imgs/page/homepage1/free.svg" alt="iori" />
+                    <Image
+                      width={32}
+                      height={32}
+                      src="/assets/imgs/page/homepage1/free.svg"
+                      alt="iori"
+                    />
                   </div>
                 </Link>
               </div>
@@ -43,8 +48,10 @@ const CareerSection2 = () => {
               <div className="card-image">
                 <Link href="#">
                   <div className="box-image">
-                    <img
-                      src="assets/imgs/page/homepage1/cross.png"
+                    <Image
+                      width={32}
+                      height={32}
+                      src="/assets/imgs/page/homepage1/cross.png"
                       loading="lazy"
                       alt="iori"
                     />
@@ -68,8 +75,10 @@ const CareerSection2 = () => {
               <div className="card-image">
                 <Link href="#">
                   <div className="box-image">
-                    <img
-                      src="assets/imgs/page/homepage2/identity.png"
+                    <Image
+                      width={32}
+                      height={32}
+                      src="/assets/imgs/page/homepage2/identity.png"
                       loading="lazy"
                       alt="iori"
                     />
@@ -93,8 +102,10 @@ const CareerSection2 = () => {
               <div className="card-image">
                 <Link href="#">
                   <div className="box-image">
-                    <img
-                      src="assets/imgs/page/career/persuasion.png"
+                    <Image
+                      width={32}
+                      height={32}
+                      src="/assets/imgs/page/career/persuasion.png"
                       loading="lazy"
                       alt="iori"
                     />

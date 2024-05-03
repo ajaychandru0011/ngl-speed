@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 import Button from "../elements/Button";
 import Link from "next/link";
 
@@ -9,9 +9,12 @@ const CareerSection6 = () => {
         <div className="box-cover-border">
           <div className="row align-items-center">
             <div className="col-lg-6">
-              <img
+              <Image
+                layout="responsive"
+                width={100}
+                height={100}
                 className="d-block"
-                src="assets/imgs/page/homepage2/img-marketing.png"
+                src="/assets/imgs/page/homepage2/img-marketing.png"
                 loading="lazy"
                 alt="iori"
               />

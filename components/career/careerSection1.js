@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 
 const CareerSection1 = () => {
   return (
@@ -15,11 +15,19 @@ const CareerSection1 = () => {
         </div>
         <div className="box-video mt-70">
           {" "}
-          <img src="assets/imgs/page/career/img-video.png" alt="iori" />
+          <Image
+            layout="responsive"
+            width={100}
+            height={100}
+            src="/assets/imgs/page/career/img-video.png"
+            alt="iori"
+          />
           <div className="image-1 shape-1">
-            <img
-              src="assets/imgs/page/career/certify.png"
-              loading="lazy"
+            <Image
+              layout="responsive"
+              width={100}
+              height={100}
+              src="/assets/imgs/page/career/certify.png"  
               alt="iori"
             />
           </div>

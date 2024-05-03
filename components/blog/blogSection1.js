@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const BlogSection1 = () => {
@@ -31,10 +32,12 @@ const BlogSection1 = () => {
           <div className="col-xxl-6 col-xl-6 col-lg-6" />
           <div className="col-xxl-6 col-xl-6 col-lg-6 pr-0">
             <div className="d-none d-xxl-block pl-70">
-              <img
+              <Image
                 className="w-100 d-block"
-                loading="lazy"
-                src="assets/imgs/page/blog/banner.png"
+                height={608}
+                width={855}
+                layout="responsive"
+                src="/assets/imgs/page/blog/banner.png"
                 alt="iori"
               />
             </div>

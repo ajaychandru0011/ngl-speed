@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 
 const CareerSection7 = () => {
@@ -39,8 +39,11 @@ const CareerSection7 = () => {
             <div className="card-blog-grid card-blog-grid-2 hover-up">
               <div className="card-image">
                 <Link href="/blog-detail">
-                  <img
-                    src="assets/imgs/page/homepage2/news1.png"
+                  <Image
+                    layout="responsive"
+                    width={100}
+                    height={100}
+                    src="/assets/imgs/page/homepage2/news1.png"
                     loading="lazy"
                     alt="iori"
                   />
@@ -103,8 +106,11 @@ const CareerSection7 = () => {
             <div className="card-blog-grid card-blog-grid-2 hover-up">
               <div className="card-image">
                 <Link href="/blog-detail">
-                  <img
-                    src="assets/imgs/page/homepage2/news2.png"
+                  <Image
+                    layout="responsive"
+                    width={100}
+                    height={100}
+                    src="/assets/imgs/page/homepage2/news2.png"
                     loading="lazy"
                     alt="iori"
                   />
@@ -167,8 +173,11 @@ const CareerSection7 = () => {
             <div className="card-blog-grid card-blog-grid-2 hover-up">
               <div className="card-image">
                 <Link href="/blog-detail">
-                  <img
-                    src="assets/imgs/page/homepage1/news2.png"
+                  <Image
+                    layout="responsive"
+                    width={100}
+                    height={100}
+                    src="/assets/imgs/page/homepage1/news2.png"
                     loading="lazy"
                     alt="iori"
                   />
@@ -231,8 +240,11 @@ const CareerSection7 = () => {
             <div className="card-blog-grid card-blog-grid-2 hover-up">
               <div className="card-image">
                 <Link href="/blog-detail">
-                  <img
-                    src="assets/imgs/page/homepage2/news3.png"
+                  <Image
+                    layout="responsive"
+                    width={100}
+                    height={100}
+                    src="/assets/imgs/page/homepage2/news3.png"
                     loading="lazy"
                     alt="iori"
                   />

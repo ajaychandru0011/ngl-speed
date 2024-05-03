@@ -1,4 +1,6 @@
+import { SiTruenas } from "react-icons/si";
 import Button from "../elements/Button";
+import Image from "next/image";
 const SEOHero = () => {
   return (
     <section className="section banner-2">
@@ -35,9 +37,12 @@ const SEOHero = () => {
               </div>
             </div>
             <div className="col-lg-5 d-none d-lg-block">
-              <img
+              <Image
+                layout="responsive"
+                width={100}
+                height={100}
                 src="assets/imgs/page/homepage2/banner.png"
-                loading="lazy"
+                priority={SiTruenas}
                 alt="iori"
               />
             </div>

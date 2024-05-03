@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import Contact from "../components/home/Contact";
 import NewsLetter from "../components/elements/Newsletter";
@@ -7,7 +7,7 @@ import PageHead from "../components/elements/PageHead";
 const Contactus = () => {
   return (
     <>
-      <PageHead title={"Contact Us for better coordination and more info."}/>
+      <PageHead title={"Contact Us for better coordination and more info."} />
       <Layout>
         <section className="section banner-contact">
           <div className="container">
@@ -36,7 +36,14 @@ const Contactus = () => {
                 </div>
                 <div className="col-lg-5 d-none d-lg-block">
                   <div className="box-banner-contact">
-                    <img src="assets/imgs/page/contact/banner.png" alt="iori" />
+                    <Image
+                      layout="responsive"
+                      width={100}
+                      height={100}
+                      src="assets/imgs/page/contact/banner.png"
+                      alt="contact banner"
+                      priority={true}
+                    />
                   </div>
                 </div>
               </div>

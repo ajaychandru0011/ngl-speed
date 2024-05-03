@@ -1,6 +1,6 @@
 import Button from "../elements/Button";
 import Link from "next/link";
-
+import Image from "next/image";
 const CareerSection3 = () => {
   return (
     <section className="section mt-200">
@@ -19,8 +19,10 @@ const CareerSection3 = () => {
           <div className="col-lg-6">
             <div className="card-offer card-we-do hover-up">
               <div className="card-image">
-                <img
-                  src="assets/imgs/page/homepage4/offer1.png"
+                <Image
+                  width={69}
+                  height={75}
+                  src="/assets/imgs/page/homepage4/offer1.png"
                   loading="lazy"
                   alt="iori"
                 />
@@ -63,8 +65,10 @@ const CareerSection3 = () => {
           <div className="col-lg-6">
             <div className="card-offer card-we-do hover-up">
               <div className="card-image">
-                <img
-                  src="assets/imgs/page/homepage4/offer2.png"
+                <Image
+                  width={69}
+                  height={75}
+                  src="/assets/imgs/page/homepage4/offer2.png"
                   loading="lazy"
                   alt="iori"
                 />
@@ -107,8 +111,10 @@ const CareerSection3 = () => {
           <div className="col-lg-6">
             <div className="card-offer card-we-do hover-up">
               <div className="card-image">
-                <img
-                  src="assets/imgs/page/homepage4/offer3.png"
+                <Image
+                  width={69}
+                  height={75}
+                  src="/assets/imgs/page/homepage4/offer3.png"
                   loading="lazy"
                   alt="iori"
                 />
@@ -151,8 +157,10 @@ const CareerSection3 = () => {
           <div className="col-lg-6">
             <div className="card-offer card-we-do hover-up">
               <div className="card-image">
-                <img
-                  src="assets/imgs/page/homepage4/offer4.png"
+                <Image
+                  width={69}
+                  height={75}
+                  src="/assets/imgs/page/homepage4/offer4.png"
                   loading="lazy"
                   alt="iori"
                 />
@@ -195,8 +203,10 @@ const CareerSection3 = () => {
           <div className="col-lg-6">
             <div className="card-offer card-we-do hover-up">
               <div className="card-image">
-                <img
-                  src="assets/imgs/page/homepage4/offer5.png"
+                <Image
+                  width={69}
+                  height={75}
+                  src="/assets/imgs/page/homepage4/offer5.png"
                   loading="lazy"
                   alt="iori"
                 />
@@ -239,8 +249,10 @@ const CareerSection3 = () => {
           <div className="col-lg-6">
             <div className="card-offer card-we-do hover-up">
               <div className="card-image">
-                <img
-                  src="assets/imgs/page/homepage4/offer6.png"
+                <Image
+                  width={69}
+                  height={75}
+                  src="/assets/imgs/page/homepage4/offer6.png"
                   loading="lazy"
                   alt="iori"
                 />
@@ -283,10 +295,7 @@ const CareerSection3 = () => {
         </div>
         <div className="mt-40 mb-50 text-center">
           <Button text={"Contact Us"} href={"/contact"} />
-          <Link
-            href="#"
-            className="btn btn-default font-sm-bold hover-up"
-          >
+          <Link href="#" className="btn btn-default font-sm-bold hover-up">
             Learn More
             <svg
               className="w-6 h-6 icon-16 ml-5"

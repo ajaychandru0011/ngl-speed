@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import Layout from "../components/layout/Layout";
 const BlogDetails = () => {
@@ -52,9 +52,13 @@ const BlogDetails = () => {
                 </h2>
                 <div className="mb-40">
                   {" "}
-                  <img
+                  <Image
+                    layout="responsive"
+                    width={100}
+                    height={100}
                     className="bd-rd8"
-                    src="assets/imgs/page/blog-detail/img.png"
+                    src="/assets/imgs/page/blog-detail/img.png"
+                    priority={true}
                     alt="iori"
                   />
                 </div>
@@ -129,8 +133,11 @@ const BlogDetails = () => {
                 <div className="row align-items-start">
                   <div className="col-xl-4 col-lg-12 col-md-5">
                     <p>
-                      <img
-                        src="assets/imgs/page/blog-detail/img2.png"
+                      <Image
+                        layout="responsive"
+                        width={100}
+                        height={100}
+                        src="/assets/imgs/page/blog-detail/img2.png"
                         alt="iori"
                       />
                     </p>
@@ -204,7 +211,13 @@ const BlogDetails = () => {
                   aliquam aperiam et atque Quis qui delectus illum cum
                 </p>
                 <p>
-                  <img src="assets/imgs/page/blog-detail/img3.png" alt="iori" />
+                  <Image
+                    layout="responsive"
+                    width={100}
+                    height={100}
+                    src="/assets/imgs/page/blog-detail/img3.png"
+                    alt="iori"
+                  />
                 </p>
                 <h4>Different ways</h4>
                 <p>
@@ -236,8 +249,11 @@ const BlogDetails = () => {
               <div className="sidebar-author">
                 <div className="box-author">
                   <Link href="#">
-                    <img
-                      src="assets/imgs/page/homepage1/author.png"
+                    <Image
+                      layout="responsive"
+                      width={100}
+                      height={100}
+                      src="/assets/imgs/page/homepage1/author.png"
                       alt="iori"
                     />
                   </Link>
@@ -316,7 +332,13 @@ const BlogDetails = () => {
               <div className="card-blog-grid card-blog-grid-3 hover-up">
                 <div className="card-image">
                   <Link href="/blog-detail">
-                    <img src="assets/imgs/page/blog/img6.png" alt="iori" />
+                    <Image
+                      layout="responsive"
+                      width={100}
+                      height={100}
+                      src="/assets/imgs/page/blog/img6.png"
+                      alt="iori"
+                    />
                   </Link>
                   <label className="lbl-border">Writing</label>
                 </div>
@@ -348,7 +370,13 @@ const BlogDetails = () => {
               <div className="card-blog-grid card-blog-grid-3 hover-up">
                 <div className="card-image">
                   <Link href="/blog-detail">
-                    <img src="assets/imgs/page/blog/img7.png" alt="iori" />
+                    <Image
+                      layout="responsive"
+                      width={100}
+                      height={100}
+                      src="/assets/imgs/page/blog/img7.png"
+                      alt="iori"
+                    />
                   </Link>
                   <label className="lbl-border">Blogging</label>
                 </div>
@@ -379,7 +407,13 @@ const BlogDetails = () => {
               <div className="card-blog-grid card-blog-grid-3 hover-up">
                 <div className="card-image">
                   <Link href="/blog-detail">
-                    <img src="assets/imgs/page/blog/img8.png" alt="iori" />
+                    <Image
+                      layout="responsive"
+                      width={100}
+                      height={100}
+                      src="/assets/imgs/page/blog/img8.png"
+                      alt="iori"
+                    />
                   </Link>
                   <label className="lbl-border">Marketting</label>
                 </div>
