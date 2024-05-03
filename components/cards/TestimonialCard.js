@@ -1,15 +1,41 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 const TestimonialCard = (props) => {
   return (
     <div className="card-review width-45 mb-40">
       <div className="card-info">
         <div className="rating-review">
-          <img src="/assets/imgs/page/homepage7/star.png" alt="star" />
-          <img src="/assets/imgs/page/homepage7/star.png" alt="star" />
-          <img src="/assets/imgs/page/homepage7/star.png" alt="star" />
-          <img src="/assets/imgs/page/homepage7/star.png" alt="star" />
-          <img src="/assets/imgs/page/homepage7/star.png" alt="star" />
+          <Image
+            src="/assets/imgs/page/homepage7/star.png"
+            height={12}
+            width={12}
+            alt="star"
+          />
+          <Image
+            src="/assets/imgs/page/homepage7/star.png"
+            height={12}
+            width={12}
+            alt="star"
+          />
+          <Image
+            src="/assets/imgs/page/homepage7/star.png"
+            height={12}
+            width={12}
+            alt="star"
+          />
+          <Image
+            src="/assets/imgs/page/homepage7/star.png"
+            height={12}
+            width={12}
+            alt="star"
+          />
+          <Image
+            src="/assets/imgs/page/homepage7/star.png"
+            height={12}
+            width={12}
+            alt="star"
+          />
         </div>
         <h5 className="color-grey-800 mb-20">{props.review}</h5>
         <div className="box-author flex-nowrap justify-content-sm-between">

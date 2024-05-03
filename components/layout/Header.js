@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Button from "../elements/Button";
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
 const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
   const [scroll, setScroll] = useState(0);
@@ -24,7 +25,7 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
             <div className="header-left">
               <div className="header-logo">
                 <Link className="d-flex" href="/">
-                  <img
+                  <Image
                     alt="Ecom"
                     src="assets/imgs/template/logo.svg"
                     width={40}
