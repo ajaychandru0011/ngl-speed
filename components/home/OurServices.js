@@ -2,22 +2,22 @@ import React from "react";
 import ServicesCard from "../cards/ServicesCard";
 const SERVICES_DATA = [
   {
-    image: "assets/imgs/page/homepage4/offer1.png",
+    image: "/assets/imgs/page/homepage4/offer1.png",
     heading: "ASO",
     desc: " Seamless importing and round-tripping of Microsoft Project plans, Excel files & CSV files.",
   },
   {
-    image: "assets/imgs/page/homepage4/offer2.png",
+    image: "/assets/imgs/page/homepage4/offer2.png",
     heading: "SEO",
     desc: "What makes us different from others? We give holistic solutions with strategy, design & technology.",
   },
   {
-    image: "assets/imgs/page/homepage4/offer3.png",
+    image: "/assets/imgs/page/homepage4/offer3.png",
     heading: "Ads",
     desc: "No lag time, no lost effort when priorities change, no email black hole. As team collaboration improves",
   },
   {
-    image: "assets/imgs/page/homepage4/offer4.png",
+    image: "/assets/imgs/page/homepage4/offer4.png",
     heading: "Engagement & Retention",
     desc: "Share updates instantly within our project management software, and get the entire team collaborating",
   },

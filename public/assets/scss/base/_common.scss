@@ -273,6 +273,9 @@ h6 {
 .bg-white {
   background-color: $background-white;
 }
+.bg-marquee {
+  background-color: $background-bg-marquee;
+}
 .border-grey-80 {
   border-color: $color-gray-80 !important;
 }
@@ -682,7 +685,6 @@ a {
     width: 10040px;
     animation: 39s slide linear infinite;
     img {
-      height: 50px;
       margin: 0 40px;
     }
   }
@@ -691,7 +693,6 @@ a {
     width: 10040px;
     animation: 39s slide2 linear infinite;
     img {
-      height: 50px;
       margin: 0 40px;
     }
   }
