@@ -9,6 +9,7 @@ const AsoFunnel = () => {
     const initChart = () => {
       const chartScript = document.createElement("script");
       chartScript.src = "https://fastly.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js";
+      chartScript.defer = true;
       document.body.appendChild(chartScript);
 
       chartScript.onload = () => {

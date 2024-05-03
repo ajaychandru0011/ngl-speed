@@ -10,6 +10,7 @@ const Chart = () => {
     const initChart = async () => {
       const chartScript = document.createElement("script");
       chartScript.src = "https://cdn.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js";
+      chartScript.defer = true;
 
       document.body.appendChild(chartScript);
       
