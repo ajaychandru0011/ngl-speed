@@ -26,10 +26,7 @@ const Marketing = () => {
                 lucilius quaestio mea ex. Ex illum officiis id.
               </p>
               <div className="box-button text-start mt-40">
-                {" "}
-                {/* <Link className="btn btn-brand-1 hover-up" href="#">
-                  Contact Us
-                </Link> */}
+                
                 <Button text={"Contact Us"} href={"#"} />
                 <Link
                   className="btn btn-default font-sm-bold hover-up"
