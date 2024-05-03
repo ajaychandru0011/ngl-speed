@@ -15,7 +15,7 @@ const CareerSection7 = () => {
             </p>
           </div>
           <div className="col-lg-4 col-md-4 text-md-end text-start">
-            <Link href='#' className="btn btn-default font-sm-bold pl-0">
+            <Link href="#" className="btn btn-default font-sm-bold pl-0">
               View All
               <svg
                 className="w-6 h-6 icon-16 ml-5"
@@ -39,7 +39,11 @@ const CareerSection7 = () => {
             <div className="card-blog-grid card-blog-grid-2 hover-up">
               <div className="card-image">
                 <Link href="/blog-detail">
-                  <img src="assets/imgs/page/homepage2/news1.png" alt="iori" />
+                  <img
+                    src="assets/imgs/page/homepage2/news1.png"
+                    loading="lazy"
+                    alt="iori"
+                  />
                 </Link>
               </div>
               <div className="card-info">
@@ -99,7 +103,11 @@ const CareerSection7 = () => {
             <div className="card-blog-grid card-blog-grid-2 hover-up">
               <div className="card-image">
                 <Link href="/blog-detail">
-                  <img src="assets/imgs/page/homepage2/news2.png" alt="iori" />
+                  <img
+                    src="assets/imgs/page/homepage2/news2.png"
+                    loading="lazy"
+                    alt="iori"
+                  />
                 </Link>
               </div>
               <div className="card-info">
@@ -159,7 +167,11 @@ const CareerSection7 = () => {
             <div className="card-blog-grid card-blog-grid-2 hover-up">
               <div className="card-image">
                 <Link href="/blog-detail">
-                  <img src="assets/imgs/page/homepage1/news2.png" alt="iori" />
+                  <img
+                    src="assets/imgs/page/homepage1/news2.png"
+                    loading="lazy"
+                    alt="iori"
+                  />
                 </Link>
               </div>
               <div className="card-info">
@@ -219,7 +231,11 @@ const CareerSection7 = () => {
             <div className="card-blog-grid card-blog-grid-2 hover-up">
               <div className="card-image">
                 <Link href="/blog-detail">
-                  <img src="assets/imgs/page/homepage2/news3.png" alt="iori" />
+                  <img
+                    src="assets/imgs/page/homepage2/news3.png"
+                    loading="lazy"
+                    alt="iori"
+                  />
                 </Link>
               </div>
               <div className="card-info">

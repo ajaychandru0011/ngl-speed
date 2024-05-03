@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Layout from "../components/layout/Layout"
+import Layout from "../components/layout/Layout";
 const BlogDetails = () => {
   return (
     <Layout>

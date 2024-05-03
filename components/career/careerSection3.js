@@ -19,7 +19,11 @@ const CareerSection3 = () => {
           <div className="col-lg-6">
             <div className="card-offer card-we-do hover-up">
               <div className="card-image">
-                <img src="assets/imgs/page/homepage4/offer1.png" alt="iori" />
+                <img
+                  src="assets/imgs/page/homepage4/offer1.png"
+                  loading="lazy"
+                  alt="iori"
+                />
               </div>
               <div className="card-info">
                 <h4 className="color-brand-1 mb-10">
@@ -59,7 +63,11 @@ const CareerSection3 = () => {
           <div className="col-lg-6">
             <div className="card-offer card-we-do hover-up">
               <div className="card-image">
-                <img src="assets/imgs/page/homepage4/offer2.png" alt="iori" />
+                <img
+                  src="assets/imgs/page/homepage4/offer2.png"
+                  loading="lazy"
+                  alt="iori"
+                />
               </div>
               <div className="card-info">
                 <h4 className="color-brand-1 mb-10">
@@ -99,7 +107,11 @@ const CareerSection3 = () => {
           <div className="col-lg-6">
             <div className="card-offer card-we-do hover-up">
               <div className="card-image">
-                <img src="assets/imgs/page/homepage4/offer3.png" alt="iori" />
+                <img
+                  src="assets/imgs/page/homepage4/offer3.png"
+                  loading="lazy"
+                  alt="iori"
+                />
               </div>
               <div className="card-info">
                 <h4 className="color-brand-1 mb-10">
@@ -139,7 +151,11 @@ const CareerSection3 = () => {
           <div className="col-lg-6">
             <div className="card-offer card-we-do hover-up">
               <div className="card-image">
-                <img src="assets/imgs/page/homepage4/offer4.png" alt="iori" />
+                <img
+                  src="assets/imgs/page/homepage4/offer4.png"
+                  loading="lazy"
+                  alt="iori"
+                />
               </div>
               <div className="card-info">
                 <h4 className="color-brand-1 mb-10">
@@ -179,7 +195,11 @@ const CareerSection3 = () => {
           <div className="col-lg-6">
             <div className="card-offer card-we-do hover-up">
               <div className="card-image">
-                <img src="assets/imgs/page/homepage4/offer5.png" alt="iori" />
+                <img
+                  src="assets/imgs/page/homepage4/offer5.png"
+                  loading="lazy"
+                  alt="iori"
+                />
               </div>
               <div className="card-info">
                 <h4 className="color-brand-1 mb-10">
@@ -219,7 +239,11 @@ const CareerSection3 = () => {
           <div className="col-lg-6">
             <div className="card-offer card-we-do hover-up">
               <div className="card-image">
-                <img src="assets/imgs/page/homepage4/offer6.png" alt="iori" />
+                <img
+                  src="assets/imgs/page/homepage4/offer6.png"
+                  loading="lazy"
+                  alt="iori"
+                />
               </div>
               <div className="card-info">
                 <h4 className="color-brand-1 mb-10">
@@ -262,7 +286,6 @@ const CareerSection3 = () => {
           <Link
             href="#"
             className="btn btn-default font-sm-bold hover-up"
-            href="#"
           >
             Learn More
             <svg

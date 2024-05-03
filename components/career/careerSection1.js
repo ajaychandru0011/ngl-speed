@@ -17,7 +17,11 @@ const CareerSection1 = () => {
           {" "}
           <img src="assets/imgs/page/career/img-video.png" alt="iori" />
           <div className="image-1 shape-1">
-            <img src="assets/imgs/page/career/certify.png" alt="iori" />
+            <img
+              src="assets/imgs/page/career/certify.png"
+              loading="lazy"
+              alt="iori"
+            />
           </div>
         </div>
       </div>

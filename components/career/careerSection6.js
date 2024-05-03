@@ -12,6 +12,7 @@ const CareerSection6 = () => {
               <img
                 className="d-block"
                 src="assets/imgs/page/homepage2/img-marketing.png"
+                loading="lazy"
                 alt="iori"
               />
             </div>
