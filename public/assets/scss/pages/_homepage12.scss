@@ -1,8 +1,9 @@
-.banner-12{
-  background-image: url("../imgs/page/homepage12/hero-bg.png");
+.banner-12 img{
+  // background-image: url("../imgs/page/homepage12/hero-bg.png");
   background-size: cover;
   min-height: 700px;
-  position: relative;
+  position: absolute;
+}
   .asset-1 {
     position: absolute;
     top: 30%;
@@ -53,7 +54,7 @@
     background: url(../imgs/page/homepage12/asset5.png) no-repeat center;
     background-size: contain;
   }
-}
+
 /*Section 2*/
 
 /*Section 3*/
