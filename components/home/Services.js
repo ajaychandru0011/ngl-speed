@@ -1,5 +1,11 @@
-import Button from "../elements/Button"
+import Button from "../elements/Button";
 import Image from "next/image";
+import project1 from "/public/assets/imgs/page/homepage1/project1.png";
+import finger from "/public/assets/imgs/page/homepage1/finger.png";
+import circle from "/public/assets/imgs/page/homepage1/circle.png";
+import project2 from "/public/assets/imgs/page/homepage1/project2.png";
+import Union from "/public/assets/imgs/page/homepage1/Union.png";
+import eye from "/public/assets/imgs/page/homepage1/eye.png";
 const Services = () => {
   return (
     <section className="section mt-80 mb-30">
@@ -11,25 +17,22 @@ const Services = () => {
           <div className="col-xl-7 col-lg-6">
             <div className="box-images-project">
               <div className="box-images mt-50">
-                {" "}
-                <Image width={768} height={402}
+                <Image
+                  layout="responsive"
                   className="img-main-2"
-                  src="/assets/imgs/page/homepage1/project1.png"
-                  alt="iori"
+                  src={project1}
+                  alt="project"
                 />
                 <div className="image-2 shape-3">
-                  {" "}
-                  <Image width={113} height={113} src="/assets/imgs/page/homepage1/finger.png" alt="iori" />
+                  <Image src={finger} layout="responsive" alt="finger" />
                 </div>
                 <div className="image-3 shape-1">
-                  {" "}
-                  <Image width={174} height={174} src="/assets/imgs/page/homepage1/circle.png" alt="iori" />
+                  <Image src={circle} layout="responsive" alt="circle" />
                 </div>
               </div>
             </div>
           </div>
           <div className="col-xl-5 col-lg-6">
-            {" "}
             <span className="btn btn-tag">Business</span>
             <h3 className="color-brand-1 mt-10 mb-15">
               We process billions of data points per day
@@ -274,23 +277,24 @@ const Services = () => {
               </ul>
             </div>
             <div className="mt-50 text-start">
-              {" "}
+
               <Button text={"Find Out How"} href={"#"} />
             </div>
           </div>
           <div className="col-xl-7 col-lg-6">
             <div className="box-images-project">
               <div className="box-images mt-50">
-                <Image width={768} height={426}
+                <Image
                   className="img-main-2"
-                  src="/assets/imgs/page/homepage1/project2.png"
+                  src={project2}
+                  layout="responsive"
                   alt="Branding"
                 />
                 <div className="image-2 shape-3">
-                  <Image width={111} height={49} src="/assets/imgs/page/homepage1/Union.png" alt="iori" />
+                  <Image src={Union} layout="responsive" alt="Union" />
                 </div>
                 <div className="image-3 shape-1">
-                  <Image width={112} height={112} src="/assets/imgs/page/homepage1/eye.png" alt="iori" />
+                  <Image layout="responsive" src={eye} alt="Eye" />
                 </div>
               </div>
             </div>
