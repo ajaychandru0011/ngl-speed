@@ -7,15 +7,15 @@ const Chart = () => {
   useEffect(() => {
     let myChart = null;
 
-    const initChart = () => {
+    const initChart = async () => {
       const chartScript = document.createElement("script");
       chartScript.src = "https://cdn.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js";
-      document.body.appendChild(chartScript);
 
+      document.body.appendChild(chartScript);
+      
       chartScript.onload = () => {
         const dom = chartContainerRef.current;
         if (!dom) return;
-
         myChart = echarts.init(dom, null, {
           renderer: 'canvas',
           useDirtyRect: false

@@ -1,11 +1,11 @@
 import Button from "../elements/Button";
-// import Image from "next/image";
-// import heroBG from "/public/assets/imgs/page/homepage12/hero-bg.png";
+import Image from "next/image";
+import heroBG from "/public/assets/imgs/page/homepage12/hero-bg.png";
 
 const Hero = () => {
   return (
     <section className="section banner-12">
-      {/* <Image src={heroBG} layout="responsive" alt="Hero" priority={true}/> */}
+      <Image src={heroBG} layout="responsive" alt="Hero" priority={true}/>
       <div className="asset-1 shape-1"></div>
       <div className="asset-2 shape-2"></div>
       <div className="asset-3 shape-3"></div>
@@ -27,7 +27,7 @@ const Hero = () => {
               point every day to drive actionable insights.
             </p>
 
-            <div className="d-none d-sm-inline-block">
+            <div className="d-sm-inline-block">
               <Button text={"Contact Us"} href={"/contact"} showIcon={true} />
             </div>
           </div>

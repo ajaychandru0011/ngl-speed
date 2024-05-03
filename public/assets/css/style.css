@@ -5929,13 +5929,13 @@ footer a {
   max-width: 119px;
 }
 
-.banner-12 {
-  background-image: url("../imgs/page/homepage12/hero-bg.png");
+.banner-12 img {
   background-size: cover;
   min-height: 700px;
-  position: relative;
+  position: absolute;
 }
-.banner-12 .asset-1 {
+
+.asset-1 {
   position: absolute;
   top: 30%;
   left: 100px;
@@ -5945,7 +5945,8 @@ footer a {
   height: 69px;
   left: 15%;
 }
-.banner-12 .asset-3 {
+
+.asset-3 {
   position: absolute;
   top: 30%;
   right: 350px;
@@ -5954,7 +5955,8 @@ footer a {
   background: url(../imgs/page/homepage12/asset3.png) no-repeat center;
   background-size: contain;
 }
-.banner-12 .asset-2 {
+
+.asset-2 {
   position: absolute;
   bottom: 10%;
   left: 30%;
@@ -5965,7 +5967,8 @@ footer a {
   background-size: contain;
   top: unset;
 }
-.banner-12 .asset-4 {
+
+.asset-4 {
   position: absolute;
   top: 340px;
   right: 100px;
@@ -5974,7 +5977,8 @@ footer a {
   background: url(../imgs/page/homepage12/asset4.png) no-repeat center;
   background-size: contain;
 }
-.banner-12 .asset-5 {
+
+.asset-5 {
   position: absolute;
   top: unset;
   bottom: 25%;
@@ -6625,13 +6629,13 @@ textarea.textarea-control {
   }
   .asset-1 {
     left: 50px;
-    top: 50px;
+    top: 90px;
   }
   .asset-2 {
     left: 30px;
   }
   .asset-3 {
-    top: 50px;
+    top: 98px;
     right: 50px;
   }
   .asset-4 {
@@ -7130,12 +7134,12 @@ textarea.textarea-control {
   }
   .asset-1 {
     left: 20px;
-    top: 30px;
+    top: 90px;
     height: 57px;
     width: 46px;
   }
   .asset-3 {
-    top: 40px;
+    top: 97px;
     right: 10px;
     height: 57px;
     width: 46px;
