@@ -33,7 +33,7 @@ const data = [
     width: 182,
   },
   {
-    src: "/assets/imgs/clientlogo/Make-My-trip.png",
+    src: "/assets/imgs/clientlogo/Make-My-Trip.png",
     alt: "Make-My-trip",
     width: 155,
   },
