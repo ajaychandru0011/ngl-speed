@@ -45,6 +45,7 @@ const CareerSection2 = () => {
                   <div className="box-image">
                     <img
                       src="assets/imgs/page/homepage1/cross.png"
+                      loading="lazy"
                       alt="iori"
                     />
                   </div>
@@ -69,6 +70,7 @@ const CareerSection2 = () => {
                   <div className="box-image">
                     <img
                       src="assets/imgs/page/homepage2/identity.png"
+                      loading="lazy"
                       alt="iori"
                     />
                   </div>
@@ -93,6 +95,7 @@ const CareerSection2 = () => {
                   <div className="box-image">
                     <img
                       src="assets/imgs/page/career/persuasion.png"
+                      loading="lazy"
                       alt="iori"
                     />
                   </div>

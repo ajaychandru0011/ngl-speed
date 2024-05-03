@@ -1,4 +1,4 @@
-import Button from "../elements/Button"
+import Button from "../elements/Button";
 import Link from "next/link";
 
 const BlogSection2 = () => {
@@ -68,6 +68,7 @@ const BlogSection2 = () => {
                   <div className="row align-items-center">
                     <div className="col-lg-6">
                       <img
+                        loading="lazy"
                         className="d-block"
                         src="assets/imgs/page/homepage2/img-marketing.png"
                         alt="iori"
@@ -129,7 +130,11 @@ const BlogSection2 = () => {
               <div className="card-blog-grid card-blog-grid-3 hover-up">
                 <div className="card-image">
                   <Link href="/blog-detail">
-                    <img src="assets/imgs/page/blog/img1.png" alt="iori" />
+                    <img
+                      src="assets/imgs/page/blog/img1.png"
+                      loading="lazy"
+                      alt="iori"
+                    />
                   </Link>
                   <Link href="blog">
                     <label className="lbl-border">Marketting</label>
@@ -163,7 +168,11 @@ const BlogSection2 = () => {
               <div className="card-blog-grid card-blog-grid-3 hover-up">
                 <div className="card-image">
                   <Link href="/blog-detail">
-                    <img src="assets/imgs/page/blog/img2.png" alt="iori" />
+                    <img
+                      src="assets/imgs/page/blog/img2.png"
+                      loading="lazy"
+                      alt="iori"
+                    />
                   </Link>
                   <Link href="blog">
                     <label className="lbl-border">Technology</label>
@@ -197,7 +206,11 @@ const BlogSection2 = () => {
               <div className="card-blog-grid card-blog-grid-3 hover-up">
                 <div className="card-image">
                   <Link href="/blog-detail">
-                    <img src="assets/imgs/page/blog/img3.png" alt="iori" />
+                    <img
+                      src="assets/imgs/page/blog/img3.png"
+                      loading="lazy"
+                      alt="iori"
+                    />
                   </Link>
                   <Link href="blog">
                     <label className="lbl-border">Marketting</label>
@@ -230,7 +243,11 @@ const BlogSection2 = () => {
               <div className="card-blog-grid card-blog-grid-3 hover-up">
                 <div className="card-image">
                   <Link href="/blog-detail">
-                    <img src="assets/imgs/page/blog/img4.png" alt="iori" />
+                    <img
+                      src="assets/imgs/page/blog/img4.png"
+                      loading="lazy"
+                      alt="iori"
+                    />
                   </Link>
                   <Link href="blog">
                     <label className="lbl-border">Tutorial</label>
@@ -263,7 +280,11 @@ const BlogSection2 = () => {
               <div className="card-blog-grid card-blog-grid-3 hover-up">
                 <div className="card-image">
                   <Link href="/blog-detail">
-                    <img src="assets/imgs/page/blog/img5.png" alt="iori" />
+                    <img
+                      src="assets/imgs/page/blog/img5.png"
+                      loading="lazy"
+                      alt="iori"
+                    />
                   </Link>
                   <Link href="blog">
                     <label className="lbl-border">Team work</label>
@@ -328,7 +349,11 @@ const BlogSection2 = () => {
               <div className="card-blog-grid card-blog-grid-3 hover-up">
                 <div className="card-image">
                   <Link href="/blog-detail">
-                    <img src="assets/imgs/page/blog/img6.png" alt="iori" />
+                    <img
+                      src="assets/imgs/page/blog/img6.png"
+                      loading="lazy"
+                      alt="iori"
+                    />
                   </Link>
                   <Link href="blog">
                     <label className="lbl-border">Writing</label>
@@ -362,7 +387,11 @@ const BlogSection2 = () => {
               <div className="card-blog-grid card-blog-grid-3 hover-up">
                 <div className="card-image">
                   <Link href="/blog-detail">
-                    <img src="assets/imgs/page/blog/img7.png" alt="iori" />
+                    <img
+                      src="assets/imgs/page/blog/img7.png"
+                      loading="lazy"
+                      alt="iori"
+                    />
                   </Link>
                   <Link href="blog">
                     <label className="lbl-border">Blogging</label>
@@ -395,7 +424,11 @@ const BlogSection2 = () => {
               <div className="card-blog-grid card-blog-grid-3 hover-up">
                 <div className="card-image">
                   <Link href="/blog-detail">
-                    <img src="assets/imgs/page/blog/img8.png" alt="iori" />
+                    <img
+                      src="assets/imgs/page/blog/img8.png"
+                      loading="lazy"
+                      alt="iori"
+                    />
                   </Link>
                   <Link href="blog">
                     <label className="lbl-border">Marketting</label>
@@ -429,7 +462,11 @@ const BlogSection2 = () => {
               <div className="card-blog-grid card-blog-grid-3 hover-up">
                 <div className="card-image">
                   <Link href="/blog-detail">
-                    <img src="assets/imgs/page/blog/img9.png" alt="iori" />
+                    <img
+                      src="assets/imgs/page/blog/img9.png"
+                      loading="lazy"
+                      alt="iori"
+                    />
                   </Link>
                   <Link href="blog">
                     <label className="lbl-border">Business</label>
@@ -462,7 +499,11 @@ const BlogSection2 = () => {
               <div className="card-blog-grid card-blog-grid-3 hover-up">
                 <div className="card-image">
                   <Link href="/blog-detail">
-                    <img src="assets/imgs/page/blog/img10.png" alt="iori" />
+                    <img
+                      src="assets/imgs/page/blog/img10.png"
+                      loading="lazy"
+                      alt="iori"
+                    />
                   </Link>
                   <Link href="blog">
                     <label className="lbl-border">Marketting</label>
@@ -495,7 +536,11 @@ const BlogSection2 = () => {
               <div className="card-blog-grid card-blog-grid-3 hover-up">
                 <div className="card-image">
                   <Link href="/blog-detail">
-                    <img src="assets/imgs/page/blog/img11.png" alt="iori" />
+                    <img
+                      src="assets/imgs/page/blog/img11.png"
+                      loading="lazy"
+                      alt="iori"
+                    />
                   </Link>
                   <Link href="blog">
                     {" "}
@@ -529,7 +574,6 @@ const BlogSection2 = () => {
           </div>
           <div className="mt-20 mb-30 text-center">
             {" "}
-
             <Button text="Load More..." href={"#"} />
           </div>
         </div>

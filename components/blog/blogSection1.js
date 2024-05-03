@@ -33,6 +33,7 @@ const BlogSection1 = () => {
             <div className="d-none d-xxl-block pl-70">
               <img
                 className="w-100 d-block"
+                loading="lazy"
                 src="assets/imgs/page/blog/banner.png"
                 alt="iori"
               />

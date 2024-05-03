@@ -35,7 +35,11 @@ const SEOHero = () => {
               </div>
             </div>
             <div className="col-lg-5 d-none d-lg-block">
-              <img src="assets/imgs/page/homepage2/banner.png" alt="iori" />
+              <img
+                src="assets/imgs/page/homepage2/banner.png"
+                loading="lazy"
+                alt="iori"
+              />
             </div>
           </div>
         </div>
