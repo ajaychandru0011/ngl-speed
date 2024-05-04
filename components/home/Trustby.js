@@ -100,6 +100,7 @@ const Trustby = () => {
         <div className="marqueeSlide">
           {data.map((item, index) => (
             <Image
+            key={index}
               src={item.src}
               alt={item.alt}
               height={50}
@@ -110,6 +111,7 @@ const Trustby = () => {
         <div className="marqueeSlide2">
           {data.map((item, index) => (
             <Image
+            key={index}
               src={item.src}
               alt={item.alt}
               height={50}
