@@ -3,6 +3,7 @@ import Hero from "../components/home/Hero";
 import Layout from "../components/layout/Layout";
 import PageHead from "../components/elements/PageHead";
 import dynamic from "next/dynamic";
+import Footer from "../components/layout/Footer";
 
 export default function Home() {
   const DynamicTrustby = dynamic(() => import("../components/home/Trustby"));
@@ -19,6 +20,8 @@ export default function Home() {
     import("../components/home/Marketing")
   );
   const DynamicContact = dynamic(() => import("../components/home/Contact"));
+  const DynamicFooter = dynamic(() => import("../components/layout/Footer"));
+
   return (
     <>
       <PageHead
@@ -33,6 +36,7 @@ export default function Home() {
         <DynamicServices />
         <DynamicMarketing />
         <DynamicContact />
+        <DynamicFooter />
       </Layout>
     </>
   );

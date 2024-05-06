@@ -1,34 +1,35 @@
-import React, { useState } from 'react';
-import BackToTop from '../elements/BackToTop';
-import Footer from './Footer';
-import Header from './Header';
-import Sidebar from './Sidebar';
+import React, { useState } from "react";
+import BackToTop from "../elements/BackToTop";
+import Header from "./Header";
+import Sidebar from "./Sidebar";
 
 const Layout = ({ children }) => {
-    const [openClass, setOpenClass] = useState('');
+  const [openClass, setOpenClass] = useState("");
 
-    const handleOpen = () => {
-        document.body.classList.add("mobile-menu-active");
-        setOpenClass("sidebar-visible")
-    }
+  const handleOpen = () => {
+    document.body.classList.add("mobile-menu-active");
+    setOpenClass("sidebar-visible");
+  };
 
-    const handleRemove = () => {
-        if (openClass === "sidebar-visible") {
-            setOpenClass("")
-            document.body.classList.remove("mobile-menu-active");
-        }
+  const handleRemove = () => {
+    if (openClass === "sidebar-visible") {
+      setOpenClass("");
+      document.body.classList.remove("mobile-menu-active");
     }
-    return (
-        <>    
-            <Header handleOpen={handleOpen} handleRemove={handleRemove} openClass={openClass} addClass="header-home7" />
-            <Sidebar openClass={openClass} />
-            <main className="main">
-                {children}
-            </main>
-            <Footer />
-            <BackToTop />
-        </>
-    );
+  };
+  return (
+    <>
+      <Header
+        handleOpen={handleOpen}
+        handleRemove={handleRemove}
+        openClass={openClass}
+        addClass="header-home7"
+      />
+      <Sidebar openClass={openClass} />
+      <main className="main">{children}</main>
+      <BackToTop />
+    </>
+  );
 };
 
 export default Layout;
