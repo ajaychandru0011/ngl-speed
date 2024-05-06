@@ -87,7 +87,10 @@ const data = [
 ];
 const Trustby = () => {
   return (
-    <section className="section bg-marquee" style={{position:'relative', marginTop:'212px'}}>
+    <section
+      className="section bg-marquee"
+      style={{ position: "relative", marginTop: "212px" }}
+    >
       <div className="row mb-50 container m-auto">
         <h2 className="color-brand-1 mb-15 font-bold text-center">
           Apps we’ve helped grow
@@ -100,22 +103,24 @@ const Trustby = () => {
         <div className="marqueeSlide">
           {data.map((item, index) => (
             <Image
-            key={index}
+              key={index}
               src={item.src}
               alt={item.alt}
               height={50}
               width={item.width}
+              loading="lazy"
             />
           ))}
         </div>
         <div className="marqueeSlide2">
           {data.map((item, index) => (
             <Image
-            key={index}
+              key={index}
               src={item.src}
               alt={item.alt}
               height={50}
               width={item.width}
+              loading="lazy"
             />
           ))}
         </div>
