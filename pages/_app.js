@@ -1,5 +1,4 @@
 import "../public/assets/css/style.css";
-import "./style.css";
 function MyApp({ Component, pageProps }) {
   return (
     <>
