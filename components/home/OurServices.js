@@ -22,10 +22,11 @@ const SERVICES_DATA = [
     desc: "Share updates instantly within our project management software, and get the entire team collaborating",
   },
 ];
+
 const OurServices = () => {
   return (
     <>
-      <section className="section mt-80">
+      <section className="section mt-80 content">
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
