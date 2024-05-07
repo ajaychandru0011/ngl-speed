@@ -70,12 +70,12 @@ const BlogSection2 = () => {
                     <div className="col-lg-6">
                       <Image
                         layout="responsive"
-                        loading="lazy"
                         width={2070}
                         height={1713}
                         className="d-block"
                         src="/assets/imgs/page/homepage2/img-marketing.png"
                         alt="iori"
+                        priority
                       />
                     </div>
                     <div className="col-lg-6">
