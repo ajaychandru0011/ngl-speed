@@ -41,8 +41,8 @@ const SEOHero = () => {
                 layout="responsive"
                 width={100}
                 height={100}
-                src="assets/imgs/page/homepage2/banner.png"
-                priority={SiTruenas}
+                src="/assets/imgs/page/homepage2/banner.png"
+                priority
                 alt="iori"
               />
             </div>

@@ -39,6 +39,7 @@ const BlogSection1 = () => {
                 layout="responsive"
                 src="/assets/imgs/page/blog/banner.png"
                 alt="iori"
+                priority
               />
             </div>
           </div>
