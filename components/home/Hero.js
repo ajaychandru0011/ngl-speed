@@ -5,7 +5,14 @@ import heroBG from "/public/assets/imgs/page/homepage12/hero-bg.png";
 const Hero = () => {
   return (
     <section className="section banner-12">
-      <Image src={heroBG} layout="responsive" alt="Hero" priority />
+      <Image
+        src="https://imagedelivery.net/q3BXzhW6eZtLKizEPWZsTQ/cd3908b7-3a5e-4e39-5461-2b59f1cfa900/public"
+        layout="responsive"
+        alt="Hero"
+        priority
+        width={100}
+        height={100}
+      />
       <div className="asset-1 shape-1"></div>
       <div className="asset-2 shape-2"></div>
       <div className="asset-3 shape-3"></div>
