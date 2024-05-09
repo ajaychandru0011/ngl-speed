@@ -1,7 +1,46 @@
 import Image from "next/image";
 import Link from "next/link";
 import Layout from "../components/layout/Layout";
+import { useState, useRef, useEffect } from "react";
 const BlogDetails = () => {
+  const [scroll, setScroll] = useState(false);
+  const [activeSection, setActiveSection] = useState(null);
+  const tocRef = useRef();
+  const blogDetailRef = useRef();
+  function tocScrollControl() {
+    let tocHeight = tocRef.current.offsetHeight;
+    let blogDetailHeight = blogDetailRef.current.offsetHeight;
+
+    const scrollPosition = window.scrollY;
+
+    if (
+      scrollPosition > tocRef.current.offsetTop &&
+      scrollPosition < blogDetailHeight - tocHeight
+    ) {
+      setScroll(true);
+    } else {
+      setScroll(false);
+    }
+
+    const h4s = document.querySelectorAll("#content > h4");
+    const h2s = document.querySelectorAll("#content > h2");
+    const sections = [...h4s, ...h2s];
+    sections.forEach((section) => {
+      const sectionId = section.getAttribute("id");
+      const sectionTop = section.offsetTop;
+      const sectionBottom = sectionTop + section.offsetHeight;
+
+      if (scrollPosition > sectionTop && scrollPosition < sectionBottom + 500) {
+        setActiveSection(sectionId);
+      }
+    });
+  }
+  useEffect(() => {
+    window.addEventListener("scroll", tocScrollControl);
+    return () => {
+      window.removeEventListener("scroll", tocScrollControl);
+    };
+  });
   return (
     <Layout>
       <div className="section mt-35">
@@ -41,12 +80,12 @@ const BlogDetails = () => {
           </div>
         </div>
       </div>
-      <div className="section mt-40">
+      <div className="section mt-40" ref={blogDetailRef}>
         <div className="container">
           <div className="row">
             <div className="col-xl-9 col-lg-8">
-              <div className="content-single">
-                <h2 className="color-brand-1 mb-50">
+              <div className="content-single" id="content">
+                <h2 className="color-brand-1 mb-50" id="section1">
                   The Betty Crocker Secret to an Email Marketing Strategy People
                   Enjoy
                 </h2>
@@ -84,7 +123,7 @@ const BlogDetails = () => {
                   risus, quis ullamcorper augue. Nunc tristique venenatis ipsum
                   at euismod. Pellentesque id arcu est.{" "}
                 </p>
-                <h4 className="color-brand-1">
+                <h4 className="color-brand-1" id="section2">
                   Freelance invoices: your legal requirements
                 </h4>
                 <ul>
@@ -129,7 +168,10 @@ const BlogDetails = () => {
                   enim. Fusce sed elit est. Suspendisse sit amet mauris in quam
                   pretium faucibus et aliquam odio.{" "}
                 </p>
-                <h4>Different ways to issue your invoices as a freelancer</h4>
+                <h4 id="section3">
+                  {" "}
+                  Different ways to issue your invoices as a freelancer
+                </h4>
                 <div className="row align-items-start">
                   <div className="col-xl-4 col-lg-12 col-md-5">
                     <p>
@@ -172,7 +214,7 @@ const BlogDetails = () => {
                     </p>
                   </div>
                 </div>
-                <h4>Invoicing as a freelancer</h4>
+                <h4 id="section4">Invoicing as a freelancer</h4>
                 <p className="column-2">
                   Lorem ipsum dolor sit amet. Sit veniam dolorum est minus nisi
                   et adipisci sequi. Non velit quia non nisi esse non rerum
@@ -219,7 +261,7 @@ const BlogDetails = () => {
                     alt="iori"
                   />
                 </p>
-                <h4>Different ways</h4>
+                <h4 id="section5">Different ways</h4>
                 <p>
                   Est amet nostrum non harum sunt eum quos dolorem aut esse
                   odio. Aut similique sint est nihil quod aut provident laborum
@@ -243,10 +285,31 @@ const BlogDetails = () => {
                   iste eum iusto nobis sit aspernatur iusto ab atque animi ut
                   voluptas dolorem.
                 </p>
+                <p>
+                  At quisquam dolorem et nobis culpa ut laudantium quae id velit
+                  inventore! Eos omnis temporibus cum exercitationem iusto eos
+                  quia quod! Hic inventore voluptas hic asperiores facere cum
+                  necessitatibus aliquam qui omnis officia. Eos voluptatibus
+                  iste eum iusto nobis sit aspernatur iusto ab atque animi ut
+                  voluptas dolorem.
+                </p>
+                <p>
+                  At quisquam dolorem et nobis culpa ut laudantium quae id velit
+                  inventore! Eos omnis temporibus cum exercitationem iusto eos
+                  quia quod! Hic inventore voluptas hic asperiores facere cum
+                  necessitatibus aliquam qui omnis officia. Eos voluptatibus
+                  iste eum iusto nobis sit aspernatur iusto ab atque animi ut
+                  voluptas dolorem.
+                </p>
               </div>
             </div>
             <div className="col-xl-3 col-lg-4">
-              <div className="sidebar-author">
+              <div
+                className={
+                  !scroll ? "sidebar-author" : "sticky-bar-blog stick-blog"
+                }
+                ref={tocRef}
+              >
                 <div className="box-author">
                   <Link href="#">
                     <Image
@@ -284,25 +347,68 @@ const BlogDetails = () => {
                   <ul className="list-number">
                     <li>
                       {" "}
-                      <Link href="#">Is making test questions difficult?</Link>
+                      <Link
+                        href="#section1"
+                        style={
+                          activeSection === "section1"
+                            ? { color: "#06d6a0" }
+                            : { color: "#3d565f" }
+                        }
+                      >
+                        Is making test questions difficult?
+                      </Link>
                     </li>
                     <li>
                       {" "}
-                      <Link href="#">How to write good test questions?</Link>
+                      <Link
+                        href="#section2"
+                        style={
+                          activeSection === "section2"
+                            ? { color: "#06d6a0" }
+                            : { color: "#3d565f" }
+                        }
+                      >
+                        How to write good test questions?
+                      </Link>
                     </li>
                     <li>
                       {" "}
-                      <Link href="#">
+                      <Link
+                        href="#section3"
+                        style={
+                          activeSection === "section3"
+                            ? { color: "#06d6a0" }
+                            : { color: "#3d565f" }
+                        }
+                      >
                         Start preparing even before you write
                       </Link>
                     </li>
                     <li>
                       {" "}
-                      <Link href="#">Creating effective open-ended</Link>
+                      <Link
+                        href="#section4"
+                        style={
+                          activeSection === "section4"
+                            ? { color: "#06d6a0" }
+                            : { color: "#3d565f" }
+                        }
+                      >
+                        Creating effective open-ended
+                      </Link>
                     </li>
                     <li>
                       {" "}
-                      <Link href="#">Making good descriptive</Link>
+                      <Link
+                        href="#section5"
+                        style={
+                          activeSection === "section5"
+                            ? { color: "#06d6a0" }
+                            : { color: "#3d565f" }
+                        }
+                      >
+                        Making good descriptive
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -322,7 +428,10 @@ const BlogDetails = () => {
             </div>
           </div>
         </div>
-        <div className="border-bottom bd-grey-80 mt-30" />
+        <div
+          className="border-bottom bd-grey-80 mt-30"
+          id="blogDetailBorderBottom"
+        />
       </div>
       <div className="section mt-50">
         <div className="container">

@@ -408,6 +408,10 @@ h6 {
   color: #071920;
 }
 
+.color-success {
+  color: #06d6a0;
+}
+
 .font-3xl {
   font-weight: 500;
   font-family: "Manrope", sans-serif;
@@ -6390,11 +6394,22 @@ textarea.textarea-control {
   font-weight: 500;
   color: #3d565f;
 }
-.list-number li a:hover {
+.list-number li a:hover, .list-number li a:active {
   color: #06d6a0;
 }
 
+.sticky-bar-blog.stick-blog {
+  position: fixed;
+  width: 100%;
+  padding-left: 20px;
+  z-index: 5;
+  transition: padding 0.5s;
+  background: #fff;
+}
+
 .sidebar-author {
+  position: sticky;
+  top: 160px;
   margin-top: 160px;
   padding-left: 20px;
 }
