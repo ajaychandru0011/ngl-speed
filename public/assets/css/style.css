@@ -835,6 +835,22 @@ a:hover {
   margin: 0 40px;
 }
 
+.excerptWordpress p {
+  font-weight: 500 !important;
+  font-family: "Manrope", sans-serif !important;
+  line-height: 24px !important;
+  font-size: 16px !important;
+  color: #3d565f;
+}
+
+.blog-card-excerpt p {
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+  line-height: 18px;
+  font-size: 14px;
+  color: #3d565f;
+}
+
 a,
 button,
 img,

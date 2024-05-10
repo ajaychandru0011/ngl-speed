@@ -4,13 +4,26 @@ import BlogSection2 from "../components/blog/blogSection2";
 import Layout from "../components/layout/Layout";
 import NewsLetter from "../components/elements/Newsletter";
 import PageHead from "../components/elements/PageHead";
-const Blog = () => {
+import { getAllPosts } from "../lib/posts";
+export async function getStaticProps() {
+  const allPosts = await getAllPosts();
+  return {
+    props: {
+      allPosts,
+    },
+  };
+}
+const Blog = ({ allPosts }) => {
   return (
     <>
-      <PageHead title = {"All the important insights, guidance and news you need to know."} />
+      <PageHead
+        title={
+          "All the important insights, guidance and news you need to know."
+        }
+      />
       <Layout>
         <BlogSection1 />
-        <BlogSection2 />
+        <BlogSection2 allPosts={allPosts} />
         <NewsLetter />
       </Layout>
     </>

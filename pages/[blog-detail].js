@@ -48,7 +48,7 @@ const BlogDetails = () => {
           <div className="breadcrumbs">
             <ul>
               <li>
-                <Link href="#">
+                <Link href="/">
                   <svg
                     className="w-6 h-6 icon-16"
                     fill="none"
@@ -67,7 +67,7 @@ const BlogDetails = () => {
                 </Link>
               </li>
               <li>
-                <Link href="#">Blog</Link>
+                <Link href="/blog">Blog</Link>
               </li>
               <li>
                 {" "}
