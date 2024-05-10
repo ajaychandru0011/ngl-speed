@@ -1,0 +1,41 @@
+import Link from "next/link";
+import Image from "next/image";
+const FeaturedImage = ({ post, styleClasses, priority }) => {
+  let img = "";
+  const defaultFeaturedImage =
+    "https://asokeywordtool.com/wp-content/uploads/2024/05/img-marketing-1.png";
+  const defaultWidth = "720";
+  const defaultHeight = "520";
+  if (post.featuredImage) {
+    let size =
+      post.featuredImage.node.mediaDetails.sizes[
+        post.featuredImage.node.mediaDetails.sizes.length - 3
+      ];
+    img = {
+      src: size.sourceUrl,
+      height: size.height,
+      width: size.width,
+    };
+  } else {
+    img = {
+      src: defaultFeaturedImage,
+      height: defaultHeight,
+      width: defaultWidth,
+    };
+  }
+  return (
+    <>
+      <Image
+        src={img.src}
+        layout="responsive"
+        height={img.height}
+        width={img.width}
+        className={styleClasses}
+        alt={post.title}
+        priority={priority}
+      />
+    </>
+  );
+};
+
+export default FeaturedImage;

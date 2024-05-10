@@ -700,3 +700,21 @@ a {
     }
   }
 }
+
+// css for excerpt from wordpress
+.excerptWordpress p {
+  font-weight: 500 !important;
+  font-family: $font-manrope !important;
+  line-height: 24px !important;
+  font-size: 16px !important;
+  color: $color-gray-500;
+}
+
+// blog card excerpt
+.blog-card-excerpt p {
+  font-weight: 500;
+  font-family: $font-manrope;
+  line-height: 18px;
+  font-size: 14px;
+  color: $color-gray-500;
+}
