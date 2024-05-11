@@ -30,7 +30,7 @@ const BlogSubSection1 = ({ latestPost }) => {
               <div className="col-lg-6">
                 <div className="box-info-video">
                   {/* <span className="btn btn-tag">Featured</span> */}
-                  <Link href="blog-detail">
+                  <Link href={latestPost.slug}>
                     <h3 className="color-brand-1 mt-15 mb-20">
                       {/* 7 Things To Keep In Mind When Starting A Business */}
                       {latestPost.title}
@@ -63,7 +63,7 @@ const BlogSubSection1 = ({ latestPost }) => {
                     {" "}
                     <Link
                       className="btn btn-default font-sm-bold pl-0 hover-up"
-                      href="blog-detail"
+                      href={latestPost.slug}
                       // dynamic href attribute / id from wordpress
                     >
                       Read more

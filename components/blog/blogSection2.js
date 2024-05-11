@@ -1,6 +1,3 @@
-import Image from "next/image";
-import Button from "../elements/Button";
-import Link from "next/link";
 import BlogSubSection1 from "./blogSubSection1";
 import BlogSubSection2 from "./blogSubSection2";
 import BlogSubSection3 from "./blogSubSection3";
@@ -11,6 +8,7 @@ import LoadMoreButton from "../elements/LoadMoreButton";
 
 export default function BlogSection2({ allPosts }) {
   const [post, setPost] = useState(allPosts);
+  const [loading, setLoading] = useState(false);
   return (
     <section className="section mt-80">
       <div className="container">
@@ -85,13 +83,19 @@ export default function BlogSection2({ allPosts }) {
                   excerpt={item.excerpt}
                   tag={item.tag}
                   post={item}
+                  slug={item.slug}
                 />
               );
             })}
           </div>
           <div className="mt-20 mb-30 text-center">
             {" "}
-            <LoadMoreButton posts={post} setPosts={setPost} />
+            <LoadMoreButton
+              posts={post}
+              setPosts={setPost}
+              setLoading={setLoading}
+              loading={loading}
+            />
             {/* <Button text="Load More..." href={"#"} /> */}
           </div>
         </div>
