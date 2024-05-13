@@ -13,7 +13,7 @@ const BlogSubSection3 = ({ posts }) => {
         >
           <div className="card-blog-grid card-blog-grid-3 hover-up">
             <div className="card-image">
-              <Link href="/blog-detail">
+              <Link href={post.slug}>
                 {/* <Image
             layout="responsive"
             width={100}
@@ -29,7 +29,7 @@ const BlogSubSection3 = ({ posts }) => {
         </Link> */}
             </div>
             <div className="card-info">
-              <Link href="/blog-detail">
+              <Link href={post.slug}>
                 <h4 className="color-brand-1">
                   {post.title}
                   {/* 10 Content Proofreading Tips to Catch More Avoidable Goofs */}
