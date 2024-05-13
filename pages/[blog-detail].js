@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Layout from "../components/layout/Layout";
 import { useState, useRef, useEffect } from "react";
+
 const BlogDetails = () => {
   const [scroll, setScroll] = useState(false);
   const [activeSection, setActiveSection] = useState(null);

@@ -4,7 +4,7 @@ import heroBG from "/public/assets/imgs/page/homepage12/hero-bg.png";
 
 const Hero = () => {
   return (
-    <section className="section banner-12">
+    <section className="section banner-12 mb-100">
       <Image
         src="https://imagedelivery.net/q3BXzhW6eZtLKizEPWZsTQ/cd3908b7-3a5e-4e39-5461-2b59f1cfa900/public"
         layout="responsive"
