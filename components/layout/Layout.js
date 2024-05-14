@@ -30,7 +30,6 @@ const Layout = ({ children }) => {
       <main className="main">{children}</main>
       <Footer />
       <BackToTop />
-      <Footer />
     </>
   );
 };

@@ -9,11 +9,24 @@ import CareerSection7 from "../components/career/careerSection7";
 import NewsLetter from "../components/elements/Newsletter";
 import Layout from "../components/layout/Layout";
 import PageHead from "../components/elements/PageHead";
+import { getAllPosts, getPostSlug } from "../lib/posts";
 
-const career = () => {
+export async function getStaticProps({ params }) {
+  //getting all posts for suggested posts
+  const suggestedPosts = await getAllPosts();
+  // returning props to access in the component
+  return {
+    props: {
+      suggestedPosts,
+    },
+  };
+}
+const career = ({ suggestedPosts }) => {
   return (
     <>
-      <PageHead title = {"We are Always Searching For Amazing People to Join Our Team."} />
+      <PageHead
+        title={"We are Always Searching For Amazing People to Join Our Team."}
+      />
       <Layout>
         <CareerSection1 />
         <CareerSection2 />
@@ -21,7 +34,7 @@ const career = () => {
         <CareerSection4 />
         <CareerSection5 />
         <CareerSection6 />
-        <CareerSection7 />
+        <CareerSection7 post={suggestedPosts} />
         <NewsLetter />
       </Layout>
     </>
