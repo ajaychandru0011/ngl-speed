@@ -15,9 +15,9 @@ const Tools = () => {
       <PageHead title={"NEXT ASO Tools"} />
       <Layout>
         <ToolsHero />
-        <div style={{ marginTop: "340px" }}>
-          <Trustby />
-        </div>
+
+        <Trustby />
+
         <ToolsSection1 />
         <ToolsSection2 />
         <ToolsSection3 />

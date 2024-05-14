@@ -87,10 +87,7 @@ const data = [
 ];
 const Trustby = ({ padding }) => {
   return (
-    <section
-      className="section bg-marquee"
-      // style={{ position: "relative", top: "20%" }}
-    >
+    <section className="section bg-marquee">
       <div className="row mb-50 container m-auto">
         <h2 className="color-brand-1 mb-15 font-bold text-center">
           Apps we’ve helped grow

@@ -59,9 +59,9 @@ export default function Home() {
       />
       <Layout>
         <Hero />
-        <div style={{ marginTop: "304px" }}>
-          <Trustby />
-        </div>
+
+        <Trustby />
+
         <OurServices />
         <Testimonials />
         <Tools />
