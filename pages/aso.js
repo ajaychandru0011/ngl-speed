@@ -16,7 +16,7 @@ const ASO = () => {
       <PageHead title={"App Store Optimization"} />
       <Layout>
         <Hero />
-        <TrustBy marginTop="0" />
+        <TrustBy />
         <Service8 category={"App's"} />
         <Testimonials />
         <Asomarketing4 />
