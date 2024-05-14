@@ -12,10 +12,12 @@ import PageHead from "../components/elements/PageHead";
 const Tools = () => {
   return (
     <>
-      <PageHead title={"NEXT ASO Tools"}/>
+      <PageHead title={"NEXT ASO Tools"} />
       <Layout>
         <ToolsHero />
-        <Trustby />
+        <div style={{ marginTop: "340px" }}>
+          <Trustby />
+        </div>
         <ToolsSection1 />
         <ToolsSection2 />
         <ToolsSection3 />

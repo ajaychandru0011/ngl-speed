@@ -1,6 +1,8 @@
 import Image from "next/image";
-import Link from "next/link";
 
+import Link from "next/link";
+import FeaturedImage from "../elements/FeaturedImage";
+import Date from "../elements/Date";
 const CareerSection7 = () => {
   return (
     <section className="section mt-50">
@@ -15,7 +17,7 @@ const CareerSection7 = () => {
             </p>
           </div>
           <div className="col-lg-4 col-md-4 text-md-end text-start">
-            <Link href="#" className="btn btn-default font-sm-bold pl-0">
+            <Link href="/blog" className="btn btn-default font-sm-bold pl-0">
               View All
               <svg
                 className="w-6 h-6 icon-16 ml-5"

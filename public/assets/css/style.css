@@ -622,7 +622,7 @@ a:hover {
   border-radius: 8px;
   color: #3d565f;
   border: 1px solid #cde2e7;
-  padding: 18px 20px;
+  padding: 14px 20px;
 }
 .form-control:focus {
   border-color: #06d6a0;
@@ -1931,7 +1931,7 @@ body {
 }
 
 .min-height-360 {
-  min-height: 380px;
+  min-height: 94%;
 }
 
 .card-offer {
@@ -6683,7 +6683,7 @@ textarea.textarea-control {
     margin: auto;
   }
   .min-height-360 {
-    min-height: 300px;
+    min-height: 94%;
   }
   .box-container-sw .box-swiper {
     padding-left: 30px;
