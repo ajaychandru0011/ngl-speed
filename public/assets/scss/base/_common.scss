@@ -501,7 +501,7 @@ a {
   border-radius: 8px;
   color: $color-gray-500;
   border: 1px solid $color-gray-80;
-  padding: 18px 20px;
+  padding: 14px 20px;
   &:focus {
     border-color: $color-success;
   }
@@ -686,7 +686,7 @@ a {
   .marqueeSlide {
     display: inline-block;
     width: 10040px;
-    animation: 39s slide linear infinite;
+    animation: 28s slide linear infinite;
     img {
       margin: 0 40px;
     }
@@ -694,7 +694,7 @@ a {
   .marqueeSlide2 {
     display: inline-block;
     width: 10040px;
-    animation: 39s slide2 linear infinite;
+    animation: 28s slide2 linear infinite;
     img {
       margin: 0 40px;
     }

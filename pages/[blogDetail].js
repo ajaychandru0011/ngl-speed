@@ -73,6 +73,7 @@ const BlogDetails = ({ postData, suggestedPosts }) => {
       window.removeEventListener("scroll", tocScrollControl);
     };
   }, [scroll]);
+
   return (
     <>
       <PageHead title={postData.title} />

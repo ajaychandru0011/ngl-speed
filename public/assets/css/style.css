@@ -622,7 +622,7 @@ a:hover {
   border-radius: 8px;
   color: #3d565f;
   border: 1px solid #cde2e7;
-  padding: 18px 20px;
+  padding: 14px 20px;
 }
 .form-control:focus {
   border-color: #06d6a0;
@@ -821,7 +821,7 @@ a:hover {
 .marqueeContainer .marqueeSlide {
   display: inline-block;
   width: 10040px;
-  animation: 39s slide linear infinite;
+  animation: 28s slide linear infinite;
 }
 .marqueeContainer .marqueeSlide img {
   margin: 0 40px;
@@ -829,7 +829,7 @@ a:hover {
 .marqueeContainer .marqueeSlide2 {
   display: inline-block;
   width: 10040px;
-  animation: 39s slide2 linear infinite;
+  animation: 28s slide2 linear infinite;
 }
 .marqueeContainer .marqueeSlide2 img {
   margin: 0 40px;
@@ -1931,7 +1931,7 @@ body {
 }
 
 .min-height-360 {
-  min-height: 380px;
+  min-height: 94%;
 }
 
 .card-offer {
@@ -6039,6 +6039,7 @@ footer a {
   border: 0px;
   min-width: 800px;
   width: 100%;
+  margin-bottom: 0 !important;
 }
 .table-compare thead tr th {
   background-color: #cde2e7;
@@ -6432,7 +6433,7 @@ textarea.textarea-control {
 
 .table-box-help {
   border-radius: 8px;
-  overflow: hidden;
+  overflow: scroll;
   border: 1px solid #cde2e7;
 }
 
@@ -6683,7 +6684,7 @@ textarea.textarea-control {
     margin: auto;
   }
   .min-height-360 {
-    min-height: 300px;
+    min-height: 94%;
   }
   .box-container-sw .box-swiper {
     padding-left: 30px;

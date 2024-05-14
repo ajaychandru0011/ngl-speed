@@ -18,7 +18,7 @@ const SEO = () => {
       />
       <Layout>
         <SEOHero />
-        <TrustBy />
+        <TrustBy marginTop="0" />
         <Service8 category={"Website's"} />
         <Testimonials />
         <SEOSection3 />
