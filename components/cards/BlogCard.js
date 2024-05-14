@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import FeaturedImage from "../elements/FeaturedImage";
 import Date from "../elements/Date";
 
@@ -9,7 +8,7 @@ const BlogCard = ({ title, date, readTimeTag, excerpt, tag, slug, post }) => {
       <div className={`col-lg-4 col-md-6 mb-30 item-article ${tag}`}>
         <div className="card-blog-grid card-blog-grid-3 hover-up">
           <div className="card-image">
-            <Link href="/blog-detail">
+            <Link href={post.slug}>
               {/* <Image
                 layout="responsive"
                 width={100}

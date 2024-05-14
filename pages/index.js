@@ -59,7 +59,9 @@ export default function Home() {
       />
       <Layout>
         <Hero />
+
         <Trustby />
+
         <OurServices />
         <Testimonials />
         <Tools />

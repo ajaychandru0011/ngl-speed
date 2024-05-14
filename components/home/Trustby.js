@@ -85,12 +85,9 @@ const data = [
   { src: "/assets/imgs/clientlogo/fectar.png", alt: "fectar", width: 177 },
   { src: "/assets/imgs/clientlogo/ZET.png", alt: "ZET", width: 92 },
 ];
-const Trustby = () => {
+const Trustby = ({ padding }) => {
   return (
-    <section
-      className="section bg-marquee"
-      style={{ position: "relative"}}
-    >
+    <section className="section bg-marquee" style={{ position: "relative" }}>
       <div className="row mb-50 mt-50 container m-auto">
         <h2 className="color-brand-1 mb-15 font-bold text-center">
           Apps we’ve helped grow
