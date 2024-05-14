@@ -3,7 +3,7 @@ import Image from "next/image";
 import heroBG from "/public/assets/imgs/page/homepage12/hero-bg.png";
 const ToolsHero = () => {
   return (
-    <section className="section banner-12">
+    <section className="section banner-12 mb-100">
       <Image src={heroBG} layout="responsive" alt="Hero" priority={true}/>
       <div className="asset-1 shape-1"></div>
       <div className="asset-2 shape-2"></div>

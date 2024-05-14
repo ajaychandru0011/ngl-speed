@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { FaArrowUp } from "react-icons/fa6";
 import Link from "next/link";
 function BackToTop() {
   const [hasScrolled, setHasScrolled] = useState("false");
@@ -24,7 +25,9 @@ function BackToTop() {
           href="#top"
           style={{ position: "fixed", zIndex: 2147483647 }}
         >
-          <i className="fi-rr-arrow-small-up text-brand" />
+          <FaArrowUp style={{fontSize:"20px", position:"relative", top:"30%"}} />
+          {/* <i className="fi-rr-arrow-small-up text-brand" /> */}
+
         </Link>
       )}
     </>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import PageHead from "../components/elements/PageHead";
 import Image from "next/image";
+import Trustby from "../components/home/Trustby"
 import Layout from "../components/layout/Layout";
 
 const Error = () => {
@@ -173,84 +174,8 @@ const Error = () => {
           </div>
         </section>
         <div className="d-inline-block mb-30" />
-        <div className="section bg-grey-80 pt-70 pb-70">
-          <div className="container">
-            <ul className="list-partners">
-              <li>
-                <Image
-                  layout="responsive"
-                  width={100}
-                  height={100}
-                  src="/assets/imgs/page/homepage1/placed.png"
-                  alt="iori"
-                />
-              </li>
-              <li>
-                <Image
-                  layout="responsive"
-                  width={100}
-                  height={100}
-                  src="/assets/imgs/page/homepage1/cuebiq.png"
-                  alt="iori"
-                />
-              </li>
-              <li>
-                <Image
-                  layout="responsive"
-                  width={100}
-                  height={100}
-                  src="/assets/imgs/page/homepage1/factual.png"
-                  alt="iori"
-                />
-              </li>
-              <li>
-                <Image
-                  layout="responsive"
-                  width={100}
-                  height={100}
-                  src="/assets/imgs/page/homepage1/placeiq.png"
-                  alt="iori"
-                />
-              </li>
-              <li>
-                <Image
-                  layout="responsive"
-                  width={100}
-                  height={100}
-                  src="/assets/imgs/page/homepage1/airmeet.png"
-                  alt="iori"
-                />
-              </li>
-              <li>
-                <Image
-                  layout="responsive"
-                  width={100}
-                  height={100}
-                  src="/assets/imgs/page/homepage1/spen.png"
-                  alt="iori"
-                />
-              </li>
-              <li>
-                <Image
-                  layout="responsive"
-                  width={100}
-                  height={100}
-                  src="/assets/imgs/page/homepage1/klippa.png"
-                  alt="iori"
-                />
-              </li>
-              <li>
-                <Image
-                  layout="responsive"
-                  width={100}
-                  height={100}
-                  src="/assets/imgs/page/homepage1/matrix.png"
-                  alt="iori"
-                />
-              </li>
-            </ul>
-          </div>
-        </div>
+        <Trustby />
+        
         <section className="section mt-50">
           <div className="container">
             <div className="box-newsletter box-newsletter-2">

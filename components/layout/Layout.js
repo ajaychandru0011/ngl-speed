@@ -3,6 +3,7 @@ import BackToTop from "../elements/BackToTop";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
 import Footer from "./Footer";
+
 const Layout = ({ children }) => {
   const [openClass, setOpenClass] = useState("");
 
@@ -27,6 +28,7 @@ const Layout = ({ children }) => {
       />
       <Sidebar openClass={openClass} />
       <main className="main">{children}</main>
+      <Footer />
       <BackToTop />
       <Footer />
     </>
