@@ -35,7 +35,7 @@ const CareerSection7 = ({ post }) => {
           </div>
         </div>
         <div className="row mt-55">
-          {post.nodes.slice(6, 10).map((post, index) => (
+          {post?.nodes.slice(6, 10).map((post, index) => (
             <BlogSuggestCard key={index} post={post} />
           ))}
         </div>
