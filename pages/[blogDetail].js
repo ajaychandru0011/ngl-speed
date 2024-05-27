@@ -7,6 +7,7 @@ import { useState, useRef, useEffect } from "react";
 import { getAllPosts, getPostData, getPostSlug } from "../lib/posts";
 import FeaturedImage from "../components/elements/FeaturedImage";
 import Date from "../components/elements/Date";
+
 export async function getStaticProps({ params }) {
   // getting post data based on slug
   const postData = await getPostData(params.blogDetail);
@@ -34,10 +35,28 @@ export async function getStaticPaths() {
     fallback: false,
   };
 }
+function extractHeadings(htmlString) {
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(htmlString, "text/html");
+  const headings = doc.querySelectorAll("h1, h2, h3, h4, h5, h6");
+  const headingArray = [];
+
+  headings.forEach((heading) => {
+    const id = heading.id;
+    const text = heading.textContent;
+
+    if (id) {
+      headingArray.push({ [id]: text }); // Change to { [text]: id } if you want text as key
+    }
+  });
+
+  return headingArray;
+}
 
 const BlogDetails = ({ postData, suggestedPosts }) => {
   const [scroll, setScroll] = useState(false);
   const [activeSection, setActiveSection] = useState(null);
+  const [headingData, setHeadingData] = useState([]);
   const tocRef = useRef();
   const blogDetailRef = useRef();
   function tocScrollControl() {
@@ -67,12 +86,19 @@ const BlogDetails = ({ postData, suggestedPosts }) => {
       }
     });
   }
+
   useEffect(() => {
     window.addEventListener("scroll", tocScrollControl);
     return () => {
       window.removeEventListener("scroll", tocScrollControl);
     };
   }, [scroll]);
+
+  useEffect(() => {
+    const data = extractHeadings(postData.content);
+    setHeadingData(data);
+    console.log(data);
+  }, [postData]);
   return (
     <>
       <PageHead title={postData.title} />
@@ -390,20 +416,26 @@ const BlogDetails = ({ postData, suggestedPosts }) => {
                   <div className="mt-50">
                     <h6 className="color-brand-1 mb-15">Table of contents</h6>
                     <ul className="list-number">
-                      <li>
-                        {" "}
-                        <Link
-                          href="#section1"
-                          style={
-                            activeSection === "section1"
-                              ? { color: "#06d6a0" }
-                              : { color: "#3d565f" }
-                          }
-                        >
-                          Is making test questions difficult?
-                        </Link>
-                      </li>
-                      <li>
+                      {headingData.length > 0 &&
+                        headingData.map((item, index) => {
+                          console.log(Object.values(item)[0]);
+                          return (
+                            <li>
+                              <Link
+                                href={Object.keys(item)[0]}
+                                // href="#"
+                                style={
+                                  activeSection === "section1"
+                                    ? { color: "#06d6a0" }
+                                    : { color: "#3d565f" }
+                                }
+                              >
+                                {Object.values(item)[0]}
+                              </Link>
+                            </li>
+                          );
+                        })}
+                      {/* <li>
                         {" "}
                         <Link
                           href="#section2"
@@ -454,7 +486,7 @@ const BlogDetails = ({ postData, suggestedPosts }) => {
                         >
                           Making good descriptive
                         </Link>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                   <div className="mt-50 d-flex align-item-center">

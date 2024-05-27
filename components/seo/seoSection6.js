@@ -892,7 +892,7 @@ const SEOSection6 = () => {
               the mobile app promotion stack.
             </p>
           </div>
-          <div className="col-lg-4 col-md-4 text-md-end text-start">
+          {/* <div className="col-lg-4 col-md-4 text-md-end text-start">
             <Link href="#" className="btn btn-default font-sm-bold pl-0">
               Learn More
               <svg
@@ -910,7 +910,7 @@ const SEOSection6 = () => {
                 />
               </svg>
             </Link>
-          </div>
+          </div> */}
         </div>
         <div className="row mt-50">
           {data.map((item, index) => (
