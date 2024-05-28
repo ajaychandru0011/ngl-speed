@@ -7,10 +7,8 @@ const FeaturedImage = ({ post, styleClasses, priority }) => {
   const defaultWidth = "720";
   const defaultHeight = "520";
   if (post.featuredImage) {
-    let size =
-      post.featuredImage.node.mediaDetails.sizes[
-        post.featuredImage.node.mediaDetails.sizes.length - 3
-      ];
+    let size = post.featuredImage.node.mediaDetails.sizes[1];
+    // post.featuredImage.node.mediaDetails.sizes.length - 4
     img = {
       src: size.sourceUrl,
       height: size.height,
@@ -23,6 +21,7 @@ const FeaturedImage = ({ post, styleClasses, priority }) => {
       width: defaultWidth,
     };
   }
+
   return (
     <>
       <Image

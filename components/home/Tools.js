@@ -2,7 +2,6 @@ import React from "react";
 import ToolsCard from "../cards/ToolsCard";
 import Link from "next/link";
 
-
 const data = [
   {
     name: "App Intelligence",
@@ -1353,7 +1352,7 @@ const Tools = ({ length }) => {
             </p>
           </div>
           <div className="col-lg-4 col-md-4 text-md-end text-start">
-            <Link href="#" className="btn btn-default font-sm-bold pl-0">
+            <Link href="/tools" className="btn btn-default font-sm-bold pl-0">
               Learn More
               <svg
                 className="w-6 h-6 icon-16 ml-5"

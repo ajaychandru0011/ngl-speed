@@ -20,7 +20,7 @@ const ServicesCard = (props) => {
           <p className="font-md color-grey-500 mb-5">{props.desc}</p>
           <div className="box-button-offer">
             <Link
-              href="#"
+              href={props.route}
               className="btn btn-default font-sm-bold pl-0 color-brand-1"
             >
               Learn More
