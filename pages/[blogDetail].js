@@ -105,8 +105,8 @@ const BlogDetails = ({ postData, suggestedPosts, postDataContent }) => {
         const sectionId = section.id;
         const sectionInDom = document.getElementById(sectionId);
 
-        const sectionTop = sectionInDom.offsetTop;
-        const sectionBottom = sectionTop + sectionInDom.offsetHeight;
+        const sectionTop = sectionInDom?.offsetTop;
+        const sectionBottom = sectionTop + sectionInDom?.offsetHeight;
         if (
           scrollPosition + 100 > sectionTop &&
           scrollPosition < sectionBottom
