@@ -7,20 +7,26 @@ import { useState, useRef, useEffect } from "react";
 import { getAllPosts, getPostData, getPostSlug } from "../lib/posts";
 import FeaturedImage from "../components/elements/FeaturedImage";
 import Date from "../components/elements/Date";
+import { parse } from "node-html-parser";
 
+// generating static props
 export async function getStaticProps({ params }) {
   // getting post data based on slug
   const postData = await getPostData(params.blogDetail);
   //getting all posts for suggested posts
   const suggestedPosts = await getAllPosts();
+  // post content
+  const postDataContent = await postData.content;
   // returning props to access in the component
   return {
     props: {
       postData,
       suggestedPosts,
+      postDataContent,
     },
   };
 }
+// generating static paths using slugs from the wp data
 export async function getStaticPaths() {
   // getting slugs to provide in static props function
   const postSlugs = await getPostSlug();
@@ -35,30 +41,51 @@ export async function getStaticPaths() {
     fallback: false,
   };
 }
-function extractHeadings(htmlString) {
-  const parser = new DOMParser();
-  const doc = parser.parseFromString(htmlString, "text/html");
-  const headings = doc.querySelectorAll("h1, h2, h3, h4, h5, h6");
-  const headingArray = [];
 
-  headings.forEach((heading) => {
-    const id = heading.id;
-    const text = heading.textContent;
-
-    if (id) {
-      headingArray.push({ [id]: text }); // Change to { [text]: id } if you want text as key
-    }
-  });
-
-  return headingArray;
-}
-
-const BlogDetails = ({ postData, suggestedPosts }) => {
+const BlogDetails = ({ postData, suggestedPosts, postDataContent }) => {
   const [scroll, setScroll] = useState(false);
   const [activeSection, setActiveSection] = useState(null);
   const [headingData, setHeadingData] = useState([]);
+
+  const sections = extractNodeList(postDataContent);
   const tocRef = useRef();
   const blogDetailRef = useRef();
+  // for toggling sticky classes for table of contents tried with intersection observer api but didn't worked as intended
+  // useEffect(() => {
+  //   if (sections.length > 0) {
+  //     const observer = new IntersectionObserver(
+  //       (entries) => {
+  //         entries.forEach((entry) => {
+  //           if (entry.isIntersecting) {
+  //             setActiveSection(entry.target.id);
+  //           }
+  //         });
+  //       },
+  //       {
+  //         root: null,
+  //         rootMargin: `-180px 0px 0px 0px`, // Adjust for header
+  //         threshold: 0.9, // Trigger when 90% of the section is visible
+  //       }
+  //     );
+
+  //     sections.forEach((section) => {
+  //       const sectionId = section.id;
+  //       const sectionInDom = document.getElementById(sectionId);
+  //       observer.observe(sectionInDom);
+  //     });
+
+  //     return () => {
+  //       sections.forEach((section) => {
+  //         const sectionId = section.id;
+  //         const sectionInDom = document.getElementById(sectionId);
+  //         console.log(typeof sectionInDom);
+  //         if (typeof sectionInDom === Object) {
+  //           observer.unobserve(sectionInDom);
+  //         }
+  //       });
+  //     };
+  //   }
+  // }, [sections]);
   function tocScrollControl() {
     let tocHeight = tocRef.current?.offsetHeight;
     let blogDetailHeight = blogDetailRef.current?.offsetHeight;
@@ -72,19 +99,22 @@ const BlogDetails = ({ postData, suggestedPosts }) => {
     } else {
       setScroll(false);
     }
+    // setting state for active class
+    if (sections) {
+      sections.forEach((section) => {
+        const sectionId = section.id;
+        const sectionInDom = document.getElementById(sectionId);
 
-    const h4s = document.querySelectorAll("#content > h4");
-    const h2s = document.querySelectorAll("#content > h2");
-    const sections = [...h4s, ...h2s];
-    sections.forEach((section) => {
-      const sectionId = section.getAttribute("id");
-      const sectionTop = section.offsetTop;
-      const sectionBottom = sectionTop + section.offsetHeight;
-
-      if (scrollPosition + 100 > sectionTop && scrollPosition < sectionBottom) {
-        setActiveSection(sectionId);
-      }
-    });
+        const sectionTop = sectionInDom?.offsetTop;
+        const sectionBottom = sectionTop + sectionInDom?.offsetHeight;
+        if (
+          scrollPosition + 100 > sectionTop &&
+          scrollPosition < sectionBottom
+        ) {
+          setActiveSection(sectionId);
+        }
+      });
+    }
   }
 
   useEffect(() => {
@@ -97,8 +127,33 @@ const BlogDetails = ({ postData, suggestedPosts }) => {
   useEffect(() => {
     const data = extractHeadings(postData.content);
     setHeadingData(data);
-    console.log(data);
-  }, [postData]);
+  }, []);
+  function extractHeadings(htmlString) {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(htmlString, "text/html");
+    // const doc = parse(htmlString);
+    const headings = doc.querySelectorAll("h2");
+    // const headingElementsArray = Array.from(headings);
+    // setSections((prev) => headingElementsArray);
+    const headingArray = [];
+
+    headings.forEach((heading) => {
+      const id = heading.id;
+      const text = heading.textContent;
+
+      if (id) {
+        headingArray.push({ [id]: text });
+      }
+    });
+
+    return headingArray;
+  }
+  function extractNodeList(htmlString) {
+    const doc = parse(htmlString);
+    const headings = doc.querySelectorAll("h2");
+
+    return headings;
+  }
   return (
     <>
       <PageHead title={postData.title} />
@@ -164,7 +219,7 @@ const BlogDetails = ({ postData, suggestedPosts }) => {
                   <div
                     dangerouslySetInnerHTML={{ __html: postData.content }}
                   ></div>
-                  <p className="color-grey-900 font-lg-bold mb-25">
+                  {/* <p className="color-grey-900 font-lg-bold mb-25">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Quisque ornare pellentesque sollicitudin. Suspendisse
                     potenti. Fusce ex risus, iaculis sit amet sapien nec,
@@ -371,7 +426,7 @@ const BlogDetails = ({ postData, suggestedPosts }) => {
                     facere cum necessitatibus aliquam qui omnis officia. Eos
                     voluptatibus iste eum iusto nobis sit aspernatur iusto ab
                     atque animi ut voluptas dolorem.
-                  </p>
+                  </p> */}
                 </div>
               </div>
               <div className="col-xl-3 col-lg-4">
@@ -418,14 +473,12 @@ const BlogDetails = ({ postData, suggestedPosts }) => {
                     <ul className="list-number">
                       {headingData.length > 0 &&
                         headingData.map((item, index) => {
-                          console.log(Object.values(item)[0]);
                           return (
-                            <li>
+                            <li key={index}>
                               <Link
-                                href={Object.keys(item)[0]}
-                                // href="#"
+                                href={`#${Object.keys(item)[0]}`}
                                 style={
-                                  activeSection === "section1"
+                                  activeSection === `${Object.keys(item)[0]}`
                                     ? { color: "#06d6a0" }
                                     : { color: "#3d565f" }
                                 }

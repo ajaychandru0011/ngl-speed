@@ -6,7 +6,7 @@ const SEOHero = () => {
   return (
     <section
       className="section"
-      style={{ position: "relative", zIndex: "9999" }}
+      style={{ position: "relative", zIndex: "999" }}
     >
       {/* Positioning the Next.js Image absolutely within the parent div */}
       <div

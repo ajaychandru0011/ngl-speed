@@ -40,7 +40,7 @@ const Contactus = () => {
                       layout="responsive"
                       width={100}
                       height={100}
-                      src="assets/imgs/page/contact/banner.png"
+                      src="/assets/imgs/page/contact/banner.png"
                       alt="contact banner"
                       priority={true}
                     />
