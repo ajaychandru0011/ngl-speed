@@ -3,7 +3,7 @@ import Link from "next/link";
 import Layout from "../components/layout/Layout";
 import PageHead from "../components/elements/PageHead";
 import BlogCard from "../components/cards/BlogCard";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { getAllPosts, getPostData, getPostSlug } from "../lib/posts";
 import FeaturedImage from "../components/elements/FeaturedImage";
 import Date from "../components/elements/Date";
@@ -102,7 +102,8 @@ const BlogDetails = ({ postData, suggestedPosts, postDataContent }) => {
   //     };
   //   }
   // }, [sections]);
-  function tocScrollControl() {
+
+  const tocScrollControl = useCallback(() => {
     let tocHeight = tocRef.current?.offsetHeight;
     let blogDetailHeight = blogDetailRef.current?.offsetHeight;
 
@@ -131,19 +132,19 @@ const BlogDetails = ({ postData, suggestedPosts, postDataContent }) => {
         }
       });
     }
-  }
+  }, [sections]);
 
   useEffect(() => {
     window.addEventListener("scroll", tocScrollControl);
     return () => {
       window.removeEventListener("scroll", tocScrollControl);
     };
-  }, [scroll]);
+  }, [scroll, tocScrollControl]);
 
   useEffect(() => {
     const data = extractHeadings(postData.content);
     setHeadingData(data);
-  }, []);
+  }, [postData.content]);
   function extractHeadings(htmlString) {
     const parser = new DOMParser();
     const doc = parser.parseFromString(htmlString, "text/html");
