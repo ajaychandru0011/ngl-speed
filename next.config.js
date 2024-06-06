@@ -1,4 +1,7 @@
 module.exports = {
+  experimental: {
+    largePageDataBytes: 128 * 100000,
+  },
   images: {
     remotePatterns: [
       {
