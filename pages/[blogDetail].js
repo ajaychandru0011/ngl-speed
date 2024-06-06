@@ -41,12 +41,28 @@ export async function getStaticPaths() {
     fallback: false,
   };
 }
+const removeHTMLTags = (htmlString) => {
+  const text = htmlString.replace(/<[^>]*>/g, "");
+  return text.trim();
+};
 
+const calculateReadingTime = (text) => {
+  const words = text.split(/\s+/).length;
+  const wordsPerMinute = 200;
+  const readingTimeMinutes = words / wordsPerMinute;
+  return Math.ceil(readingTimeMinutes);
+};
+
+const getReadingTimeFromHTML = (htmlString) => {
+  const text = removeHTMLTags(htmlString);
+  const readingTime = calculateReadingTime(text);
+  return readingTime;
+};
 const BlogDetails = ({ postData, suggestedPosts, postDataContent }) => {
   const [scroll, setScroll] = useState(false);
   const [activeSection, setActiveSection] = useState(null);
   const [headingData, setHeadingData] = useState([]);
-
+  const readingTime = getReadingTimeFromHTML(postDataContent);
   const sections = extractNodeList(postDataContent);
   const tocRef = useRef();
   const blogDetailRef = useRef();
@@ -214,6 +230,7 @@ const BlogDetails = ({ postData, suggestedPosts, postDataContent }) => {
                       post={postData}
                       styleClasses="bd-rd8"
                       priority={true}
+                      height={500}
                     />
                   </div>
                   <div
@@ -456,7 +473,7 @@ const BlogDetails = ({ postData, suggestedPosts, postDataContent }) => {
                         <Date dateString={postData.date} />
                       </span>
                       <span className="font-xs color-grey-500 icon-read">
-                        8 min read
+                        {readingTime} min read
                       </span>
                     </div>
                   </div>
