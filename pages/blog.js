@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import BlogSection1 from "../components/blog/blogSection1";
 import BlogSection2 from "../components/blog/blogSection2";
 import Layout from "../components/layout/Layout";
@@ -14,6 +14,12 @@ export async function getStaticProps() {
   };
 }
 const Blog = ({ allPosts }) => {
+  const [data, setData] = useState();
+  useEffect(() => {
+    const postData = fetch("/api/routes");
+    setData(postData);
+  }, []);
+  console.log(data);
   return (
     <>
       <PageHead

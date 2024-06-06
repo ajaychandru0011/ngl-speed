@@ -41,7 +41,7 @@ const Services = () => {
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
               officia deserunt mollit laborum — semper quis lectus nulla.
               Interactively transform magnetic growth strategies whereas
-              prospective "outside the box" thinking.
+              prospective &quot;outside the box&quot; thinking.
             </p>
             <div className="mt-20">
               <ul className="list-ticks">
@@ -277,7 +277,6 @@ const Services = () => {
               </ul>
             </div>
             <div className="mt-50 text-start">
-
               <Button text={"Find Out How"} href={"#"} />
             </div>
           </div>

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import PageHead from "../components/elements/PageHead";
 import Image from "next/image";
-import Trustby from "../components/home/Trustby"
+import Trustby from "../components/home/Trustby";
 import Layout from "../components/layout/Layout";
 
 const Error = () => {
@@ -30,8 +30,8 @@ const Error = () => {
                       Oops, nothing to see here
                     </h3>
                     <p className="font-md color-grey-500">
-                      Unfortunately, we couldn't find what you were looking for
-                      or the page no longer exists.
+                      Unfortunately, we couldn&apos;t find what you were looking
+                      for or the page no longer exists.
                     </p>
                     <div className="mt-50">
                       <Link
@@ -175,7 +175,7 @@ const Error = () => {
         </section>
         <div className="d-inline-block mb-30" />
         <Trustby />
-        
+
         <section className="section mt-50">
           <div className="container">
             <div className="box-newsletter box-newsletter-2">

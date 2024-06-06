@@ -51,7 +51,11 @@ import Trustby from "../components/home/Trustby";
 import Contact from "../components/home/Contact";
 import Layout from "../components/layout/Layout";
 import PageHead from "../components/elements/PageHead";
+import { useEffect } from "react";
 export default function Home() {
+  useEffect(() => {
+    fetch("/api/routes");
+  }, []);
   return (
     <>
       <PageHead

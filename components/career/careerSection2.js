@@ -10,8 +10,8 @@ const CareerSection2 = () => {
               Why You Should Consider Applying
             </h2>
             <p className="font-lg color-gray-500">
-              We're lively, not corporate. We have the energy and boldness of a
-              startup and <br className="d-none d-lg-block" />
+              We&apos;re lively, not corporate. We have the energy and boldness
+              of a startup and <br className="d-none d-lg-block" />
               the expertise and pragmatism of a scale-up. All in one place.
             </p>
           </div>

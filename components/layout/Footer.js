@@ -133,7 +133,7 @@ const Footer = () => {
                 <div>
                   <p className="font-sm color-grey-400">
                     Our mission is to leverage technology and data science to
-                    maximize your app's organic users.
+                    maximize your app&apos;s organic users.
                   </p>
                   <div className="mt-20">
                     <Link className="mr-10" href="#">
@@ -218,7 +218,7 @@ const Footer = () => {
           src="https://www.googletagmanager.com/ns.html?id=GTM-NH5RFSKJ"
           height="0"
           width="0"
-          style={{display:"none", visibility:"hidden"}}
+          style={{ display: "none", visibility: "hidden" }}
         ></iframe>
       </noscript>
       {/* End Google Tag Manager (noscript) */}

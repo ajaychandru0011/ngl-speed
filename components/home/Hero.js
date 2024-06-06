@@ -29,7 +29,7 @@ const Hero = () => {
             </h1>
             <p className="font-md color-grey-500 mb-25 max-width-685">
               Since 2016, we are at the forefront of Digital Marketing. We just
-              don't service our clients - we <br />
+              don&apos;t service our clients - we <br />
               reverse engineer search algorithms. We process billions of data
               point every day to drive actionable insights.
             </p>

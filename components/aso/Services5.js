@@ -7,7 +7,9 @@ const Services5 = () => {
       <div className="container">
         <div className="row align-items-end">
           <div className="col-lg-8 col-md-8">
-            <h2 className="color-brand-1 mb-20">Let's Talk Data & Processes</h2>
+            <h2 className="color-brand-1 mb-20">
+              Let&apos;s Talk Data & Processes
+            </h2>
             <p className="font-lg color-gray-500">
               Our ASO Innovation Stack - that captures everything from the
               <br className="d-none d-lg-block" />
@@ -15,7 +17,7 @@ const Services5 = () => {
             </p>
           </div>
           <div className="col-lg-4 col-md-4 text-md-end text-start">
-            <Link href='#' className="btn btn-default font-sm-bold pl-0">
+            <Link href="#" className="btn btn-default font-sm-bold pl-0">
               Learn More
               <svg
                 className="w-6 h-6 icon-16 ml-5"
@@ -59,7 +61,10 @@ const Services5 = () => {
                   close eye on the changes they make.
                 </p>
                 <div className="box-button-offer">
-                  <Link href='#' className="btn btn-default font-sm-bold pl-0 color-brand-1">
+                  <Link
+                    href="#"
+                    className="btn btn-default font-sm-bold pl-0 color-brand-1"
+                  >
                     Learn More
                     <svg
                       className="w-6 h-6 icon-16 ml-5"
@@ -101,10 +106,13 @@ const Services5 = () => {
                 </h4>
                 <p className="font-md color-grey-500 mb-5">
                   About 5% of the total 1-star reviews tend to be sementic
-                  mismatches. And there's a way to fix it.
+                  mismatches. And there&apos;s a way to fix it.
                 </p>
                 <div className="box-button-offer">
-                  <Link href='#' className="btn btn-default font-sm-bold pl-0 color-brand-1">
+                  <Link
+                    href="#"
+                    className="btn btn-default font-sm-bold pl-0 color-brand-1"
+                  >
                     Learn More
                     <svg
                       className="w-6 h-6 icon-16 ml-5"
@@ -149,7 +157,10 @@ const Services5 = () => {
                   (Most Helpful Review Section) Score - developed by us.
                 </p>
                 <div className="box-button-offer">
-                  <Link href='#' className="btn btn-default font-sm-bold pl-0 color-brand-1">
+                  <Link
+                    href="#"
+                    className="btn btn-default font-sm-bold pl-0 color-brand-1"
+                  >
                     Learn More
                     <svg
                       className="w-6 h-6 icon-16 ml-5"
@@ -194,7 +205,10 @@ const Services5 = () => {
                   your peers, and help you improve on it.
                 </p>
                 <div className="box-button-offer">
-                  <Link href='#' className="btn btn-default font-sm-bold pl-0 color-brand-1">
+                  <Link
+                    href="#"
+                    className="btn btn-default font-sm-bold pl-0 color-brand-1"
+                  >
                     Learn More
                     <svg
                       className="w-6 h-6 icon-16 ml-5"

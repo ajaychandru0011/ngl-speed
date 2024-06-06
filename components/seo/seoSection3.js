@@ -16,9 +16,9 @@ const SEOSection3 = () => {
                 for capturing the vast array of keywords used in search engine
                 optimization (SEO). We go beyond what others do and find new
                 ways to capture and target the right keywords for your business.
-                This helps improve your website's visibility in search engine
-                results pages (SERPs) and drive more targeted traffic to your
-                site.
+                This helps improve your website&apos;s visibility in search
+                engine results pages (SERPs) and drive more targeted traffic to
+                your site.
               </p>
               <div className="box-button text-start mt-40">
                 <Button text="Find Out How" href={"#"} />

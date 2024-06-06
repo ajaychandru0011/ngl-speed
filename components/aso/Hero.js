@@ -1,4 +1,4 @@
-import Button from "../elements/Button"
+import Button from "../elements/Button";
 import React, { useState } from "react";
 const Hero = () => {
   const [selectedOption, setSelectedOption] = useState("");
@@ -17,13 +17,15 @@ const Hero = () => {
       <div className="container text-center">
         <div className="row mt-100 mb-100">
           <div className="col-xl-8 col-lg-10 m-auto">
-            <h1 className="color-brand-1 mb-25 mt-10">App Store Optimization</h1>
+            <h1 className="color-brand-1 mb-25 mt-10">
+              App Store Optimization
+            </h1>
             <p className="font-md color-grey-500 mb-25">
-              Since 2016, we've been at the forefront of App Marketing. Some of
-              world's top brands too read these lines, before contacting and
-              working with us. The next 5 minutes you spend reading about us
-              will give you a glimpse to our approach. Want a customised
-              presentation? Let us know.
+              Since 2016, we&apos;ve been at the forefront of App Marketing.
+              Some of world&apos;s top brands too read these lines, before
+              contacting and working with us. The next 5 minutes you spend
+              reading about us will give you a glimpse to our approach. Want a
+              customised presentation? Let us know.
             </p>
             <div className="aso-input-form mb-25">
               <div className="mb-25">
