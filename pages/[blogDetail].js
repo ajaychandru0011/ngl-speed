@@ -9,7 +9,7 @@ import FeaturedImage from "../components/elements/FeaturedImage";
 import Date from "../components/elements/Date";
 import { parse } from "node-html-parser";
 
-export const runtime = "edge"; // 'nodejs' (default) | 'edge'
+export const runtime = "experimental-edge"; // 'nodejs' (default) | 'edge'
 // generating static props
 export async function getServerSideProps({ params }) {
   // getting post data based on slug
