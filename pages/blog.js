@@ -13,11 +13,6 @@ export async function getStaticProps() {
   };
 }
 const Blog = ({ allPosts }) => {
-  // const [data, setData] = useState();
-  // useEffect(() => {
-  //   const postData = fetch("/api/routes");
-  //   setData(postData);
-  // }, []);
   return (
     <>
       <PageHead
