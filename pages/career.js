@@ -11,6 +11,7 @@ import Layout from "../components/layout/Layout";
 import PageHead from "../components/elements/PageHead";
 import { getAllPosts, getPostSlug } from "../lib/posts";
 
+export const runtime = "edge"; // 'nodejs' (default) | 'edge'
 export async function getServerSideProps({ params }) {
   //getting all posts for suggested posts
   const suggestedPosts = await getAllPosts();
