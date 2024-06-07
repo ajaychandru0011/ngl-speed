@@ -10,7 +10,7 @@ import Date from "../components/elements/Date";
 import { parse } from "node-html-parser";
 
 // generating static props
-export async function getStaticProps({ params }) {
+export async function getServerSideProps({ params }) {
   // getting post data based on slug
   const postData = await getPostData(params.blogDetail);
   //getting all posts for suggested posts
@@ -26,21 +26,21 @@ export async function getStaticProps({ params }) {
     },
   };
 }
-// generating static paths using slugs from the wp data
-export async function getStaticPaths() {
-  // getting slugs to provide in static props function
-  const postSlugs = await getPostSlug();
-  return {
-    paths: postSlugs.map((s) => {
-      return {
-        params: {
-          blogDetail: s.slug,
-        },
-      };
-    }),
-    fallback: false,
-  };
-}
+// // generating static paths using slugs from the wp data
+// export async function getStaticPaths() {
+//   // getting slugs to provide in static props function
+//   const postSlugs = await getPostSlug();
+//   return {
+//     paths: postSlugs.map((s) => {
+//       return {
+//         params: {
+//           blogDetail: s.slug,
+//         },
+//       };
+//     }),
+//     fallback: false,
+//   };
+// }
 const removeHTMLTags = (htmlString) => {
   const text = htmlString.replace(/<[^>]*>/g, "");
   return text.trim();
