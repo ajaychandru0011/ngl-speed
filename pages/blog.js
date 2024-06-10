@@ -4,7 +4,9 @@ import Layout from "../components/layout/Layout";
 import NewsLetter from "../components/elements/Newsletter";
 import PageHead from "../components/elements/PageHead";
 import { getAllPosts } from "../lib/posts";
-export async function getStaticProps() {
+
+export const runtime = "experimental-edge"; // 'nodejs' (default) | 'edge'
+export async function getServerSideProps() {
   const allPosts = await getAllPosts();
   return {
     props: {
