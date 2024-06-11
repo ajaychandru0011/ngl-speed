@@ -12,7 +12,7 @@ const Footer = () => {
                   <Image
                     width={40}
                     height={40}
-                    src="assets/imgs/template/logo.svg"
+                    src="/assets/imgs/template/logo.svg"
                     alt="iori"
                   />
                 </div>
