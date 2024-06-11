@@ -7,7 +7,7 @@ import { useState, useRef, useEffect, useCallback } from "react";
 import { getAllPosts, getPostData, getPostSlug } from "../lib/posts";
 import FeaturedImage from "../components/elements/FeaturedImage";
 import Date from "../components/elements/Date";
-import { parse } from "node-html-parser";
+// import { parse } from "node-html-parser";
 
 export const runtime = "experimental-edge"; // 'nodejs' (default) | 'edge'
 // generating static props
@@ -64,46 +64,10 @@ const BlogDetails = ({ postData, suggestedPosts, postDataContent }) => {
   const [activeSection, setActiveSection] = useState(null);
   const [headingData, setHeadingData] = useState([]);
   const readingTime = getReadingTimeFromHTML(postDataContent);
-  const sections = extractNodeList(postDataContent);
+  // const sections = extractNodeList(postDataContent);
+  const [sections,setSections] = useState([]);
   const tocRef = useRef();
   const blogDetailRef = useRef();
-  // for toggling sticky classes for table of contents tried with intersection observer api but didn't worked as intended
-  // useEffect(() => {
-  //   if (sections.length > 0) {
-  //     const observer = new IntersectionObserver(
-  //       (entries) => {
-  //         entries.forEach((entry) => {
-  //           if (entry.isIntersecting) {
-  //             setActiveSection(entry.target.id);
-  //           }
-  //         });
-  //       },
-  //       {
-  //         root: null,
-  //         rootMargin: `-180px 0px 0px 0px`, // Adjust for header
-  //         threshold: 0.9, // Trigger when 90% of the section is visible
-  //       }
-  //     );
-
-  //     sections.forEach((section) => {
-  //       const sectionId = section.id;
-  //       const sectionInDom = document.getElementById(sectionId);
-  //       observer.observe(sectionInDom);
-  //     });
-
-  //     return () => {
-  //       sections.forEach((section) => {
-  //         const sectionId = section.id;
-  //         const sectionInDom = document.getElementById(sectionId);
-  //         console.log(typeof sectionInDom);
-  //         if (typeof sectionInDom === Object) {
-  //           observer.unobserve(sectionInDom);
-  //         }
-  //       });
-  //     };
-  //   }
-  // }, [sections]);
-
   const tocScrollControl = useCallback(() => {
     let tocHeight = tocRef.current?.offsetHeight;
     let blogDetailHeight = blogDetailRef.current?.offsetHeight;
@@ -118,8 +82,8 @@ const BlogDetails = ({ postData, suggestedPosts, postDataContent }) => {
       setScroll(false);
     }
     // setting state for active class
-    if (sections) {
-      sections.forEach((section) => {
+    if (sections?.length > 0) {
+      sections?.forEach((section) => {
         const sectionId = section.id;
         const sectionInDom = document.getElementById(sectionId);
 
@@ -144,6 +108,7 @@ const BlogDetails = ({ postData, suggestedPosts, postDataContent }) => {
 
   useEffect(() => {
     const data = extractHeadings(postData.content);
+    extractNodeList(postData.content);
     setHeadingData(data);
   }, [postData.content]);
   function extractHeadings(htmlString) {
@@ -166,10 +131,11 @@ const BlogDetails = ({ postData, suggestedPosts, postDataContent }) => {
 
     return headingArray;
   }
-  function extractNodeList(htmlString) {
+  async function extractNodeList(htmlString) {
+    const {parse} = await import("node-html-parser")
     const doc = parse(htmlString);
     const headings = doc.querySelectorAll("h2");
-
+    setSections(headings)
     return headings;
   }
   return (
@@ -219,15 +185,6 @@ const BlogDetails = ({ postData, suggestedPosts, postDataContent }) => {
                     {postData.title}
                   </h2>
                   <div className="mb-40">
-                    {/* <Image
-                      layout="responsive"
-                      width={100}
-                      height={100}
-                      className="bd-rd8"
-                      src="/assets/imgs/page/blog-detail/img.png"
-                      priority={true}
-                      alt="iori"
-                    /> */}
                     <FeaturedImage
                       post={postData}
                       styleClasses="bd-rd8"
@@ -479,14 +436,6 @@ const BlogDetails = ({ postData, suggestedPosts, postDataContent }) => {
                       </span>
                     </div>
                   </div>
-                  {/* <div className="mt-25">
-                    <Link className="btn btn-border mr-10 mb-10" href="#">
-                      Marketing
-                    </Link>
-                    <Link className="btn btn-border mr-10 mb-10" href="#">
-                      Business
-                    </Link>
-                  </div> */}
                   <div className="mt-50">
                     <h6 className="color-brand-1 mb-15">Table of contents</h6>
                     <ul className="list-number">
@@ -507,58 +456,6 @@ const BlogDetails = ({ postData, suggestedPosts, postDataContent }) => {
                             </li>
                           );
                         })}
-                      {/* <li>
-                        {" "}
-                        <Link
-                          href="#section2"
-                          style={
-                            activeSection === "section2"
-                              ? { color: "#06d6a0" }
-                              : { color: "#3d565f" }
-                          }
-                        >
-                          How to write good test questions?
-                        </Link>
-                      </li>
-                      <li>
-                        {" "}
-                        <Link
-                          href="#section3"
-                          style={
-                            activeSection === "section3"
-                              ? { color: "#06d6a0" }
-                              : { color: "#3d565f" }
-                          }
-                        >
-                          Start preparing even before you write
-                        </Link>
-                      </li>
-                      <li>
-                        {" "}
-                        <Link
-                          href="#section4"
-                          style={
-                            activeSection === "section4"
-                              ? { color: "#06d6a0" }
-                              : { color: "#3d565f" }
-                          }
-                        >
-                          Creating effective open-ended
-                        </Link>
-                      </li>
-                      <li>
-                        {" "}
-                        <Link
-                          href="#section5"
-                          style={
-                            activeSection === "section5"
-                              ? { color: "#06d6a0" }
-                              : { color: "#3d565f" }
-                          }
-                        >
-                          Making good descriptive
-                        </Link>
-                      </li> */}
                     </ul>
                   </div>
                   <div className="mt-50 d-flex align-item-center">
