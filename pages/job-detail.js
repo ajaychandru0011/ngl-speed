@@ -214,7 +214,7 @@ const JobDetail = () => {
                       Photoshop, Illustrator, and Sketch
                     </li>
                   </ul>
-                  <h4 className="color-brand-1">What's on Offer </h4>
+                  <h4 className="color-brand-1">What&apos;s on Offer </h4>
                   <ul>
                     <li>
                       Annual bonus and holidays, social welfare, and health
@@ -417,7 +417,7 @@ const JobDetail = () => {
                         Photoshop, Illustrator, and Sketch
                       </li>
                     </ul>
-                    <h4 className="color-brand-1">What's on Offer </h4>
+                    <h4 className="color-brand-1">What&apos;s on Offer </h4>
                     <ul>
                       <li>
                         Annual bonus and holidays, social welfare, and health

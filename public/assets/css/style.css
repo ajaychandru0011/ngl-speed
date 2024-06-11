@@ -31,7 +31,6 @@ TABLE CONTENT
 @import url(../css/vendors/normalize.css);
 @import url(../css/vendors/bootstrap.min.css);
 @import url(../css/vendors/uicons-regular-rounded.css);
-@import url(../css/plugins/swiper-bundle.min.css);
 @import url(../css/plugins/magnific-popup.css);
 @import url(../css/plugins/select2.min.css);
 @import url(../css/plugins/slick.css);
@@ -885,6 +884,7 @@ h4 {
   -webkit-animation: spinner 1.2s infinite ease-in-out;
   -o-animation: spinner 1.2s infinite ease-in-out;
   animation: spinner 1.2s infinite ease-in-out;
+  background: url(../../imgs/favicon.svg);
   box-shadow: 0 0 10px #fff;
 }
 

@@ -70,9 +70,9 @@ const ToolsSection5 = () => {
         convenient Chrome extension that acts as an ASO Chrome extension. This
         add-on checks for specific keywords, provides the review URL, and even
         displays the number of screenshots. With this feature, you can easily
-        monitor and optimize your app's performance, all within the convenience
-        of your browser. It's like having a dedicated Google Play ASO tool right
-        at your fingertips.
+        monitor and optimize your app&apos;s performance, all within the
+        convenience of your browser. It&apos;s like having a dedicated Google
+        Play ASO tool right at your fingertips.
       </p>
       <p className="font-md color-grey-400 mb-20">
         <b>Keyword Shuffle Tool:</b> Building long-tail keywords can

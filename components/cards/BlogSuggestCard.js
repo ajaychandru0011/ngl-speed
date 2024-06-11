@@ -8,17 +8,21 @@ const BlogSuggestCard = ({ post }) => {
       <div className="card-blog-grid card-blog-grid-2 hover-up min-height-360">
         <div className="card-image">
           <Link href={post.slug}>
-            <FeaturedImage post={post} styleClasses="" priority={false} />
+            <FeaturedImage
+              post={post}
+              styleClasses=""
+              priority={false}
+              height={240}
+            />
           </Link>
         </div>
         <div className="card-info">
           <Link href={post.slug}>
             <h6 className="color-brand-1">{post.title}</h6>
           </Link>
-          <div
-            className="blog-card-excerpt mt-20"
-            dangerouslySetInnerHTML={{ __html: post.excerpt }}
-          ></div>
+          <div className="blog-card-excerpt mt-20">
+            {post.excerpt.slice(3, 150)}...
+          </div>
           <div className="mt-20 d-flex align-items-center border-top pt-20">
             <span className="date-post font-xs color-grey-300 mr-15">
               <svg
@@ -37,7 +41,7 @@ const BlogSuggestCard = ({ post }) => {
               </svg>
               <Date dateString={post.date} />
             </span>
-            <span className="time-read font-xs color-grey-300">
+            {/* <span className="time-read font-xs color-grey-300">
               <svg
                 className="w-6 h-6 icon-16"
                 fill="none"
@@ -53,7 +57,7 @@ const BlogSuggestCard = ({ post }) => {
                 />
               </svg>
               3 mins read
-            </span>
+            </span> */}
           </div>
         </div>
       </div>

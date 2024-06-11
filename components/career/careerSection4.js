@@ -66,7 +66,7 @@ const CareerSection4 = () => {
                 <h5 className="color-brand-1 mb-5">Think Big</h5>
                 <div className="box-border-dashed">
                   <p className="font-md color-grey-500 mb-20">
-                    Being the world's leading commerce platform requires
+                    Being the world&apos;s leading commerce platform requires
                     unrivaled vision, innovation and execution. We never settle.
                     We challenge our ideas of what’s possible in order to better
                     meet the needs of our customers.

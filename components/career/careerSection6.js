@@ -29,7 +29,7 @@ const CareerSection6 = () => {
                   Excepteur sint occaecat cupidatat non proident, sunt in culpa
                   qui officia deserunt mollit laborum — semper quis lectus
                   nulla. Interactively transform magnetic growth strategies
-                  whereas prospective "outside the box" thinking.
+                  whereas prospective &quot;outside the box&quot; thinking.
                 </p>
                 <div className="box-button text-start mt-65">
                   {" "}

@@ -3,14 +3,15 @@ import Link from "next/link";
 import Layout from "../components/layout/Layout";
 import PageHead from "../components/elements/PageHead";
 import BlogCard from "../components/cards/BlogCard";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { getAllPosts, getPostData, getPostSlug } from "../lib/posts";
 import FeaturedImage from "../components/elements/FeaturedImage";
 import Date from "../components/elements/Date";
-import { parse } from "node-html-parser";
+// import { parse } from "node-html-parser";
 
+export const runtime = "experimental-edge"; // 'nodejs' (default) | 'edge'
 // generating static props
-export async function getStaticProps({ params }) {
+export async function getServerSideProps({ params }) {
   // getting post data based on slug
   const postData = await getPostData(params.blogDetail);
   //getting all posts for suggested posts
@@ -26,67 +27,48 @@ export async function getStaticProps({ params }) {
     },
   };
 }
-// generating static paths using slugs from the wp data
-export async function getStaticPaths() {
-  // getting slugs to provide in static props function
-  const postSlugs = await getPostSlug();
-  return {
-    paths: postSlugs.map((s) => {
-      return {
-        params: {
-          blogDetail: s.slug,
-        },
-      };
-    }),
-    fallback: false,
-  };
-}
+// // generating static paths using slugs from the wp data
+// export async function getStaticPaths() {
+//   // getting slugs to provide in static props function
+//   const postSlugs = await getPostSlug();
+//   return {
+//     paths: postSlugs.map((s) => {
+//       return {
+//         params: {
+//           blogDetail: s.slug,
+//         },
+//       };
+//     }),
+//     fallback: false,
+//   };
+// }
+const removeHTMLTags = (htmlString) => {
+  const text = htmlString.replace(/<[^>]*>/g, "");
+  return text.trim();
+};
 
+const calculateReadingTime = (text) => {
+  const words = text.split(/\s+/).length;
+  const wordsPerMinute = 200;
+  const readingTimeMinutes = words / wordsPerMinute;
+  return Math.ceil(readingTimeMinutes);
+};
+
+const getReadingTimeFromHTML = (htmlString) => {
+  const text = removeHTMLTags(htmlString);
+  const readingTime = calculateReadingTime(text);
+  return readingTime;
+};
 const BlogDetails = ({ postData, suggestedPosts, postDataContent }) => {
   const [scroll, setScroll] = useState(false);
   const [activeSection, setActiveSection] = useState(null);
   const [headingData, setHeadingData] = useState([]);
-
-  const sections = extractNodeList(postDataContent);
+  const readingTime = getReadingTimeFromHTML(postDataContent);
+  // const sections = extractNodeList(postDataContent);
+  const [sections,setSections] = useState([]);
   const tocRef = useRef();
   const blogDetailRef = useRef();
-  // for toggling sticky classes for table of contents tried with intersection observer api but didn't worked as intended
-  // useEffect(() => {
-  //   if (sections.length > 0) {
-  //     const observer = new IntersectionObserver(
-  //       (entries) => {
-  //         entries.forEach((entry) => {
-  //           if (entry.isIntersecting) {
-  //             setActiveSection(entry.target.id);
-  //           }
-  //         });
-  //       },
-  //       {
-  //         root: null,
-  //         rootMargin: `-180px 0px 0px 0px`, // Adjust for header
-  //         threshold: 0.9, // Trigger when 90% of the section is visible
-  //       }
-  //     );
-
-  //     sections.forEach((section) => {
-  //       const sectionId = section.id;
-  //       const sectionInDom = document.getElementById(sectionId);
-  //       observer.observe(sectionInDom);
-  //     });
-
-  //     return () => {
-  //       sections.forEach((section) => {
-  //         const sectionId = section.id;
-  //         const sectionInDom = document.getElementById(sectionId);
-  //         console.log(typeof sectionInDom);
-  //         if (typeof sectionInDom === Object) {
-  //           observer.unobserve(sectionInDom);
-  //         }
-  //       });
-  //     };
-  //   }
-  // }, [sections]);
-  function tocScrollControl() {
+  const tocScrollControl = useCallback(() => {
     let tocHeight = tocRef.current?.offsetHeight;
     let blogDetailHeight = blogDetailRef.current?.offsetHeight;
 
@@ -100,8 +82,8 @@ const BlogDetails = ({ postData, suggestedPosts, postDataContent }) => {
       setScroll(false);
     }
     // setting state for active class
-    if (sections) {
-      sections.forEach((section) => {
+    if (sections?.length > 0) {
+      sections?.forEach((section) => {
         const sectionId = section.id;
         const sectionInDom = document.getElementById(sectionId);
 
@@ -115,19 +97,20 @@ const BlogDetails = ({ postData, suggestedPosts, postDataContent }) => {
         }
       });
     }
-  }
+  }, [sections]);
 
   useEffect(() => {
     window.addEventListener("scroll", tocScrollControl);
     return () => {
       window.removeEventListener("scroll", tocScrollControl);
     };
-  }, [scroll]);
+  }, [scroll, tocScrollControl]);
 
   useEffect(() => {
     const data = extractHeadings(postData.content);
+    extractNodeList(postData.content);
     setHeadingData(data);
-  }, []);
+  }, [postData.content]);
   function extractHeadings(htmlString) {
     const parser = new DOMParser();
     const doc = parser.parseFromString(htmlString, "text/html");
@@ -148,10 +131,11 @@ const BlogDetails = ({ postData, suggestedPosts, postDataContent }) => {
 
     return headingArray;
   }
-  function extractNodeList(htmlString) {
+  async function extractNodeList(htmlString) {
+    const {parse} = await import("node-html-parser")
     const doc = parse(htmlString);
     const headings = doc.querySelectorAll("h2");
-
+    setSections(headings)
     return headings;
   }
   return (
@@ -201,19 +185,11 @@ const BlogDetails = ({ postData, suggestedPosts, postDataContent }) => {
                     {postData.title}
                   </h2>
                   <div className="mb-40">
-                    {/* <Image
-                      layout="responsive"
-                      width={100}
-                      height={100}
-                      className="bd-rd8"
-                      src="/assets/imgs/page/blog-detail/img.png"
-                      priority={true}
-                      alt="iori"
-                    /> */}
                     <FeaturedImage
                       post={postData}
                       styleClasses="bd-rd8"
                       priority={true}
+                      height={500}
                     />
                   </div>
                   <div
@@ -456,18 +432,10 @@ const BlogDetails = ({ postData, suggestedPosts, postDataContent }) => {
                         <Date dateString={postData.date} />
                       </span>
                       <span className="font-xs color-grey-500 icon-read">
-                        8 min read
+                        {readingTime} min read
                       </span>
                     </div>
                   </div>
-                  {/* <div className="mt-25">
-                    <Link className="btn btn-border mr-10 mb-10" href="#">
-                      Marketing
-                    </Link>
-                    <Link className="btn btn-border mr-10 mb-10" href="#">
-                      Business
-                    </Link>
-                  </div> */}
                   <div className="mt-50">
                     <h6 className="color-brand-1 mb-15">Table of contents</h6>
                     <ul className="list-number">
@@ -488,58 +456,6 @@ const BlogDetails = ({ postData, suggestedPosts, postDataContent }) => {
                             </li>
                           );
                         })}
-                      {/* <li>
-                        {" "}
-                        <Link
-                          href="#section2"
-                          style={
-                            activeSection === "section2"
-                              ? { color: "#06d6a0" }
-                              : { color: "#3d565f" }
-                          }
-                        >
-                          How to write good test questions?
-                        </Link>
-                      </li>
-                      <li>
-                        {" "}
-                        <Link
-                          href="#section3"
-                          style={
-                            activeSection === "section3"
-                              ? { color: "#06d6a0" }
-                              : { color: "#3d565f" }
-                          }
-                        >
-                          Start preparing even before you write
-                        </Link>
-                      </li>
-                      <li>
-                        {" "}
-                        <Link
-                          href="#section4"
-                          style={
-                            activeSection === "section4"
-                              ? { color: "#06d6a0" }
-                              : { color: "#3d565f" }
-                          }
-                        >
-                          Creating effective open-ended
-                        </Link>
-                      </li>
-                      <li>
-                        {" "}
-                        <Link
-                          href="#section5"
-                          style={
-                            activeSection === "section5"
-                              ? { color: "#06d6a0" }
-                              : { color: "#3d565f" }
-                          }
-                        >
-                          Making good descriptive
-                        </Link>
-                      </li> */}
                     </ul>
                   </div>
                   <div className="mt-50 d-flex align-item-center">

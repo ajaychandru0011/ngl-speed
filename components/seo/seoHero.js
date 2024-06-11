@@ -38,11 +38,11 @@ const SEOHero = () => {
               <div className="row">
                 <div className="col-lg-9">
                   <p className="font-md color-grey-500">
-                    Since 2016, we've been at the forefront of SEO. Some of
-                    world's top brands too read these lines, before contacting
-                    and working with us. The next 5 minutes you spend reading
-                    about us will give you a glimpse to our approach. Want a
-                    customised presentation? Let us know.
+                    Since 2016, we&apos;ve been at the forefront of SEO. Some of
+                    world&apos;s top brands too read these lines, before
+                    contacting and working with us. The next 5 minutes you spend
+                    reading about us will give you a glimpse to our approach.
+                    Want a customised presentation? Let us know.
                   </p>
                 </div>
               </div>

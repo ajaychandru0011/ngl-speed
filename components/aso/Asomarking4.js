@@ -12,11 +12,11 @@ const Asomarketing4 = () => {
                 Reduce Cost on UAC Campaigns
               </h2>
               <p className="color-grey-500 mb-15">
-                It's often assumed that UAC campaign cost is fixed. However,
-                it's not. Ratings of your app and that of your competitors, Most
-                Helpful Review Section, number of companies that are bidding and
-                engagement/retention influences the overall cost.{" "}
-                <b>You pay only if we reduce the cost</b>. So, if the cost
+                It&apos;s often assumed that UAC campaign cost is fixed.
+                However, it&apos;s not. Ratings of your app and that of your
+                competitors, Most Helpful Review Section, number of companies
+                that are bidding and engagement/retention influences the overall
+                cost. <b>You pay only if we reduce the cost</b>. So, if the cost
                 reduction is <b>x</b>, then you pay a fee that is much lower
                 than <b>x</b>.
               </p>
