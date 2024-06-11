@@ -1,14 +1,16 @@
 import Layout from "../components/layout/Layout";
-import Testimonials from "../components/home/Testimonials";
-import SEOSection3 from "../components/seo/seoSection3";
-import SEOSection4 from "../components/seo/seoSection4";
-import SEOSection5 from "../components/seo/seoSection5";
 import Contact from "../components/home/Contact";
-import SEOSection6 from "../components/seo/seoSection6";
-import SEOHero from "../components/seo/seoHero";
-import TrustBy from "../components/home/Trustby";
 import Service8 from "../components/home/Service8";
 import PageHead from "../components/elements/PageHead";
+import dynamic from "next/dynamic";
+
+const DynamicTrustBy = dynamic(()=>import("../components/home/Trustby",{ssr:false}))
+const DynamicSeoHero = dynamic( ()=> import("../components/seo/seoHero"),{ssr:false})
+const DynamicTestimonials = dynamic( ()=> import("../components/home/Testimonials"),{ssr:false})
+const DynamicSEOSection3 = dynamic( ()=> import("../components/seo/seoSection3"),{ssr:false})
+const DynamicSEOSection4 = dynamic( ()=> import("../components/seo/seoSection4"),{ssr:false})
+const DynamicSEOSection5 = dynamic( ()=> import("../components/seo/seoSection5"),{ssr:false})
+const DynamicSEOSection6 = dynamic( ()=> import("../components/seo/seoSection6"),{ssr:false})
 
 const SEO = () => {
   return (
@@ -17,14 +19,14 @@ const SEO = () => {
         title={"Increase Visibility & Traffic with Our SEO Solutions"}
       />
       <Layout>
-        <SEOHero />
-        <TrustBy />
+        <DynamicSeoHero />
+        <DynamicTrustBy />
         <Service8 category={"Website's"} />
-        <Testimonials />
-        <SEOSection3 />
-        <SEOSection4 />
-        <SEOSection5 />
-        <SEOSection6 />
+        <DynamicTestimonials />
+        <DynamicSEOSection3 />
+        <DynamicSEOSection4 />
+        <DynamicSEOSection5 />
+        <DynamicSEOSection6 />
         <Contact />
       </Layout>
     </>

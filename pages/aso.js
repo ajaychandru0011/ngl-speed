@@ -1,15 +1,19 @@
-import Layout from "../components/layout/Layout";
-import Hero from "../components/aso/Hero";
-import Testimonials from "../components/home/Testimonials";
-import Tools from "../components/home/Tools";
-import Service8 from "../components/home/Service8";
-import Asocontact from "../components/aso/Asocontact";
-import TrustBy from "../components/home/Trustby";
-import Services5 from "../components/aso/Services5";
-import Asomarketing from "../components/aso/Asomarketing";
-import Asomarketing4 from "../components/aso/Asomarking4";
-import AsoSection6 from "../components/aso/AsoSection6";
+import dynamic from "next/dynamic";
 import PageHead from "../components/elements/PageHead";
+
+// Use dynamic imports for each component
+const Layout = dynamic(() => import("../components/layout/Layout"));
+const Hero = dynamic(() => import("../components/aso/Hero"));
+const Testimonials = dynamic(() => import("../components/home/Testimonials"));
+const Tools = dynamic(() => import("../components/home/Tools"));
+const Service8 = dynamic(() => import("../components/home/Service8"));
+const Asocontact = dynamic(() => import("../components/aso/Asocontact"));
+const TrustBy = dynamic(() => import("../components/home/Trustby"));
+const Services5 = dynamic(() => import("../components/aso/Services5"));
+const Asomarketing = dynamic(() => import("../components/aso/Asomarketing"));
+const Asomarketing4 = dynamic(() => import("../components/aso/Asomarking4"));
+const AsoSection6 = dynamic(() => import("../components/aso/AsoSection6"));
+
 const ASO = () => {
   return (
     <>

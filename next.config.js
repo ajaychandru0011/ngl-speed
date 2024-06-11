@@ -1,10 +1,10 @@
-module.exports = {
+const nextConfig = {
   experimental: {
     largePageDataBytes: 128 * 100000,
   },
   images: {
     remotePatterns: [
-      {
+      { 
         protocol: "https",
         hostname: "asokeywordtool.com",
         port: "",
@@ -17,3 +17,4 @@ module.exports = {
     ],
   },
 };
+module.exports = nextConfig
