@@ -27,10 +27,16 @@ const Footer = () => {
                 </div>
                 <h6 className="color-brand-1">Follow Us</h6>
                 <div className="mt-15">
-                  <Link className="icon-socials icon-facebook" href="#"></Link>
+                  <Link
+                    className="icon-socials icon-facebook"
+                    href="https://www.facebook.com/thenextlabs/"
+                  ></Link>
                   <Link className="icon-socials icon-instagram" href="#"></Link>
                   <Link className="icon-socials icon-twitter" href="#"></Link>
-                  <Link className="icon-socials icon-linkedin" href="#"></Link>
+                  <Link
+                    className="icon-socials icon-linkedin"
+                    href="https://www.linkedin.com/company/13337675/"
+                  ></Link>
                   <Link className="icon-socials icon-youtube" href="#"></Link>
                 </div>
               </div>
@@ -138,7 +144,7 @@ const Footer = () => {
                   <div className="mt-20">
                     <Link className="mr-10" href="#">
                       <Image
-                        src="/assets/imgs/template/download 1.svg"
+                        src="assets/imgs/template/download_1.svg"
                         alt="Description of the image"
                         width={220}
                         height={82}
@@ -212,16 +218,6 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      {/* Google Tag Manager (noscript) */}
-      <noscript>
-        <iframe
-          src="https://www.googletagmanager.com/ns.html?id=GTM-NH5RFSKJ"
-          height="0"
-          width="0"
-          style={{ display: "none", visibility: "hidden" }}
-        ></iframe>
-      </noscript>
-      {/* End Google Tag Manager (noscript) */}
     </>
   );
 };

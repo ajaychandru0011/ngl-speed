@@ -14,6 +14,11 @@ export const runtime = "experimental-edge"; // 'nodejs' (default) | 'edge'
 export async function getServerSideProps({ params }) {
   // getting post data based on slug
   const postData = await getPostData(params.blogDetail);
+  if (!postData) {
+    return {
+      notFound: true,
+    };
+  }
   //getting all posts for suggested posts
   const suggestedPosts = await getAllPosts();
   // post content
