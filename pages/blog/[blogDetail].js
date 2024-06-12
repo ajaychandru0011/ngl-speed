@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import Layout from "../components/layout/Layout";
-import PageHead from "../components/elements/PageHead";
-import BlogCard from "../components/cards/BlogCard";
+import Layout from "../../components/layout/Layout";
+import PageHead from "../../components/elements/PageHead";
+import BlogCard from "../../components/cards/BlogCard";
 import { useState, useRef, useEffect, useCallback } from "react";
-import { getAllPosts, getPostData, getPostSlug } from "../lib/posts";
-import FeaturedImage from "../components/elements/FeaturedImage";
-import Date from "../components/elements/Date";
+import { getAllPosts, getPostData, getPostSlug } from "../../lib/posts";
+import FeaturedImage from "../../components/elements/FeaturedImage";
+import Date from "../../components/elements/Date";
 // import { parse } from "node-html-parser";
 
 export const runtime = "experimental-edge"; // 'nodejs' (default) | 'edge'
@@ -16,7 +16,10 @@ export async function getServerSideProps({ params }) {
   const postData = await getPostData(params.blogDetail);
   if (!postData) {
     return {
-      notFound: true,
+      redirect: {
+        destination: "/404",
+        permanent: false,
+      },
     };
   }
   //getting all posts for suggested posts
@@ -70,7 +73,7 @@ const BlogDetails = ({ postData, suggestedPosts, postDataContent }) => {
   const [headingData, setHeadingData] = useState([]);
   const readingTime = getReadingTimeFromHTML(postDataContent);
   // const sections = extractNodeList(postDataContent);
-  const [sections,setSections] = useState([]);
+  const [sections, setSections] = useState([]);
   const tocRef = useRef();
   const blogDetailRef = useRef();
   const tocScrollControl = useCallback(() => {
@@ -137,10 +140,10 @@ const BlogDetails = ({ postData, suggestedPosts, postDataContent }) => {
     return headingArray;
   }
   async function extractNodeList(htmlString) {
-    const {parse} = await import("node-html-parser")
+    const { parse } = await import("node-html-parser");
     const doc = parse(htmlString);
     const headings = doc.querySelectorAll("h2");
-    setSections(headings)
+    setSections(headings);
     return headings;
   }
   return (
