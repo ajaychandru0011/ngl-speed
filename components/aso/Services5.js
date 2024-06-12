@@ -41,7 +41,7 @@ const Services5 = () => {
             <div className="card-offer card-we-do hover-upd bg-4">
               <div className="card-image">
                 <Image
-                  src="assets/imgs/template/listing.svg"
+                  src="/assets/imgs/template/listing.svg"
                   height={64}
                   width={64}
                   alt="listing"
@@ -89,7 +89,7 @@ const Services5 = () => {
             <div className="card-offer card-we-do hover-up bg-5">
               <div className="card-image">
                 <Image
-                  src="assets/imgs/template/anamolies.svg"
+                  src="/assets/imgs/template/anamolies.svg"
                   height={64}
                   width={64}
                   alt="iori"
@@ -137,7 +137,7 @@ const Services5 = () => {
             <div className="card-offer card-we-do hover-up bg-5">
               <div className="card-image">
                 <Image
-                  src="assets/imgs/template/rating-mhr.svg"
+                  src="/assets/imgs/template/rating-mhr.svg"
                   height={64}
                   width={64}
                   alt="Ratings"
@@ -185,7 +185,7 @@ const Services5 = () => {
             <div className="card-offer card-we-do hover-up bg-7">
               <div className="card-image">
                 <Image
-                  src="assets/imgs/template/engagement.svg"
+                  src="/assets/imgs/template/engagement.svg"
                   height={64}
                   width={64}
                   alt="iori"

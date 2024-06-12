@@ -4,7 +4,7 @@ import Image from "next/image";
 import Trustby from "../components/home/Trustby";
 import Layout from "../components/layout/Layout";
 
-const Error = () => {
+const CustomError404 = () => {
   return (
     <>
       <PageHead title={"Error 404 - Page not found"} />
@@ -224,4 +224,4 @@ const Error = () => {
   );
 };
 
-export default Error;
+export default CustomError404;

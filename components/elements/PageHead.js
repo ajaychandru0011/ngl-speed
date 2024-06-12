@@ -31,7 +31,7 @@ const PageHead = ({ title }) => {
         property="article:modified_time"
         content="2023-09-18T14:13:16+00:00"
       />
-      <meta property="og:image" content="assets/imgs/template/logo.svg" />
+      <meta property="og:image" content="/assets/imgs/template/logo.svg" />
       <meta property="og:image:width" content="512" />
       <meta property="og:image:height" content="512" />
       <meta property="og:image:type" content="image/jpeg" />

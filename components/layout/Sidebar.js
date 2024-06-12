@@ -12,7 +12,7 @@ const Sidebar = ({ openClass }) => {
               <Link className="d-flex" href="/">
                 <Image
                   alt="logo"
-                  src="assets/imgs/template/logo.svg"
+                  src="/assets/imgs/template/logo.svg"
                   width={40}
                   height={40}
                 />

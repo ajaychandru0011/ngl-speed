@@ -1,13 +1,21 @@
-import BlogSection1 from "../components/blog/blogSection1";
-import BlogSection2 from "../components/blog/blogSection2";
-import Layout from "../components/layout/Layout";
-import NewsLetter from "../components/elements/Newsletter";
-import PageHead from "../components/elements/PageHead";
-import { getAllPosts } from "../lib/posts";
+import BlogSection1 from "../../components/blog/blogSection1";
+import BlogSection2 from "../../components/blog/blogSection2";
+import Layout from "../../components/layout/Layout";
+import NewsLetter from "../../components/elements/Newsletter";
+import PageHead from "../../components/elements/PageHead";
+import { getAllPosts } from "../../lib/posts";
 
 export const runtime = "experimental-edge"; // 'nodejs' (default) | 'edge'
 export async function getServerSideProps() {
   const allPosts = await getAllPosts();
+  if (!allPosts) {
+    return {
+      redirect: {
+        destination: "/500",
+        premanent: false,
+      },
+    };
+  }
   return {
     props: {
       allPosts,

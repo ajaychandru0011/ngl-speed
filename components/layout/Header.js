@@ -27,7 +27,7 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                 <Link className="d-flex" href="/">
                   <Image
                     alt="Ecom"
-                    src="assets/imgs/template/logo.svg"
+                    src="/assets/imgs/template/logo.svg"
                     width={40}
                     height={40}
                   />

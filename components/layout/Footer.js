@@ -144,7 +144,7 @@ const Footer = () => {
                   <div className="mt-20">
                     <Link className="mr-10" href="#">
                       <Image
-                        src="assets/imgs/template/download_1.svg"
+                        src="/assets/imgs/template/download_1.svg"
                         alt="Description of the image"
                         width={220}
                         height={82}
