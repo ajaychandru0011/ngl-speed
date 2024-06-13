@@ -2,6 +2,7 @@ import Link from "next/link";
 import PageHead from "../components/elements/PageHead";
 import React from "react";
 import Layout from "../components/layout/Layout";
+import Image from "next/image";
 
 const pageTerm = () => {
   return (
@@ -46,11 +47,13 @@ const pageTerm = () => {
                   Please read and acquaint yourself with our Terms & Conditions.
                 </p>
                 <div className="box-image-head mt-50 mb-50">
-                  {" "}
-                  <img
+                  <Image
                     className="bd-rd8"
-                    src="assets/imgs/page/term/img.png"
+                    width={1408}
+                    height={413}
+                    src="/assets/imgs/page/term/img.png"
                     alt="iori"
+                    layout="responsive"
                   />
                 </div>
               </div>
