@@ -5,7 +5,7 @@ const ContactForm = () => {
     console.log("Send button clicked");
   };
   return (
-    <div className="col-lg-7">
+    <div className="col-lg-7" id="contact">
       <div className="box-form-contact">
         <div className="row">
           <div className="col-lg-6 col-sm-6">

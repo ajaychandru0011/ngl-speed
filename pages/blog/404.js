@@ -64,7 +64,7 @@ const CustomError404 = () => {
         </section>
         <section className="section mt-100">
           <div className="container">
-            <div className="row">
+            <div className="d-flex" style={{ justifyContent: "space-around" }}>
               <div className="col-lg-3 col-md-6 col-sm-6">
                 <div className="card-small card-small-2">
                   <div className="card-image">
@@ -84,63 +84,13 @@ const CustomError404 = () => {
                       Email{" "}
                       <Link
                         className="color-success"
-                        href="mailto:support@alithemes.com"
+                        href="mailto:contact@nextgrowthlabs.com"
                       >
-                        support@alithemes.com{" "}
+                        contact@nextgrowthlabs.com
                       </Link>
                       <br />
                       For help with a current product or service or refer to
                       FAQs and developer tools
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-6 col-sm-6">
-                <div className="card-small card-small-2">
-                  <div className="card-image">
-                    <div className="box-image">
-                      <Image
-                        layout="responsive"
-                        width={100}
-                        height={100}
-                        src="/assets/imgs/page/contact/phone.png"
-                        alt="iori"
-                      />
-                    </div>
-                  </div>
-                  <div className="card-info">
-                    <h6 className="color-brand-1 mb-10">Call Us</h6>
-                    <p className="font-xs color-grey-500">
-                      Call us to speak to a member of our team.
-                      <br />
-                      (+01) 234 567 89
-                      <br />
-                      (+01) 456 789 21
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-6 col-sm-6">
-                <div className="card-small card-small-2">
-                  <div className="card-image">
-                    <div className="box-image">
-                      <Image
-                        layout="responsive"
-                        width={100}
-                        height={100}
-                        src="/assets/imgs/page/contact/chart.png"
-                        alt="iori"
-                      />
-                    </div>
-                  </div>
-                  <div className="card-info">
-                    <h6 className="color-brand-1 mb-10">
-                      Bussiness Department
-                    </h6>
-                    <p className="font-xs color-grey-500">
-                      Contact the sales department about cooperation projects
-                      <br />
-                      (+01) 789 456 23
                     </p>
                   </div>
                 </div>
@@ -159,13 +109,10 @@ const CustomError404 = () => {
                     </div>
                   </div>
                   <div className="card-info">
-                    <h6 className="color-brand-1 mb-10">Global branch</h6>
+                    <h6 className="color-brand-1 mb-10">Corporate Address</h6>
                     <p className="font-xs color-grey-500">
-                      Contact us to open our branches globally.
-                      <br />
-                      (+01) 234 567 89
-                      <br />
-                      (+01) 456 789 23
+                      1216, 14th main, HSR Layout,
+                      <br /> Bengaluru-KA-560102
                     </p>
                   </div>
                 </div>
