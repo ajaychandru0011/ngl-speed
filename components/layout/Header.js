@@ -52,7 +52,9 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                       <Link href="/aso">Get Free ASO Analysis</Link>
                     </li>
                     <li>
-                      <Link href="/blog">Blog</Link>
+                      <Link href="http://blogs.nextgrowthlabs.com/blog-listing-1/">
+                        Blog
+                      </Link>
                     </li>
                     <li>
                       <Link href="/career">Career</Link>
@@ -61,7 +63,7 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                       <Link href="/contact">Contact Us</Link>
                     </li>
                     <li>
-                      <Link href="/terms">Terms</Link>
+                      <Link href="/term-conditions">Terms</Link>
                     </li>
                     <li>
                       <Link href="/privacy">Privacy</Link>

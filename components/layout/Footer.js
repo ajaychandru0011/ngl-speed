@@ -31,13 +31,10 @@ const Footer = () => {
                     className="icon-socials icon-facebook"
                     href="https://www.facebook.com/thenextlabs/"
                   ></Link>
-                  <Link className="icon-socials icon-instagram" href="#"></Link>
-                  <Link className="icon-socials icon-twitter" href="#"></Link>
                   <Link
                     className="icon-socials icon-linkedin"
                     href="https://www.linkedin.com/company/13337675/"
                   ></Link>
-                  <Link className="icon-socials icon-youtube" href="#"></Link>
                 </div>
               </div>
               <div className="col-lg-3 width-16 mb-30">

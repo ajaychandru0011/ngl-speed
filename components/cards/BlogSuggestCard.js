@@ -7,7 +7,7 @@ const BlogSuggestCard = ({ post }) => {
     <div className="col-xl-3 col-lg-6 col-md-6">
       <div className="card-blog-grid card-blog-grid-2 hover-up min-height-360">
         <div className="card-image">
-          <Link href={`/blog/${post.slug}`}>
+          <Link href={`https://blogsngl.wpenginepowered.com/${post.slug}`}>
             <FeaturedImage
               post={post}
               styleClasses=""
@@ -17,7 +17,7 @@ const BlogSuggestCard = ({ post }) => {
           </Link>
         </div>
         <div className="card-info">
-          <Link href={`/blog/${post.slug}`}>
+          <Link href={`https://blogsngl.wpenginepowered.com/${post.slug}`}>
             <h6 className="color-brand-1">{post.title}</h6>
           </Link>
           <div className="blog-card-excerpt mt-20">
