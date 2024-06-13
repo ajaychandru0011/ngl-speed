@@ -35,7 +35,7 @@ const Hero = () => {
             </p>
 
             <div className="d-sm-inline-block">
-              <Button text={"Contact Us"} href={"/contact"} showIcon={true} />
+              <Button text={"Contact Us"} href={"/contact"} showIcon={false} />
             </div>
           </div>
         </div>

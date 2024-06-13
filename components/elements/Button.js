@@ -1,5 +1,12 @@
 import Link from "next/link";
-const Button = ({ text, showIcon, href, onClick, target }) => {
+const Button = ({
+  text,
+  showIcon,
+  href,
+  onClick,
+  target,
+  customBtnSize = true,
+}) => {
   return (
     <>
       {href ? (
@@ -29,7 +36,9 @@ const Button = ({ text, showIcon, href, onClick, target }) => {
         </Link>
       ) : (
         <button
-          className="btn btn-brand-1-full hover-up custom-btn-size"
+          className={`btn btn-brand-1-full hover-up ${
+            customBtnSize ? "custom-btn-size" : ""
+          }`}
           onClick={onClick}
         >
           {text}

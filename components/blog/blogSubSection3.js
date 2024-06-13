@@ -12,7 +12,7 @@ const BlogSubSection3 = ({ posts }) => {
         >
           <div className="card-blog-grid card-blog-grid-3 hover-up">
             <div className="card-image">
-              <Link href={`/blog/${post.slug}`}>
+              <Link href={`https://blogsngl.wpenginepowered.com/${post.slug}`}>
                 <FeaturedImage
                   post={post}
                   styleClasses=""
@@ -22,7 +22,7 @@ const BlogSubSection3 = ({ posts }) => {
               </Link>
             </div>
             <div className="card-info">
-              <Link href={`/blog/${post.slug}`}>
+              <Link href={`https://blogsngl.wpenginepowered.com/${post.slug}`}>
                 <h4 className="color-brand-1">{post.title}</h4>
               </Link>
               <div className="mb-25 mt-10">

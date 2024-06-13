@@ -40,7 +40,9 @@ const Sidebar = ({ openClass }) => {
                           <Link href="/aso">Get Free ASO Analysis</Link>
                         </li>
                         <li>
-                          <Link href="/blog">Blog</Link>
+                          <Link href="http://blogs.nextgrowthlabs.com/">
+                            Blog
+                          </Link>
                         </li>
                         <li>
                           <Link href="/career">Career</Link>
@@ -49,7 +51,7 @@ const Sidebar = ({ openClass }) => {
                           <Link href="/contact">Contact Us</Link>
                         </li>
                         <li>
-                          <Link href="/terms">Terms</Link>
+                          <Link href="/term-conditions">Terms</Link>
                         </li>
                         <li>
                           <Link href="/privacy">Privacy</Link>

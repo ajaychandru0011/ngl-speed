@@ -1,6 +1,6 @@
 import React from "react";
 import ToolsCard from "../cards/ToolsCard";
-import Link from "next/link";
+import Button from "../elements/Button";
 
 const data = [
   {
@@ -1342,7 +1342,7 @@ const Tools = ({ length }) => {
   return (
     <section className="section mt-80">
       <div className="container">
-        <div className="row align-items-end">
+        {/* <div className="row align-items-end">
           <div className="col-lg-8 col-md-8">
             <h2 className="color-brand-1 mb-20">Tools that are built by us</h2>
             <p className="font-lg color-gray-500">
@@ -1370,6 +1370,17 @@ const Tools = ({ length }) => {
                 />
               </svg>
             </Link>
+          </div>
+        </div> */}
+        <div className="row">
+          <div className="col-lg-12 text-center">
+            <h2 className="color-brand-1 mb-20">Tools that are built by us</h2>
+            <p className="font-lg color-gray-500 mb-30">
+              We&apos;ve built flurry of tools - that keeps up light years ahead
+              in the mobile app promotion stack.
+            </p>
+
+            <Button text={"Learn More"} href="/tools" />
           </div>
         </div>
         <div className="row mt-50">
