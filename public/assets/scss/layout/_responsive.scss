@@ -23,7 +23,9 @@
     height: 72px;
     line-height: 72px;
   }
-
+  .header-logo-mobile {
+    width: 0%;
+  }
   .box-banner-abs {
     position: relative;
     top: auto;
@@ -765,6 +767,17 @@
   .testimonial-min-height {
     min-height: 200px;
     margin-top: 2.5rem;
+  }
+  .header-logo-mobile {
+    width: 0%;
+  }
+  .mlNav-110 {
+    margin-left: 110px;
+  }
+  .header {
+    .nav-main-menu {
+      padding: 0 160px;
+    }
   }
 }
 
