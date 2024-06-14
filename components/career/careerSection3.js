@@ -17,7 +17,7 @@ const CareerSection3 = () => {
         </div>
         <div className="row mt-50">
           <div className="col-lg-6">
-            <div className="card-offer card-we-do hover-up">
+            <div className="card-offer card-we-do hover-up card-min-height">
               <div className="card-image">
                 <Image
                   width={69}
@@ -28,16 +28,19 @@ const CareerSection3 = () => {
                 />
               </div>
               <div className="card-info">
-                <h4 className="color-brand-1 mb-10">UI/UX Designer Fulltime</h4>
-                <p className="font-md color-grey-500 mb-5">
-                  Seamless importing and round-tripping of Microsoft Project
-                  plans, Excel files &amp; CSV files.
+                <h4 className="color-brand-1 mb-10 career-card-heading">
+                  Outreach & Sales Associate
+                </h4>
+                <p className="font-md color-grey-500 mb-5 career-card-info-paragraph">
+                  Building and maintaining client relationships, identifying new
+                  sales opportunities, and effectively promoting our products
+                  and services.
                 </p>
               </div>
             </div>
           </div>
           <div className="col-lg-6">
-            <div className="card-offer card-we-do hover-up">
+            <div className="card-offer card-we-do hover-up card-min-height">
               <div className="card-image">
                 <Image
                   width={69}
@@ -48,16 +51,19 @@ const CareerSection3 = () => {
                 />
               </div>
               <div className="card-info">
-                <h4 className="color-brand-1 mb-10">Full Stack Engineer</h4>
-                <p className="font-md color-grey-500 mb-5">
-                  What makes us different from others? We give holistic
-                  solutions with strategy, design &amp; technology.
+                <h4 className="color-brand-1 mb-10">
+                  Digital Marketing Executive
+                </h4>
+                <p className="font-md color-grey-500 mb-5 career-card-info-min-height">
+                  Developing, implementing, and managing online marketing
+                  campaigns that drive traffic, engage customers, and generate
+                  leads.
                 </p>
               </div>
             </div>
           </div>
           <div className="col-lg-6">
-            <div className="card-offer card-we-do hover-up">
+            <div className="card-offer card-we-do hover-up card-min-height">
               <div className="card-image">
                 <Image
                   width={69}
@@ -68,16 +74,19 @@ const CareerSection3 = () => {
                 />
               </div>
               <div className="card-info">
-                <h4 className="color-brand-1 mb-10">Java Software Engineer</h4>
-                <p className="font-md color-grey-500 mb-5">
-                  No lag time, no lost effort when priorities change, no email
-                  black hole. As team collaboration improves
+                <h4 className="color-brand-1 mb-10">
+                  Search Engine Optimization Specialist
+                </h4>
+                <p className="font-md color-grey-500 mb-5 career-card-info-min-height">
+                  Develop and implement effective SEO strategies to improve our
+                  website&apos;s visibility on search engines, drive organic
+                  traffic, and increase overall online presence.
                 </p>
               </div>
             </div>
           </div>
           <div className="col-lg-6">
-            <div className="card-offer card-we-do hover-up">
+            <div className="card-offer card-we-do hover-up card-min-height">
               <div className="card-image">
                 <Image
                   width={69}
@@ -88,16 +97,18 @@ const CareerSection3 = () => {
                 />
               </div>
               <div className="card-info">
-                <h4 className="color-brand-1 mb-10">Frontend Developer</h4>
-                <p className="font-md color-grey-500 mb-5">
-                  Share updates instantly within our project management
-                  software, and get the entire team collaborating
+                <h4 className="color-brand-1 mb-10">
+                  Data Center Administrator - Freelancer
+                </h4>
+                <p className="font-md color-grey-500 mb-5 career-card-info-min-height">
+                  Ensuring the availability, performance, and security of our
+                  data center infrastructure.
                 </p>
               </div>
             </div>
           </div>
           <div className="col-lg-6">
-            <div className="card-offer card-we-do hover-up">
+            <div className="card-offer card-we-do hover-up card-min-height">
               <div className="card-image">
                 <Image
                   width={69}
@@ -109,17 +120,18 @@ const CareerSection3 = () => {
               </div>
               <div className="card-info">
                 <h4 className="color-brand-1 mb-10">
-                  React Native Web Developer
+                  Junior HR Representative (Intern)
                 </h4>
-                <p className="font-md color-grey-500 mb-5">
-                  Seamless importing and round-tripping of Microsoft Project
-                  plans, Excel files &amp; CSV files.
+                <p className="font-md color-grey-500 mb-5 career-card-info-min-height">
+                  Assist in various HR functions, including recruitment,
+                  employee onboarding, record-keeping, and providing support to
+                  employees.
                 </p>
               </div>
             </div>
           </div>
           <div className="col-lg-6">
-            <div className="card-offer card-we-do hover-up">
+            <div className="card-offer card-we-do hover-up card-min-height">
               <div className="card-image">
                 <Image
                   width={69}
@@ -130,10 +142,12 @@ const CareerSection3 = () => {
                 />
               </div>
               <div className="card-info">
-                <h4 className="color-brand-1 mb-10">Senior System Engineer</h4>
-                <p className="font-md color-grey-500 mb-5">
-                  What makes us different from others? We give holistic
-                  solutions with strategy, design &amp; technology.
+                <h4 className="color-brand-1 mb-10">
+                  Senior Content Associate
+                </h4>
+                <p className="font-md color-grey-500 mb-5 career-card-info-min-height">
+                  Creating, managing, and optimizing high-quality content across
+                  various platforms.
                 </p>
               </div>
             </div>
