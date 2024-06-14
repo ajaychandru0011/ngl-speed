@@ -106,7 +106,7 @@ const data = [
         </defs>
       </svg>
     ),
-    toolLink: "https://tools.nextgrowthlabs.com/",
+    toolLink: "/contact",
     tag: "Enterprise",
   },
   {
@@ -198,7 +198,7 @@ const data = [
         </defs>
       </svg>
     ),
-    toolLink: "https://tools.nextgrowthlabs.com/",
+    toolLink: "/contact",
     tag: "Enterprise",
   },
   {
@@ -245,7 +245,7 @@ const data = [
         </defs>
       </svg>
     ),
-    toolLink: "https://tools.nextgrowthlabs.com/",
+    toolLink: "/contact",
     tag: "Enterprise",
   },
   {
@@ -305,7 +305,7 @@ const data = [
         />
       </svg>
     ),
-    toolLink: "https://tools.nextgrowthlabs.com/",
+    toolLink: "/contact",
     tag: "Enterprise",
   },
   {
@@ -404,7 +404,7 @@ const data = [
         </defs>
       </svg>
     ),
-    toolLink: "https://tools.nextgrowthlabs.com/",
+    toolLink: "/contact",
     tag: "Enterprise",
   },
   {
@@ -484,7 +484,7 @@ const data = [
         />
       </svg>
     ),
-    toolLink: "https://tools.nextgrowthlabs.com/",
+    toolLink: "/contact",
     tag: "Enterprise",
   },
   {
@@ -1355,7 +1355,7 @@ const data = [
         </defs>
       </svg>
     ),
-    toolLink: "https://tools.nextgrowthlabs.com/",
+    toolLink: "/contact",
     tag: "Enterprise",
   },
 ];
@@ -1382,6 +1382,7 @@ const SEOSection6 = () => {
               name={item.name}
               desc={item.desc}
               toolLink={item.toolLink}
+              tag={item.tag}
             />
           ))}
         </div>
