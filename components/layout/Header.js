@@ -34,7 +34,7 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                 </Link>
               </div>
               <div className="header-nav d-flex align-items-center">
-                <div className="header-logo d-flex justify-content-end">
+                <div className="header-logo d-flex header-logo-lg-xxl">
                   <Link className="d-flex" href="/">
                     <Image
                       alt="Ecom"

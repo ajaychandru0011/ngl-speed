@@ -6590,6 +6590,9 @@ textarea.textarea-control {
     min-height: 200px;
     margin-top: 2.5rem;
   }
+  header-logo-lg-xxl {
+    justify-content: left;
+  }
 }
 @media (max-width: 1199.98px) {
   .header {
@@ -6686,6 +6689,9 @@ textarea.textarea-control {
   .testimonial-min-height {
     min-height: 310px;
     margin-top: 2.5rem;
+  }
+  .header-logo-mobile {
+    width: 100%;
   }
 }
 @media (max-width: 991.98px) {
@@ -6818,6 +6824,9 @@ textarea.textarea-control {
   .testimonial-min-height {
     min-height: 85px;
     margin-top: 2.5rem;
+  }
+  .header-logo-mobile {
+    width: 100%;
   }
 }
 @media (max-width: 767.98px) {
@@ -6982,6 +6991,9 @@ textarea.textarea-control {
     min-height: 140px;
     margin-top: 2.5rem;
   }
+  .header-logo-mobile {
+    width: 100%;
+  }
 }
 @media (max-width: 575.98px) {
   .header {
@@ -7053,6 +7065,14 @@ textarea.textarea-control {
   .asset-5 {
     display: none;
   }
+  .header-logo-mobile {
+    width: 100%;
+  }
+}
+@media (max-width: 649.98px) {
+  .header-logo-mobile {
+    width: 100%;
+  }
 }
 @media (max-width: 499.98px) {
   .footer .width-20,
@@ -7122,6 +7142,9 @@ textarea.textarea-control {
   .item-tick.font-xl-bold {
     line-height: 18px;
     font-size: 14px;
+  }
+  .header-logo-mobile {
+    width: 100%;
   }
 }
 @media (max-width: 449.98px) {
@@ -7203,6 +7226,9 @@ textarea.textarea-control {
   .banner-9.mb-100 {
     margin-bottom: 130px !important;
   }
+  .header-logo-mobile {
+    width: 100%;
+  }
 }
 @media (max-width: 349.98px) {
   .mobile-header-wrapper-style {
@@ -7261,6 +7287,9 @@ textarea.textarea-control {
     width: 300px !important;
     height: 300px !important;
   }
+  .header-logo-mobile {
+    width: 100%;
+  }
 }
 @media (min-width: 1400px) {
   .container.wide {
@@ -7278,6 +7307,9 @@ textarea.textarea-control {
   }
   .header .nav-main-menu {
     padding: 0 160px;
+  }
+  header-logo-lg-xxl {
+    justify-content: end;
   }
 }
 /*OTHER SCREEN*/
