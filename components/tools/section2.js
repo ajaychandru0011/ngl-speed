@@ -1,6 +1,6 @@
 import React from "react";
-import ToolsCard from "../cards/ToolsCard";
-import Link from "next/link";
+import ToolsCard1 from "../cards/ToolsCard1";
+
 const data = [
   {
     name: "Sync & Reply",
@@ -277,7 +277,7 @@ const ToolsSection2 = () => {
         </div>
         <div className="row mt-50">
           {data.map((item, index) => (
-            <ToolsCard
+            <ToolsCard1
               key={index + item.name}
               name={item.name}
               img={item.img}

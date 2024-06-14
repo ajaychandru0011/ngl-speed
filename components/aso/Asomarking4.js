@@ -26,7 +26,7 @@ const Asomarketing4 = () => {
           <div className="col-xl-6 col-lg-7">
             <div className="row pt-0 row-image">
               <Image
-                src="/assets/imgs/template/Marketing-dashboard 1.svg"
+                src="/assets/imgs/template/Marketing-dashboard1.svg"
                 width={690}
                 height={420}
                 alt="Marketing-dashboard"
