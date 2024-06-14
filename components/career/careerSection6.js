@@ -26,10 +26,11 @@ const CareerSection6 = () => {
                   Want to talk to a marketing expert?
                 </h2>
                 <p className="font-md color-grey-500">
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                  qui officia deserunt mollit laborum — semper quis lectus
-                  nulla. Interactively transform magnetic growth strategies
-                  whereas prospective &quot;outside the box&quot; thinking.
+                  At NextGrowth Labs, we value data-driven individuals with a
+                  commitment to excellence. Elevate your business with our
+                  expert SEO and ASO skills. Experience dynamic growth through
+                  market-leading strategies. Choose us for guaranteed brand
+                  visibility and unmatched digital success.
                 </p>
                 <div className="box-button text-start mt-65">
                   {" "}

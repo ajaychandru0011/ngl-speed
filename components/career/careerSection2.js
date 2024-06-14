@@ -10,9 +10,11 @@ const CareerSection2 = () => {
               Why You Should Consider Applying
             </h2>
             <p className="font-lg color-gray-500">
-              We&apos;re lively, not corporate. We have the energy and boldness
-              of a startup and <br className="d-none d-lg-block" />
-              the expertise and pragmatism of a scale-up. All in one place.
+              Join NextGrowth Labs - a place where data-driven excellence is
+              valued, hard work acknowledged,{" "}
+              <br className="d-none d-lg-block" />
+              skills are nurtured and contributions impact success. Make a
+              real-time difference with us.
             </p>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import ToolsCard from "../cards/ToolsCard";
+import ToolsCard1 from "../cards/ToolsCard1";
 import Link from "next/link";
 const data = [
   {
@@ -360,7 +360,7 @@ const ToolsSection1 = () => {
         </div>
         <div className="row mt-50">
           {data.map((item, index) => (
-            <ToolsCard
+            <ToolsCard1
               key={index + item.name}
               name={item.name}
               desc={item.desc}
