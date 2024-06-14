@@ -83,11 +83,11 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                 </div>
               </div>
             </div>
-            <div className="header-right">
+            {/* <div className="header-right">
               <div className="d-none d-sm-inline-block">
                 <Button text={"Get Started"} href={"/register"} />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </header>

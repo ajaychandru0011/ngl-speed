@@ -2326,8 +2326,8 @@ const ToolsSection3 = () => {
               in the mobile app promotion stack.
             </p>
           </div>
-          <div className="col-lg-4 col-md-4 text-md-end text-start">
-            {/* <Link href="#" className="btn btn-default font-sm-bold pl-0">
+          {/* <div className="col-lg-4 col-md-4 text-md-end text-start">
+ <Link href="#" className="btn btn-default font-sm-bold pl-0">
               Learn More
               <svg
                 className="w-6 h-6 icon-16 ml-5"
@@ -2343,8 +2343,8 @@ const ToolsSection3 = () => {
                   d="M14 5l7 7m0 0l-7 7m7-7H3"
                 />
               </svg>
-            </Link> */}
-          </div>
+            </Link> 
+          </div> */}
         </div>
         <div className="row mt-50">
           {data.map((item, index) => (

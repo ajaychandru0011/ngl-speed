@@ -20,10 +20,6 @@ const Asomarketing4 = () => {
                 reduction is <b>x</b>, then you pay a fee that is much lower
                 than <b>x</b>.
               </p>
-              <div className="box-button text-start mt-40">
-                {" "}
-                <Button text="Find Out How" href={"#"} />
-              </div>
             </div>
           </div>
 

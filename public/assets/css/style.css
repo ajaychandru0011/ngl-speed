@@ -6583,6 +6583,10 @@ textarea.textarea-control {
     left: auto;
     transform: none;
   }
+  .testimonial-min-height {
+    min-height: 200px;
+    margin-top: 2.5rem;
+  }
 }
 @media (max-width: 1199.98px) {
   .header {
@@ -6675,6 +6679,10 @@ textarea.textarea-control {
   .asset-5 {
     top: 550px;
     left: 230px;
+  }
+  .testimonial-min-height {
+    min-height: 310px;
+    margin-top: 2.5rem;
   }
 }
 @media (max-width: 991.98px) {
@@ -6803,6 +6811,10 @@ textarea.textarea-control {
   }
   .header .header-right a {
     padding: 12px 13px;
+  }
+  .testimonial-min-height {
+    min-height: 85px;
+    margin-top: 2.5rem;
   }
 }
 @media (max-width: 767.98px) {
@@ -6962,6 +6974,10 @@ textarea.textarea-control {
   }
   .accordion .accordion-button {
     padding: 25px;
+  }
+  .testimonial-min-height {
+    min-height: 140px;
+    margin-top: 2.5rem;
   }
 }
 @media (max-width: 575.98px) {
@@ -7246,6 +7262,10 @@ textarea.textarea-control {
 @media (min-width: 1400px) {
   .container.wide {
     max-width: 1544px;
+  }
+  .testimonial-min-height {
+    min-height: 200px;
+    margin-top: 2.5rem;
   }
 }
 /*OTHER SCREEN*/

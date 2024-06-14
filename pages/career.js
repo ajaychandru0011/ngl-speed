@@ -6,7 +6,7 @@ import CareerSection4 from "../components/career/careerSection4";
 import CareerSection5 from "../components/career/careerSection5";
 import CareerSection6 from "../components/career/careerSection6";
 import CareerSection7 from "../components/career/careerSection7";
-import NewsLetter from "../components/elements/Newsletter";
+
 import Layout from "../components/layout/Layout";
 import PageHead from "../components/elements/PageHead";
 import { getAllPosts, getPostSlug } from "../lib/posts";
@@ -36,7 +36,6 @@ const career = ({ suggestedPosts }) => {
         <CareerSection5 />
         <CareerSection6 />
         <CareerSection7 post={suggestedPosts} />
-        <NewsLetter />
       </Layout>
     </>
   );
