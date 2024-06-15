@@ -107,7 +107,7 @@ const data = [
         </defs>
       </svg>
     ),
-    toolLink: "https://tools.nextgrowthlabs.com/",
+    toolLink: "/contact",
     tag: "Enterprise",
   },
   {
@@ -199,7 +199,7 @@ const data = [
         </defs>
       </svg>
     ),
-    toolLink: "https://tools.nextgrowthlabs.com/",
+    toolLink: "/contact",
     tag: "Enterprise",
   },
   {
@@ -246,7 +246,7 @@ const data = [
         </defs>
       </svg>
     ),
-    toolLink: "https://tools.nextgrowthlabs.com/",
+    toolLink: "/contact",
     tag: "Enterprise",
   },
   {
@@ -306,7 +306,7 @@ const data = [
         />
       </svg>
     ),
-    toolLink: "https://tools.nextgrowthlabs.com/",
+    toolLink: "/contact",
     tag: "Enterprise",
   },
   {
@@ -405,7 +405,7 @@ const data = [
         </defs>
       </svg>
     ),
-    toolLink: "https://tools.nextgrowthlabs.com/",
+    toolLink: "/contact",
     tag: "Enterprise",
   },
   {
@@ -485,7 +485,7 @@ const data = [
         />
       </svg>
     ),
-    toolLink: "https://tools.nextgrowthlabs.com/",
+    toolLink: "/contact",
     tag: "Enterprise",
   },
   {
@@ -1356,7 +1356,7 @@ const data = [
         </defs>
       </svg>
     ),
-    toolLink: "https://tools.nextgrowthlabs.com/",
+    toolLink: "/contact",
     tag: "Enterprise",
   },
 ];
