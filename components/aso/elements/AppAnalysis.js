@@ -16,9 +16,10 @@ const AppAnalysis = () => {
     enabled: appPackageURL !== undefined,
   })
 
+  const loaderBG = userSelectedAppObject ? {backgroundColor: '#E0F1F4'} : "";
   return (
     <>
-    {!isFetched && <Loader />}
+    {!isFetched && <Loader style={loaderBG}  />}
       {(isFetched && data !== undefined) && (
         <div
           id="play-info-outer-box"

@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import Image from "next/image"
 
-
 const AppBasicInfo = ({ userAppData }) => {
   const rating = parseFloat(userAppData.userRating).toFixed(1)
   const [isExpanded, setIsExpanded] = useState(false)
@@ -54,15 +53,15 @@ const AppBasicInfo = ({ userAppData }) => {
         <p className="app-description">
           {isExpanded
             ? userAppData.appDescription
-            : userAppData.appDescription.slice(0, 250)}
+            : userAppData.appDescription.slice(0, 200)}
         </p>
-        {!isExpanded && userAppData.appDescription.length > 250 && (
+        {!isExpanded && userAppData.appDescription.length > 200 && (
           <p
-          className="readMoreBtn"
-          onClick={toggleReadMore}
-        >
-          Read More
-        </p>
+            className="readMoreBtn"
+            onClick={toggleReadMore}
+          >
+            Read More
+          </p>
         )}
         {isExpanded && (
           <p
@@ -89,7 +88,12 @@ const AppBasicInfo = ({ userAppData }) => {
               <td>
                 <strong>File Size :</strong>
               </td>
-              <td style={{ width: "52%" }}>{userAppData.appFileSize}MB</td>
+              {/* <td style={{ width: "52%" }}>{userAppData.appFileSize}MB</td> */}
+              <td style={{ width: "52%" }}>
+                {userAppData.appFileSize && !isNaN(userAppData.appFileSize)
+                  ? `${userAppData.appFileSize}MB`
+                  : "N/A"}
+              </td>
             </tr>
             <tr>
               <td>

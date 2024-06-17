@@ -5914,6 +5914,7 @@ footer a {
   width: 86px;
   background: url(../imgs/page/homepage8/asset1.png) no-repeat center;
   background-size: contain;
+  z-index: -1;
 }
 
 .asset-3 {
@@ -5924,6 +5925,7 @@ footer a {
   width: 66px;
   background: url(../imgs/page/homepage8/asset3.png) no-repeat center;
   background-size: contain;
+  z-index: -1;
 }
 
 .asset-2 {
@@ -5934,6 +5936,7 @@ footer a {
   width: 75px;
   background: url(../imgs/page/homepage8/asset2.png) no-repeat center;
   background-size: contain;
+  z-index: -1;
 }
 
 .asset-4 {
@@ -5944,6 +5947,7 @@ footer a {
   width: 59px;
   background: url(../imgs/page/homepage8/asset4.png) no-repeat center;
   background-size: contain;
+  z-index: -1;
 }
 
 .asset-5 {
@@ -5954,6 +5958,7 @@ footer a {
   width: 215px;
   background: url(../imgs/page/homepage8/asset5.png) no-repeat center;
   background-size: contain;
+  z-index: -1;
 }
 
 .banner-abs {
@@ -6524,6 +6529,17 @@ textarea.textarea-control {
 }
 .list-terms li a:hover {
   color: #06d6a0;
+}
+
+.tableOfContents {
+  padding-top: 100px; /* Optional: to create space between the header and the sticky element */
+  transition: position 0.3s ease-in-out;
+}
+
+.sticky {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 100px; /* Adjust this if you need an offset */
 }
 
 .box-core-value {
@@ -7354,7 +7370,6 @@ textarea.textarea-control {
   align-items: center;
   position: relative;
   top: 50%;
-  background-color: #E0F1F4;
 }
 
 .ball {
@@ -8040,6 +8055,7 @@ img.device-icon-logo {
   font-size: 1.2rem;
   color: green;
   padding: 0px;
+  line-height: 1.5;
 }
 
 .seo-data {
