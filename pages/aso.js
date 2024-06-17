@@ -13,11 +13,14 @@ const Services5 = dynamic(() => import("../components/aso/Services5"));
 const Asomarketing = dynamic(() => import("../components/aso/Asomarketing"));
 const Asomarketing4 = dynamic(() => import("../components/aso/Asomarking4"));
 const AsoSection6 = dynamic(() => import("../components/aso/AsoSection6"));
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
+const queryClient = new QueryClient()
 
 const ASO = () => {
   return (
     <>
-      <PageHead title={"App Store Optimization"} />
+    <QueryClientProvider client={queryClient}>
+      <PageHead title={"Get Free ASO Analysis - NextGrowthLabs"} />
       <Layout>
         <Hero />
         <TrustBy />
@@ -30,6 +33,7 @@ const ASO = () => {
         <Asomarketing />
         <Asocontact />
       </Layout>
+      </QueryClientProvider>
     </>
   );
 };

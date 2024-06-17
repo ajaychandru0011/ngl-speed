@@ -1,9 +1,39 @@
 import Link from "next/link";
 import PageHead from "../components/elements/PageHead";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Layout from "../components/layout/Layout";
 import Image from "next/image";
-const pageTerm = () => {
+const Privacy = () => {
+  const tocRef = useRef(null);
+
+  useEffect(() => {
+    const toc = tocRef.current;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) {
+          toc.classList.remove("sticky");
+        } else {
+          toc.classList.add("sticky");
+        }
+      },
+      {
+        root: null,
+        threshold: 0,
+        rootMargin: `-100px 0px 0px 0px`, // Adjust this based on your header height
+      }
+    );
+
+    if (toc) {
+      observer.observe(toc);
+    }
+
+    return () => {
+      if (toc) {
+        observer.unobserve(toc);
+      }
+    };
+  }, []);
   return (
     <>
       <PageHead title={"Privacy Policy"} />
@@ -56,53 +86,58 @@ const pageTerm = () => {
                   />
                 </div>
               </div>
+              <div className="border-bottom"></div>
+
               <div className="row mt-70">
-                <div className="col-lg-1 col-md-1" />
                 <div className="col-lg-2 col-md-3">
-                  <h6 className="color-brand-1 mb-15">Table of contents</h6>
-                  <ul className="list-terms">
-                    <li>
-                      <Link href="#section1">
-                        How NextLabs Collects Information
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#section2">
-                        How NextLabs Uses Information
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#section3">
-                        How NextLabs Discloses Information
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#section4">Transfer To Other Countries</Link>
-                    </li>
-                    <li>
-                      <Link href="#section5">Data Retention</Link>
-                    </li>
-                    <li>
-                      <Link href="#section6">Our Commitment To Security</Link>
-                    </li>
-                    <li>
-                      <Link href="#section7">Children’s Privacy</Link>
-                    </li>
-                    <li>
-                      <Link href="#section8">Do Not Track</Link>
-                    </li>
-                    <li>
-                      <Link href="#section9">Your Rights and Choices</Link>
-                    </li>
-                    <li>
-                      <Link href="#section10">How To Contact Us</Link>
-                    </li>
-                    <li>
-                      <Link href="#section11">
-                        Updates To This Privacy Policy
-                      </Link>
-                    </li>
-                  </ul>
+                  <div ref={tocRef}>
+                    <h6 className="color-brand-1 mb-15">Table of contents</h6>
+                    <ul className="list-terms">
+                      <li>
+                        <Link href="#section1">
+                          How NextLabs Collects Information
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="#section2">
+                          How NextLabs Uses Information
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="#section3">
+                          How NextLabs Discloses Information
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="#section4">
+                          Transfer To Other Countries
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="#section5">Data Retention</Link>
+                      </li>
+                      <li>
+                        <Link href="#section6">Our Commitment To Security</Link>
+                      </li>
+                      <li>
+                        <Link href="#section7">Children&apos;s Privacy</Link>
+                      </li>
+                      <li>
+                        <Link href="#section8">Do Not Track</Link>
+                      </li>
+                      <li>
+                        <Link href="#section9">Your Rights and Choices</Link>
+                      </li>
+                      <li>
+                        <Link href="#section10">How To Contact Us</Link>
+                      </li>
+                      <li>
+                        <Link href="#section11">
+                          Updates To This Privacy Policy
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
                 <div className="col-lg-8 col-md-7">
                   <p className="font-md color-grey-500 mb-30">
@@ -262,7 +297,8 @@ const pageTerm = () => {
                     online resources.
                   </p>
                   <p className="font-md color-grey-500 mb-30">
-                    You can learn about Google’s practices by going to&nbsp;
+                    You can learn about Google&apos;s practices by going
+                    to&nbsp;
                     <Link
                       href="https://www.nextlabs.io/privacy-policy#"
                       style={{ textDecoration: "underline" }}
@@ -290,8 +326,8 @@ const pageTerm = () => {
                     member companies (or if located in the European Union, click
                     here ). Please note this does not opt you out of being
                     served ads. You will continue to receive generic ads. Please
-                    visit your device’s settings or install the AppChoices app
-                    to learn more about how you may opt out of receiving
+                    visit your device&apos;s settings or install the AppChoices
+                    app to learn more about how you may opt out of receiving
                     personalized ads in mobile apps. Our Services may include
                     links, features or components supplied by third parties,
                     such as the Facebook “Like” button or other interactive
@@ -347,13 +383,13 @@ const pageTerm = () => {
                   </h5>
                   <p className="font-md color-grey-500 mb-30">
                     We will use your information for marketing purposes, such as
-                    contacting you about NextLabs’s products and services,
+                    contacting you about NextLabs&apos;s products and services,
                     providing you with promotional materials that may be useful,
                     relevant, valuable or otherwise of interest to you. We use
                     Personal Information that we collect in connection with the
                     Services, such as your location and your activities on the
                     Services, to determine whether NextLabs may wish to contact
-                    you in order to offer you NextLabs’s services and to
+                    you in order to offer you NextLabs&apos;s services and to
                     facilitate the delivery of advertisements. We may send you
                     (a) information about topics or content that we think may
                     interest you, or (b) updates about the latest developments
@@ -395,8 +431,8 @@ const pageTerm = () => {
                   </h5>
                   <p className="font-md color-grey-500 mb-30">
                     NextLabs may share your information with and receive
-                    information from NextLabs’s offices throughout the world,
-                    subject to this Privacy Policy.
+                    information from NextLabs&apos;s offices throughout the
+                    world, subject to this Privacy Policy.
                   </p>
                   <h5 className="color-brand-1 mb-20">
                     3.2. Service Providers
@@ -413,7 +449,7 @@ const pageTerm = () => {
                     NextLabs may work with and share your Personal Information
                     with our third party advertisinsite-section bg-lightg
                     partners to provide you with advertisements regarding
-                    NextLabs’s Services. For more information about our
+                    NextLabs&apos;s Services. For more information about our
                     advertising and marketing practices and those of the third
                     party advertising partners, please see the Cookies and
                     Related Technologies section above.
@@ -476,12 +512,12 @@ const pageTerm = () => {
                     countries for which adequacy decisions have been issued, use
                     contractual protections for the transfer of Personal
                     Information to our U.S. headquarters or third parties, such
-                    as the European Commission’s Standard Contractual Clauses,
-                    or rely on third parties’ certification to the EU-U.S. or
-                    Swiss-U.S. Privacy Shield frameworks, where applicable. You
-                    may contact us as specified below to obtain a copy of the
-                    safeguards we use to transfer Personal Information outside
-                    of the EEA.
+                    as the European Commission&apos;s Standard Contractual
+                    Clauses, or rely on third parties&apos; certification to the
+                    EU-U.S. or Swiss-U.S. Privacy Shield frameworks, where
+                    applicable. You may contact us as specified below to obtain
+                    a copy of the safeguards we use to transfer Personal
+                    Information outside of the EEA.
                   </p>
                   <h4 className="color-brand-1 mb-20" id="section5">
                     5. Data Retention
@@ -512,7 +548,7 @@ const pageTerm = () => {
                     or receives.
                   </p>
                   <h4 className="color-brand-1 mb-20" id="section7">
-                    7. Children’s Privacy
+                    7. Children&apos;s Privacy
                   </h4>
                   <p id="section-8" className="font-md color-grey-500 mb-30">
                     We do not knowingly collect, maintain, or use Personal
@@ -555,8 +591,8 @@ const pageTerm = () => {
                     deletion requests that are unduly burdensome or repetitive
                     or that cannot be honored in light of legal obligations or
                     ongoing disputes, or where retention is necessary to enforce
-                    our agreements or protect our or another party’s rights,
-                    property, safety, or security.
+                    our agreements or protect our or another party&apos;s
+                    rights, property, safety, or security.
                   </p>
                   <h5 className="color-brand-1 mb-20">9.2. European Rights</h5>
                   <p id="section-10" className="font-md color-grey-500 mb-30">
@@ -603,65 +639,21 @@ const pageTerm = () => {
                     countries for which adequacy decisions have been issued, use
                     contractual protections for the transfer of Personal
                     Information to our U.S. headquarters or third parties, such
-                    as the European Commission’s Standard Contractual Clauses,
-                    or rely on third parties’ certification to the EU-U.S. or
-                    Swiss-U.S. Privacy Shield frameworks, where applicable. You
-                    may contact us as specified below to obtain a copy of the
-                    safeguards we use to transfer Personal Information outside
-                    of the EEA.
+                    as the European Commission&apos;s Standard Contractual
+                    Clauses, or rely on third parties&apos; certification to the
+                    EU-U.S. or Swiss-U.S. Privacy Shield frameworks, where
+                    applicable. You may contact us as specified below to obtain
+                    a copy of the safeguards we use to transfer Personal
+                    Information outside of the EEA.
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <section className="section mt-50">
-          <div className="container">
-            <div className="box-newsletter box-newsletter-2">
-              <div className="row align-items-center">
-                <div className="col-lg-6 col-md-7 m-auto text-center">
-                  <span className="font-lg color-brand-1">Newsletter</span>
-                  <h2 className="color-brand-1 mb-15 mt-5">
-                    Subcribe our newsletter
-                  </h2>
-                  <p className="font-md color-grey-500">
-                    Do not miss the latest information from us about the
-                    trending in the market. By clicking the button, you are
-                    agreeing with our Term &amp; Conditions
-                  </p>
-                  <div className="form-newsletter mt-30">
-                    <form action="#">
-                      <input type="text" placeholder="Enter you mail .." />
-                      <button
-                        className="btn btn-submit-newsletter"
-                        type="submit"
-                      >
-                        <svg
-                          className="w-6 h-6 icon-16"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M14 5l7 7m0 0l-7 7m7-7H3"
-                          />
-                        </svg>
-                      </button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
       </Layout>
     </>
   );
 };
 
-export default pageTerm;
+export default Privacy;

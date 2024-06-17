@@ -107,6 +107,8 @@ const data = [
         </defs>
       </svg>
     ),
+    toolLink: "/contact",
+    tag: "Enterprise",
   },
   {
     name: "SDKs",
@@ -197,6 +199,8 @@ const data = [
         </defs>
       </svg>
     ),
+    toolLink: "/contact",
+    tag: "Enterprise",
   },
   {
     name: "ASO Chrome Extension",
@@ -242,6 +246,8 @@ const data = [
         </defs>
       </svg>
     ),
+    toolLink: "/contact",
+    tag: "Enterprise",
   },
   {
     name: "Doc Add-Ons",
@@ -300,6 +306,8 @@ const data = [
         />
       </svg>
     ),
+    toolLink: "/contact",
+    tag: "Enterprise",
   },
   {
     name: "BigQuery Connector",
@@ -397,6 +405,8 @@ const data = [
         </defs>
       </svg>
     ),
+    toolLink: "/contact",
+    tag: "Enterprise",
   },
   {
     name: "Data Studio Connector",
@@ -475,6 +485,8 @@ const data = [
         />
       </svg>
     ),
+    toolLink: "/contact",
+    tag: "Enterprise",
   },
   {
     name: "SERP Tracker",
@@ -564,6 +576,7 @@ const data = [
         </defs>
       </svg>
     ),
+    toolLink: "https://nextgrowthlabs.com/google-serp-rank-tracker/",
   },
   {
     name: "Keyword Suggest",
@@ -642,6 +655,7 @@ const data = [
         />
       </svg>
     ),
+    toolLink: "https://tools.nextgrowthlabs.com/keyword-suggestion/",
   },
   {
     name: "Chrome Add-Ons",
@@ -692,6 +706,8 @@ const data = [
         </defs>
       </svg>
     ),
+    toolLink:
+      "https://chromewebstore.google.com/detail/aso-seo-search-ranking-ke/pjjlpohgclhhnmbjfhijoeikehadbohd",
   },
   {
     name: "Content Assist",
@@ -754,6 +770,8 @@ const data = [
         />
       </svg>
     ),
+    toolLink:
+      "https://tools.nextgrowthlabs.com/seo-and-aso-keyword-content-writing-assistant/",
   },
   {
     name: "Bulk Keyword Rank Checker",
@@ -867,6 +885,7 @@ const data = [
         </defs>
       </svg>
     ),
+    toolLink: "https://tools.nextgrowthlabs.com/bulk-website-rank-checker/",
   },
   {
     name: "Keyword Density Monitor",
@@ -981,6 +1000,7 @@ const data = [
         </defs>
       </svg>
     ),
+    toolLink: "https://tools.nextgrowthlabs.com/keyword-density-tool/",
   },
   {
     name: "Title and Meta Checker",
@@ -1107,6 +1127,7 @@ const data = [
         </defs>
       </svg>
     ),
+    toolLink: "https://tools.nextgrowthlabs.com/title-meta-description/",
   },
   {
     name: "Page Speed Assessment",
@@ -1213,6 +1234,7 @@ const data = [
         </defs>
       </svg>
     ),
+    toolLink: "https://tools.nextgrowthlabs.com/page-speed-assessment/",
   },
   {
     name: "Search Console Connector",
@@ -1335,6 +1357,8 @@ const data = [
         </defs>
       </svg>
     ),
+    toolLink: "/contact",
+    tag: "Enterprise",
   },
 ];
 const Tools = ({ length }) => {
@@ -1353,7 +1377,7 @@ const Tools = ({ length }) => {
             </p>
           </div>
           <div className="col-lg-4 col-md-4 text-md-end text-start">
-            <Link href="/tools" className="btn btn-default font-sm-bold pl-0">
+            <toolLink href="/tools" className="btn btn-default font-sm-bold pl-0">
               Learn More
               <svg
                 className="w-6 h-6 icon-16 ml-5"
@@ -1369,7 +1393,7 @@ const Tools = ({ length }) => {
                   d="M14 5l7 7m0 0l-7 7m7-7H3"
                 />
               </svg>
-            </Link>
+            </toolLink>
           </div>
         </div> */}
         <div className="row">
@@ -1390,6 +1414,8 @@ const Tools = ({ length }) => {
               name={item.name}
               img={item.img}
               desc={item.desc}
+              toolLink={item.toolLink}
+              tag={item.tag}
             />
           ))}
         </div>

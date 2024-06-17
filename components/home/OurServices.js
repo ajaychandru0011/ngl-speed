@@ -4,26 +4,26 @@ const SERVICES_DATA = [
   {
     image: "/assets/imgs/page/homepage4/offer1.png",
     heading: "ASO",
-    desc: " Seamless importing and round-tripping of Microsoft Project plans, Excel files & CSV files.",
+    desc: "With our expert ASO strategies, your app will not only attract more users but also retain them, leading to increased engagement and profitability. Let us help you maximize your app’s potential and achieve your desired results.",
     route: "/aso",
   },
   {
     image: "/assets/imgs/page/homepage4/offer2.png",
     heading: "SEO",
-    desc: "What makes us different from others? We give holistic solutions with strategy, design & technology.",
+    desc: "With our expert SEO strategies, your site will not only attract more visitors but also engage and convert them, leading to increased sales and success. Let us help you unlock your website’s full potential and achieve your desired outcomes.",
     route: "/seo",
   },
   {
     image: "/assets/imgs/page/homepage4/offer3.png",
     heading: "Ads",
-    desc: "No lag time, no lost effort when priorities change, no email black hole. As team collaboration improves",
-    route: "/",
+    desc: "With our expert ad management, your business will see increased traffic, higher engagement, and improved sales. Let us help you leverage the power of ads to achieve your marketing goals and grow your business effectively.",
+    route: "/contact",
   },
   {
     image: "/assets/imgs/page/homepage4/offer4.png",
     heading: "Engagement & Retention",
-    desc: "Share updates instantly within our project management software, and get the entire team collaborating",
-    route: "/",
+    desc: "Our Engagement & Retention services are tailored to foster customer loyalty and drive sustained growth for your business. We implement personalized strategies that keep your audience engaged and invested in your brand.",
+    route: "/contact",
   },
 ];
 

@@ -8,7 +8,7 @@ import LoadMoreButton from "../elements/LoadMoreButton";
 
 export default function BlogSection2({ allPosts }) {
   const [post, setPost] = useState(allPosts);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   // useEffect(() => {
   //   try {
