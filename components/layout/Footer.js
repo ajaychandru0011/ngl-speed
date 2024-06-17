@@ -131,11 +131,11 @@ const Footer = () => {
                       Html Editor
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="https://tools.nextgrowthlabs.com/bulk-website-rank-checker/">
                       Website Rank Checker
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link href="https://tools.nextgrowthlabs.com/emi-calculator/">
                       Emi Calculator

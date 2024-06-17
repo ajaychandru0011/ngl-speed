@@ -6520,6 +6520,17 @@ textarea.textarea-control {
   color: #06d6a0;
 }
 
+.tableOfContents {
+  padding-top: 100px; /* Optional: to create space between the header and the sticky element */
+  transition: position 0.3s ease-in-out;
+}
+
+.sticky {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 100px; /* Adjust this if you need an offset */
+}
+
 .box-core-value {
   padding-left: 80px;
   position: relative;
