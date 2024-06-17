@@ -30,7 +30,6 @@ const SearchResults = () => {
   const [_8, setInputFocused] = useAtom(focusAtom)
   const debouncedKeyword = useDebounce(searchAppKeyword, 500);
   
-
 // ******************debouncing*******************
     const { data, isFetched, isPending, isError } = useQuery({
       queryKey: ["searchResults", debouncedKeyword, countryCode],
@@ -64,17 +63,11 @@ const SearchResults = () => {
   }
   // handle audit app
   const handleSelectedAppForAudit = (data) => {
-    console.log("selected app data", data)
-    return
-
+    // console.log("selected app data", data)
     if (searchAppVisible["search-box1"]) {
-      setIsPopupVisible(true)
-    //   setShouldScroll(true)
       setFormInput({ ...formInput, appURL: data["data-package-url"]});
     }
-    if(activeTab !== "pricingTab"){
-      setActiveTab("pricingTab")
-    }
+
   }
   // ******** close suggestion list whenever click outside
   const appSuggestionRef = useRef(null)

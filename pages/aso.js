@@ -20,7 +20,7 @@ const ASO = () => {
   return (
     <>
     <QueryClientProvider client={queryClient}>
-      <PageHead title={"App Store Optimization"} />
+      <PageHead title={"Get Free ASO Analysis - NextGrowthLabs"} />
       <Layout>
         <Hero />
         <TrustBy />

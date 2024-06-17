@@ -7,19 +7,17 @@ import {
   showAppSelected,
   showRecentApps,
   userSelectedApp,
-  popupVisibleAtom,
   formInputData,
   focusAtom
 } from "../../../state/atoms";
 const RecentSearchedApps = () => {
   const [recentlySelectedApps, setRecentlySelectedApps] = useAtom(recentApps);
-  const [recentAppsVisible, setShowRecentApps] = useAtom(showRecentApps);
   const [_1, setAppSelect] = useAtom(showAppSelected);
   const [_2, setUserSelectApp] = useAtom(userSelectedApp);
+  const [_3, setShowRecentApps] = useAtom(showRecentApps);
   const [country] = useAtom(selectedAppCountry);
-  const [_3, setIsPopupVisible] = useAtom(popupVisibleAtom);
   const [formInput, setFormInput] = useAtom(formInputData)
-  const [_5, setInputFocused] = useAtom(focusAtom)
+  const [_4, setInputFocused] = useAtom(focusAtom)
 
   useEffect(() => {
     setRecentlySelectedApps(getRecentAppData());
@@ -32,9 +30,6 @@ const RecentSearchedApps = () => {
         if (!suggestion.contains(event.target)) {
           suggestion.classList.remove('format-suggestions');
           setInputFocused({})
-        //   if (isHidden) {
-        //     setIsHidden(!isHidden);
-        //   }
         }
       });
     };
@@ -43,20 +38,7 @@ const RecentSearchedApps = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
-  // handle recent app selection
-  const handleRecentAppSelection = (data) => {
-    console.log("Recent app data", data)
-    return
-    if (recentAppsVisible["suggestions-box1"]) {
-      setIsPopupVisible(true)
-    //   setShouldScroll(true)
-      setFormInput({ ...formInput, appURL: data});
-    }
-    if(activeTab !== "pricingTab"){
-      setActiveTab("pricingTab")
-    }
-  }
-
+  
   return (
     <>
       {recentlySelectedApps?.length > 0 && (
@@ -72,7 +54,7 @@ const RecentSearchedApps = () => {
               device={`${item.device}`}
               onClick={(e) => {
                 e.stopPropagation();
-                handleRecentAppSelection(item["data-package-url"])
+                setFormInput({ ...formInput, appURL: item.appPackageURL});
                 if (item.device === "android") {
                   setUserSelectApp({
                     appPackageURL: item["data-package-url"],

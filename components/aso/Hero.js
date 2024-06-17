@@ -1,33 +1,30 @@
-import React, { useRef } from "react"
+import React, { useRef, useState } from "react"
 import Country from "./elements/Country"
 import { useAtom } from "jotai"
 import {
   searchKeyword,
   showRecentApps,
   showSearchApps,
-  popupVisibleAtom,
   showAppSelected,
   focusAtom,
 } from "../../state/atoms"
 import RecentSearchedApps from "./elements/RecentSearchedApps"
 import SearchResults from "./elements/SearchResult"
+import AppAnalysis from "./elements/AppAnalysis"
 
 const Hero = () => {
   const [recentAppsVisible, setRecentAppsVisible] = useAtom(showRecentApps)
   const [searchAppKeyword, setSearchAppKeyword] = useAtom(searchKeyword)
   const [searchAppVisible, setSearchAppVisible] = useAtom(showSearchApps)
-  const [_, setPopupVisible] = useAtom(popupVisibleAtom)
   const [appSelected, _3] = useAtom(showAppSelected)
   const [inputFocused, setInputFocused] = useAtom(focusAtom)
   const inputRef = useRef()
-  const togglePopup = () => {
-    setPopupVisible(true)
-  }
   const clearInput = () => {
     setSearchAppKeyword("")
   }
 
   return (
+    <>
     <section
       className="section"
       style={{ backgroundColor: "#E0F1F4" }}
@@ -139,8 +136,8 @@ const Hero = () => {
                 id="Audit-App-button"
                 onClick={() => {
                   if (appSelected) {
-                    // console.log(appSelected);
-                    togglePopup()
+                    console.log("appSelected");
+                  
                   } else {
                     inputRef.current.focus()
                   }
@@ -153,6 +150,8 @@ const Hero = () => {
         </div>
       </div>
     </section>
+   {appSelected && <AppAnalysis />} 
+    </>
   )
 }
 
