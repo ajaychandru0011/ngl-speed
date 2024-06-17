@@ -705,7 +705,8 @@ const data = [
         </defs>
       </svg>
     ),
-    toolLink: "https://tools.nextgrowthlabs.com/",
+    toolLink:
+      "https://chromewebstore.google.com/detail/aso-seo-search-ranking-ke/pjjlpohgclhhnmbjfhijoeikehadbohd",
   },
   {
     name: "Content Assist",

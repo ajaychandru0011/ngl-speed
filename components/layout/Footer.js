@@ -4,6 +4,8 @@ const Footer = () => {
   return (
     <>
       <footer className="footer mt-80">
+        <div className="border-bottom"></div>
+
         <div className="footer-1">
           <div className="container">
             <div className="row">
@@ -131,11 +133,11 @@ const Footer = () => {
                       Html Editor
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="https://tools.nextgrowthlabs.com/bulk-website-rank-checker/">
                       Website Rank Checker
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link href="https://tools.nextgrowthlabs.com/emi-calculator/">
                       Emi Calculator

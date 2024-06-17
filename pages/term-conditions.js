@@ -1,10 +1,40 @@
 import Link from "next/link";
 import PageHead from "../components/elements/PageHead";
-import React from "react";
+import { useEffect, useRef } from "react";
 import Layout from "../components/layout/Layout";
 import Image from "next/image";
 
 const pageTerm = () => {
+  const tocRef = useRef(null);
+
+  useEffect(() => {
+    const toc = tocRef.current;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) {
+          toc.classList.remove("sticky");
+        } else {
+          toc.classList.add("sticky");
+        }
+      },
+      {
+        root: null,
+        threshold: 0,
+        rootMargin: `-100px 0px 0px 0px`, // Adjust this based on your header height
+      }
+    );
+
+    if (toc) {
+      observer.observe(toc);
+    }
+
+    return () => {
+      if (toc) {
+        observer.unobserve(toc);
+      }
+    };
+  }, []);
   return (
     <>
       <PageHead title={"Terms & Conditions"} />
@@ -57,90 +87,99 @@ const pageTerm = () => {
                   />
                 </div>
               </div>
+              <div className="border-bottom"></div>
+
               <div className="row mt-70">
-                <div className="col-lg-1 col-md-1" />
                 <div className="col-lg-2 col-md-3">
-                  <h6 className="color-brand-1 mb-15">Table of contents</h6>
-                  <ul className="list-terms">
-                    <li>
-                      <Link href="#section1">
-                        SECTION 1 – ONLINE STORE TERMS
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#section2">SECTION 2 – LICENSING POLICY</Link>
-                    </li>
-                    <li>
-                      <Link href="#section3">
-                        SECTION 3 – PRODUCT COMPATIBILITY
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#section4">SECTION 4 – DELIVERY</Link>
-                    </li>
-                    <li>
-                      <Link href="#section5">SECTION 5 – OWNERSHIP</Link>
-                    </li>
-                    <li>
-                      <Link href="#section6">
-                        SECTION 6 – BROWSER COMPATIBILITY
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#section7">SECTION 7 – UPDATES</Link>
-                    </li>
-                    <li>
-                      <Link href="#section8">SECTION 8 – THEME SUPPORT</Link>
-                    </li>
-                    <li>
-                      <Link href="#section9">SECTION 9 – PRICE CHANGES</Link>
-                    </li>
-                    <li>
-                      <Link href="#section10">SECTION 10 – REFUND POLICY</Link>
-                    </li>
-                    <li>
-                      <Link href="#section11">
-                        SECTION 11 – EMAIL &amp; NEWSLETTER
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#section12">
-                        SECTION 12 – LICENSE AGREEMENT
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#section13">SECTION 13 – SEVERABILITY</Link>
-                    </li>
-                    <li>
-                      <Link href="#section14">
-                        SECTION 14 – INDEMNIFICATION
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#section15">SECTION 15 – SEVERABILITY</Link>
-                    </li>
-                    <li>
-                      <Link href="#section16">SECTION 16 – TERMINATION</Link>
-                    </li>
-                    <li>
-                      <Link href="#section17">
-                        SECTION 17 – ENTIRE AGREEMENT
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#section18">SECTION 18 – GOVERNING LAW</Link>
-                    </li>
-                    <li>
-                      <Link href="#section19">
-                        SECTION 19 – CHANGES TO TERMS OF SERVICE
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#section20">
-                        SECTION 20 – CONTACT INFORMATION
-                      </Link>
-                    </li>
-                  </ul>
+                  <div ref={tocRef}>
+                    <h6 className="color-brand-1 mb-15">Table of contents</h6>
+                    <ul className="list-terms">
+                      <li>
+                        <Link href="#section1">
+                          SECTION 1 – ONLINE STORE TERMS
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="#section2">
+                          SECTION 2 – LICENSING POLICY
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="#section3">
+                          SECTION 3 – PRODUCT COMPATIBILITY
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="#section4">SECTION 4 – DELIVERY</Link>
+                      </li>
+                      <li>
+                        <Link href="#section5">SECTION 5 – OWNERSHIP</Link>
+                      </li>
+                      <li>
+                        <Link href="#section6">
+                          SECTION 6 – BROWSER COMPATIBILITY
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="#section7">SECTION 7 – UPDATES</Link>
+                      </li>
+                      <li>
+                        <Link href="#section8">SECTION 8 – THEME SUPPORT</Link>
+                      </li>
+                      <li>
+                        <Link href="#section9">SECTION 9 – PRICE CHANGES</Link>
+                      </li>
+                      <li>
+                        <Link href="#section10">
+                          SECTION 10 – REFUND POLICY
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="#section11">
+                          SECTION 11 – EMAIL &amp; NEWSLETTER
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="#section12">
+                          SECTION 12 – LICENSE AGREEMENT
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="#section13">SECTION 13 – SEVERABILITY</Link>
+                      </li>
+                      <li>
+                        <Link href="#section14">
+                          SECTION 14 – INDEMNIFICATION
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="#section15">SECTION 15 – SEVERABILITY</Link>
+                      </li>
+                      <li>
+                        <Link href="#section16">SECTION 16 – TERMINATION</Link>
+                      </li>
+                      <li>
+                        <Link href="#section17">
+                          SECTION 17 – ENTIRE AGREEMENT
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="#section18">
+                          SECTION 18 – GOVERNING LAW
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="#section19">
+                          SECTION 19 – CHANGES TO TERMS OF SERVICE
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="#section20">
+                          SECTION 20 – CONTACT INFORMATION
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
                 <div className="col-lg-8 col-md-7">
                   <p className="font-md color-grey-500 mb-30">
@@ -634,49 +673,6 @@ const pageTerm = () => {
             </div>
           </div>
         </div>
-        <section className="section mt-50">
-          <div className="container">
-            <div className="box-newsletter box-newsletter-2">
-              <div className="row align-items-center">
-                <div className="col-lg-6 col-md-7 m-auto text-center">
-                  <span className="font-lg color-brand-1">Newsletter</span>
-                  <h2 className="color-brand-1 mb-15 mt-5">
-                    Subcribe our newsletter
-                  </h2>
-                  <p className="font-md color-grey-500">
-                    Do not miss the latest information from us about the
-                    trending in the market. By clicking the button, you are
-                    agreeing with our Term &amp; Conditions
-                  </p>
-                  <div className="form-newsletter mt-30">
-                    <form action="#">
-                      <input type="text" placeholder="Enter you mail .." />
-                      <button
-                        className="btn btn-submit-newsletter"
-                        type="submit"
-                      >
-                        <svg
-                          className="w-6 h-6 icon-16"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M14 5l7 7m0 0l-7 7m7-7H3"
-                          />
-                        </svg>
-                      </button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
       </Layout>
     </>
   );

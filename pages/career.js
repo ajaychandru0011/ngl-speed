@@ -9,19 +9,19 @@ import CareerSection7 from "../components/career/careerSection7";
 
 import Layout from "../components/layout/Layout";
 import PageHead from "../components/elements/PageHead";
-import { getAllPosts, getPostSlug } from "../lib/posts";
+// import { getAllPosts, getPostSlug } from "../lib/posts";
 
-export const runtime = "experimental-edge"; // 'nodejs' (default) | 'edge'
-export async function getServerSideProps({ params }) {
-  //getting all posts for suggested posts
-  const suggestedPosts = await getAllPosts();
-  // returning props to access in the component
-  return {
-    props: {
-      suggestedPosts,
-    },
-  };
-}
+// export const runtime = "experimental-edge"; // 'nodejs' (default) | 'edge'
+// export async function getServerSideProps({ params }) {
+//   //getting all posts for suggested posts
+//   const suggestedPosts = await getAllPosts();
+//   // returning props to access in the component
+//   return {
+//     props: {
+//       suggestedPosts,
+//     },
+//   };
+// }
 const career = ({ suggestedPosts }) => {
   return (
     <>
@@ -30,12 +30,12 @@ const career = ({ suggestedPosts }) => {
       />
       <Layout>
         <CareerSection1 />
-        <CareerSection2 />
+        {/* <CareerSection2 /> */}
         <CareerSection3 />
         {/* <CareerSection4 /> */}
         <CareerSection5 />
         <CareerSection6 />
-        <CareerSection7 post={suggestedPosts} />
+        {/* <CareerSection7 post={suggestedPosts} /> */}
       </Layout>
     </>
   );

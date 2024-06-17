@@ -4,7 +4,7 @@ const ToolsCard = ({ toolLink, img, name, desc, tag }) => {
   // console.log(toolLink);
   return (
     <div className="col-lg-4 col-md-6 col-sm-6">
-      <Link href={toolLink}>
+      <Link href={toolLink} target="_blank">
         <div className="card-offer hover-up min-height-360">
           <div className="card-image d-flex align-items-center card-space-between">
             {img}
