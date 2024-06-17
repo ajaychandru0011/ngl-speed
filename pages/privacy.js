@@ -3,7 +3,7 @@ import PageHead from "../components/elements/PageHead";
 import React, { useEffect, useRef } from "react";
 import Layout from "../components/layout/Layout";
 import Image from "next/image";
-const pageTerm = () => {
+const Privacy = () => {
   const tocRef = useRef(null);
 
   useEffect(() => {
@@ -656,4 +656,4 @@ const pageTerm = () => {
   );
 };
 
-export default pageTerm;
+export default Privacy;

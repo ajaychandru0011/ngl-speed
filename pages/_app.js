@@ -1,8 +1,7 @@
 import "../public/assets/css/style.css";
-import { useState ,useEffect} from "react";
-
+import { useState, useEffect } from "react";
+import Head from "next/head";
 function loadGTM(gtmId) {
-
   const script = document.createElement("script");
   script.innerHTML = `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -37,6 +36,12 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
+      <Head>
+        <link
+          href="https://fonts.bunny.net/css?family=chivo:700|manrope:400,500,700,800|shippori-mincho:700,800"
+          rel="stylesheet"
+        />
+      </Head>
       <Component {...pageProps} />
     </>
   );
