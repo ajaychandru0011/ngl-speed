@@ -5913,6 +5913,7 @@ footer a {
   width: 86px;
   background: url(../imgs/page/homepage8/asset1.png) no-repeat center;
   background-size: contain;
+  z-index: -1;
 }
 
 .asset-3 {
@@ -5923,6 +5924,7 @@ footer a {
   width: 66px;
   background: url(../imgs/page/homepage8/asset3.png) no-repeat center;
   background-size: contain;
+  z-index: -1;
 }
 
 .asset-2 {
@@ -5933,6 +5935,7 @@ footer a {
   width: 75px;
   background: url(../imgs/page/homepage8/asset2.png) no-repeat center;
   background-size: contain;
+  z-index: -1;
 }
 
 .asset-4 {
@@ -5943,6 +5946,7 @@ footer a {
   width: 59px;
   background: url(../imgs/page/homepage8/asset4.png) no-repeat center;
   background-size: contain;
+  z-index: -1;
 }
 
 .asset-5 {
@@ -5953,6 +5957,7 @@ footer a {
   width: 215px;
   background: url(../imgs/page/homepage8/asset5.png) no-repeat center;
   background-size: contain;
+  z-index: -1;
 }
 
 .banner-abs {
@@ -5981,6 +5986,7 @@ footer a {
   background-size: contain;
   height: 69px;
   left: 15%;
+  z-index: -1;
 }
 
 .asset-3 {
@@ -5990,6 +5996,7 @@ footer a {
   height: 115px;
   width: 38px;
   background: url(../imgs/page/homepage12/asset3.png) no-repeat center;
+  z-index: -1;
   background-size: contain;
 }
 
@@ -6003,6 +6010,7 @@ footer a {
   background-size: auto;
   background-size: contain;
   top: unset;
+  z-index: -1;
 }
 
 .asset-4 {
@@ -6013,6 +6021,7 @@ footer a {
   width: 91px;
   background: url(../imgs/page/homepage12/asset4.png) no-repeat center;
   background-size: contain;
+  z-index: -1;
 }
 
 .asset-5 {
@@ -6025,6 +6034,7 @@ footer a {
   width: 44px;
   background: url(../imgs/page/homepage12/asset5.png) no-repeat center;
   background-size: contain;
+  z-index: -1;
 }
 
 /*Section 2*/
