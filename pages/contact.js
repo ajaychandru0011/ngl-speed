@@ -23,9 +23,13 @@ const Contactus = () => {
                   <div className="row">
                     <div className="col-lg-9">
                       <p className="font-md color-grey-500">
-                        Request a demo, ask a question, or get in touch here. If
-                        you’re interested in working at Iori Coporation, check
-                        out our
+                        Whether you are starting off or have billions of users,
+                        our team is willing and able to help you.
+                        <br /> Please reach out to us to request a demo or if
+                        you have any more questions.
+                        <br />
+                        If you’re interested in working at NextGrowth Labs,
+                        check out our
                         <Link className="ml-3" href="/career">
                           {" "}
                           careers page.

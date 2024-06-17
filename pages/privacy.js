@@ -120,7 +120,7 @@ const pageTerm = () => {
                         <Link href="#section6">Our Commitment To Security</Link>
                       </li>
                       <li>
-                        <Link href="#section7">Children’s Privacy</Link>
+                        <Link href="#section7">Children&apos;s Privacy</Link>
                       </li>
                       <li>
                         <Link href="#section8">Do Not Track</Link>
@@ -297,7 +297,8 @@ const pageTerm = () => {
                     online resources.
                   </p>
                   <p className="font-md color-grey-500 mb-30">
-                    You can learn about Google’s practices by going to&nbsp;
+                    You can learn about Google&apos;s practices by going
+                    to&nbsp;
                     <Link
                       href="https://www.nextlabs.io/privacy-policy#"
                       style={{ textDecoration: "underline" }}
@@ -325,8 +326,8 @@ const pageTerm = () => {
                     member companies (or if located in the European Union, click
                     here ). Please note this does not opt you out of being
                     served ads. You will continue to receive generic ads. Please
-                    visit your device’s settings or install the AppChoices app
-                    to learn more about how you may opt out of receiving
+                    visit your device&apos;s settings or install the AppChoices
+                    app to learn more about how you may opt out of receiving
                     personalized ads in mobile apps. Our Services may include
                     links, features or components supplied by third parties,
                     such as the Facebook “Like” button or other interactive
@@ -382,13 +383,13 @@ const pageTerm = () => {
                   </h5>
                   <p className="font-md color-grey-500 mb-30">
                     We will use your information for marketing purposes, such as
-                    contacting you about NextLabs’s products and services,
+                    contacting you about NextLabs&apos;s products and services,
                     providing you with promotional materials that may be useful,
                     relevant, valuable or otherwise of interest to you. We use
                     Personal Information that we collect in connection with the
                     Services, such as your location and your activities on the
                     Services, to determine whether NextLabs may wish to contact
-                    you in order to offer you NextLabs’s services and to
+                    you in order to offer you NextLabs&apos;s services and to
                     facilitate the delivery of advertisements. We may send you
                     (a) information about topics or content that we think may
                     interest you, or (b) updates about the latest developments
@@ -430,8 +431,8 @@ const pageTerm = () => {
                   </h5>
                   <p className="font-md color-grey-500 mb-30">
                     NextLabs may share your information with and receive
-                    information from NextLabs’s offices throughout the world,
-                    subject to this Privacy Policy.
+                    information from NextLabs&apos;s offices throughout the
+                    world, subject to this Privacy Policy.
                   </p>
                   <h5 className="color-brand-1 mb-20">
                     3.2. Service Providers
@@ -448,7 +449,7 @@ const pageTerm = () => {
                     NextLabs may work with and share your Personal Information
                     with our third party advertisinsite-section bg-lightg
                     partners to provide you with advertisements regarding
-                    NextLabs’s Services. For more information about our
+                    NextLabs&apos;s Services. For more information about our
                     advertising and marketing practices and those of the third
                     party advertising partners, please see the Cookies and
                     Related Technologies section above.
@@ -511,12 +512,12 @@ const pageTerm = () => {
                     countries for which adequacy decisions have been issued, use
                     contractual protections for the transfer of Personal
                     Information to our U.S. headquarters or third parties, such
-                    as the European Commission’s Standard Contractual Clauses,
-                    or rely on third parties’ certification to the EU-U.S. or
-                    Swiss-U.S. Privacy Shield frameworks, where applicable. You
-                    may contact us as specified below to obtain a copy of the
-                    safeguards we use to transfer Personal Information outside
-                    of the EEA.
+                    as the European Commission&apos;s Standard Contractual
+                    Clauses, or rely on third parties&apos; certification to the
+                    EU-U.S. or Swiss-U.S. Privacy Shield frameworks, where
+                    applicable. You may contact us as specified below to obtain
+                    a copy of the safeguards we use to transfer Personal
+                    Information outside of the EEA.
                   </p>
                   <h4 className="color-brand-1 mb-20" id="section5">
                     5. Data Retention
@@ -547,7 +548,7 @@ const pageTerm = () => {
                     or receives.
                   </p>
                   <h4 className="color-brand-1 mb-20" id="section7">
-                    7. Children’s Privacy
+                    7. Children&apos;s Privacy
                   </h4>
                   <p id="section-8" className="font-md color-grey-500 mb-30">
                     We do not knowingly collect, maintain, or use Personal
@@ -590,8 +591,8 @@ const pageTerm = () => {
                     deletion requests that are unduly burdensome or repetitive
                     or that cannot be honored in light of legal obligations or
                     ongoing disputes, or where retention is necessary to enforce
-                    our agreements or protect our or another party’s rights,
-                    property, safety, or security.
+                    our agreements or protect our or another party&apos;s
+                    rights, property, safety, or security.
                   </p>
                   <h5 className="color-brand-1 mb-20">9.2. European Rights</h5>
                   <p id="section-10" className="font-md color-grey-500 mb-30">
@@ -638,19 +639,18 @@ const pageTerm = () => {
                     countries for which adequacy decisions have been issued, use
                     contractual protections for the transfer of Personal
                     Information to our U.S. headquarters or third parties, such
-                    as the European Commission’s Standard Contractual Clauses,
-                    or rely on third parties’ certification to the EU-U.S. or
-                    Swiss-U.S. Privacy Shield frameworks, where applicable. You
-                    may contact us as specified below to obtain a copy of the
-                    safeguards we use to transfer Personal Information outside
-                    of the EEA.
+                    as the European Commission&apos;s Standard Contractual
+                    Clauses, or rely on third parties&apos; certification to the
+                    EU-U.S. or Swiss-U.S. Privacy Shield frameworks, where
+                    applicable. You may contact us as specified below to obtain
+                    a copy of the safeguards we use to transfer Personal
+                    Information outside of the EEA.
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="border-bottom"></div>
       </Layout>
     </>
   );

@@ -673,7 +673,6 @@ const pageTerm = () => {
             </div>
           </div>
         </div>
-        <div className="border-bottom"></div>
       </Layout>
     </>
   );
