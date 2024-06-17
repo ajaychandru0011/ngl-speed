@@ -162,6 +162,13 @@ TABLE CONTENT
 // ***************************
 
 // custom media queries
+@media (min-width: 2200px) {
+  .custom-section-css{
+     margin-top: 300px !important;
+   }
+ }
+
+
 
 @media(min-width: 1023px){
   .row-image img{
@@ -816,6 +823,7 @@ img.device-icon-logo {
 .readMoreBtn{
   color: #1c7df8;
   text-align: right;
+  cursor: pointer;
 }
 
 

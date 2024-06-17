@@ -5915,7 +5915,6 @@ footer a {
   background: url(../imgs/page/homepage8/asset1.png) no-repeat center;
   background-size: contain;
   z-index: -1;
-  
 }
 
 .asset-3 {
@@ -7458,6 +7457,11 @@ textarea.textarea-control {
   height: 415px !important;
 }
 
+@media (min-width: 2200px) {
+  .custom-section-css {
+    margin-top: 300px !important;
+  }
+}
 @media (min-width: 1023px) {
   .row-image img {
     width: 415px !important;
@@ -8146,6 +8150,7 @@ img.device-icon-logo {
 .readMoreBtn {
   color: #1c7df8;
   text-align: right;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 720px) {

@@ -1366,36 +1366,6 @@ const Tools = ({ length }) => {
   return (
     <section className="section mt-80">
       <div className="container">
-        {/* <div className="row align-items-end">
-          <div className="col-lg-8 col-md-8">
-            <h2 className="color-brand-1 mb-20">Tools that are built by us</h2>
-            <p className="font-lg color-gray-500">
-              We&apos;ve built flurry of tools - that keeps up light years ahead
-              in
-              <br className="d-none d-lg-block" />
-              the mobile app promotion stack.
-            </p>
-          </div>
-          <div className="col-lg-4 col-md-4 text-md-end text-start">
-            <toolLink href="/tools" className="btn btn-default font-sm-bold pl-0">
-              Learn More
-              <svg
-                className="w-6 h-6 icon-16 ml-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M14 5l7 7m0 0l-7 7m7-7H3"
-                />
-              </svg>
-            </toolLink>
-          </div>
-        </div> */}
         <div className="row">
           <div className="col-lg-12 text-center">
             <h2 className="color-brand-1 mb-20">Tools that are built by us</h2>

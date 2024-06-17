@@ -350,7 +350,7 @@ const data = [
 ];
 const ToolsSection1 = () => {
   return (
-    <section className="section mt-80">
+    <section className="section mt-80 custom-section-css">
       <div className="container">
         <div className="row align-items-end">
           <div className="col-lg-8 col-md-8">
