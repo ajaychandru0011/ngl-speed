@@ -575,7 +575,7 @@ const data = [
         </defs>
       </svg>
     ),
-    toolLink: "https://tools.nextgrowthlabs.com/",
+    toolLink: "https://nextgrowthlabs.com/google-serp-rank-tracker/",
   },
   {
     name: "Keyword Suggest",
@@ -772,6 +772,7 @@ const data = [
     toolLink:
       "https://tools.nextgrowthlabs.com/seo-and-aso-keyword-content-writing-assistant/",
   },
+
   {
     name: "Bulk Keyword Rank Checker",
     desc: "Improve your IAP's and subscriptions with our state of the art tool.",
@@ -884,7 +885,7 @@ const data = [
         </defs>
       </svg>
     ),
-    toolLink: "https://tools.nextgrowthlabs.com/",
+    toolLink: "https://tools.nextgrowthlabs.com/bulk-website-rank-checker/",
   },
   {
     name: "Keyword Density Monitor",
