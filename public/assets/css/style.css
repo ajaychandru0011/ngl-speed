@@ -5915,6 +5915,7 @@ footer a {
   background: url(../imgs/page/homepage8/asset1.png) no-repeat center;
   background-size: contain;
   z-index: -1;
+  
 }
 
 .asset-3 {
@@ -6529,11 +6530,6 @@ textarea.textarea-control {
 }
 .list-terms li a:hover {
   color: #06d6a0;
-}
-
-.tableOfContents {
-  padding-top: 100px; /* Optional: to create space between the header and the sticky element */
-  transition: position 0.3s ease-in-out;
 }
 
 .sticky {

@@ -25,8 +25,14 @@ const nextConfig = {
         hostname: "play-lh.googleusercontent.com",
         port: "",
         pathname: "/**",
-      }
+      },
+      {
+        protocol: "https",
+        hostname: "is1-ssl.mzstatic.com",
+        port: "",
+        pathname: "/**",
+      },
     ],
   },
-}
-module.exports = nextConfig
+};
+module.exports = nextConfig;
