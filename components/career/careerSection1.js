@@ -23,7 +23,7 @@ const CareerSection1 = () => {
             alt="iori"
             priority
           />
-          <div className="image-1 shape-1">
+          {/* <div className="image-1 shape-1">
             <Image
               layout="responsive"
               width={100}
@@ -31,7 +31,7 @@ const CareerSection1 = () => {
               src="/assets/imgs/page/career/certify.png"
               alt="iori"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

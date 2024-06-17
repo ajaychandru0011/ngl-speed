@@ -1,4 +1,4 @@
-import { useAtom } from "jotai"
+import { useAtom } from "jotai";
 import {
   searchedApps,
   searchKeyword,
@@ -9,100 +9,93 @@ import {
   pricingWrapper,
   popupVisibleAtom,
   formInputData,
-  focusAtom
-} from "../../../state/atoms"
-import { prepareDataForRequests } from "../../utils"
-import { useQuery } from "@tanstack/react-query"
-import { useEffect, useRef } from "react"
-import useDebounce from "../elements/useDebounce"
-const searchShimmerArray = [0, 1, 2, 3, 4, 5]
+  focusAtom,
+} from "../../../state/atoms";
+import { prepareDataForRequests } from "../../utils";
+import { useQuery } from "@tanstack/react-query";
+import { useEffect, useRef } from "react";
+import useDebounce from "../elements/useDebounce";
+const searchShimmerArray = [0, 1, 2, 3, 4, 5];
 const SearchResults = () => {
-  const [countryCode, _1] = useAtom(selectedAppCountry)
-  const [searchResults, setSearchResult] = useAtom(searchedApps)
-  const [searchAppKeyword, _2] = useAtom(searchKeyword)
-  const [searchAppVisible, setSearchAppVisible] = useAtom(showSearchApps)
-  const [_4, setAppSelect] = useAtom(showAppSelected)
-  const [_5, setUserSelectedApp] = useAtom(userSelectedApp)
-  const [country] = useAtom(selectedAppCountry)
-  const [isHidden, setIsHidden] = useAtom(pricingWrapper)
-  const [_6, setIsPopupVisible] = useAtom(popupVisibleAtom)
-  const [formInput, setFormInput] = useAtom(formInputData)
-  const [_8, setInputFocused] = useAtom(focusAtom)
+  const [countryCode, _1] = useAtom(selectedAppCountry);
+  const [searchResults, setSearchResult] = useAtom(searchedApps);
+  const [searchAppKeyword, _2] = useAtom(searchKeyword);
+  const [searchAppVisible, setSearchAppVisible] = useAtom(showSearchApps);
+  const [_4, setAppSelect] = useAtom(showAppSelected);
+  const [_5, setUserSelectedApp] = useAtom(userSelectedApp);
+  const [country] = useAtom(selectedAppCountry);
+  const [isHidden, setIsHidden] = useAtom(pricingWrapper);
+  const [_6, setIsPopupVisible] = useAtom(popupVisibleAtom);
+  const [formInput, setFormInput] = useAtom(formInputData);
+  const [_8, setInputFocused] = useAtom(focusAtom);
   const debouncedKeyword = useDebounce(searchAppKeyword, 500);
-  
-// ******************debouncing*******************
-    const { data, isFetched, isPending, isError } = useQuery({
-      queryKey: ["searchResults", debouncedKeyword, countryCode],
-      queryFn: () => prepareDataForRequests(debouncedKeyword, countryCode),
-      enabled: debouncedKeyword.length > 0,
-      staleTime: Infinity,
-    })
+
+  // ******************debouncing*******************
+  const { data, isFetched, isPending, isError } = useQuery({
+    queryKey: ["searchResults", debouncedKeyword, countryCode],
+    queryFn: () => prepareDataForRequests(debouncedKeyword, countryCode),
+    enabled: debouncedKeyword.length > 0,
+    staleTime: Infinity,
+  });
   if (isFetched) {
-    setSearchResult(data)
+    setSearchResult(data);
   }
 
   function recentAppDataFromLocalStorage(appData) {
-    let oldAppData = localStorage.getItem("Recent Selected App")
+    let oldAppData = localStorage.getItem("Recent Selected App");
     if (oldAppData) {
-      let Array = JSON.parse(oldAppData)
-      Array.unshift(appData)
+      let Array = JSON.parse(oldAppData);
+      Array.unshift(appData);
       let uniqueArray = Array.filter(
         (item, index) =>
           Array.findIndex(
-            obj => JSON.stringify(obj) === JSON.stringify(item),
-          ) === index,
-      )
-      localStorage.setItem("Recent Selected App", JSON.stringify(uniqueArray))
+            (obj) => JSON.stringify(obj) === JSON.stringify(item)
+          ) === index
+      );
+      localStorage.setItem("Recent Selected App", JSON.stringify(uniqueArray));
     } else {
-      localStorage.setItem("Recent Selected App", JSON.stringify([appData]))
+      localStorage.setItem("Recent Selected App", JSON.stringify([appData]));
     }
   }
 
   function handleSelectedApp(data) {
-    recentAppDataFromLocalStorage(data)
+    recentAppDataFromLocalStorage(data);
   }
   // handle audit app
   const handleSelectedAppForAudit = (data) => {
     // console.log("selected app data", data)
     if (searchAppVisible["search-box1"]) {
-      setFormInput({ ...formInput, appURL: data["data-package-url"]});
+      setFormInput({ ...formInput, appURL: data["data-package-url"] });
     }
-
-  }
+  };
   // ******** close suggestion list whenever click outside
-  const appSuggestionRef = useRef(null)
+  const appSuggestionRef = useRef(null);
   useEffect(() => {
-    const handleClickOutside = event => {
-      const suggestion = appSuggestionRef.current
+    const handleClickOutside = (event) => {
+      const suggestion = appSuggestionRef.current;
       if (suggestion && !suggestion.contains(event.target)) {
-        suggestion.classList.remove("format-suggestions")
-        setInputFocused({})
+        suggestion.classList.remove("format-suggestions");
+        setInputFocused({});
         if (isHidden) {
-          setIsHidden(false)
+          setIsHidden(false);
         }
       }
-    }
+    };
 
-    document.addEventListener("mousedown", handleClickOutside)
+    document.addEventListener("mousedown", handleClickOutside);
 
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside)
-    }
-  }, [appSuggestionRef])
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [appSuggestionRef]);
 
   return (
     <>
       {debouncedKeyword.length > 0 && isPending && (
-        <div
-          id="searching-shimmer1"
-          className="searching-shimmer"
-        >
+        <div id="searching-shimmer1" className="searching-shimmer">
           <ul className="o-vertical-spacing o-vertical-spacing--l">
-            {searchShimmerArray.map(item => (
-              <li
-                key={item}
-                className="blog-post o-media"
-              >
+            {searchShimmerArray.map((item) => (
+              <li key={item} className="blog-post o-media">
                 <div className="o-media__figure">
                   <span className="skeleton-box"></span>
                 </div>
@@ -134,12 +127,9 @@ const SearchResults = () => {
         </ul>
       )}
       {!isPending && isFetched && searchResults.length > 0 && (
-        <ul
-          ref={appSuggestionRef}
-          className="suggestions format-suggestions"
-        >
+        <ul ref={appSuggestionRef} className="suggestions format-suggestions">
           <p className="info-search">Search Results:</p>
-          {searchResults.map(item => (
+          {searchResults.map((item) => (
             <li
               className="li-suggestion-item"
               application-url={item.dataPackageUrl}
@@ -147,8 +137,8 @@ const SearchResults = () => {
               application-img-logo={item.app_icon}
               device={item.device}
               key={item.app_icon}
-              onClick={e => {
-                e.stopPropagation()
+              onClick={(e) => {
+                e.stopPropagation();
                 const data = {
                   packageName: item.appName,
                   developer: item.developer,
@@ -156,25 +146,25 @@ const SearchResults = () => {
                   device: item.device,
                   "data-package-url": item.dataPackageUrl,
                   "app-package-id": item.appPackageId,
-                }
-                handleSelectedAppForAudit(data)
-                handleSelectedApp(data)
+                };
+                handleSelectedAppForAudit(data);
+                handleSelectedApp(data);
                 if (item.device === "android") {
                   setUserSelectedApp({
                     appPackageURL: item.dataPackageUrl,
                     applicationId: item.appPackageId,
                     device: "android",
                     country,
-                  })
-                //   if (typeof dataLayer !== "undefined" && Array.isArray(dataLayer)) {
-                //     dataLayer.push({
-                //       event: "play_app_select",
-                //       keyword: searchAppKeyword,
-                //       "gtm.elementId": item.appPackageId,
-                //       "gtm.elementUrl": item.dataPackageUrl,
-                //       "gtm.uniqueAnalyticsReports": "AnalyticsLiveWeb_nl",
-                //     })
-                //   }
+                  });
+                  //   if (typeof dataLayer !== "undefined" && Array.isArray(dataLayer)) {
+                  //     dataLayer.push({
+                  //       event: "play_app_select",
+                  //       keyword: searchAppKeyword,
+                  //       "gtm.elementId": item.appPackageId,
+                  //       "gtm.elementUrl": item.dataPackageUrl,
+                  //       "gtm.uniqueAnalyticsReports": "AnalyticsLiveWeb_nl",
+                  //     })
+                  //   }
                 }
                 if (item.device === "apple") {
                   setUserSelectedApp({
@@ -182,20 +172,20 @@ const SearchResults = () => {
                     applicationId: item.appPackageId,
                     device: "apple",
                     country,
-                  })
-                //   if (typeof dataLayer !== "undefined" && Array.isArray(dataLayer)) {
-                //     dataLayer.push({
-                //       event: "ios_app_select",
-                //       keyword: searchAppKeyword,
-                //       "gtm.elementId": item.appPackageId,
-                //       "gtm.elementUrl":  item.dataPackageUrl,
-                //       "gtm.uniqueAnalyticsReports": "AnalyticsLiveWeb_nl",
-                //     })
-                //   }
+                  });
+                  //   if (typeof dataLayer !== "undefined" && Array.isArray(dataLayer)) {
+                  //     dataLayer.push({
+                  //       event: "ios_app_select",
+                  //       keyword: searchAppKeyword,
+                  //       "gtm.elementId": item.appPackageId,
+                  //       "gtm.elementUrl":  item.dataPackageUrl,
+                  //       "gtm.uniqueAnalyticsReports": "AnalyticsLiveWeb_nl",
+                  //     })
+                  //   }
                 }
 
-                setAppSelect(true)
-                setSearchAppVisible({})
+                setAppSelect(true);
+                setSearchAppVisible({});
               }}
             >
               <div className="show-device-icon">
@@ -211,10 +201,7 @@ const SearchResults = () => {
                   <span>{item.developer}</span>
                 </div>
               </div>
-              <div
-                className="device-icon"
-                device={item.device}
-              >
+              <div className="device-icon" device={item.device}>
                 <img
                   src={item.deviceIcon}
                   alt="device-logo"
@@ -224,16 +211,17 @@ const SearchResults = () => {
             </li>
           ))}
           <p className="info-search">
-            Couldn't find your app try with  <strong>App ID</strong> or <strong>App URL</strong>
+            Couldn&apos;t find your app try with <strong>App ID</strong> or{" "}
+            <strong>App URL</strong>
             {/* <button className="audit-button"> */}
-              {/* </button> or{" "} */}
+            {/* </button> or{" "} */}
             {/* <button className="audit-button"> */}
-              {/* </button> */}
+            {/* </button> */}
           </p>
         </ul>
       )}
     </>
-  )
-}
+  );
+};
 
-export default SearchResults
+export default SearchResults;

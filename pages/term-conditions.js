@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import Layout from "../components/layout/Layout";
 import Image from "next/image";
 
-const pageTerm = () => {
+const Terms = () => {
   const tocRef = useRef(null);
 
   useEffect(() => {
@@ -678,4 +678,4 @@ const pageTerm = () => {
   );
 };
 
-export default pageTerm;
+export default Terms;

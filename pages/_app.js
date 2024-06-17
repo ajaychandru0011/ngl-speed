@@ -1,8 +1,6 @@
 import "../public/assets/css/style.css";
-import { useState ,useEffect} from "react";
-
+import { useState, useEffect } from "react";
 function loadGTM(gtmId) {
-
   const script = document.createElement("script");
   script.innerHTML = `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -35,6 +33,28 @@ function MyApp({ Component, pageProps }) {
     };
   }, [gtmLoaded]);
 
+  useEffect(() => {
+    function loadFont() {
+      if (!window.fontLoaded) {
+        const link = document.createElement("link");
+        link.href =
+          "https://fonts.bunny.net/css?family=chivo:700|manrope:400,500,700,800|shippori-mincho:700,800";
+        link.rel = "stylesheet";
+        document.head.appendChild(link);
+        window.fontLoaded = true;
+      }
+    }
+    window.addEventListener(
+      "scroll",
+      function () {
+        loadFont();
+      },
+      { once: true }
+    );
+    return () => {
+      window.removeEventListener("scroll", loadFont);
+    };
+  }, []);
   return (
     <>
       <Component {...pageProps} />
