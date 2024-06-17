@@ -54,16 +54,14 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="https://tools.nextgrowthlabs.com/search-engine-optimization/">
-                      Search Engine Optimization
-                    </Link>
+                    <Link href="/seo">Search Engine Optimization</Link>
                   </li>
                   <li>
                     {/* add link to nextlabs site */}
-                    <Link href="#">Free App Analysis</Link>
+                    <Link href="/aso">Free App Analysis</Link>
                   </li>
                   <li>
-                    <Link href="/">Improve Pagespeed</Link>
+                    <Link href="#contact">Improve Pagespeed</Link>
                   </li>
                   <li>
                     <Link href="#contact">Mobile & Web Analytics</Link>
@@ -89,7 +87,7 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="https://tools.nextgrowthlabs.com/keyword-autosuggest-a-multi-platform-keyword-tool/">
+                    <Link href="https://tools.nextgrowthlabs.com/google-serp-rank-tracker/">
                       Google SERP Checker
                     </Link>
                   </li>
@@ -197,10 +195,7 @@ const Footer = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        href="https://tools.nextgrowthlabs.com/free-app-store-optimization-tool/"
-                        className="font-sm color-grey-400 "
-                      >
+                      <Link href="/tools" className="font-sm color-grey-400 ">
                         Request Access to Free Tools Suite
                       </Link>
                     </li>
