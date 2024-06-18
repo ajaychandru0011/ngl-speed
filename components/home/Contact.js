@@ -43,7 +43,12 @@ const Contact = () => {
                 <div className="card-info">
                   <h6 className="color-brand-1 mb-10">Reach Us </h6>
                   <p className="font-md color-grey-500 mb-5">
-                    Bangalore: 1216, 14th Main, HSR Layout
+                    <i>
+                      {" "}
+                      #27, Santosh Tower, Second Floor, JP Nagar, 4th Phase,{" "}
+                      <br />
+                      4th Main 100ft Ring Road, Bangalore - 560078
+                    </i>
                   </p>
                 </div>
               </div>

@@ -4,7 +4,7 @@ import ToolsCard from "../cards/ToolsCard";
 const data = [
   {
     name: "App Intelligence",
-    desc: "Flawless way to track keywords and write keyword focused short and long description",
+    desc: "Increase organic search visibility to improve retention and revenue: ROI is maximised",
     img: (
       <svg
         width="75"
@@ -113,8 +113,8 @@ const data = [
     name: "SDKs",
     desc: (
       <>
-        To get the data from Google Play, App Store &amp; Analytics data from
-        BigQuery
+        Conversion rate optimization (CRO) on your app's display page can be
+        used to your advantage to drive maximum views.
       </>
     ),
     img: (
@@ -203,7 +203,7 @@ const data = [
   },
   {
     name: "ASO Chrome Extension",
-    desc: "Track ranks, short description and so on",
+    desc: "Chrome Add-on for ASO tools. Get competitor's keyword insights, vitals, etc.",
     img: (
       <svg
         width="75"
@@ -250,7 +250,7 @@ const data = [
   },
   {
     name: "Doc Add-Ons",
-    desc: "A/B test and localize in 100s of languages using Publish APIs",
+    desc: "We don't just translate, we localize your keywords to ensure your app can reach a global audience.",
     img: (
       <svg
         width="75"
@@ -310,7 +310,7 @@ const data = [
   },
   {
     name: "BigQuery Connector",
-    desc: "Flawless way to track keywords and write keyword focused short and long description",
+    desc: "To get the data from Google Play, App Store & Analytics data from BigQuery",
     img: (
       <svg
         width="75"
@@ -409,7 +409,7 @@ const data = [
   },
   {
     name: "Data Studio Connector",
-    desc: "Get every single piece of keyword universe - some of our clients track tens of thousand of keywords",
+    desc: "Connect, integrate and visualize data effortlessly using our Data Studio connector",
     img: (
       <svg
         width="75"
@@ -489,7 +489,7 @@ const data = [
   },
   {
     name: "SERP Tracker",
-    desc: "Optimize your CPA's (FOr app based campaigns) and CPC for web based campaigns",
+    desc: "Multi-tool for tracking top 10 results on Google, Bing, Apple, and Play Store rankings.",
     img: (
       <svg
         width="75"
@@ -579,7 +579,7 @@ const data = [
   },
   {
     name: "Keyword Suggest",
-    desc: "Improve your IAP's and subscriptions with our state of the art tool.",
+    desc: "A Keyword Suggestion tool assists in finding relevant search terms to improve SEO and content optimization strategies effectively.",
     img: (
       <svg
         width="75"
@@ -658,7 +658,7 @@ const data = [
   },
   {
     name: "Chrome Add-Ons",
-    desc: "Improve your IAP's and subscriptions with our state of the art tool.",
+    desc: "Boost your SEO efforts with essential Chrome add-ons. Get competitor's keyword insights, vitals, etc.",
     img: (
       <svg
         width="75"
@@ -710,7 +710,7 @@ const data = [
   },
   {
     name: "Content Assist",
-    desc: "Optimize your CPA's (FOr app based campaigns) and CPC for web based campaigns",
+    desc: "Write ASO and SEO optimised content flawlessly with the help of our tool.",
     img: (
       <svg
         width="75"
@@ -772,10 +772,9 @@ const data = [
     toolLink:
       "https://tools.nextgrowthlabs.com/seo-and-aso-keyword-content-writing-assistant/",
   },
-
   {
     name: "Bulk Keyword Rank Checker",
-    desc: "Improve your IAP's and subscriptions with our state of the art tool.",
+    desc: "Check multiple keyword rankings at once with our free bulk tool. And enhance your SEO efforts",
     img: (
       <svg
         width="75"
@@ -889,7 +888,7 @@ const data = [
   },
   {
     name: "Keyword Density Monitor",
-    desc: "Improve your IAP's and subscriptions with our state of the art tool.",
+    desc: "Check density of keywords in your competitor's description, and use them in yours.",
     img: (
       <svg
         width="75"
@@ -1004,7 +1003,7 @@ const data = [
   },
   {
     name: "Title and Meta Checker",
-    desc: "Optimize your CPA's (FOr app based campaigns) and CPC for web based campaigns",
+    desc: "This tool allows you to check the title, meta description and see if it's suitable for SEO.",
     img: (
       <svg
         width="75"
@@ -1131,7 +1130,7 @@ const data = [
   },
   {
     name: "Page Speed Assessment",
-    desc: "Improve your IAP's and subscriptions with our state of the art tool.",
+    desc: "Get a webpage speed assessment with Next Growth Labs. Improve your site's loading time and user experience.",
     img: (
       <svg
         width="75"
@@ -1238,7 +1237,7 @@ const data = [
   },
   {
     name: "Search Console Connector",
-    desc: "Improve your IAP's and subscriptions with our state of the art tool.",
+    desc: "Streamline Data with Search Console Connector. Easily integrate Google Search Console data for detailed insights.",
     img: (
       <svg
         width="75"

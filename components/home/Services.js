@@ -127,7 +127,7 @@ const Services = () => {
                       d="M5 13l4 4L19 7"
                     />
                   </svg>
-                  60M results/week processed in PlayStore & AppStore.
+                  60M/week app results processed
                 </li>
                 <li>
                   <svg
@@ -144,7 +144,7 @@ const Services = () => {
                       d="M5 13l4 4L19 7"
                     />
                   </svg>
-                  150K+ usage data of mobile apps and websites
+                  150K+ mobile & web usage data
                 </li>
               </ul>
             </div>
