@@ -490,7 +490,7 @@ const data = [
   },
   {
     name: "SERP Tracker",
-    desc: "Optimize your CPA (for app-based campaigns) and CPC for web-based campaigns.",
+    desc: "Track and optimize your Search Engine Results Page (SERP) performance effortlessly.",
     img: (
       <svg
         width="75"
