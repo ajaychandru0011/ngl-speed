@@ -7,7 +7,7 @@ const Service8 = ({ category }) => {
     "Website's": [
       {
         name: "Improve Website's Visibility",
-        desc: "Our Search Engine Optimization solutions for growing a website's organic visibility",
+        desc: "Our Search Engine Optimization solutions are designed for growing a website's organic visibility.",
         data: [
           {
             link: "On page Optimization",
@@ -35,7 +35,7 @@ const Service8 = ({ category }) => {
     "App's": [
       {
         name: "Improve App's Organic Visibility",
-        desc: "Our ASO solutions for growing an app's organic visibility",
+        desc: "Our ASO solutions are designed for growing an app's organic visibility.",
         data: [
           {
             link: "Improve Installs",

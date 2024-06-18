@@ -63,7 +63,7 @@ export default function Home() {
       />
       <Layout>
         <Hero />
-        <Trustby />
+        <Trustby heading = {"Brands we’ve helped grow"} />
         <OurServices />
         <Testimonials />
         <Tools />

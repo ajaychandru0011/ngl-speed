@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "../elements/Button";
 import Image from "next/image";
 import gif from "../../public/assets/imgs/Google-Search-Animation.gif";
 const SEOSection5 = () => {

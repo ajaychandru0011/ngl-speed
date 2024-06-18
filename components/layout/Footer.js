@@ -18,10 +18,17 @@ const Footer = () => {
                     alt="iori"
                   />
                 </div>
+                <p className="font-md-bold mb-20 color-brand-1">
+                  NextGrowth Labs Private Limited
+                </p>
                 <p className="font-md mb-20 color-grey-400">
-                  Bangalore: 1216, 14th Main,
-                  <br className="d-none d-lg-block" />
-                  HSR Layout
+                    #27, Santosh Tower,
+                    <br className="d-none d-lg-block" />
+                    Second Floor,JP Nagar,
+                    <br className="d-none d-lg-block" />
+                    4th Phase, 4th Main 100ft Ring Road
+                    <br className="d-none d-lg-block" />
+                    Bangalore - 560078
                 </p>
                 <div className="font-md mb-20 color-grey-400">
                   <strong className="font-md-bold">Email:</strong>{" "}

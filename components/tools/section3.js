@@ -2351,8 +2351,7 @@ const ToolsSection3 = () => {
           <div className="col-lg-8 col-md-8">
             <h2 className="color-brand-1 mb-20">Other Tools</h2>
             <p className="font-lg color-gray-500">
-              We&apos;ve built flurry of tools - that keeps up light years ahead
-              in the mobile app promotion stack.
+            We've built a powerful suite of tools that puts us light years ahead in the mobile app promotion stack.
             </p>
           </div>
           {/* <div className="col-lg-4 col-md-4 text-md-end text-start">

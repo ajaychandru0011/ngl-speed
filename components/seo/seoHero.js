@@ -1,6 +1,6 @@
-import { SiTruenas } from "react-icons/si";
-import Button from "../elements/Button";
-import Image from "next/image";
+import { SiTruenas } from "react-icons/si"
+import Button from "../elements/Button"
+import Image from "next/image"
 
 const SEOHero = () => {
   return (
@@ -37,12 +37,20 @@ const SEOHero = () => {
               </h1>
               <div className="row">
                 <div className="col-lg-9">
-                  <p className="font-md color-grey-500">
-                    Since 2016, we&apos;ve been at the forefront of SEO. Some of
+                  {/* <p className="font-md color-grey-500">
+                    Since 2016, we&apos;ve been at the forefront of SEO. Some of the
                     world&apos;s top brands too read these lines, before
                     contacting and working with us. The next 5 minutes you spend
                     reading about us will give you a glimpse to our approach.
                     Want a customised presentation? Let us know.
+                  </p> */}
+                  <p className="font-md color-grey-500">
+                    With our expert SEO strategies, your site will not only
+                    attract more visitors, keeping them engaged and ultimately
+                    converting them into engaged customers, leading to increased
+                    sales and success. Let us help you unlock your website's
+                    full potential and achieve your desired outcomes, like
+                    boosting sales or generating more qualified leads.
                   </p>
                 </div>
               </div>
@@ -74,7 +82,7 @@ const SEOHero = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default SEOHero;
+export default SEOHero
