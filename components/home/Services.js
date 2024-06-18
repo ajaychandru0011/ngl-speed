@@ -154,8 +154,7 @@ const Services = () => {
           <div className="col-xl-5 col-lg-6">
             <span className="btn btn-tag">Branding</span>
             <h3 className="color-brand-1 mt-10 mb-15">
-              We build numerous tools for the community - link that to the tool
-              page of NGL.
+              We build numerous tools for the community.
             </h3>
             <p className="font-md color-grey-400">
               At NGL, we prioritize our community by building a range of
