@@ -7,9 +7,9 @@ import {
   showSearchApps,
   userSelectedApp,
   pricingWrapper,
-  popupVisibleAtom,
   formInputData,
   focusAtom,
+  startButton
 } from "../../../state/atoms";
 import { prepareDataForRequests } from "../../utils";
 import { useQuery } from "@tanstack/react-query";
@@ -25,9 +25,9 @@ const SearchResults = () => {
   const [_5, setUserSelectedApp] = useAtom(userSelectedApp);
   const [country] = useAtom(selectedAppCountry);
   const [isHidden, setIsHidden] = useAtom(pricingWrapper);
-  const [_6, setIsPopupVisible] = useAtom(popupVisibleAtom);
   const [formInput, setFormInput] = useAtom(formInputData);
   const [_8, setInputFocused] = useAtom(focusAtom);
+  const [isClickStart, setClickStart] = useAtom(startButton)
   const debouncedKeyword = useDebounce(searchAppKeyword, 500);
 
   // ******************debouncing*******************
@@ -75,6 +75,8 @@ const SearchResults = () => {
       const suggestion = appSuggestionRef.current;
       if (suggestion && !suggestion.contains(event.target)) {
         suggestion.classList.remove("format-suggestions");
+        setClickStart(false)
+        setSearchAppVisible({})
         setInputFocused({});
         if (isHidden) {
           setIsHidden(false);
@@ -128,7 +130,7 @@ const SearchResults = () => {
       )}
       {!isPending && isFetched && searchResults.length > 0 && (
         <ul ref={appSuggestionRef} className="suggestions format-suggestions">
-          <p className="info-search">Search Results:</p>
+          {isClickStart ? <p className="info-search">Popular Apps:</p> : <p className="info-search">Search Results:</p>}
           {searchResults.map((item) => (
             <li
               className="li-suggestion-item"

@@ -7,6 +7,7 @@ import {
   showSearchApps,
   showAppSelected,
   focusAtom,
+  startButton
 } from "../../state/atoms"
 import RecentSearchedApps from "./elements/RecentSearchedApps"
 import SearchResults from "./elements/SearchResult"
@@ -16,7 +17,8 @@ const Hero = () => {
   const [recentAppsVisible, setRecentAppsVisible] = useAtom(showRecentApps)
   const [searchAppKeyword, setSearchAppKeyword] = useAtom(searchKeyword)
   const [searchAppVisible, setSearchAppVisible] = useAtom(showSearchApps)
-  const [appSelected, _3] = useAtom(showAppSelected)
+  const [appSelected] = useAtom(showAppSelected)
+  const [isClickStart, setClickStart] = useAtom(startButton)
   const [inputFocused, setInputFocused] = useAtom(focusAtom)
   const inputRef = useRef()
   const clearInput = () => {
@@ -56,15 +58,19 @@ const Hero = () => {
                     id="search-bar-input1"
                     className="search-input"
                     placeholder="Enter an app name to get [quick insights, data, information]"
-                    value={searchAppKeyword}
+                    value={searchAppKeyword === "Top apps" ? "": searchAppKeyword}
                     ref={inputRef}
                     onFocus={() => {
-                      setRecentAppsVisible(prev => {
-                        return {
-                          ...prev,
-                          ["suggestions-box1"]: true,
-                        }
-                      })
+                      {
+                        isClickStart ?
+                        setRecentAppsVisible(prev => {
+                          return {
+                            ...prev,
+                            ["suggestions-box1"]: true,
+                          }
+                        }) 
+                        : ""
+                      }
                       setInputFocused(prev => {
                         return {
                           ...prev,
@@ -137,9 +143,18 @@ const Hero = () => {
                 onClick={() => {
                   if (appSelected) {
                     console.log("appSelected");
+                    inputRef.current.focus()
                   
                   } else {
                     inputRef.current.focus()
+                    setSearchAppKeyword("Top apps")
+                    setClickStart(true)
+                    setSearchAppVisible(prev => {
+                      return {
+                        ...prev,
+                        ["search-box1"]: true,
+                      }
+                    })
                   }
                 }}
               >
