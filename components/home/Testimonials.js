@@ -116,7 +116,7 @@ const data = [
   },
   {
     review:
-      "NextGrowth Labs has been able to deliver exceptional results. Their tools, insights, are top notch, and they have great deal of attention to detail and technical expertise.",
+      "NextGrowth Labs has been able to deliver exceptional results. Their tools and insights are top-notch, and they have a great deal of attention to detail and technical expertise.",
     author: "Ashish Kumar Bhalla",
     department: "Urban Company",
     img: (

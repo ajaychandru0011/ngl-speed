@@ -18,6 +18,9 @@ const Footer = () => {
                     alt="iori"
                   />
                 </div>
+                <p className="font-md-bold mb-20 color-brand-1">
+                  NextGrowth Labs Private Limited
+                </p>
                 <p className="font-md mb-20 color-grey-400">
                   <i>
                     #27, Santosh Tower,

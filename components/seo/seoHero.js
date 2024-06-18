@@ -1,6 +1,6 @@
-import { SiTruenas } from "react-icons/si";
-import Button from "../elements/Button";
-import Image from "next/image";
+import { SiTruenas } from "react-icons/si"
+import Button from "../elements/Button"
+import Image from "next/image"
 
 const SEOHero = () => {
   return (
@@ -37,12 +37,20 @@ const SEOHero = () => {
               </h1>
               <div className="row">
                 <div className="col-lg-9">
-                  <p className="font-md color-grey-500">
-                    Since 2016, we&apos;ve been at the forefront of SEO. Some of
+                  {/* <p className="font-md color-grey-500">
+                    Since 2016, we&apos;ve been at the forefront of SEO. Some of the
                     world&apos;s top brands too read these lines, before
                     contacting and working with us. The next 5 minutes you spend
                     reading about us will give you a glimpse to our approach.
                     Want a customised presentation? Let us know.
+                  </p> */}
+                  <p className="font-md color-grey-500">
+                    Since 2016, we've been leading the way in SEO. Even some of
+                    the world's top brands have taken note before reaching out
+                    to collaborate with us. Spend the next 5 minutes learning
+                    about our approach, and you'll get a glimpse into what sets
+                    us apart. Interested in a customized presentation? Just let
+                    us know.
                   </p>
                 </div>
               </div>
@@ -74,7 +82,7 @@ const SEOHero = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default SEOHero;
+export default SEOHero

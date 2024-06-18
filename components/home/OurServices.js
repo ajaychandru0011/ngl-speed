@@ -1,6 +1,7 @@
 import React from "react";
 import ServicesCard from "../cards/ServicesCard";
 const SERVICES_DATA = [
+  
   {
     image: "/assets/imgs/page/homepage4/offer1.png",
     heading: "ASO",
