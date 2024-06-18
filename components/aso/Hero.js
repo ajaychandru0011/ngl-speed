@@ -40,10 +40,10 @@ const Hero = () => {
             </h1>
             <p className="font-md color-grey-500 mb-25">
               Since 2016, we&apos;ve been at the forefront of App Marketing.
-              Some of world&apos;s top brands too read these lines, before
+              Some of the world&apos;s top brands have also read these lines, before
               contacting and working with us. The next 5 minutes you spend
-              reading about us will give you a glimpse to our approach. Want a
-              customised presentation? Let us know.
+              reading about us will give you a glimpse of our approach. 
+              Want a customized presentation? <strong> Let us know.</strong>
             </p>
 
             <div

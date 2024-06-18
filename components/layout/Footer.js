@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from "next/image"
+import Link from "next/link"
 const Footer = () => {
   return (
     <>
@@ -18,10 +18,13 @@ const Footer = () => {
                     alt="iori"
                   />
                 </div>
+                <p className="font-md-bold mb-20 color-brand-1">
+                  NextGrowth Labs Private Limited
+                </p>
                 <p className="font-md mb-20 color-grey-400">
-                  Bangalore: 1216, 14th Main,
+                  #27, Santosh Tower, Second Floor, JP Nagar,
                   <br className="d-none d-lg-block" />
-                  HSR Layout
+                  4th Phase, 4th Main 100ft Ring Road Bangalore - 560078
                 </p>
                 <div className="font-md mb-20 color-grey-400">
                   <strong className="font-md-bold">Email:</strong>{" "}
@@ -195,7 +198,10 @@ const Footer = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/tools" className="font-sm color-grey-400 ">
+                      <Link
+                        href="/tools"
+                        className="font-sm color-grey-400 "
+                      >
                         Request Access to Free Tools Suite
                       </Link>
                     </li>
@@ -220,7 +226,10 @@ const Footer = () => {
                 <div className="col-lg-6 col-md-12 text-center text-lg-start">
                   <ul className="menu-bottom">
                     <li>
-                      <Link className="font-sm color-grey-300" href="/privacy">
+                      <Link
+                        className="font-sm color-grey-300"
+                        href="/privacy"
+                      >
                         Privacy policy
                       </Link>
                     </li>
@@ -253,7 +262,7 @@ const Footer = () => {
         </div>
       </footer>
     </>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
