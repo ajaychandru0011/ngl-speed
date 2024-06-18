@@ -2,7 +2,7 @@
 export const data = [
   {
     name: "App Intelligence",
-    desc: "Track keywords and optimize performance effortlessly with our App Intelligence platform.",
+    desc: "Increase organic search visibility to improve retention and revenue: ROI is maximised",
     img: (
       <svg
         width="75"
@@ -111,8 +111,8 @@ export const data = [
     name: "SDKs",
     desc: (
       <>
-        To get the data from Google Play, App Store &amp; Analytics data from
-        BigQuery
+        Conversion rate optimization (CRO) on your app's display page can be
+        used to your advantage to drive maximum views.
       </>
     ),
     img: (
@@ -201,7 +201,7 @@ export const data = [
   },
   {
     name: "ASO Chrome Extension",
-    desc: "Track rankings, analyze keywords, and optimize your app's visibility effortlessly with our ASO Chrome Extension.",
+    desc: "Chrome Add-on for ASO tools. Get competitor's keyword insights, vitals, etc.",
     img: (
       <svg
         width="75"
@@ -248,7 +248,7 @@ export const data = [
   },
   {
     name: "Doc Add-Ons",
-    desc: "A/B test and localize in 100s of languages using Publish APIs",
+    desc: "We don't just translate, we localize your keywords to ensure your app can reach a global audience.",
     img: (
       <svg
         width="75"
@@ -308,7 +308,7 @@ export const data = [
   },
   {
     name: "BigQuery Connector",
-    desc: "Flawless way to track keywords and write keyword focused short and long description",
+    desc: "To get the data from Google Play, App Store & Analytics data from BigQuery",
     img: (
       <svg
         width="75"
@@ -407,7 +407,7 @@ export const data = [
   },
   {
     name: "Data Studio Connector",
-    desc: "Get every single piece of keyword universe - some of our clients track tens of thousand of keywords.",
+    desc: "Connect, integrate and visualize data effortlessly using our Data Studio connector",
     img: (
       <svg
         width="75"
@@ -487,7 +487,7 @@ export const data = [
   },
   {
     name: "SERP Tracker",
-    desc: "Track and optimize your Search Engine Results Page (SERP) performance effortlessly.",
+    desc: "Multi-tool for tracking top 10 results on Google, Bing, Apple, and Play Store rankings.",
     img: (
       <svg
         width="75"
@@ -577,7 +577,7 @@ export const data = [
   },
   {
     name: "Keyword Suggest",
-    desc: "Boost your app's visibility and ranking with our cutting-edge Keyword Suggest tool.",
+    desc: "A Keyword Suggestion tool assists in finding relevant search terms to improve SEO and content optimization strategies effectively.",
     img: (
       <svg
         width="75"
@@ -656,7 +656,7 @@ export const data = [
   },
   {
     name: "Chrome Add-Ons",
-    desc: "Elevate your browsing experience with our innovative Chrome Add-ons.",
+    desc: "Boost your SEO efforts with essential Chrome add-ons. Get competitor's keyword insights, vitals, etc.",
     img: (
       <svg
         width="75"
@@ -708,7 +708,7 @@ export const data = [
   },
   {
     name: "Content Assist",
-    desc: "Optimize your CPA (for app-based campaigns) and CPC for web-based campaigns.",
+    desc: "Write ASO and SEO optimised content flawlessly with the help of our tool.",
     img: (
       <svg
         width="75"
@@ -772,7 +772,7 @@ export const data = [
   },
   {
     name: "Bulk Keyword Rank Checker",
-    desc: "Improve your IAPs and subscriptions with our state of the art tool.",
+    desc: "Check multiple keyword rankings at once with our free bulk tool. And enhance your SEO efforts",
     img: (
       <svg
         width="75"
@@ -886,7 +886,7 @@ export const data = [
   },
   {
     name: "Keyword Density Monitor",
-    desc: "Enhance your SEO strategy with our intuitive Keyword Density Monitor.",
+    desc: "Check density of keywords in your competitor's description, and use them in yours.",
     img: (
       <svg
         width="75"
@@ -1001,7 +1001,7 @@ export const data = [
   },
   {
     name: "Title and Meta Checker",
-    desc: "Perfect your website's SEO with our efficient Title and Meta Checker.",
+    desc: "This tool allows you to check the title, meta description and see if it's suitable for SEO.",
     img: (
       <svg
         width="75"
@@ -1128,7 +1128,7 @@ export const data = [
   },
   {
     name: "Page Speed Assessment",
-    desc: "Optimize your website's performance with our comprehensive Page Speed Assessment tool.",
+    desc: "Get a webpage speed assessment with Next Growth Labs. Improve your site's loading time and user experience.",
     img: (
       <svg
         width="75"
@@ -1235,7 +1235,7 @@ export const data = [
   },
   {
     name: "Search Console Connector",
-    desc: "Streamline your website analytics with our intuitive Search Console Connector.",
+    desc: "Streamline Data with Search Console Connector. Easily integrate Google Search Console data for detailed insights.",
     img: (
       <svg
         width="75"
@@ -1358,7 +1358,6 @@ export const data = [
     tag: "Enterprise",
   },
 ];
-
 
 // Countries list
 export const countries = [
@@ -1484,7 +1483,7 @@ export const countries = [
   { name: "Yemen", code: "ye", flag: "ye.png" },
   { name: "Zambia", code: "zm", flag: "zm.png" },
   { name: "Zimbabwe", code: "zw", flag: "zw.png" },
-]
+];
 export const stopwords = [
   "a",
   "b",
@@ -1626,101 +1625,101 @@ export const stopwords = [
   "now",
   "use",
   "it's",
-]
+];
 // funcion for getting recent apps data
 export function getRecentAppData() {
   const recentSelectedApp = JSON.parse(
-    localStorage.getItem("Recent Selected App"),
-  )
-  const recentSuggestion = recentSelectedApp?.map(item => {
-    let deviceIcon
+    localStorage.getItem("Recent Selected App")
+  );
+  const recentSuggestion = recentSelectedApp?.map((item) => {
+    let deviceIcon;
     if (item.device === "apple")
       deviceIcon =
-        "https://uploads-ssl.webflow.com/63806eb7687817f7f9be26de/6492f645042f50918e6e390f_app-store.svg"
+        "https://uploads-ssl.webflow.com/63806eb7687817f7f9be26de/6492f645042f50918e6e390f_app-store.svg";
     else
       deviceIcon =
-        "https://uploads-ssl.webflow.com/63806eb7687817f7f9be26de/6492f644817f822625b18bb6_google-play-store.svg"
-    item.deviceIcon = deviceIcon
-    return item
-  })
-  const uniqueRecentAppsArray = uniqueArray(recentSuggestion, "app-package-id")
-  return uniqueRecentAppsArray
+        "https://uploads-ssl.webflow.com/63806eb7687817f7f9be26de/6492f644817f822625b18bb6_google-play-store.svg";
+    item.deviceIcon = deviceIcon;
+    return item;
+  });
+  const uniqueRecentAppsArray = uniqueArray(recentSuggestion, "app-package-id");
+  return uniqueRecentAppsArray;
 }
 
 function uniqueArray(arr, key) {
-  const seen = new Set()
-  return arr?.filter(item => {
-    const keyValue = item[key]
+  const seen = new Set();
+  return arr?.filter((item) => {
+    const keyValue = item[key];
     if (seen.has(keyValue)) {
-      return false
+      return false;
     } else {
-      seen.add(keyValue)
-      return true
+      seen.add(keyValue);
+      return true;
     }
-  })
+  });
 }
 
 // data fetching
 function encodingName(e) {
-  return encodeURIComponent(e)
+  return encodeURIComponent(e);
 }
 export async function prepareDataForRequests(
   searchKeyword,
-  selectedCountryCode,
+  selectedCountryCode
 ) {
-  let currentNameIOS = searchKeyword
-  let currentNamePlay = encodingName(searchKeyword)
-  let country = selectedCountryCode
+  let currentNameIOS = searchKeyword;
+  let currentNamePlay = encodingName(searchKeyword);
+  let country = selectedCountryCode;
   if (currentNameIOS.trim().length < 2 && currentNameIOS.trim() === "") {
-    return false
+    return false;
   }
-  const newKeyword = currentNameIOS.split(" ").join("+")
-  const requestIOS = `https://itunes.apple.com/search?media=software&entity=software%2CiPadSoftware%2CsoftwareDeveloper&term=${newKeyword}&country=${country}&limit=30`
+  const newKeyword = currentNameIOS.split(" ").join("+");
+  const requestIOS = `https://itunes.apple.com/search?media=software&entity=software%2CiPadSoftware%2CsoftwareDeveloper&term=${newKeyword}&country=${country}&limit=30`;
   if (
     requestIOS.trim() ===
     `https://itunes.apple.com/search?media=software&entity=software%2CiPadSoftware%2CsoftwareDeveloper&term=&country=&limit=30`
   ) {
-    return false
+    return false;
   }
-  let requestPlay = `https://store.maakeetoo.com/apps/search/?q=${currentNamePlay}&gl=${country}`
+  let requestPlay = `https://store.maakeetoo.com/apps/search/?q=${currentNamePlay}&gl=${country}`;
   if (
     requestPlay.trim() ===
     `https://store.maakeetoo.com/apps/search/?q=&gl=${country}`
   ) {
-    return false
+    return false;
   }
-  let listData = await handleRequestsAndProcessData(requestPlay, requestIOS)
-  return listData
+  let listData = await handleRequestsAndProcessData(requestPlay, requestIOS);
+  return listData;
 }
 
 async function handleRequestsAndProcessData(requestPlay, requestIOS) {
   try {
-    const response1 = await fetch(requestIOS)
-    const response2 = await fetch(requestPlay)
-    const iOSResponse = await response1.json()
-    const playResponse = await response2.json()
+    const response1 = await fetch(requestIOS);
+    const response2 = await fetch(requestPlay);
+    const iOSResponse = await response1.json();
+    const playResponse = await response2.json();
 
     const mergedData = {
       iOSResponse: iOSResponse,
       playResponse: playResponse,
-    }
+    };
 
-    const fullAppData = mergedExtractedData(mergedData)
-    const suggestionList = createListWithDevice(fullAppData)
+    const fullAppData = mergedExtractedData(mergedData);
+    const suggestionList = createListWithDevice(fullAppData);
 
-    return suggestionList
+    return suggestionList;
   } catch (error) {
-    console.error("Error:", error)
-    return false
+    console.error("Error:", error);
+    return false;
   }
 }
 
 // merging fetched data
 function mergedExtractedData(rowData) {
-  let appDataMain = []
-  let appDataA = []
-  let appDataP = []
-  rowData.iOSResponse.results.map(item => {
+  let appDataMain = [];
+  let appDataA = [];
+  let appDataP = [];
+  rowData.iOSResponse.results.map((item) => {
     if (item.trackViewUrl) {
       let iosData = {
         dataPackageUrl: item.trackViewUrl,
@@ -1730,11 +1729,11 @@ function mergedExtractedData(rowData) {
         developer: "By " + item.artistName,
         device: "apple",
         deviceIcon: "apple_icon.svg",
-      }
-      appDataA.push(iosData)
+      };
+      appDataA.push(iosData);
     }
-  })
-  rowData.playResponse.map(item => {
+  });
+  rowData.playResponse.map((item) => {
     let playData = {
       dataPackageUrl:
         "https://play.google.com/store/apps/details?id=" + item.package_id,
@@ -1744,81 +1743,80 @@ function mergedExtractedData(rowData) {
       developer: "By " + item.developer_name,
       device: "android",
       deviceIcon: "android_icon.svg",
-    }
-    appDataP.push(playData)
-  })
+    };
+    appDataP.push(playData);
+  });
   appDataA.map((app, index) => {
-    appDataMain.push(appDataA[index])
+    appDataMain.push(appDataA[index]);
     if (appDataP[index]) {
-      appDataMain.push(appDataP[index])
+      appDataMain.push(appDataP[index]);
     }
-  })
-  if (appDataA.length === 0) appDataMain = appDataP
-  return appDataMain
+  });
+  if (appDataA.length === 0) appDataMain = appDataP;
+  return appDataMain;
 }
 
 //app list with device icon and type
 function createListWithDevice(data) {
-  const formattedData = data.map(item => {
+  const formattedData = data.map((item) => {
     if (item.appName !== undefined) {
-      let deviceIcon
+      let deviceIcon;
       if (item.device == "apple")
         deviceIcon =
-          "https://uploads-ssl.webflow.com/63806eb7687817f7f9be26de/6492f645042f50918e6e390f_app-store.svg"
+          "https://uploads-ssl.webflow.com/63806eb7687817f7f9be26de/6492f645042f50918e6e390f_app-store.svg";
       else
         deviceIcon =
-          "https://uploads-ssl.webflow.com/63806eb7687817f7f9be26de/6492f644817f822625b18bb6_google-play-store.svg"
-      item.deviceIcon = deviceIcon
-      return item
+          "https://uploads-ssl.webflow.com/63806eb7687817f7f9be26de/6492f644817f822625b18bb6_google-play-store.svg";
+      item.deviceIcon = deviceIcon;
+      return item;
     }
-  })
-  return formattedData
+  });
+  return formattedData;
 }
 
-// generating seo data 
-const removeStopwords = str => {
-  let res = []
-  let words = str.split(" ")
+// generating seo data
+const removeStopwords = (str) => {
+  let res = [];
+  let words = str.split(" ");
   for (let word of words) {
-    let wordClean = word.split(".").join("")
+    let wordClean = word.split(".").join("");
     if (!stopwords.includes(wordClean)) {
-      res.push(wordClean)
+      res.push(wordClean);
     }
   }
-  return res.join(" ")
-}
+  return res.join(" ");
+};
 
-export const generateKeywordTable = description => {
-  let keyword = description.toLowerCase().replace(/[,.():<>?;/:!*\n]+/g, " ")
-  keyword = removeStopwords(keyword)
-  const filteredKeyword = keyword.split(" ").filter(item => item.length > 2)
+export const generateKeywordTable = (description) => {
+  let keyword = description.toLowerCase().replace(/[,.():<>?;/:!*\n]+/g, " ");
+  keyword = removeStopwords(keyword);
+  const filteredKeyword = keyword.split(" ").filter((item) => item.length > 2);
 
-  const countFreq = arr => {
-    const keywordTable = []
-    const visited = Array(arr.length).fill(false)
+  const countFreq = (arr) => {
+    const keywordTable = [];
+    const visited = Array(arr.length).fill(false);
 
     for (let i = 0; i < arr.length; i++) {
-      if (visited[i]) continue
-      let count = 1
+      if (visited[i]) continue;
+      let count = 1;
       for (let j = i + 1; j < arr.length; j++) {
         if (arr[i] === arr[j]) {
-          visited[j] = true
-          count++
+          visited[j] = true;
+          count++;
         }
       }
-      keywordTable.push({ keyword: arr[i], count })
+      keywordTable.push({ keyword: arr[i], count });
     }
-    return keywordTable
-  }
+    return keywordTable;
+  };
 
-  const keywordWithCount = countFreq(filteredKeyword)
+  const keywordWithCount = countFreq(filteredKeyword);
   let finalKeywordTable = keywordWithCount
     .sort((a, b) => b.count - a.count)
-    .slice(0, 10)
+    .slice(0, 10);
 
-  return finalKeywordTable
-}
-
+  return finalKeywordTable;
+};
 
 // fetch and render app data
 export async function fetchAndStoreAppDataToBox(
@@ -1827,7 +1825,6 @@ export async function fetchAndStoreAppDataToBox(
   device,
   country
 ) {
-  
   if (device == "apple") {
     let result = await fetchAppleAppData(appPackageURL, country);
     const appData = JSON.stringify({ apple: result });
@@ -1840,8 +1837,6 @@ export async function fetchAndStoreAppDataToBox(
     return result;
   }
 }
-
-
 
 // fetch app data
 async function fetchPlayStoreAppData(applicationId, t) {
@@ -1857,7 +1852,7 @@ async function fetchPlayStoreAppData(applicationId, t) {
       dataObject.appIcon = data.icon;
       dataObject.appName = data.title;
       dataObject.appPrice = data.priceText;
-      dataObject.userRating = (data.score).toFixed(2);
+      dataObject.userRating = data.score.toFixed(2);
       dataObject.genresName = data.genre;
       dataObject.appFileSize = (parseInt(data.size) / (1000 * 1000)).toFixed(2);
       let date = new Date(data.updated);
@@ -1867,13 +1862,17 @@ async function fetchPlayStoreAppData(applicationId, t) {
       dataObject.screenshotCount = data.screenshots.length;
       dataObject.appDescription = data.description;
       dataObject.appReleaseDate = data.released || "2021-01-01";
-      let copyright = '© ' + new Date(dataObject.appReleaseDate).getFullYear() + " " + data.developer;
+      let copyright =
+        "© " +
+        new Date(dataObject.appReleaseDate).getFullYear() +
+        " " +
+        data.developer;
       dataObject.appCopyright = copyright;
       dataObject.type = "play";
       return dataObject;
-  } else {
+    } else {
       window.alert("Warning! Please select the app from the dropdown menu.");
-  }
+    }
   } catch (error) {
     throw new Error(`Error fetching Play Store app data: ${error}`);
   }
@@ -1893,27 +1892,35 @@ async function fetchAppleAppData(appPackageURL, t) {
     const row_data = data["results"][0];
     let AppURL = row_data.trackViewUrl;
     if (AppURL) {
-        let dataObject = {};
-        dataObject.packageURL = row_data.trackViewUrl;
-        dataObject.packageId = row_data.trackId;
-        dataObject.appIcon = row_data.artworkUrl100;
-        dataObject.appName = row_data.trackCensoredName;
-        dataObject.appPrice = row_data.formattedPrice;
-        dataObject.userRating = (row_data.averageUserRating).toFixed(2);
-        dataObject.genresName = (row_data.genres).join(', ');
-        dataObject.appFileSize = (parseInt(row_data.fileSizeBytes) / (1000 * 1000)).toFixed(2);
-        dataObject.lastUpdateDate = row_data.currentVersionReleaseDate.split('T')[0];
-        dataObject.lastUpdateNotes = row_data.releaseNotes;
-        dataObject.appScreenshot = row_data.screenshotUrls;
-        dataObject.screenshotCount = row_data.screenshotUrls.length;
-        dataObject.appDescription = row_data.description;
-        dataObject.appReleaseDate = row_data.releaseDate;
-        let copyright = '© ' + new Date(row_data.releaseDate).getFullYear() + " " + row_data.sellerName;
-        dataObject.appCopyright = copyright;
-        dataObject.type = "ios";
-        return dataObject;
+      let dataObject = {};
+      dataObject.packageURL = row_data.trackViewUrl;
+      dataObject.packageId = row_data.trackId;
+      dataObject.appIcon = row_data.artworkUrl100;
+      dataObject.appName = row_data.trackCensoredName;
+      dataObject.appPrice = row_data.formattedPrice;
+      dataObject.userRating = row_data.averageUserRating.toFixed(2);
+      dataObject.genresName = row_data.genres.join(", ");
+      dataObject.appFileSize = (
+        parseInt(row_data.fileSizeBytes) /
+        (1000 * 1000)
+      ).toFixed(2);
+      dataObject.lastUpdateDate =
+        row_data.currentVersionReleaseDate.split("T")[0];
+      dataObject.lastUpdateNotes = row_data.releaseNotes;
+      dataObject.appScreenshot = row_data.screenshotUrls;
+      dataObject.screenshotCount = row_data.screenshotUrls.length;
+      dataObject.appDescription = row_data.description;
+      dataObject.appReleaseDate = row_data.releaseDate;
+      let copyright =
+        "© " +
+        new Date(row_data.releaseDate).getFullYear() +
+        " " +
+        row_data.sellerName;
+      dataObject.appCopyright = copyright;
+      dataObject.type = "ios";
+      return dataObject;
     } else {
-        window.alert("Warning! Please select the app from the dropdown menu.");
+      window.alert("Warning! Please select the app from the dropdown menu.");
     }
   } catch (error) {
     throw new Error(`Error fetching Apple app data: ${error}`);
