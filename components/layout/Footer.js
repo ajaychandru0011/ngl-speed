@@ -22,7 +22,6 @@ const Footer = () => {
                   NextGrowth Labs Private Limited
                 </p>
                 <p className="font-md mb-20 color-grey-400">
-                  <i>
                     #27, Santosh Tower,
                     <br className="d-none d-lg-block" />
                     Second Floor,JP Nagar,
@@ -30,7 +29,6 @@ const Footer = () => {
                     4th Phase, 4th Main 100ft Ring Road
                     <br className="d-none d-lg-block" />
                     Bangalore - 560078
-                  </i>
                 </p>
                 <div className="font-md mb-20 color-grey-400">
                   <strong className="font-md-bold">Email:</strong>{" "}
