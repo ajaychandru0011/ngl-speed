@@ -156,7 +156,7 @@ const Testimonials = () => {
       <div className="container">
         <div className="pt-120 pb-120">
           <h2 className="color-brand-1 text-center">
-            Read what our amazing clients say
+          Hear from real customers about their experiences
           </h2>
           <div className="mt-50">
             <div className="box-swiper">

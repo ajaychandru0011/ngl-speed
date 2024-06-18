@@ -45,12 +45,12 @@ const SEOHero = () => {
                     Want a customised presentation? Let us know.
                   </p> */}
                   <p className="font-md color-grey-500">
-                    Since 2016, we've been leading the way in SEO. Even some of
-                    the world's top brands have taken note before reaching out
-                    to collaborate with us. Spend the next 5 minutes learning
-                    about our approach, and you'll get a glimpse into what sets
-                    us apart. Interested in a customized presentation? Just let
-                    us know.
+                    With our expert SEO strategies, your site will not only
+                    attract more visitors, keeping them engaged and ultimately
+                    converting them into engaged customers, leading to increased
+                    sales and success. Let us help you unlock your website's
+                    full potential and achieve your desired outcomes, like
+                    boosting sales or generating more qualified leads.
                   </p>
                 </div>
               </div>

@@ -93,7 +93,7 @@ const Trustby = ({ padding }) => {
           Apps we’ve helped grow
         </h2>
         <p className="text-sm color-brand-1 mb-1 text-center">
-          And 100’s of other top companies – ranging up to 0.5 Billion downloads
+        We’ve helped grow 100’s of top brands with upto 500 million downloads on their apps.
         </p>
       </div>
       <div className="marqueeContainer">

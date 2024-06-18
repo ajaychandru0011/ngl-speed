@@ -17,13 +17,13 @@ const SERVICES_DATA = [
   {
     image: "/assets/imgs/page/homepage4/offer3.png",
     heading: "Ads",
-    desc: "With our expert ad management, your business will see increased traffic, higher engagement, and improved sales. Let us help you leverage the power of ads to achieve your marketing goals and grow your business effectively.",
+    desc: "Leverage the power of ads with our expert ad management to experience increased traffic, higher engagement, and improved sales. Achieve your marketing goals with us and grow your business effectively.",
     route: "/contact",
   },
   {
     image: "/assets/imgs/page/homepage4/offer4.png",
     heading: "Engagement & Retention",
-    desc: "Our Engagement & Retention services are tailored to foster customer loyalty and drive sustained growth for your business. We implement personalized strategies that keep your audience engaged and invested in your brand.",
+    desc: "Our Engagement & Retention services are designed to foster customer loyalty and drive sustained growth for your business. We implement personalized strategies that keep your audience engaged and invested in your brand.",
     route: "/contact",
   },
 ];
@@ -37,9 +37,7 @@ const OurServices = () => {
             <div className="col-lg-12 text-center">
               <h2 className="color-brand-1 mb-20">Our services</h2>
               <p className="font-lg color-gray-500">
-                What makes us different from others? We give holistic solutions
-                <br className="d-none d-lg-block" />
-                with strategy, design &amp; technology.
+                What makes us different from others?
               </p>
             </div>
           </div>

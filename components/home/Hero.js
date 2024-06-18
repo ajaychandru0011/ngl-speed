@@ -34,12 +34,11 @@ const Hero = () => {
               point every day to drive actionable insights.
             </p> */}
             <p className="font-md color-grey-500 mb-25 max-width-685">
-              Since 2016, we've been leading the way in Digital Marketing. We
-              don't just serve our clients – we reverse engineer search
-              algorithms. Every day, we process billions of data points to
-              deliver actionable insights.
+              Since 2016, we have been at the forefront of Digital Marketing. We
+              go beyond servicing our clients - we reverse engineer search
+              algorithms and process billions of data points every day to drive
+              actionable insights.
             </p>
-
             <div className="d-sm-inline-block">
               <Button
                 text={"Contact Us"}
