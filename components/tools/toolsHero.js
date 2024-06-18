@@ -15,7 +15,7 @@ const ToolsHero = () => {
           <div className="col-xl-8 col-lg-10 m-auto" style={{ zIndex: 999 }}>
             <h1 className="color-brand-1 mb-25 mt-10">Next ASO Tools</h1>
             <p className="font-md color-grey-500 mb-25">
-              Keyword rankings, review monitoring or replies – manage it all
+              Keyword rankings, review monitoring, or replies – manage it all
               with our tools portal.
             </p>
 

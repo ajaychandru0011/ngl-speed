@@ -11,8 +11,7 @@ const Tools = ({ length }) => {
           <div className="col-lg-12 text-center">
             <h2 className="color-brand-1 mb-20">Tools that are built by us</h2>
             <p className="font-lg color-gray-500 mb-30">
-              We&apos;ve built flurry of tools - that keeps up light years ahead
-              in the mobile app promotion stack.
+            We've built a flurry of tools that keep us light years ahead in the mobile app promotion stack.
             </p>
 
             <Button text={"Learn More"} href="/tools" />
