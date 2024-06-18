@@ -5,7 +5,7 @@ import Button from "../elements/Button";
 const data = [
   {
     name: "App Intelligence",
-    desc: "Flawless way to track keywords and write keyword focused short and long description",
+    desc: "Track keywords and optimize performance effortlessly with our App Intelligence platform.",
     img: (
       <svg
         width="75"
@@ -204,7 +204,7 @@ const data = [
   },
   {
     name: "ASO Chrome Extension",
-    desc: "Track ranks, short description and so on",
+    desc: "Track rankings, analyze keywords, and optimize your app's visibility effortlessly with our ASO Chrome Extension.",
     img: (
       <svg
         width="75"
@@ -490,7 +490,7 @@ const data = [
   },
   {
     name: "SERP Tracker",
-    desc: "Optimize your CPA's (FOr app based campaigns) and CPC for web based campaigns",
+    desc: "Optimize your CPA (for app-based campaigns) and CPC for web-based campaigns.",
     img: (
       <svg
         width="75"
@@ -580,7 +580,7 @@ const data = [
   },
   {
     name: "Keyword Suggest",
-    desc: "Improve your IAP's and subscriptions with our state of the art tool.",
+    desc: "Boost your app's visibility and ranking with our cutting-edge Keyword Suggest tool.",
     img: (
       <svg
         width="75"
@@ -659,7 +659,7 @@ const data = [
   },
   {
     name: "Chrome Add-Ons",
-    desc: "Improve your IAP's and subscriptions with our state of the art tool.",
+    desc: "Elevate your browsing experience with our innovative Chrome Add-ons.",
     img: (
       <svg
         width="75"
@@ -711,7 +711,7 @@ const data = [
   },
   {
     name: "Content Assist",
-    desc: "Optimize your CPA's (FOr app based campaigns) and CPC for web based campaigns",
+    desc: "Optimize your CPA (for app-based campaigns) and CPC for web-based campaigns.",
     img: (
       <svg
         width="75"
@@ -775,7 +775,7 @@ const data = [
   },
   {
     name: "Bulk Keyword Rank Checker",
-    desc: "Improve your IAP's and subscriptions with our state of the art tool.",
+    desc: "Improve your IAPs and subscriptions with our state of the art tool.",
     img: (
       <svg
         width="75"
@@ -889,7 +889,7 @@ const data = [
   },
   {
     name: "Keyword Density Monitor",
-    desc: "Improve your IAP's and subscriptions with our state of the art tool.",
+    desc: "Enhance your SEO strategy with our intuitive Keyword Density Monitor.",
     img: (
       <svg
         width="75"
@@ -1004,7 +1004,7 @@ const data = [
   },
   {
     name: "Title and Meta Checker",
-    desc: "Optimize your CPA's (FOr app based campaigns) and CPC for web based campaigns",
+    desc: "Perfect your website's SEO with our efficient Title and Meta Checker.",
     img: (
       <svg
         width="75"
@@ -1131,7 +1131,7 @@ const data = [
   },
   {
     name: "Page Speed Assessment",
-    desc: "Improve your IAP's and subscriptions with our state of the art tool.",
+    desc: "Optimize your website's performance with our comprehensive Page Speed Assessment tool.",
     img: (
       <svg
         width="75"
@@ -1238,7 +1238,7 @@ const data = [
   },
   {
     name: "Search Console Connector",
-    desc: "Improve your IAP's and subscriptions with our state of the art tool.",
+    desc: "Streamline your website analytics with our intuitive Search Console Connector.",
     img: (
       <svg
         width="75"
