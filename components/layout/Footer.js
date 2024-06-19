@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="footer-1">
           <div className="container">
             <div className="row">
-              <div className="col-lg-3 width-20 custom-container-row">
+              <div className="col-lg-3 width-20">
                 <div className="mb-10">
                   <Image
                     width={40}
@@ -46,7 +46,7 @@ const Footer = () => {
                   ></Link>
                 </div>
               </div>
-              <div className="col-lg-3 width-16 mb-30 custom-container-row">
+              <div className="col-lg-3 width-16 mb-30">
                 <h5 className="mb-10 color-brand-1">Consulting</h5>
                 <ul className="menu-footer">
                   <li>
@@ -75,7 +75,7 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <div className="col-lg-3 width-16 mb-30 custom-container-row">
+              <div className="col-lg-3 width-16 mb-30">
                 <h5 className="mb-10 color-brand-1">Free Tools</h5>
                 <ul className="menu-footer">
                   <li>
@@ -234,7 +234,7 @@ const Footer = () => {
                     <li>
                       <Link
                         className="font-sm color-grey-300"
-                        href="term-conditions.html"
+                        href="/term-conditions"
                       >
                         Cookies
                       </Link>

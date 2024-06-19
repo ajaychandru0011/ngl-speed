@@ -61,6 +61,29 @@ TABLE CONTENT
 }
 
 // Custom css
+
+.section-logo-marquee.padding-horizontal-vertical {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.marquee {
+  grid-column-gap: 1.5rem;
+  display: flex;
+  overflow: hidden;
+}
+
+.marquee-content {
+  min-width: 100%;
+  grid-column-gap: 1.5rem;
+  flex: none;
+  justify-content: space-around;
+  display: flex;
+}
+.scroll {
+  animation: scroll 50s linear infinite;
+}
+
 #Loading {
   display: flex;
   justify-content: center;
@@ -167,14 +190,6 @@ TABLE CONTENT
      margin-top: 300px !important;
    }
  }
-
- @media (min-width: 992px) and (max-width: 1200px) {
-  .custom-container-row{
-    width: 25% !important;
-  }
-
- }
-
 
 @media(min-width: 1023px){
   .row-image img{

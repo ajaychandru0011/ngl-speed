@@ -108,7 +108,7 @@ const Service8 = ({ category }) => {
             ))}
             <div className="col-lg-12 box-button text-center mt-40">
               <Button
-                text={"Book An Appointment"}
+                text={"Book an appointment"}
                 href={
                   "https://calender.multivariate.ai/team/nextgrowth-labs/marketing-meet"
                 }

@@ -60,7 +60,7 @@ const SEOHero = () => {
               </div>
               <div className="box-button mt-20">
                 <Button
-                  text={"Book An Appointment"}
+                  text={"Book an appointment"}
                   showIcon={true}
                   href={
                     "https://calender.multivariate.ai/team/nextgrowth-labs/marketing-meet"

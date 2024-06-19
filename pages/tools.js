@@ -22,7 +22,7 @@ const Tools = () => {
       <PageHead title={"NEXT ASO Tools"} />
       <Layout>
         <ToolsHero />
-        <Trustby />
+        <Trustby heading = {"Brands we’ve helped grow"}/>
         <DynamicToolSection1 />
         <DynamicToolSection2 />
         <DynamicToolSection3 />
