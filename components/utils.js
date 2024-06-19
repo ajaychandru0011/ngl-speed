@@ -320,7 +320,7 @@ export const data = [
   },
   {
     name: "BigQuery Connector",
-    desc: "To get the data from Google Play, App Store & Analytics data from BigQuery",
+    desc: "Facilitate robust data analysis by seamlessly integrating datasets using our BigQuery connector",
     img: (
       <svg
         width="75"

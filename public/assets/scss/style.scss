@@ -168,6 +168,12 @@ TABLE CONTENT
    }
  }
 
+ @media (min-width: 992px) and (max-width: 1200px) {
+  .custom-container-row{
+    width: 25% !important;
+  }
+
+ }
 
 
 @media(min-width: 1023px){
