@@ -22,16 +22,16 @@ const Footer = () => {
                   NextGrowth Labs Private Limited
                 </p>
                 <p className="font-md mb-20 color-grey-400">
-                    #27, Santosh Tower,
-                    <br className="d-none d-lg-block" />
-                    Second Floor,JP Nagar,
-                    <br className="d-none d-lg-block" />
-                    4th Phase, 4th Main 100ft Ring Road
-                    <br className="d-none d-lg-block" />
-                    Bangalore - 560078
+                  #27, Santosh Tower,
+                  <br className="d-none d-lg-block" />
+                  Second Floor,JP Nagar,
+                  <br className="d-none d-lg-block" />
+                  4th Phase, 4th Main 100ft Ring Road
+                  <br className="d-none d-lg-block" />
+                  Bangalore - 560078
                 </p>
                 <div className="font-md mb-20 color-grey-400">
-                  <strong className="font-md-bold">Email:</strong>{" "}
+                  <strong className="font-md-bold">Email:</strong>
                   contact@nextgrowthlabs.com
                 </div>
                 <h6 className="color-brand-1">Follow Us</h6>
@@ -56,7 +56,7 @@ const Footer = () => {
                     <Link href="/">Mobile App Promotion</Link>
                   </li>
                   <li>
-                    <Link href="https://nextgrowthlabs.com/how-we-lower-google-uac-ad-costs/">
+                    <Link href="https://tools.nextgrowthlabs.com/how-we-lower-google-uac-ad-costs/">
                       Ad Cost Reduction
                     </Link>
                   </li>
@@ -89,7 +89,7 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="https://tools.nextgrowthlabs.com/google-serp-rank-tracker/">
+                    <Link href="https://tools.nextgrowthlabs.com/keyword-suggestion/">
                       Keyword Auto Suggest
                     </Link>
                   </li>
@@ -120,7 +120,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link href="https://tools.nextgrowthlabs.com/bulk-ios-keywords-tracker/">
-                      iOS Keyword Tracker
+                      Bulk iOS Keyword Rank Tracker
                     </Link>
                   </li>
                 </ul>
