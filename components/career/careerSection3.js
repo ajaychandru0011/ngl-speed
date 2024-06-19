@@ -1,6 +1,6 @@
-import Button from "../elements/Button";
-import Link from "next/link";
-import Image from "next/image";
+import Button from "../elements/Button"
+import Link from "next/link"
+import Image from "next/image"
 const CareerSection3 = () => {
   return (
     <section className="section mt-200">
@@ -10,8 +10,10 @@ const CareerSection3 = () => {
             <h2 className="color-brand-1 mb-20">Join Our Growing Team!</h2>
             <p className="font-lg color-gray-500">
               {/* Explore our open roles for working totally remotely, from the */}
-              We're always looking for talented individuals to join the NextLabs family. Even if you don't see a perfect fit right now, upload your resume and let us know your areas of interest. We might have the perfect opportunity waiting for you!
-              {/* <br className="d-none d-lg-block" /> */}
+              We're always looking for talented individuals to join the NextLabs
+              family. Even if you don't see a perfect fit right now, upload your
+              resume and let us know your areas of interest. We might have the
+              perfect opportunity waiting for you!
               {/* office or somewhere in between. */}
             </p>
           </div>
@@ -28,16 +30,23 @@ const CareerSection3 = () => {
                   alt="iori"
                 />
               </div>
-              <div className="card-info">
-                <h4 className="color-brand-1 mb-10 career-card-heading">
-                  Outreach & Sales Associate
-                </h4>
-                <p className="font-md color-grey-500 mb-5 career-card-info-paragraph">
-                  Building and maintaining client relationships, identifying new
-                  sales opportunities, and effectively promoting our products
-                  and services.
-                </p>
-              </div>
+              <Link
+                href={
+                  "https://apply.workable.com/nextgrowth-labs/j/AEA13ADE9B/"
+                }
+                target = "_blank"
+              >
+                <div className="card-info">
+                  <h4 className="color-brand-1 mb-10 career-card-heading">
+                    Outreach & Sales Associate
+                  </h4>
+                  <p className="font-md color-grey-500 mb-5 career-card-info-paragraph">
+                    Building and maintaining client relationships, identifying
+                    new sales opportunities, and effectively promoting our
+                    products and services.
+                  </p>
+                </div>
+              </Link>
             </div>
           </div>
           <div className="col-lg-6">
@@ -51,16 +60,24 @@ const CareerSection3 = () => {
                   alt="iori"
                 />
               </div>
-              <div className="card-info">
-                <h4 className="color-brand-1 mb-10">
-                  Digital Marketing Executive
-                </h4>
-                <p className="font-md color-grey-500 mb-5 career-card-info-min-height">
-                  Developing, implementing, and managing online marketing
-                  campaigns that drive traffic, engage customers, and generate
-                  leads.
-                </p>
-              </div>
+              <Link
+                href={
+                  "https://apply.workable.com/nextgrowth-labs/j/2207CE0FFF/"
+                  
+                }
+                target = "_blank"
+              >
+                <div className="card-info">
+                  <h4 className="color-brand-1 mb-10">
+                    Digital Marketing Executive
+                  </h4>
+                  <p className="font-md color-grey-500 mb-5 career-card-info-min-height">
+                    Developing, implementing, and managing online marketing
+                    campaigns that drive traffic, engage customers, and generate
+                    leads.
+                  </p>
+                </div>
+              </Link>
             </div>
           </div>
           <div className="col-lg-6">
@@ -74,6 +91,7 @@ const CareerSection3 = () => {
                   alt="iori"
                 />
               </div>
+              <Link href={"https://apply.workable.com/nextgrowth-labs/j/20D933CB28/"} target = "_blank">
               <div className="card-info">
                 <h4 className="color-brand-1 mb-10">
                   Search Engine Optimization Specialist
@@ -84,6 +102,7 @@ const CareerSection3 = () => {
                   traffic, and increase overall online presence.
                 </p>
               </div>
+              </Link>
             </div>
           </div>
           <div className="col-lg-6">
@@ -97,6 +116,7 @@ const CareerSection3 = () => {
                   alt="iori"
                 />
               </div>
+              <Link href={"https://apply.workable.com/nextgrowth-labs/j/6BD5C4B0DC/"} target = "_blank">
               <div className="card-info">
                 <h4 className="color-brand-1 mb-10">
                   Data Center Administrator - Freelancer
@@ -106,6 +126,7 @@ const CareerSection3 = () => {
                   data center infrastructure.
                 </p>
               </div>
+              </Link>
             </div>
           </div>
           <div className="col-lg-6">
@@ -119,6 +140,7 @@ const CareerSection3 = () => {
                   alt="iori"
                 />
               </div>
+              <Link href={"https://apply.workable.com/nextgrowth-labs/j/E82298D05D/"} target = "_blank">
               <div className="card-info">
                 <h4 className="color-brand-1 mb-10">
                   Junior HR Representative (Intern)
@@ -129,6 +151,7 @@ const CareerSection3 = () => {
                   employees.
                 </p>
               </div>
+              </Link>
             </div>
           </div>
           <div className="col-lg-6">
@@ -142,6 +165,7 @@ const CareerSection3 = () => {
                   alt="iori"
                 />
               </div>
+              <Link href={"https://apply.workable.com/nextgrowth-labs/j/4EC3E3FC2A/"} target = "_blank">
               <div className="card-info">
                 <h4 className="color-brand-1 mb-10">
                   Senior Content Associate
@@ -151,6 +175,7 @@ const CareerSection3 = () => {
                   various platforms.
                 </p>
               </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -162,7 +187,7 @@ const CareerSection3 = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default CareerSection3;
+export default CareerSection3
