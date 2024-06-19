@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="footer-1">
           <div className="container">
             <div className="row">
-              <div className="col-lg-3 width-20">
+              <div className="col-lg-3 width-20 custom-container-row">
                 <div className="mb-10">
                   <Image
                     width={40}
@@ -22,16 +22,16 @@ const Footer = () => {
                   NextGrowth Labs Private Limited
                 </p>
                 <p className="font-md mb-20 color-grey-400">
-                    #27, Santosh Tower,
-                    <br className="d-none d-lg-block" />
-                    Second Floor,JP Nagar,
-                    <br className="d-none d-lg-block" />
-                    4th Phase, 4th Main 100ft Ring Road
-                    <br className="d-none d-lg-block" />
-                    Bangalore - 560078
+                  #27, Santosh Tower,
+                  <br className="d-none d-lg-block" />
+                  Second Floor,JP Nagar,
+                  <br className="d-none d-lg-block" />
+                  4th Phase, 4th Main 100ft Ring Road
+                  <br className="d-none d-lg-block" />
+                  Bangalore - 560078
                 </p>
                 <div className="font-md mb-20 color-grey-400">
-                  <strong className="font-md-bold">Email:</strong>{" "}
+                  <strong className="font-md-bold">Email:</strong>
                   contact@nextgrowthlabs.com
                 </div>
                 <h6 className="color-brand-1">Follow Us</h6>
@@ -46,7 +46,7 @@ const Footer = () => {
                   ></Link>
                 </div>
               </div>
-              <div className="col-lg-3 width-16 mb-30">
+              <div className="col-lg-3 width-16 mb-30 custom-container-row">
                 <h5 className="mb-10 color-brand-1">Consulting</h5>
                 <ul className="menu-footer">
                   <li>
@@ -56,7 +56,7 @@ const Footer = () => {
                     <Link href="/">Mobile App Promotion</Link>
                   </li>
                   <li>
-                    <Link href="https://nextgrowthlabs.com/how-we-lower-google-uac-ad-costs/">
+                    <Link href="https://tools.nextgrowthlabs.com/how-we-lower-google-uac-ad-costs/">
                       Ad Cost Reduction
                     </Link>
                   </li>
@@ -75,7 +75,7 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <div className="col-lg-3 width-16 mb-30">
+              <div className="col-lg-3 width-16 mb-30 custom-container-row">
                 <h5 className="mb-10 color-brand-1">Free Tools</h5>
                 <ul className="menu-footer">
                   <li>
@@ -89,7 +89,7 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="https://tools.nextgrowthlabs.com/google-serp-rank-tracker/">
+                    <Link href="https://tools.nextgrowthlabs.com/keyword-suggestion/">
                       Keyword Auto Suggest
                     </Link>
                   </li>
@@ -120,7 +120,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link href="https://tools.nextgrowthlabs.com/bulk-ios-keywords-tracker/">
-                      iOS Keyword Tracker
+                      Bulk iOS Keyword Rank Tracker
                     </Link>
                   </li>
                 </ul>
