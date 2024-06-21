@@ -20,7 +20,7 @@ const SEO = () => {
       />
       <Layout>
         <DynamicSeoHero />
-        <DynamicTrustBy />
+        <DynamicTrustBy heading = {"Brands we’ve helped grow"}/>
         <Service8 category={"Website's"} />
         <DynamicTestimonials />
         <DynamicSEOSection3 />

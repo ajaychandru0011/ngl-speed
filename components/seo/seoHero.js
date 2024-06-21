@@ -1,6 +1,6 @@
-import { SiTruenas } from "react-icons/si"
-import Button from "../elements/Button"
-import Image from "next/image"
+import { SiTruenas } from "react-icons/si";
+import Button from "../elements/Button";
+import Image from "next/image";
 
 const SEOHero = () => {
   return (
@@ -48,9 +48,10 @@ const SEOHero = () => {
                     With our expert SEO strategies, your site will not only
                     attract more visitors, keeping them engaged and ultimately
                     converting them into engaged customers, leading to increased
-                    sales and success. Let us help you unlock your website's
-                    full potential and achieve your desired outcomes, like
-                    boosting sales or generating more qualified leads.
+                    sales and success. Let us help you unlock your
+                    website&apos;s full potential and achieve your desired
+                    outcomes, like boosting sales or generating more qualified
+                    leads.
                   </p>
                 </div>
               </div>
@@ -59,7 +60,7 @@ const SEOHero = () => {
               </div>
               <div className="box-button mt-20">
                 <Button
-                  text={"Book An Appointment"}
+                  text={"Book an appointment"}
                   showIcon={true}
                   href={
                     "https://calender.multivariate.ai/team/nextgrowth-labs/marketing-meet"
@@ -82,7 +83,7 @@ const SEOHero = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default SEOHero
+export default SEOHero;

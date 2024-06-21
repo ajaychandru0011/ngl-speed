@@ -1,6 +1,6 @@
-import React, { useRef, useState } from "react"
-import Country from "./elements/Country"
-import { useAtom } from "jotai"
+import React, { useRef, useState } from "react";
+import Country from "./elements/Country";
+import { useAtom } from "jotai";
 import {
   searchKeyword,
   showRecentApps,
@@ -8,29 +8,26 @@ import {
   showAppSelected,
   focusAtom,
   startButton,
-} from "../../state/atoms"
-import RecentSearchedApps from "./elements/RecentSearchedApps"
-import SearchResults from "./elements/SearchResult"
-import AppAnalysis from "./elements/AppAnalysis"
+} from "../../state/atoms";
+import RecentSearchedApps from "./elements/RecentSearchedApps";
+import SearchResults from "./elements/SearchResult";
+import AppAnalysis from "./elements/AppAnalysis";
 
 const Hero = () => {
-  const [recentAppsVisible, setRecentAppsVisible] = useAtom(showRecentApps)
-  const [searchAppKeyword, setSearchAppKeyword] = useAtom(searchKeyword)
-  const [searchAppVisible, setSearchAppVisible] = useAtom(showSearchApps)
-  const [appSelected] = useAtom(showAppSelected)
-  const [isClickStart, setClickStart] = useAtom(startButton)
-  const [inputFocused, setInputFocused] = useAtom(focusAtom)
-  const inputRef = useRef()
+  const [recentAppsVisible, setRecentAppsVisible] = useAtom(showRecentApps);
+  const [searchAppKeyword, setSearchAppKeyword] = useAtom(searchKeyword);
+  const [searchAppVisible, setSearchAppVisible] = useAtom(showSearchApps);
+  const [appSelected] = useAtom(showAppSelected);
+  const [isClickStart, setClickStart] = useAtom(startButton);
+  const [inputFocused, setInputFocused] = useAtom(focusAtom);
+  const inputRef = useRef();
   const clearInput = () => {
-    setSearchAppKeyword("")
-  }
+    setSearchAppKeyword("");
+  };
 
   return (
     <>
-      <section
-        className="section"
-        style={{ backgroundColor: "#E0F1F4" }}
-      >
+      <section className="section" style={{ backgroundColor: "#E0F1F4" }}>
         <div className="container text-center">
           <div className="row mt-100 mb-100">
             <div className="col-xl-8 col-lg-10 m-auto">
@@ -41,9 +38,9 @@ const Hero = () => {
               <p className="font-md color-grey-500 mb-25">
                 With our expert ASO strategies, your app will not only engage
                 more users but also hook them, leading to increased engagement
-                and profitability. Let us help you maximize your app's potential
-                and achieve your desired results, like boosting revenue or
-                building brand awareness.
+                and profitability. Let us help you maximize your app&apos;s
+                potential and achieve your desired results, like boosting
+                revenue or building brand awareness.
               </p>
               <div
                 id="search-box1"
@@ -64,34 +61,34 @@ const Hero = () => {
                       onFocus={() => {
                         {
                           isClickStart
-                            ? setRecentAppsVisible(prev => {
+                            ? setRecentAppsVisible((prev) => {
                                 return {
                                   ...prev,
                                   ["suggestions-box1"]: true,
-                                }
+                                };
                               })
-                            : ""
+                            : "";
                         }
-                        setInputFocused(prev => {
+                        setInputFocused((prev) => {
                           return {
                             ...prev,
                             ["search-box1"]: true,
-                          }
-                        })
+                          };
+                        });
                       }}
-                      onChange={e => {
+                      onChange={(e) => {
                         if (e.target.value.trim().length === 0) {
-                          setRecentAppsVisible({})
-                          setSearchAppVisible({})
+                          setRecentAppsVisible({});
+                          setSearchAppVisible({});
                         }
-                        setRecentAppsVisible({})
-                        setSearchAppKeyword(e.target.value)
-                        setSearchAppVisible(prev => {
+                        setRecentAppsVisible({});
+                        setSearchAppKeyword(e.target.value);
+                        setSearchAppVisible((prev) => {
                           return {
                             ...prev,
                             ["search-box1"]: true,
-                          }
-                        })
+                          };
+                        });
                       }}
                     />
                     {inputFocused["search-box1"] && (
@@ -99,10 +96,10 @@ const Hero = () => {
                         id="close-search-form1"
                         className="close-search-form"
                         onClick={() => {
-                          setRecentAppsVisible({})
-                          setSearchAppVisible({})
-                          setInputFocused({})
-                          clearInput()
+                          setRecentAppsVisible({});
+                          setSearchAppVisible({});
+                          setInputFocused({});
+                          clearInput();
                         }}
                       >
                         <svg
@@ -145,18 +142,18 @@ const Hero = () => {
                   id="Audit-App-button"
                   onClick={() => {
                     if (appSelected) {
-                      console.log("appSelected")
-                      inputRef.current.focus()
+                      console.log("appSelected");
+                      inputRef.current.focus();
                     } else {
-                      inputRef.current.focus()
-                      setSearchAppKeyword("Top apps")
-                      setClickStart(true)
-                      setSearchAppVisible(prev => {
+                      inputRef.current.focus();
+                      setSearchAppKeyword("Top apps");
+                      setClickStart(true);
+                      setSearchAppVisible((prev) => {
                         return {
                           ...prev,
                           ["search-box1"]: true,
-                        }
-                      })
+                        };
+                      });
                     }
                   }}
                 >
@@ -169,7 +166,7 @@ const Hero = () => {
       </section>
       {appSelected && <AppAnalysis />}
     </>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
