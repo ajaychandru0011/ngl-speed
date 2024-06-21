@@ -53,6 +53,7 @@ const PageHead = ({ title }) => {
         name="msapplication-TileImage"
         content="https://nextgrowthlabs.com/wp-content/uploads/2021/11/cropped-nextlogo-270x270.jpeg"
       />
+      <link rel="canonical" href="https://nextgrowthlabs.com/" />
     </Head>
   );
 };
