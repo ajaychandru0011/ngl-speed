@@ -17,7 +17,7 @@ yarn.lock
 
 # production
 /build
-/pages/blog
+/removed
 # misc
 .DS_Store
 *.pem
