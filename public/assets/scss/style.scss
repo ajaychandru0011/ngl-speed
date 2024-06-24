@@ -61,6 +61,33 @@ TABLE CONTENT
 }
 
 // Custom css
+.brands-container{
+  gap: 2rem;
+  justify-content: flex-start;
+}
+.brands_wrapper{
+    background-color: #fff;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    padding: 20px 6px;
+    display: flex;
+    // box-shadow: 0 0 50px rgba(0,0,0,.08);
+    box-shadow: 0 0 10px #20c997;
+}
+.icon_brand {
+  object-fit: contain;
+  width: 80px;
+  height: 80px;
+}
+.brands_wrapper img {
+  vertical-align: middle;
+  max-width: 100%;
+  display: inline-block;
+}
+
   .email-container {
     display: flex;
     flex-direction: column;
@@ -189,6 +216,12 @@ TABLE CONTENT
 // ***************************
 
 // custom media queries
+// @media (min-width: 425px) {
+  .brands-container{
+    margin-left: 2.5rem;
+// }
+
+}
 @media (min-width: 1279px) and (max-width: 1400px) {
   .custom-con{
     padding-left: 34px!important;
