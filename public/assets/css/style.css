@@ -7359,11 +7359,6 @@ textarea.textarea-control {
   --bgColor: #024430;
 }
 
-.email-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .section-logo-marquee.padding-horizontal-vertical {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -7485,7 +7480,17 @@ textarea.textarea-control {
   height: 415px !important;
 }
 
-@media (min-width: 992px) and (max-width: 1240px) {
+@media (min-width: 1279px) and (max-width: 1400px) {
+  .custom-con {
+    padding-left: 74px !important;
+  }
+}
+@media (min-width: 1401px) {
+  .custom-con {
+    padding-left: 40px !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1249px) {
   .custom-width-30 {
     width: 30% !important;
   }

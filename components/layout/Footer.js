@@ -53,7 +53,7 @@ const Footer = () => {
                   ></Link>
                 </div>
               </div>
-              <div className="col-lg-3 width-16 mb-30">
+              <div className="col-lg-3 width-16 mb-30 custom-con">
                 <h5 className="mb-10 color-brand-1">Consulting</h5>
                 <ul className="menu-footer">
                   <li>
