@@ -252,15 +252,6 @@ const Footer = () => {
                         Terms of service
                       </Link>
                     </li>
-                    {/* <li>
-                      <Link
-                        className="font-sm color-grey-300"
-                        href="/sitemap.xml"
-                        target="_blank"
-                      >
-                        Sitemap
-                      </Link>
-                    </li> */}
                   </ul>
                 </div>
                 <div className="col-lg-6 col-md-12 text-center text-lg-end">

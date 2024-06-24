@@ -8,6 +8,7 @@ import CareerSection6 from "../components/career/careerSection6";
 import CareerSection7 from "../components/career/careerSection7";
 import Layout from "../components/layout/Layout";
 import PageHead from "../components/elements/PageHead";
+import Brands from "../components/career/Brands";
 const career = () => {
   const photos  = [
     { src: "/assets/imgs/clientlogo/HDFC.png", alt: "hdfc", width: 304 },
@@ -103,7 +104,8 @@ const career = () => {
       <Layout>
         <CareerSection1 />
         <CareerSection3 />
-        <CareerSection5 />
+        {/* <CareerSection5 /> */}
+        <Brands />
         <CareerSection6 />
       </Layout>
     </>
