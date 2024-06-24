@@ -61,6 +61,10 @@ TABLE CONTENT
 }
 
 // Custom css
+.brands-container{
+  gap: 2rem;
+  justify-content: flex-start;
+}
 .brands_wrapper{
     background-color: #fff;
     border-radius: 10px;
@@ -212,6 +216,12 @@ TABLE CONTENT
 // ***************************
 
 // custom media queries
+// @media (min-width: 425px) {
+  .brands-container{
+    margin-left: 2.5rem;
+// }
+
+}
 @media (min-width: 1279px) and (max-width: 1400px) {
   .custom-con{
     padding-left: 34px!important;

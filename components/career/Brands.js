@@ -168,8 +168,7 @@ const Brands = () => {
         {/* ************ */}
         <div className="mt-50">
           <div
-            className="row"
-            style={{ gap: "2rem", justifyContent: "center" }}
+            className="row brands-container"
           >
             {selectedCategory &&
               categories

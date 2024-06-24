@@ -7359,6 +7359,11 @@ textarea.textarea-control {
   --bgColor: #024430;
 }
 
+.brands-container {
+  gap: 2rem;
+  justify-content: flex-start;
+}
+
 .brands_wrapper {
   background-color: #fff;
   border-radius: 10px;
@@ -7507,6 +7512,10 @@ textarea.textarea-control {
 .insideslider canvas {
   width: 415px !important;
   height: 415px !important;
+}
+
+.brands-container {
+  margin-left: 2.5rem;
 }
 
 @media (min-width: 1279px) and (max-width: 1400px) {
