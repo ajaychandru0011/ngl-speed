@@ -1,6 +1,6 @@
-import Image from "next/image";
-import Button from "../elements/Button";
-import Link from "next/link";
+import Image from "next/image"
+import Button from "../elements/Button"
+import Link from "next/link"
 
 const CareerSection6 = () => {
   return (
@@ -23,18 +23,21 @@ const CareerSection6 = () => {
               <div className="box-info-video">
                 <span className="btn btn-tag">Get in touch</span>
                 <h2 className="color-brand-1 mt-15 mb-20">
-                  Want to talk to a marketing expert?
+                  Join Our Growing Team!
                 </h2>
                 <p className="font-md color-grey-500">
-                  At NextGrowth Labs, we value data-driven individuals with a
-                  commitment to excellence. Elevate your business with our
-                  expert SEO and ASO skills. Experience dynamic growth through
-                  market-leading strategies. Choose us for guaranteed brand
-                  visibility and unmatched digital success.
+                  We're always looking for talented individuals to join the
+                  NextGrowth Labs family. Even if you don't see a perfect fit
+                  right now, upload your resume and let us know your areas of
+                  interest. We might have the perfect opportunity waiting for
+                  you!
                 </p>
                 <div className="box-button text-start mt-65">
-                  {" "}
-                  <Button text={"Contact Us"} href={"/contact"} />
+                  <Button
+                    text={"Drop your resume"}
+                    href={"https://nextgrowth-labs.workable.com/"}
+                    target={"_blank"}
+                  />
                 </div>
               </div>
             </div>
@@ -42,7 +45,7 @@ const CareerSection6 = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default CareerSection6;
+export default CareerSection6

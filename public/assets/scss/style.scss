@@ -61,10 +61,11 @@ TABLE CONTENT
 }
 
 // Custom css
-  // .email-container {
-  //   display: flex;
-  //   flex-direction: column;
-  // }
+  .email-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
 .section-logo-marquee.padding-horizontal-vertical {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -190,7 +191,7 @@ TABLE CONTENT
 // custom media queries
 @media (min-width: 1279px) and (max-width: 1400px) {
   .custom-con{
-    padding-left: 74px!important;
+    padding-left: 34px!important;
   }
 }
 

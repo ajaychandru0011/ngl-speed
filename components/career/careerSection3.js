@@ -7,14 +7,11 @@ const CareerSection3 = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-12 text-center">
-            <h2 className="color-brand-1 mb-20">Join Our Growing Team!</h2>
+            <h2 className="color-brand-1 mb-20">Career Opportunities</h2>
             <p className="font-lg color-gray-500">
-              {/* Explore our open roles for working totally remotely, from the */}
-              We're always looking for talented individuals to join the NextLabs
-              family. Even if you don't see a perfect fit right now, upload your
-              resume and let us know your areas of interest. We might have the
-              perfect opportunity waiting for you!
-              {/* office or somewhere in between. */}
+              Explore our open roles for working totally remotely, from the
+              <br className="d-none d-lg-block" />
+              office or somewhere in between.
             </p>
           </div>
         </div>
@@ -183,6 +180,7 @@ const CareerSection3 = () => {
           <Button
             text={"View & Apply"}
             href={"https://nextgrowth-labs.workable.com/"}
+            target={"_blank"}
           />
         </div>
       </div>

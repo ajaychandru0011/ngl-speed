@@ -7359,6 +7359,11 @@ textarea.textarea-control {
   --bgColor: #024430;
 }
 
+.email-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .section-logo-marquee.padding-horizontal-vertical {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -7482,7 +7487,7 @@ textarea.textarea-control {
 
 @media (min-width: 1279px) and (max-width: 1400px) {
   .custom-con {
-    padding-left: 74px !important;
+    padding-left: 34px !important;
   }
 }
 @media (min-width: 1401px) {
