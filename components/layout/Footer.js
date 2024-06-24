@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from "next/image"
+import Link from "next/link"
 const Footer = () => {
   return (
     <>
@@ -7,9 +7,9 @@ const Footer = () => {
         <div className="border-bottom"></div>
 
         <div className="footer-1">
-          <div className="container">
+          <div className="container footer-container">
             <div className="row">
-              <div className="col-lg-3 width-20">
+              <div className="col-lg-3 width-20 custom-width-30">
                 <div className="mb-10">
                   <Image
                     width={40}
@@ -30,10 +30,17 @@ const Footer = () => {
                   <br className="d-none d-lg-block" />
                   Bangalore - 560078
                 </p>
-                <div className="font-md mb-20 color-grey-400">
+                {/* <div className="font-md mb-20 color-grey-400">
                   <strong className="font-md-bold">Email:</strong>
                   contact@nextgrowthlabs.com
+                </div> */}
+                <div className="email-container font-md mb-20 color-grey-400 ">
+                  <strong className="font-md-bold email-label">Email:</strong>
+                  <span className="email-address">
+                    contact@nextgrowthlabs.com
+                  </span>
                 </div>
+
                 <h6 className="color-brand-1">Follow Us</h6>
                 <div className="mt-15">
                   <Link
@@ -46,7 +53,7 @@ const Footer = () => {
                   ></Link>
                 </div>
               </div>
-              <div className="col-lg-3 width-16 mb-30">
+              <div className="col-lg-3 width-16 mb-30 custom-con">
                 <h5 className="mb-10 color-brand-1">Consulting</h5>
                 <ul className="menu-footer">
                   <li>
@@ -75,7 +82,7 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <div className="col-lg-3 width-16 mb-30">
+              <div className="col-lg-3 width-16 mb-30 custom-width-23">
                 <h5 className="mb-10 color-brand-1">Free Tools</h5>
                 <ul className="menu-footer">
                   <li>
@@ -202,7 +209,10 @@ const Footer = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/tools" className="font-sm color-grey-400 ">
+                      <Link
+                        href="/tools"
+                        className="font-sm color-grey-400 "
+                      >
                         Request Access to Free Tools Suite
                       </Link>
                     </li>
@@ -227,7 +237,10 @@ const Footer = () => {
                 <div className="col-lg-6 col-md-12 text-center text-lg-start">
                   <ul className="menu-bottom">
                     <li>
-                      <Link className="font-sm color-grey-300" href="/privacy">
+                      <Link
+                        className="font-sm color-grey-300"
+                        href="/privacy"
+                      >
                         Privacy policy
                       </Link>
                     </li>
@@ -260,7 +273,7 @@ const Footer = () => {
         </div>
       </footer>
     </>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

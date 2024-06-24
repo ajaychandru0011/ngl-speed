@@ -98,6 +98,7 @@ const CareerSection5 = () => {
             We helped these brands turn online assessments into success stories.{" "}
           </p>
         </div>
+        
         <div className="mt-50">
           <ul className="list-partners text-start">
             {data.map((item, index) => (
