@@ -53,7 +53,7 @@ const Footer = () => {
                   ></Link>
                 </div>
               </div>
-              <div className="col-lg-3 width-16 mb-30 custom-con">
+              <div className="col-lg-3 width-16 mb-30">
                 <h5 className="mb-10 color-brand-1">Consulting</h5>
                 <ul className="menu-footer">
                   <li>
@@ -82,7 +82,7 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <div className="col-lg-3 width-16 mb-30 custom-width-23">
+              <div className="col-lg-3 width-16 mb-30">
                 <h5 className="mb-10 color-brand-1">Free Tools</h5>
                 <ul className="menu-footer">
                   <li>
@@ -239,7 +239,7 @@ const Footer = () => {
                     <li>
                       <Link
                         className="font-sm color-grey-300"
-                        href="/privacy"
+                        href="/privacy-policy"
                       >
                         Privacy policy
                       </Link>
@@ -247,19 +247,20 @@ const Footer = () => {
                     <li>
                       <Link
                         className="font-sm color-grey-300"
-                        href="/term-conditions"
-                      >
-                        Cookies
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className="font-sm color-grey-300"
-                        href="/term-conditions"
+                        href="/terms-of-service"
                       >
                         Terms of service
                       </Link>
                     </li>
+                    {/* <li>
+                      <Link
+                        className="font-sm color-grey-300"
+                        href="/sitemap.xml"
+                        target="_blank"
+                      >
+                        Sitemap
+                      </Link>
+                    </li> */}
                   </ul>
                 </div>
                 <div className="col-lg-6 col-md-12 text-center text-lg-end">
