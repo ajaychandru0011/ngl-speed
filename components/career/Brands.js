@@ -26,7 +26,7 @@ const Brands = () => {
           { id: 11, src: "/images/Yatra.svg", alt: "Yatra", width: 115 },
           { id: 12, src: "/images/fectar.svg", alt: "Fectar", width: 115 },
           { id: 13, src: "/images/mint.svg", alt: "Mint", width: 115 },
-          { id: 14, src: "/images/FanCODE.svg", alt: "FanCODE", width: 247 }
+          { id: 14, src: "/images/Fancode.svg", alt: "FanCODE", width: 247 }
         ],
       },
       {
