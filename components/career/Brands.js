@@ -2,9 +2,72 @@ import Image from "next/image"
 import React, { useState } from "react"
 
 const Brands = () => {
-  const [selectedCategory, setSelectedCategory] = useState("Finance & Banking")
+  const [selectedCategory, setSelectedCategory] = useState("Social media")
 
   const categories = [
+    {
+        category: "Social media",
+        images: [
+          { id: 1, src: "/images/Airtel.svg", alt: "airtel", width: 49 },
+          { id: 2, src: "/images/ZEE.svg", alt: "ZEE", width: 110 },
+          { id: 3, src: "/images/OYO.svg", alt: "OYO", width: 142 },
+          { id: 4, src: "/images/Josh.svg", alt: "Josh", width: 105 },
+          { id: 5, src: "/images/Share-Chat.svg", alt: "ShareChat", width: 182 },
+          { id: 6, src: "/images/Dream11.svg", alt: "Dream11", width: 182 },
+          { id: 7, src: "/images/Dunzo.svg", alt: "Dunzo", width: 219 },
+          {
+            id: 8,
+            src: "/images/Make-My-Trip.svg",
+            alt: "Make-My-trip",
+            width: 155,
+          },
+          { id: 9, src: "/images/Goibibo.svg", alt: "Goibibo", width: 158 },
+          { id: 10, src: "/images/ixigo.svg", alt: "ixigo", width: 108 },
+          { id: 11, src: "/images/Yatra.svg", alt: "Yatra", width: 115 },
+          { id: 12, src: "/images/fectar.svg", alt: "Fectar", width: 115 },
+          { id: 13, src: "/images/mint.svg", alt: "Mint", width: 115 },
+          { id: 14, src: "/images/FanCODE.svg", alt: "FanCODE", width: 247 }
+        ],
+      },
+      {
+        category: "E-commerce",
+        images: [
+          { id: 1, src: "/images/Nykaa.svg", alt: "Nykaa", width: 146 },
+          { id: 2, src: "/images/Myntra.svg", alt: "Myntra", width: 177 },
+          { id: 3, src: "/images/Snapdeal.svg", alt: "Snapdeal", width: 241 },
+          { id: 4, src: "/images/Smood.ch-PINK.svg", alt: "Smood", width: 247 },
+          {
+            id: 5,
+            src: "/images/Alibabagroup.svg",
+            alt: "Alibabagroup",
+            width: 103,
+          },
+          {
+            id: 6,
+            src: "/images/Urban-company.svg",
+            alt: "Urbancompany",
+            width: 169,
+          },
+        ],
+      },
+      {
+        category: "Edtech",
+        images: [
+          { id: 1, src: "/images/ELSA.svg", alt: "ELSA", width: 146 },
+          {
+            id: 2,
+            src: "/images/SimpleLearn.svg",
+            alt: "SimpleLearn",
+            width: 195,
+          },
+          {
+            id: 3,
+            src: "/images/BYJUs-Exam-Prep.svg",
+            alt: "BYJU'sExamPrep",
+            width: 287,
+          },
+        ],
+      },
     {
       category: "Finance & Banking",
       images: [
@@ -35,69 +98,7 @@ const Brands = () => {
         },
       ],
     },
-    {
-      category: "Social media",
-      images: [
-        { id: 1, src: "/images/Airtel.svg", alt: "airtel", width: 49 },
-        { id: 2, src: "/images/ZEE.svg", alt: "ZEE", width: 110 },
-        { id: 3, src: "/images/OYO.svg", alt: "OYO", width: 142 },
-        { id: 4, src: "/images/Josh.svg", alt: "Josh", width: 105 },
-        { id: 5, src: "/images/Share-Chat.svg", alt: "ShareChat", width: 182 },
-        { id: 6, src: "/images/Dream11.svg", alt: "Dream11", width: 182 },
-        { id: 7, src: "/images/Dunzo.svg", alt: "Dunzo", width: 219 },
-        {
-          id: 8,
-          src: "/images/Make-My-Trip.svg",
-          alt: "Make-My-trip",
-          width: 155,
-        },
-        { id: 9, src: "/images/Goibibo.svg", alt: "Goibibo", width: 158 },
-        { id: 10, src: "/images/ixigo.svg", alt: "ixigo", width: 108 },
-        { id: 11, src: "/images/Yatra.svg", alt: "Yatra", width: 115 },
-        { id: 12, src: "/images/fectar.svg", alt: "Fectar", width: 115 },
-        { id: 13, src: "/images/mint.svg", alt: "Mint", width: 115 },
-        { id: 14, src: "/images/FanCODE.svg", alt: "FanCODE", width: 247 }
-      ],
-    },
-    {
-      category: "E-commerce",
-      images: [
-        { id: 1, src: "/images/Nykaa.svg", alt: "Nykaa", width: 146 },
-        { id: 2, src: "/images/Myntra.svg", alt: "Myntra", width: 177 },
-        { id: 3, src: "/images/Snapdeal.svg", alt: "Snapdeal", width: 241 },
-        { id: 4, src: "/images/Smood.ch-PINK.svg", alt: "Smood", width: 247 },
-        {
-          id: 5,
-          src: "/images/Alibabagroup.svg",
-          alt: "Alibabagroup",
-          width: 103,
-        },
-        {
-          id: 6,
-          src: "/images/Urban-company.svg",
-          alt: "Urbancompany",
-          width: 169,
-        },
-      ],
-    },
-    {
-      category: "Edtech",
-      images: [
-        { id: 1, src: "/images/ELSA.svg", alt: "ELSA", width: 146 },
-        {
-          id: 2,
-          src: "/images/SimpleLearn.svg",
-          alt: "SimpleLearn",
-          width: 195,
-        },
-        {
-          id: 3,
-          src: "/images/BYJUs-Exam-Prep.svg",
-          alt: "BYJU'sExamPrep",
-          width: 287,
-        },
-      ],
-    },
+   
     {
       category: "Real estate",
       images: [
