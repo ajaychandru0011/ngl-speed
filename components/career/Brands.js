@@ -51,7 +51,7 @@ const Brands = () => {
         ],
       },
       {
-        category: "Edtech",
+        category: "Ed-tech",
         images: [
           { id: 1, src: "/images/ELSA.svg", alt: "ELSA", width: 146 },
           {
