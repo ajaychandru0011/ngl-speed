@@ -61,7 +61,10 @@ TABLE CONTENT
 }
 
 // Custom css
-
+  .email-container {
+    display: flex;
+    flex-direction: column;
+  }
 .section-logo-marquee.padding-horizontal-vertical {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -185,6 +188,19 @@ TABLE CONTENT
 // ***************************
 
 // custom media queries
+@media (min-width: 992px) and (max-width: 1240px) {
+  .custom-width-30{
+    width: 30% !important;
+  }
+  .custom-width-23{
+    width: 23% !important;
+  }
+  .footer-container{
+    max-width: 1280px;
+    padding: 0 2rem;
+  }
+}
+
 @media (min-width: 2200px) {
   .custom-section-css{
      margin-top: 300px !important;
