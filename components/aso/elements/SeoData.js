@@ -14,7 +14,7 @@ const SEOData = ({ userAppData }) => {
               <td style={{ width: "40%" }}>{userAppData.appName.length}</td>
             </tr>
             <tr>
-              <td>Description Length :</td>
+              <td>Description Length:</td>
               <td style={{ width: "40%" }}>
                 {userAppData.appDescription.length}
               </td>
