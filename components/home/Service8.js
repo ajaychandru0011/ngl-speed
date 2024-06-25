@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "../elements/Button";
-import Link from "next/link";
 import Image from "next/image";
 const Service8 = ({ category }) => {
   const data = {
@@ -93,9 +92,7 @@ const Service8 = ({ category }) => {
                         </div>
                         <div className="card-info">
                           <h4 className="color-brand-1 mb-10">
-                            <Link className="color-brand-1" href={subItem.link}>
                               {subItem.link}
-                            </Link>
                           </h4>
                           <p className="font-md color-grey-500 mb-5">
                             {subItem.desc}

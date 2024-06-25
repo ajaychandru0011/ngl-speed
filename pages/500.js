@@ -109,8 +109,8 @@ const CustomError500 = () => {
                   <div className="card-info">
                     <h6 className="color-brand-1 mb-10">Corporate Address</h6>
                     <p className="font-xs color-grey-500">
-                      1216, 14th main, HSR Layout,
-                      <br /> Bengaluru-KA-560102
+                    #27, Santosh Tower, Second Floor,JP Nagar <br /> 4th Phase, 4th
+                    Main 100ft Ring Road <br /> Bangalore - 560078
                     </p>
                   </div>
                 </div>
