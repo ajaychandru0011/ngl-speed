@@ -10,7 +10,7 @@ export const searchedApps = atom([])
 export const formSubmitted = atom(false)
 export const formError = atom(false)
 export const formSuccess = atom(false)
-export const selectedAppCountry = atom("in")
+export const selectedAppCountry = atom("us")
 export const pricingWrapper = atom(false)
 export const startButton = atom(false)
 export const formInputData = atom({
@@ -21,7 +21,7 @@ export const formInputData = atom({
     appURL: "",
   })
   export const selectedCountryAtom = atom({
-    code: "in",
-    name: "India",
-    flag: "in.png",
+    code: "us",
+    name: "United States",
+    flag: "us.png",
   })
