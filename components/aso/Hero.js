@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import Country from "./elements/Country";
 import { useAtom } from "jotai";
 import {

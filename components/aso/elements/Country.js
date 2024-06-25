@@ -2,14 +2,14 @@ import React, { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import { useAtom } from "jotai";
 import { selectedAppCountry,selectedCountryAtom} from "../../../state/atoms";
-import { countries } from "../../utils";
+import { countries, jsonp } from "../../utils";
 
-const Country = ({ setSelectedCountryCode, showCode }) => {
+const Country = ({ showCode }) => {
   const [_, setSelectedAppCountryCode] = useAtom(selectedAppCountry);
   const [selectedCountry, setSelectedCountry] = useAtom(selectedCountryAtom);
   const [filteredCountries, setFilteredCountries] = useState(countries);
   const [isDropdownActive, setIsDropdownActive] = useState(false);
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState("")
 
   useEffect(() => {
     const lowercasedFilter = searchTerm.toLowerCase();
@@ -23,10 +23,26 @@ const Country = ({ setSelectedCountryCode, showCode }) => {
 
   const handleSelectCountry = (country) => {
     setSelectedCountry(country);
-    // setSelectedCountryCode(country.code);
     setSelectedAppCountryCode(country.code);
     setIsDropdownActive(false);
   };
+
+  
+// getUserLocation
+  useEffect(() => {
+    const fetchLocation = async () => {
+      try {
+        const data = await jsonp('https://ipapi.co/jsonp', 'getUserLocation');
+        const userLocation = filteredCountries.find(country => country.code === data.country_code.toLowerCase());
+        setSelectedCountry(userLocation);
+        setSelectedAppCountryCode(data.country_code.toLowerCase());
+      } catch (error) {}
+    };
+    fetchLocation();
+  }, []);
+
+
+
 
   // close the dropdown when clicking outside
   const countrySelectionBoxRef = useRef(null);

@@ -1990,3 +1990,28 @@ async function fetchAppleAppData(appPackageURL, t) {
     throw new Error(`Error fetching Apple app data: ${error}`)
   }
 }
+
+// ********************* 
+// utils/jsonp.js
+export function jsonp(url, callbackName) {
+  return new Promise((resolve, reject) => {
+    const script = document.createElement('script');
+    const callbackFunction = `${callbackName}_${Date.now()}`;
+    
+    window[callbackFunction] = (data) => {
+      resolve(data);
+      delete window[callbackFunction];
+      script.remove();
+    };
+
+    script.src = `${url}?callback=${callbackFunction}`;
+    script.onerror = (error) => {
+      reject(error);
+      delete window[callbackFunction];
+      script.remove();
+    };
+
+    document.body.appendChild(script);
+  });
+}
+
