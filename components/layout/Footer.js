@@ -30,10 +30,6 @@ const Footer = () => {
                   <br className="d-none d-lg-block" />
                   Bangalore - 560078
                 </p>
-                {/* <div className="font-md mb-20 color-grey-400">
-                  <strong className="font-md-bold">Email:</strong>
-                  contact@nextgrowthlabs.com
-                </div> */}
                 <div className="email-container font-md mb-20 color-grey-400 ">
                   <strong className="font-md-bold email-label">Email:</strong>
                   <span className="email-address">
@@ -59,10 +55,10 @@ const Footer = () => {
                 <h5 className="mb-10 color-brand-1">Consulting</h5>
                 <ul className="menu-footer">
                   <li>
-                    <Link href="/aso">App Store Optimization</Link>
+                    <Link href="/get-free-aso-analysis">App Store Optimization</Link>
                   </li>
                   <li>
-                    <Link href="/">Mobile App Promotion</Link>
+                    <Link href="#contact">Mobile App Promotion</Link>
                   </li>
                   <li>
                     <Link href="https://tools.nextgrowthlabs.com/how-we-lower-google-uac-ad-costs/">
@@ -70,11 +66,11 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/seo">Search Engine Optimization</Link>
+                    <Link href="/search-engine-optimization">Search Engine Optimization</Link>
                   </li>
                   <li>
                     {/* add link to nextlabs site */}
-                    <Link href="/aso">Free App Analysis</Link>
+                    <Link href="/get-free-aso-analysis">Free App Analysis</Link>
                   </li>
                   <li>
                     <Link href="#contact">Improve Pagespeed</Link>
