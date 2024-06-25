@@ -96,7 +96,7 @@ const data = [
   },
   {
     review:
-      "The team not only delivered on time but also met our expectations. Onboarding them helped us improve conversions. I appreciate their professionalism and delivery excellence and highly recommend them.",
+      "The team not only delivered on time but also met our expectations. Onboarding them helped us improve conversions. I appreciate their professionalism and delivery excellence, and highly recommend them.",
     author: "Abhinav Mathur",
     department: "Insanely Good by Swiggy",
     img: (
