@@ -593,7 +593,7 @@ export const data = [
         </defs>
       </svg>
     ),
-    toolLink: "https://nextgrowthlabs.com/google-serp-rank-tracker/",
+    toolLink: "https://tools.nextgrowthlabs.com/google-serp-rank-tracker/",
   },
   {
     name: "Keyword Suggest",

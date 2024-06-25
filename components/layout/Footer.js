@@ -208,7 +208,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <Link
-                        href="/tools"
+                        href="/free-app-store-optimization-tool"
                         className="font-sm color-grey-400 "
                       >
                         Request Access to Free Tools Suite
