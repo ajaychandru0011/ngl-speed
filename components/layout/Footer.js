@@ -46,10 +46,12 @@ const Footer = () => {
                   <Link
                     className="icon-socials icon-facebook"
                     href="https://www.facebook.com/thenextlabs/"
+                    target="_blank"
                   ></Link>
                   <Link
                     className="icon-socials icon-linkedin"
                     href="https://www.linkedin.com/company/13337675/"
+                    target="_blank"
                   ></Link>
                 </div>
               </div>
@@ -256,7 +258,7 @@ const Footer = () => {
                 </div>
                 <div className="col-lg-6 col-md-12 text-center text-lg-end">
                   <span className="color-grey-300 font-md">
-                    ©NextGrowthLabs 2024. All right reserved.
+                    ©NextGrowthLabs 2024. All rights reserved.
                   </span>
                 </div>
               </div>

@@ -15,7 +15,7 @@ const Tools = ({ length }) => {
               years ahead in the mobile app promotion stack.
             </p>
 
-            <Button text={"Learn More"} href="/tools" />
+            <Button text={"Learn More"} href="/free-app-store-optimization-tool" />
           </div>
         </div>
         <div className="row mt-50">

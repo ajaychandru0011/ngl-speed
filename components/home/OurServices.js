@@ -6,13 +6,13 @@ const SERVICES_DATA = [
     image: "/assets/imgs/page/homepage4/offer1.png",
     heading: "ASO",
     desc: "With our expert ASO strategies, your app will not only attract more users but also retain them, leading to increased engagement and profitability. Let us help you maximize your app’s potential and achieve your desired results.",
-    route: "/aso",
+    route: "/get-free-aso-analysis",
   },
   {
     image: "/assets/imgs/page/homepage4/offer2.png",
     heading: "SEO",
     desc: "With our expert SEO strategies, your site will not only attract more visitors but also engage and convert them, leading to increased sales and success. Let us help you unlock your website’s full potential and achieve your desired outcomes.",
-    route: "/seo",
+    route: "/search-engine-optimization",
   },
   {
     image: "/assets/imgs/page/homepage4/offer3.png",
