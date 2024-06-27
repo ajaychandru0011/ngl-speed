@@ -1,7 +1,7 @@
 import Layout from "../components/layout/Layout";
 import Trustby from "../components/home/Trustby";
 import Contact from "../components/home/Contact";
-import ToolsHero from "../components/tools/ToolsHero";
+import ToolsHeroSection from "../components/tools/ToolsHero";
 import PageHead from "../components/elements/PageHead";
 import dynamic from "next/dynamic";
 const TrackingTools = dynamic( ()=> import("../components/tools/TrackingTools"),{ssr:false})
@@ -15,7 +15,7 @@ const Tools = () => {
     <>
       <PageHead title={"NEXT ASO Tools"} />
       <Layout>
-        <ToolsHero />
+        <ToolsHeroSection />
         <Trustby heading = {"Brands we’ve helped grow"}/>
         <TrackingTools />
         <SlackTool />

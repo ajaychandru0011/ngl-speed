@@ -5,7 +5,7 @@ import PageHead from "../components/elements/PageHead";
 import dynamic from "next/dynamic";
 
 const DynamicTrustBy = dynamic(()=>import("../components/home/Trustby",{ssr:false}))
-const SeoHero = dynamic( ()=> import("../components/seo/SeoHero"),{ssr:false})
+const DynamicSeoHero = dynamic( ()=> import("../components/seo/SeoHero"),{ssr:false})
 const DynamicTestimonials = dynamic( ()=> import("../components/home/Testimonials"),{ssr:false})
 const BetterResults = dynamic( ()=> import("../components/seo/BetterResults"),{ssr:false})
 const MetaAnalyzer = dynamic( ()=> import("../components/seo/MetaAnalyzer"),{ssr:false})
@@ -19,7 +19,7 @@ const SEO = () => {
         title={"Increase Visibility & Traffic with Our SEO Solutions"}
       />
       <Layout>
-        <SeoHero />
+        <DynamicSeoHero />
         <DynamicTrustBy heading = {"Brands we’ve helped grow"}/>
         <WebVisibility category={"Website's"} />
         <DynamicTestimonials />
