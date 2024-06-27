@@ -5,7 +5,7 @@ import PageHead from "../components/elements/PageHead";
 import dynamic from "next/dynamic";
 
 const DynamicTrustBy = dynamic(()=>import("../components/home/Trustby",{ssr:false}))
-const DynamicSeoHero = dynamic( ()=> import("../components/seo/SeoHero"),{ssr:false})
+const DynamicSeoHero = dynamic( ()=> import("../components/seo/seoHero"),{ssr:false})
 const DynamicTestimonials = dynamic( ()=> import("../components/home/Testimonials"),{ssr:false})
 const BetterResults = dynamic( ()=> import("../components/seo/BetterResults"),{ssr:false})
 const MetaAnalyzer = dynamic( ()=> import("../components/seo/MetaAnalyzer"),{ssr:false})

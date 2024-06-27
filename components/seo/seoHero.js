@@ -1,6 +1,5 @@
-import { SiTruenas } from "react-icons/si";
-import Button from "../elements/Button";
 import Image from "next/image";
+import Button from "../elements/Button";
 
 const SeoHero = () => {
   return (

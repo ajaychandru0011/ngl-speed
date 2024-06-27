@@ -1,8 +1,9 @@
 import Layout from "../components/layout/Layout";
 import Trustby from "../components/home/Trustby";
 import Contact from "../components/home/Contact";
-import ToolsHeroSection from "../components/tools/ToolsHero";
 import PageHead from "../components/elements/PageHead";
+import ToolsHeroSection from "../components/tools/toolsHero";
+
 import dynamic from "next/dynamic";
 const TrackingTools = dynamic( ()=> import("../components/tools/TrackingTools"),{ssr:false})
 const SlackTool = dynamic( ()=> import("../components/tools/SlackTool"),{ssr:false})
