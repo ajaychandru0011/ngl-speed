@@ -9,15 +9,15 @@ const Tools = dynamic(() => import("../components/home/Tools"));
 const WebVisibility = dynamic(() => import("../components/home/WebVisibility"));
 const Asocontact = dynamic(() => import("../components/aso/Asocontact"));
 const TrustBy = dynamic(() => import("../components/home/Trustby"));
-const Services5 = dynamic(() => import("../components/aso/Services5"));
-const Asomarketing = dynamic(() => import("../components/aso/Asomarketing"));
-const Asomarketing4 = dynamic(() => import("../components/aso/Asomarking4"));
-const AsoSection6 = dynamic(() => import("../components/aso/AsoSection6"));
+const AsoInnovation = dynamic(() => import("../components/aso/AsoInnovation"));
+const AsoMarketing = dynamic(() => import("../components/aso/AsoMarketing"));
+const AsoCampaigns = dynamic(() => import("../components/aso/AsoCampaigns"));
+const AsoAcquisition = dynamic(() => import("../components/aso/AsoAcquisition"));
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
 const queryClient = new QueryClient()
 
 const ASO = () => {
-  return (
+  return (  
     <>
     <QueryClientProvider client={queryClient}>
       <PageHead title={"Get Free ASO Analysis - NextGrowthLabs"} />
@@ -26,12 +26,12 @@ const ASO = () => {
         <TrustBy />
         <WebVisibility category={"App's"} />
         <Testimonials />
-        <Asomarketing4 />
-        <AsoSection6 />
+        <AsoCampaigns />
+        <AsoAcquisition />
         <Tools length={6} />
-        <Services5 />
-        <Asomarketing />
-        <Asocontact />
+        <AsoInnovation />
+        <AsoMarketing />
+        <AsoContact />
       </Layout>
       </QueryClientProvider>
     </>
