@@ -3,12 +3,25 @@ import BlogSubSection2 from "./blogSubSection2";
 import BlogSubSection3 from "./blogSubSection3";
 import BlogSubSection4 from "./blogSubSection4";
 import BlogCard from "../cards/BlogCard";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import LoadMoreButton from "../elements/LoadMoreButton";
 
 export default function BlogSection2({ allPosts }) {
   const [post, setPost] = useState(allPosts);
   const [loading, setLoading] = useState(false);
+
+  // useEffect(() => {
+  //   try {
+  //     fetch("/api/routes")
+  //       .then((res) => res.json())
+  //       .then((data) => console.log(data));
+  //     setLoading(false);
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // });
+  // if (loading) return <p>Blogs are loading</p>;
+  // if (!post) return <p>blogs not found</p>;
   return (
     <section className="section mt-80">
       <div className="container">

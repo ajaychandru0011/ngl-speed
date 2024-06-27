@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import ContactForm from "../elements/ContactForm";
-const Asocontact = () => {
+const AsoContact = () => {
   return (
     <section className="section mt-80">
       <div className="container">
@@ -11,9 +11,10 @@ const Asocontact = () => {
               Need help to skyrocket your add-on rankings?
             </h2>
             <p className="font-sm color-grey-500">
-              Elevate your app's success with our ASO expertise – we specialize
-              in optimizing keywords, enhancing visibility, boost app-installs,
-              and maximize conversions for unparalleled app growth.
+              Elevate your app&apos;s success with our ASO expertise – we
+              specialize in optimizing keywords, enhancing visibility, boost
+              app-installs, and maximize conversions for unparalleled app
+              growth.
               <br />
               Get in touch with us, and a specialist will be with you in a few
               hours.
@@ -46,4 +47,4 @@ const Asocontact = () => {
   );
 };
 
-export default Asocontact;
+export default AsoContact;

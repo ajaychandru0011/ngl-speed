@@ -22,18 +22,29 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
       >
         <div className="container">
           <div className="main-header">
-            <div className="header-left">
-              <div className="header-logo">
+            <div className="header-left ">
+              <div className="header-logo-mobile">
                 <Link className="d-flex" href="/">
                   <Image
                     alt="Ecom"
-                    src="assets/imgs/template/logo.svg"
+                    src="/assets/imgs/template/logo.svg"
                     width={40}
                     height={40}
                   />
                 </Link>
               </div>
-              <div className="header-nav">
+              <div className="header-nav d-flex align-items-center">
+                <div className="header-logo d-flex header-logo-lg-xxl">
+                  <Link className="d-flex" href="/">
+                    <Image
+                      alt="Ecom"
+                      src="/assets/imgs/template/logo.svg"
+                      width={40}
+                      height={40}
+                      className="mlNav-110"
+                    />
+                  </Link>
+                </div>
                 <nav className="nav-main-menu d-none d-xl-block">
                   <ul className="main-menu">
                     <li>
@@ -43,16 +54,16 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                     </li>
 
                     <li>
-                      <Link href="/seo">SEO</Link>
+                      <Link href="/search-engine-optimization">SEO</Link>
                     </li>
                     <li>
-                      <Link href="/tools">Tools</Link>
+                      <Link href="/free-app-store-optimization-tool">Tools</Link>
                     </li>
                     <li>
-                      <Link href="/aso">Get Free ASO Analysis</Link>
+                      <Link href="/get-free-aso-analysis">Get Free ASO Analysis</Link>
                     </li>
                     <li>
-                      <Link href="/blog">Blog</Link>
+                      <Link href="http://blogs.nextgrowthlabs.com/">Blog</Link>
                     </li>
                     <li>
                       <Link href="/career">Career</Link>
@@ -61,10 +72,10 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                       <Link href="/contact">Contact Us</Link>
                     </li>
                     <li>
-                      <Link href="/terms">Terms</Link>
+                      <Link href="/terms-of-service">Terms</Link>
                     </li>
                     <li>
-                      <Link href="/privacy">Privacy</Link>
+                      <Link href="/privacy-policy">Privacy</Link>
                     </li>
                   </ul>
                 </nav>
@@ -83,11 +94,11 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                 </div>
               </div>
             </div>
-            <div className="header-right">
+            {/* <div className="header-right">
               <div className="d-none d-sm-inline-block">
                 <Button text={"Get Started"} href={"/register"} />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </header>

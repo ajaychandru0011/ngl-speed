@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-const FeaturedImage = ({ post, styleClasses, priority }) => {
+const FeaturedImage = ({ post, styleClasses, priority, height }) => {
   let img = "";
   const defaultFeaturedImage =
     "https://asokeywordtool.com/wp-content/uploads/2024/05/img-marketing-1.png";
@@ -26,8 +26,9 @@ const FeaturedImage = ({ post, styleClasses, priority }) => {
     <>
       <Image
         src={img.src}
-        layout="responsive"
-        height={img.height}
+        // layout="responsive"
+        // height={img.height}
+        height={height}
         width={img.width}
         className={styleClasses}
         alt={post.title}

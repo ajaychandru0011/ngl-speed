@@ -1,8 +1,6 @@
-import Button from "../elements/Button";
-import Chart from './Chart'
+import Chart from "./Chart";
 
-
-const Asomarketing = () => {
+const AsoMarketing = () => {
   return (
     <section className="section mt-80">
       <div className="container">
@@ -25,11 +23,7 @@ const Asomarketing = () => {
                 <li>Go beyond your standard analytics.</li>
                 <li>Engage the right set of users at the right time.</li>
                 <li>Integrate that into your overall ASO SWOT analysis .</li>
-                </ul>
-              <div className="box-button text-start mt-40">
-                {" "}
-                <Button text="Find Out How" href={"#"} />
-              </div>
+              </ul>
             </div>
           </div>
 
@@ -38,11 +32,10 @@ const Asomarketing = () => {
               <Chart />
             </div>
           </div>
-
         </div>
       </div>
     </section>
   );
 };
 
-export default Asomarketing;
+export default AsoMarketing;

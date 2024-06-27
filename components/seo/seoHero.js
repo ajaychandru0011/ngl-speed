@@ -2,7 +2,7 @@ import { SiTruenas } from "react-icons/si";
 import Button from "../elements/Button";
 import Image from "next/image";
 
-const SEOHero = () => {
+const SeoHero = () => {
   return (
     <section
       className="section"
@@ -37,12 +37,21 @@ const SEOHero = () => {
               </h1>
               <div className="row">
                 <div className="col-lg-9">
+                  {/* <p className="font-md color-grey-500">
+                    Since 2016, we&apos;ve been at the forefront of SEO. Some of the
+                    world&apos;s top brands too read these lines, before
+                    contacting and working with us. The next 5 minutes you spend
+                    reading about us will give you a glimpse to our approach.
+                    Want a customised presentation? Let us know.
+                  </p> */}
                   <p className="font-md color-grey-500">
-                    Since 2016, we've been at the forefront of SEO. Some of
-                    world's top brands too read these lines, before contacting
-                    and working with us. The next 5 minutes you spend reading
-                    about us will give you a glimpse to our approach. Want a
-                    customised presentation? Let us know.
+                    With our expert SEO strategies, your site will not only
+                    attract more visitors, keeping them engaged and ultimately
+                    converting them into engaged customers, leading to increased
+                    sales and success. Let us help you unlock your
+                    website&apos;s full potential and achieve your desired
+                    outcomes, like boosting sales or generating more qualified
+                    leads.
                   </p>
                 </div>
               </div>
@@ -51,7 +60,7 @@ const SEOHero = () => {
               </div>
               <div className="box-button mt-20">
                 <Button
-                  text={"Book An Appointment"}
+                  text={"Book an appointment"}
                   showIcon={true}
                   href={
                     "https://calender.multivariate.ai/team/nextgrowth-labs/marketing-meet"
@@ -77,4 +86,4 @@ const SEOHero = () => {
   );
 };
 
-export default SEOHero;
+export default SeoHero;

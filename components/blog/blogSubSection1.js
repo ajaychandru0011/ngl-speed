@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import FeaturedImage from "../elements/FeaturedImage";
 import Date from "../elements/Date";
 const BlogSubSection1 = ({ latestPost }) => {
@@ -10,61 +9,35 @@ const BlogSubSection1 = ({ latestPost }) => {
           <div className="box-cover-border">
             <div className="row align-items-center">
               <div className="col-lg-6">
-                {/* <Image
-                  layout="responsive"
-                  // we'll get height width from wordpress
-                  width={2070}
-                  height={1713}
-                  className="d-block"
-                  src="/assets/imgs/page/homepage2/img-marketing.png"
-                  // we'll need src from the wordpress
-                  alt="iori"
-                  priority
-                /> */}
                 <FeaturedImage
                   post={latestPost}
                   styleClasses="d-block"
                   priority={true}
+                  height={400}
                 />
               </div>
               <div className="col-lg-6">
                 <div className="box-info-video">
                   {/* <span className="btn btn-tag">Featured</span> */}
-                  <Link href={latestPost.slug}>
+                  <Link
+                    href={`https://blogsngl.wpenginepowered.com/${latestPost.slug}`}
+                  >
                     <h3 className="color-brand-1 mt-15 mb-20">
-                      {/* 7 Things To Keep In Mind When Starting A Business */}
                       {latestPost.title}
-                      {/* this will have title */}
                     </h3>
                   </Link>
                   <div className="mb-25 mt-10">
                     <span className="font-xs-color-grey-500">
                       <Date dateString={latestPost.date} />
-                      {/* date from wordpress */}
-                    </span>
-                    <span className="font-xs-color-grey-500 icon-read">
-                      2 min read
-                      {/* time to read from wordpress */}
                     </span>
                   </div>
-                  <div
-                    className="excerptWordpress"
-                    dangerouslySetInnerHTML={{
-                      __html: latestPost.excerpt,
-                    }}
-                  >
-                    {/* short description from wordpress
-                    Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit laborum — semper quis
-                    lectus nulla. Interactively transform magnetic growth
-                    strategies whereas prospective "outside the box" thinking. */}
+                  <div className="excerptWordpress">
+                    {latestPost.excerpt.slice(3, 150)}...
                   </div>
                   <div className="box-button text-start mt-45">
-                    {" "}
                     <Link
                       className="btn btn-default font-sm-bold pl-0 hover-up"
-                      href={latestPost.slug}
-                      // dynamic href attribute / id from wordpress
+                      href={`https://blogsngl.wpenginepowered.com/${latestPost.slug}`}
                     >
                       Read more
                       <svg

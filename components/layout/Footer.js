@@ -1,62 +1,82 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from "next/image"
+import Link from "next/link"
 const Footer = () => {
   return (
     <>
       <footer className="footer mt-80">
+        <div className="border-bottom"></div>
+
         <div className="footer-1">
-          <div className="container">
+          <div className="container footer-container">
             <div className="row">
-              <div className="col-lg-3 width-20">
+              <div className="col-lg-3 width-20 custom-width-30">
                 <div className="mb-10">
                   <Image
                     width={40}
                     height={40}
-                    src="assets/imgs/template/logo.svg"
+                    src="/assets/imgs/template/logo.svg"
                     alt="iori"
                   />
                 </div>
-                <p className="font-md mb-20 color-grey-400">
-                  Bangalore: 1216, 14th Main,
-                  <br className="d-none d-lg-block" />
-                  HSR Layout
+                <p className="font-md-bold mb-20 color-brand-1">
+                  NextGrowth Labs Private Limited
                 </p>
-                <div className="font-md mb-20 color-grey-400">
-                  <strong className="font-md-bold">Email:</strong>{" "}
-                  contact@nextgrowthlabs.com
+                <p className="font-md mb-20 color-grey-400">
+                  #27, Santosh Tower,
+                  <br className="d-none d-lg-block" />
+                  Second Floor,JP Nagar,
+                  <br className="d-none d-lg-block" />
+                  4th Phase, 4th Main 100ft Ring Road
+                  <br className="d-none d-lg-block" />
+                  Bangalore - 560078
+                </p>
+                <div className="email-container font-md mb-20 color-grey-400 ">
+                  <strong className="font-md-bold email-label">Email:</strong>
+                  <span className="email-address">
+                    contact@nextgrowthlabs.com
+                  </span>
                 </div>
+
                 <h6 className="color-brand-1">Follow Us</h6>
                 <div className="mt-15">
-                  <Link className="icon-socials icon-facebook" href="#"></Link>
-                  <Link className="icon-socials icon-instagram" href="#"></Link>
-                  <Link className="icon-socials icon-twitter" href="#"></Link>
-                  <Link className="icon-socials icon-linkedin" href="#"></Link>
-                  <Link className="icon-socials icon-youtube" href="#"></Link>
+                  <Link
+                    className="icon-socials icon-facebook"
+                    href="https://www.facebook.com/thenextlabs/"
+                    target="_blank"
+                  ></Link>
+                  <Link
+                    className="icon-socials icon-linkedin"
+                    href="https://www.linkedin.com/company/13337675/"
+                    target="_blank"
+                  ></Link>
                 </div>
               </div>
               <div className="col-lg-3 width-16 mb-30">
                 <h5 className="mb-10 color-brand-1">Consulting</h5>
                 <ul className="menu-footer">
                   <li>
-                    <Link href="#!">App Store Optimization</Link>
+                    <Link href="/get-free-aso-analysis">App Store Optimization</Link>
                   </li>
                   <li>
-                    <Link href="#!">Mobile App Promotion</Link>
+                    <Link href="#contact">Mobile App Promotion</Link>
                   </li>
                   <li>
-                    <Link href="#!">Ad Cost Reduction</Link>
+                    <Link href="https://tools.nextgrowthlabs.com/how-we-lower-google-uac-ad-costs/">
+                      Ad Cost Reduction
+                    </Link>
                   </li>
                   <li>
-                    <Link href="#!">Search Engine Optimization</Link>
+                    <Link href="/search-engine-optimization">Search Engine Optimization</Link>
                   </li>
                   <li>
-                    <Link href="#!">Free App Analysis</Link>
+                    {/* add link to nextlabs site */}
+                    <Link href="/get-free-aso-analysis">Free App Analysis</Link>
                   </li>
                   <li>
-                    <Link href="#!">Improve Pagespeed</Link>
+                    <Link href="#contact">Improve Pagespeed</Link>
                   </li>
                   <li>
-                    <Link href="#!">Mobile & Web Analytics</Link>
+                    <Link href="#contact">Mobile & Web Analytics</Link>
                   </li>
                 </ul>
               </div>
@@ -64,31 +84,49 @@ const Footer = () => {
                 <h5 className="mb-10 color-brand-1">Free Tools</h5>
                 <ul className="menu-footer">
                   <li>
-                    <Link href="#!">App Rank Checker</Link>
+                    <Link href="https://tools.nextgrowthlabs.com/app-rank-tracker/">
+                      App Rank Checker
+                    </Link>
                   </li>
                   <li>
-                    <Link href="#!">Bing Rank Checker</Link>
+                    <Link href="https://tools.nextgrowthlabs.com/introducing-the-bing-search-ranking-tool/">
+                      Bing Rank Checker
+                    </Link>
                   </li>
                   <li>
-                    <Link href="#!">Keyword Auto Suggest</Link>
+                    <Link href="https://tools.nextgrowthlabs.com/keyword-suggestion/">
+                      Keyword Auto Suggest
+                    </Link>
                   </li>
                   <li>
-                    <Link href="#!">Google SERP Checker</Link>
+                    <Link href="https://tools.nextgrowthlabs.com/google-serp-rank-tracker/">
+                      Google SERP Checker
+                    </Link>
                   </li>
                   <li>
-                    <Link href="#!">SEO Content Assistant</Link>
+                    <Link href="https://tools.nextgrowthlabs.com/seo-and-aso-keyword-content-writing-assistant/">
+                      SEO Content Assistant
+                    </Link>
                   </li>
                   <li>
-                    <Link href="#!">iOS Keyword Search</Link>
+                    <Link href="https://tools.nextgrowthlabs.com/ios-keyword-ranks/">
+                      iOS Keyword Search
+                    </Link>
                   </li>
                   <li>
-                    <Link href="#!">SEO and ASO Chrome Add On</Link>
+                    <Link href="https://tools.nextgrowthlabs.com/seo-aso-chrome-add-on-free-tool-with-use-cases/">
+                      SEO and ASO Chrome Add On
+                    </Link>
                   </li>
                   <li>
-                    <Link href="#!">Bulk Page Speed Assessment</Link>
+                    <Link href="https://tools.nextgrowthlabs.com/page-speed-assessment/">
+                      Bulk Page Speed Assessment
+                    </Link>
                   </li>
                   <li>
-                    <Link href="#!">iOS Keyword Tracker</Link>
+                    <Link href="https://tools.nextgrowthlabs.com/bulk-ios-keywords-tracker/">
+                      Bulk iOS Keyword Rank Tracker
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -96,36 +134,47 @@ const Footer = () => {
                 <h5 className="mb-10 color-brand-1"></h5>
                 <ul className="menu-footer">
                   <li>
-                    {" "}
-                    <Link href="#!">Android Rating Projection Tool</Link>
+                    <Link href="https://tools.nextgrowthlabs.com/rating-projection-calculator/">
+                      Android Rating Projection Tool
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="https://tools.nextgrowthlabs.com/html-editor/">
+                      Html Editor
+                    </Link>
+                  </li>
+                  {/* <li>
+                    <Link href="https://tools.nextgrowthlabs.com/bulk-website-rank-checker/">
+                      Website Rank Checker
+                    </Link>
+                  </li> */}
+                  <li>
+                    <Link href="https://tools.nextgrowthlabs.com/emi-calculator/">
+                      Emi Calculator
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="https://tools.nextgrowthlabs.com/word-to-html/">
+                      Word To Html
+                    </Link>
                   </li>
                   <li>
                     {" "}
-                    <Link href="#!">Html Editor</Link>
+                    <Link href="https://tools.nextgrowthlabs.com/font-changer/">
+                      Font Changer
+                    </Link>
                   </li>
                   <li>
                     {" "}
-                    <Link href="#!">Website Rank Checker</Link>
+                    <Link href="https://tools.nextgrowthlabs.com/multi-tool/">
+                      Multi Tool
+                    </Link>
                   </li>
                   <li>
                     {" "}
-                    <Link href="#!">Emi Calculator</Link>
-                  </li>
-                  <li>
-                    {" "}
-                    <Link href="#!">Word To Html</Link>
-                  </li>
-                  <li>
-                    {" "}
-                    <Link href="#!">Font Changer</Link>
-                  </li>
-                  <li>
-                    {" "}
-                    <Link href="#!">Multi Tool</Link>
-                  </li>
-                  <li>
-                    {" "}
-                    <Link href="#!">Keyword Suggestion</Link>
+                    <Link href="https://tools.nextgrowthlabs.com/keyword-suggestion/">
+                      Keyword Suggestion
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -133,12 +182,15 @@ const Footer = () => {
                 <div>
                   <p className="font-sm color-grey-400">
                     Our mission is to leverage technology and data science to
-                    maximize your app's organic users.
+                    maximize your app&apos;s organic users.
                   </p>
                   <div className="mt-20">
-                    <Link className="mr-10" href="#">
+                    <Link
+                      className="mr-10"
+                      href="https://www.google.com/partners/agency?id=4821617337"
+                    >
                       <Image
-                        src="assets/imgs/template/download 1.svg"
+                        src="/assets/imgs/template/download_1.svg"
                         alt="Description of the image"
                         width={220}
                         height={82}
@@ -155,12 +207,18 @@ const Footer = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link href="#" className="font-sm color-grey-400 ">
+                      <Link
+                        href="/free-app-store-optimization-tool"
+                        className="font-sm color-grey-400 "
+                      >
                         Request Access to Free Tools Suite
                       </Link>
                     </li>
                     <li>
-                      <Link href="#" className="font-sm color-grey-400">
+                      <Link
+                        href="https://tools.nextgrowthlabs.com/google-play-data-studio-connector-by-nextgrowth-labs/"
+                        className="font-sm color-grey-400"
+                      >
                         Data Studio Connector For PlayStore
                       </Link>
                     </li>
@@ -179,7 +237,7 @@ const Footer = () => {
                     <li>
                       <Link
                         className="font-sm color-grey-300"
-                        href="term-conditions.html"
+                        href="/privacy-policy"
                       >
                         Privacy policy
                       </Link>
@@ -187,15 +245,7 @@ const Footer = () => {
                     <li>
                       <Link
                         className="font-sm color-grey-300"
-                        href="term-conditions.html"
-                      >
-                        Cookies
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className="font-sm color-grey-300"
-                        href="term-conditions.html"
+                        href="/terms-of-service"
                       >
                         Terms of service
                       </Link>
@@ -204,7 +254,7 @@ const Footer = () => {
                 </div>
                 <div className="col-lg-6 col-md-12 text-center text-lg-end">
                   <span className="color-grey-300 font-md">
-                    ©NextGrowthLabs 2024. All right reserved.
+                    ©NextGrowthLabs 2024. All rights reserved.
                   </span>
                 </div>
               </div>
@@ -212,18 +262,8 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      {/* Google Tag Manager (noscript) */}
-      <noscript>
-        <iframe
-          src="https://www.googletagmanager.com/ns.html?id=GTM-NH5RFSKJ"
-          height="0"
-          width="0"
-          style={{display:"none", visibility:"hidden"}}
-        ></iframe>
-      </noscript>
-      {/* End Google Tag Manager (noscript) */}
     </>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
