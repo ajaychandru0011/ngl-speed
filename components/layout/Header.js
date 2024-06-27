@@ -57,13 +57,17 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                       <Link href="/search-engine-optimization">SEO</Link>
                     </li>
                     <li>
-                      <Link href="/free-app-store-optimization-tool">Tools</Link>
+                      <Link href="/free-app-store-optimization-tool">
+                        Tools
+                      </Link>
                     </li>
                     <li>
-                      <Link href="/get-free-aso-analysis">Get Free ASO Analysis</Link>
+                      <Link href="/get-free-aso-analysis">
+                        Get Free ASO Analysis
+                      </Link>
                     </li>
                     <li>
-                      <Link href="http://blogs.nextgrowthlabs.com/">Blog</Link>
+                      <Link href="/blog">Blog</Link>
                     </li>
                     <li>
                       <Link href="/career">Career</Link>
