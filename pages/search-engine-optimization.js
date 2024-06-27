@@ -1,6 +1,6 @@
 import Layout from "../components/layout/Layout";
 import Contact from "../components/home/Contact";
-import Service8 from "../components/home/Service8";
+import WebVisibility from "../components/home/WebVisibility";
 import PageHead from "../components/elements/PageHead";
 import dynamic from "next/dynamic";
 
@@ -21,7 +21,7 @@ const SEO = () => {
       <Layout>
         <DynamicSeoHero />
         <DynamicTrustBy heading = {"Brands we’ve helped grow"}/>
-        <Service8 category={"Website's"} />
+        <WebVisibility category={"Website's"} />
         <DynamicTestimonials />
         <DynamicSEOSection3 />
         <DynamicSEOSection4 />

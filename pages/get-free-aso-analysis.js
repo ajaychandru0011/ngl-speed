@@ -6,7 +6,7 @@ const Layout = dynamic(() => import("../components/layout/Layout"));
 const Hero = dynamic(() => import("../components/aso/Hero"));
 const Testimonials = dynamic(() => import("../components/home/Testimonials"));
 const Tools = dynamic(() => import("../components/home/Tools"));
-const Service8 = dynamic(() => import("../components/home/Service8"));
+const WebVisibility = dynamic(() => import("../components/home/WebVisibility"));
 const Asocontact = dynamic(() => import("../components/aso/Asocontact"));
 const TrustBy = dynamic(() => import("../components/home/Trustby"));
 const Services5 = dynamic(() => import("../components/aso/Services5"));
@@ -24,7 +24,7 @@ const ASO = () => {
       <Layout>
         <Hero />
         <TrustBy />
-        <Service8 category={"App's"} />
+        <WebVisibility category={"App's"} />
         <Testimonials />
         <Asomarketing4 />
         <AsoSection6 />
