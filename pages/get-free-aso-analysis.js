@@ -11,8 +11,8 @@ const TrustBy = dynamic(() => import("../components/home/Trustby"));
 const AsoInnovation = dynamic(() => import("../components/aso/AsoInnovation"));
 const AsoCampaigns = dynamic(() => import("../components/aso/AsoCampaigns"));
 const AsoAcquisition = dynamic(() => import("../components/aso/AsoAcquisition"));
-const DynamicAsoMarketing = dynamic(() => import("../components/aso/Asomarketing"));
-const AsoContact = dynamic(() => import("../components/aso/Asocontact"));
+const DynamicAsoMarketing = dynamic(() => import("../components/aso/AppMarketing"));
+const AsoContact = dynamic(() => import("../components/aso/BoostRankings"));
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
 const queryClient = new QueryClient()
 

@@ -2,7 +2,7 @@ import Layout from "../components/layout/Layout";
 import Trustby from "../components/home/Trustby";
 import Contact from "../components/home/Contact";
 import PageHead from "../components/elements/PageHead";
-import ToolsHeroSection from "../components/tools/toolsHero";
+import ToolsHeroSection from "../components/tools/NextTools";
 
 import dynamic from "next/dynamic";
 const TrackingTools = dynamic( ()=> import("../components/tools/TrackingTools"),{ssr:false})
