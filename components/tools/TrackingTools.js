@@ -348,7 +348,7 @@ const data = [
     ),
   },
 ];
-const ToolsSection1 = () => {
+const TrackingTools = () => {
   return (
     <section className="section mt-80 custom-section-css">
       <div className="container">
@@ -373,4 +373,4 @@ const ToolsSection1 = () => {
   );
 };
 
-export default ToolsSection1;
+export default TrackingTools;

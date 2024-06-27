@@ -2422,7 +2422,7 @@ const data = [
     toolLink: "https://tools.nextgrowthlabs.com/on-page-seo-checker/",
   },
 ];
-const ToolsSection3 = () => {
+const OtherTools = () => {
   return (
     <section className="section mt-80">
       <div className="container">
@@ -2470,4 +2470,4 @@ const ToolsSection3 = () => {
   );
 };
 
-export default ToolsSection3;
+export default OtherTools;

@@ -265,7 +265,7 @@ const data = [
     ),
   },
 ];
-const ToolsSection2 = () => {
+const SlackTool = () => {
   return (
     <section className="section mt-80">
       <div className="container">
@@ -290,4 +290,4 @@ const ToolsSection2 = () => {
   );
 };
 
-export default ToolsSection2;
+export default SlackTool;
