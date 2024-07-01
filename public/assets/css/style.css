@@ -851,6 +851,10 @@ a:hover {
   color: #3d565f;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 a,
 button,
 img,
